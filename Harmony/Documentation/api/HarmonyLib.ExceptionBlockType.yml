@@ -21,7 +21,7 @@ items:
   source:
     remote:
       path: Harmony/Public/ExceptionBlock.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: ExceptionBlockType
     path: ../Public/ExceptionBlock.cs
@@ -54,7 +54,7 @@ items:
   source:
     remote:
       path: Harmony/Public/ExceptionBlock.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: BeginExceptionBlock
     path: ../Public/ExceptionBlock.cs
@@ -88,7 +88,7 @@ items:
   source:
     remote:
       path: Harmony/Public/ExceptionBlock.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: BeginCatchBlock
     path: ../Public/ExceptionBlock.cs
@@ -122,7 +122,7 @@ items:
   source:
     remote:
       path: Harmony/Public/ExceptionBlock.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: BeginExceptFilterBlock
     path: ../Public/ExceptionBlock.cs
@@ -156,7 +156,7 @@ items:
   source:
     remote:
       path: Harmony/Public/ExceptionBlock.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: BeginFaultBlock
     path: ../Public/ExceptionBlock.cs
@@ -190,7 +190,7 @@ items:
   source:
     remote:
       path: Harmony/Public/ExceptionBlock.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: BeginFinallyBlock
     path: ../Public/ExceptionBlock.cs
@@ -224,7 +224,7 @@ items:
   source:
     remote:
       path: Harmony/Public/ExceptionBlock.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: EndExceptionBlock
     path: ../Public/ExceptionBlock.cs

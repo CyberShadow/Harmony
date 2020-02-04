@@ -66,7 +66,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/CodeMatcher.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: CodeMatcher
     path: ../Tools/CodeMatcher.cs
@@ -109,7 +109,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/CodeMatcher.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Pos
     path: ../Tools/CodeMatcher.cs
@@ -147,7 +147,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/CodeMatcher.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Length
     path: ../Tools/CodeMatcher.cs
@@ -185,7 +185,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/CodeMatcher.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: IsValid
     path: ../Tools/CodeMatcher.cs
@@ -223,7 +223,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/CodeMatcher.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: IsInvalid
     path: ../Tools/CodeMatcher.cs
@@ -261,7 +261,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/CodeMatcher.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Remaining
     path: ../Tools/CodeMatcher.cs
@@ -299,7 +299,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/CodeMatcher.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Opcode
     path: ../Tools/CodeMatcher.cs
@@ -337,7 +337,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/CodeMatcher.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Operand
     path: ../Tools/CodeMatcher.cs
@@ -375,7 +375,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/CodeMatcher.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Labels
     path: ../Tools/CodeMatcher.cs
@@ -413,7 +413,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/CodeMatcher.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Blocks
     path: ../Tools/CodeMatcher.cs
@@ -451,7 +451,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/CodeMatcher.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: .ctor
     path: ../Tools/CodeMatcher.cs
@@ -483,7 +483,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/CodeMatcher.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: .ctor
     path: ../Tools/CodeMatcher.cs
@@ -525,7 +525,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/CodeMatcher.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Clone
     path: ../Tools/CodeMatcher.cs
@@ -560,7 +560,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/CodeMatcher.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Instruction
     path: ../Tools/CodeMatcher.cs
@@ -598,7 +598,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/CodeMatcher.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: InstructionAt
     path: ../Tools/CodeMatcher.cs
@@ -637,7 +637,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/CodeMatcher.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Instructions
     path: ../Tools/CodeMatcher.cs
@@ -672,7 +672,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/CodeMatcher.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: InstructionEnumeration
     path: ../Tools/CodeMatcher.cs
@@ -707,7 +707,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/CodeMatcher.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Instructions
     path: ../Tools/CodeMatcher.cs
@@ -746,7 +746,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/CodeMatcher.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: InstructionsInRange
     path: ../Tools/CodeMatcher.cs
@@ -788,7 +788,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/CodeMatcher.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: InstructionsWithOffsets
     path: ../Tools/CodeMatcher.cs
@@ -830,7 +830,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/CodeMatcher.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: DistinctLabels
     path: ../Tools/CodeMatcher.cs
@@ -874,7 +874,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/CodeMatcher.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: ReportFailure
     path: ../Tools/CodeMatcher.cs
@@ -919,7 +919,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/CodeMatcher.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: SetInstruction
     path: ../Tools/CodeMatcher.cs
@@ -958,7 +958,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/CodeMatcher.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: SetInstructionAndAdvance
     path: ../Tools/CodeMatcher.cs
@@ -997,7 +997,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/CodeMatcher.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Set
     path: ../Tools/CodeMatcher.cs
@@ -1039,7 +1039,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/CodeMatcher.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: SetAndAdvance
     path: ../Tools/CodeMatcher.cs
@@ -1081,7 +1081,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/CodeMatcher.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: SetOpcodeAndAdvance
     path: ../Tools/CodeMatcher.cs
@@ -1120,7 +1120,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/CodeMatcher.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: SetOperandAndAdvance
     path: ../Tools/CodeMatcher.cs
@@ -1159,7 +1159,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/CodeMatcher.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: CreateLabel
     path: ../Tools/CodeMatcher.cs
@@ -1201,7 +1201,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/CodeMatcher.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: CreateLabelAt
     path: ../Tools/CodeMatcher.cs
@@ -1246,7 +1246,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/CodeMatcher.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: AddLabels
     path: ../Tools/CodeMatcher.cs
@@ -1288,7 +1288,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/CodeMatcher.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: AddLabelsAt
     path: ../Tools/CodeMatcher.cs
@@ -1333,7 +1333,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/CodeMatcher.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: SetJumpTo
     path: ../Tools/CodeMatcher.cs
@@ -1381,7 +1381,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/CodeMatcher.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Insert
     path: ../Tools/CodeMatcher.cs
@@ -1423,7 +1423,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/CodeMatcher.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Insert
     path: ../Tools/CodeMatcher.cs
@@ -1465,7 +1465,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/CodeMatcher.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: InsertBranch
     path: ../Tools/CodeMatcher.cs
@@ -1507,7 +1507,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/CodeMatcher.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: InsertAndAdvance
     path: ../Tools/CodeMatcher.cs
@@ -1549,7 +1549,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/CodeMatcher.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: InsertAndAdvance
     path: ../Tools/CodeMatcher.cs
@@ -1591,7 +1591,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/CodeMatcher.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: InsertBranchAndAdvance
     path: ../Tools/CodeMatcher.cs
@@ -1633,7 +1633,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/CodeMatcher.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: RemoveInstruction
     path: ../Tools/CodeMatcher.cs
@@ -1668,7 +1668,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/CodeMatcher.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: RemoveInstructions
     path: ../Tools/CodeMatcher.cs
@@ -1707,7 +1707,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/CodeMatcher.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: RemoveInstructionsInRange
     path: ../Tools/CodeMatcher.cs
@@ -1749,7 +1749,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/CodeMatcher.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: RemoveInstructionsWithOffsets
     path: ../Tools/CodeMatcher.cs
@@ -1791,7 +1791,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/CodeMatcher.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Advance
     path: ../Tools/CodeMatcher.cs
@@ -1830,7 +1830,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/CodeMatcher.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Start
     path: ../Tools/CodeMatcher.cs
@@ -1865,7 +1865,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/CodeMatcher.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: End
     path: ../Tools/CodeMatcher.cs
@@ -1900,7 +1900,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/CodeMatcher.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: SearchForward
     path: ../Tools/CodeMatcher.cs
@@ -1942,7 +1942,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/CodeMatcher.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: SearchBack
     path: ../Tools/CodeMatcher.cs
@@ -1984,7 +1984,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/CodeMatcher.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: MatchForward
     path: ../Tools/CodeMatcher.cs
@@ -2029,7 +2029,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/CodeMatcher.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: MatchBack
     path: ../Tools/CodeMatcher.cs
@@ -2074,7 +2074,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/CodeMatcher.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Repeat
     path: ../Tools/CodeMatcher.cs
@@ -2119,7 +2119,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/CodeMatcher.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: NamedMatch
     path: ../Tools/CodeMatcher.cs

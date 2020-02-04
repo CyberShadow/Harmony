@@ -30,7 +30,7 @@ items:
   source:
     remote:
       path: Harmony/Public/HarmonyMethod.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: HarmonyMethod
     path: ../Public/HarmonyMethod.cs
@@ -76,7 +76,7 @@ items:
   source:
     remote:
       path: Harmony/Public/HarmonyMethod.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: method
     path: ../Public/HarmonyMethod.cs
@@ -109,7 +109,7 @@ items:
   source:
     remote:
       path: Harmony/Public/HarmonyMethod.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: declaringType
     path: ../Public/HarmonyMethod.cs
@@ -142,7 +142,7 @@ items:
   source:
     remote:
       path: Harmony/Public/HarmonyMethod.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: methodName
     path: ../Public/HarmonyMethod.cs
@@ -175,7 +175,7 @@ items:
   source:
     remote:
       path: Harmony/Public/HarmonyMethod.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: methodType
     path: ../Public/HarmonyMethod.cs
@@ -208,7 +208,7 @@ items:
   source:
     remote:
       path: Harmony/Public/HarmonyMethod.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: argumentTypes
     path: ../Public/HarmonyMethod.cs
@@ -241,7 +241,7 @@ items:
   source:
     remote:
       path: Harmony/Public/HarmonyMethod.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: priority
     path: ../Public/HarmonyMethod.cs
@@ -274,7 +274,7 @@ items:
   source:
     remote:
       path: Harmony/Public/HarmonyMethod.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: before
     path: ../Public/HarmonyMethod.cs
@@ -307,7 +307,7 @@ items:
   source:
     remote:
       path: Harmony/Public/HarmonyMethod.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: after
     path: ../Public/HarmonyMethod.cs
@@ -340,7 +340,7 @@ items:
   source:
     remote:
       path: Harmony/Public/HarmonyMethod.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: reversePatchType
     path: ../Public/HarmonyMethod.cs
@@ -373,7 +373,7 @@ items:
   source:
     remote:
       path: Harmony/Public/HarmonyMethod.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: .ctor
     path: ../Public/HarmonyMethod.cs
@@ -405,7 +405,7 @@ items:
   source:
     remote:
       path: Harmony/Public/HarmonyMethod.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: .ctor
     path: ../Public/HarmonyMethod.cs
@@ -441,7 +441,7 @@ items:
   source:
     remote:
       path: Harmony/Public/HarmonyMethod.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: .ctor
     path: ../Public/HarmonyMethod.cs
@@ -486,7 +486,7 @@ items:
   source:
     remote:
       path: Harmony/Public/HarmonyMethod.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: HarmonyFields
     path: ../Public/HarmonyMethod.cs
@@ -523,7 +523,7 @@ items:
   source:
     remote:
       path: Harmony/Public/HarmonyMethod.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Merge
     path: ../Public/HarmonyMethod.cs
@@ -567,7 +567,7 @@ items:
   source:
     remote:
       path: Harmony/Public/HarmonyMethod.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: ToString
     path: ../Public/HarmonyMethod.cs

@@ -26,7 +26,7 @@ items:
   source:
     remote:
       path: Harmony/Public/Patch.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Patch
     path: ../Public/Patch.cs
@@ -80,7 +80,7 @@ items:
   source:
     remote:
       path: Harmony/Public/Patch.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: index
     path: ../Public/Patch.cs
@@ -115,7 +115,7 @@ items:
   source:
     remote:
       path: Harmony/Public/Patch.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: owner
     path: ../Public/Patch.cs
@@ -150,7 +150,7 @@ items:
   source:
     remote:
       path: Harmony/Public/Patch.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: priority
     path: ../Public/Patch.cs
@@ -185,7 +185,7 @@ items:
   source:
     remote:
       path: Harmony/Public/Patch.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: before
     path: ../Public/Patch.cs
@@ -220,7 +220,7 @@ items:
   source:
     remote:
       path: Harmony/Public/Patch.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: after
     path: ../Public/Patch.cs
@@ -255,7 +255,7 @@ items:
   source:
     remote:
       path: Harmony/Public/Patch.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: PatchMethod
     path: ../Public/Patch.cs
@@ -292,7 +292,7 @@ items:
   source:
     remote:
       path: Harmony/Public/Patch.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: .ctor
     path: ../Public/Patch.cs
@@ -346,7 +346,7 @@ items:
   source:
     remote:
       path: Harmony/Public/Patch.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: GetMethod
     path: ../Public/Patch.cs
@@ -385,7 +385,7 @@ items:
   source:
     remote:
       path: Harmony/Public/Patch.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Equals
     path: ../Public/Patch.cs
@@ -427,7 +427,7 @@ items:
   source:
     remote:
       path: Harmony/Public/Patch.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: CompareTo
     path: ../Public/Patch.cs
@@ -468,7 +468,7 @@ items:
   source:
     remote:
       path: Harmony/Public/Patch.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: GetHashCode
     path: ../Public/Patch.cs

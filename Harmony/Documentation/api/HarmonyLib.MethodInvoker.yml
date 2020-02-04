@@ -22,7 +22,7 @@ items:
   source:
     remote:
       path: Harmony/Extras/MethodInvoker.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: MethodInvoker
     path: ../Extras/MethodInvoker.cs
@@ -65,7 +65,7 @@ items:
   source:
     remote:
       path: Harmony/Extras/MethodInvoker.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: GetHandler
     path: ../Extras/MethodInvoker.cs
@@ -106,7 +106,7 @@ items:
   source:
     remote:
       path: Harmony/Extras/MethodInvoker.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: .ctor
     path: ../Extras/MethodInvoker.cs
@@ -142,7 +142,7 @@ items:
   source:
     remote:
       path: Harmony/Extras/MethodInvoker.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Handler
     path: ../Extras/MethodInvoker.cs
@@ -181,7 +181,7 @@ items:
   source:
     remote:
       path: Harmony/Extras/MethodInvoker.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Emit
     path: ../Extras/MethodInvoker.cs
@@ -219,7 +219,7 @@ items:
   source:
     remote:
       path: Harmony/Extras/MethodInvoker.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Emit
     path: ../Extras/MethodInvoker.cs
@@ -259,7 +259,7 @@ items:
   source:
     remote:
       path: Harmony/Extras/MethodInvoker.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: EmitCall
     path: ../Extras/MethodInvoker.cs
@@ -299,7 +299,7 @@ items:
   source:
     remote:
       path: Harmony/Extras/MethodInvoker.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: EmitFastInt
     path: ../Extras/MethodInvoker.cs

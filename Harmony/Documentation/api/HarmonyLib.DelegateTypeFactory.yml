@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: Harmony/Extras/DelegateTypeFactory.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: DelegateTypeFactory
     path: ../Extras/DelegateTypeFactory.cs
@@ -60,7 +60,7 @@ items:
   source:
     remote:
       path: Harmony/Extras/DelegateTypeFactory.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: .ctor
     path: ../Extras/DelegateTypeFactory.cs
@@ -92,7 +92,7 @@ items:
   source:
     remote:
       path: Harmony/Extras/DelegateTypeFactory.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: CreateDelegateType
     path: ../Extras/DelegateTypeFactory.cs

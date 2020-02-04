@@ -21,7 +21,7 @@ items:
   source:
     remote:
       path: Harmony/Public/Attributes.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: HarmonyPatchType
     path: ../Public/Attributes.cs
@@ -54,7 +54,7 @@ items:
   source:
     remote:
       path: Harmony/Public/Attributes.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: All
     path: ../Public/Attributes.cs
@@ -88,7 +88,7 @@ items:
   source:
     remote:
       path: Harmony/Public/Attributes.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Prefix
     path: ../Public/Attributes.cs
@@ -122,7 +122,7 @@ items:
   source:
     remote:
       path: Harmony/Public/Attributes.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Postfix
     path: ../Public/Attributes.cs
@@ -156,7 +156,7 @@ items:
   source:
     remote:
       path: Harmony/Public/Attributes.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Transpiler
     path: ../Public/Attributes.cs
@@ -190,7 +190,7 @@ items:
   source:
     remote:
       path: Harmony/Public/Attributes.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Finalizer
     path: ../Public/Attributes.cs
@@ -224,7 +224,7 @@ items:
   source:
     remote:
       path: Harmony/Public/Attributes.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: ReversePatch
     path: ../Public/Attributes.cs

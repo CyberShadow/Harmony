@@ -19,7 +19,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/SymbolExtensions.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: SymbolExtensions
     path: ../Tools/SymbolExtensions.cs
@@ -63,7 +63,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/SymbolExtensions.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: GetMethodInfo
     path: ../Tools/SymbolExtensions.cs
@@ -107,7 +107,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/SymbolExtensions.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: GetMethodInfo
     path: ../Tools/SymbolExtensions.cs
@@ -154,7 +154,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/SymbolExtensions.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: GetMethodInfo
     path: ../Tools/SymbolExtensions.cs
@@ -203,7 +203,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/SymbolExtensions.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: GetMethodInfo
     path: ../Tools/SymbolExtensions.cs

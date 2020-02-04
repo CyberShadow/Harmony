@@ -15,7 +15,7 @@ items:
   source:
     remote:
       path: Harmony/Extras/FastAccess.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: GetterHandler
     path: ../Extras/FastAccess.cs

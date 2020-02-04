@@ -49,7 +49,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/Traverse.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Traverse
     path: ../Tools/Traverse.cs
@@ -91,7 +91,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/Traverse.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Create
     path: ../Tools/Traverse.cs
@@ -132,7 +132,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/Traverse.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Create
     path: ../Tools/Traverse.cs
@@ -175,7 +175,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/Traverse.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Create
     path: ../Tools/Traverse.cs
@@ -216,7 +216,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/Traverse.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: CreateWithType
     path: ../Tools/Traverse.cs
@@ -257,7 +257,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/Traverse.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: .ctor
     path: ../Tools/Traverse.cs
@@ -293,7 +293,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/Traverse.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: .ctor
     path: ../Tools/Traverse.cs
@@ -329,7 +329,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/Traverse.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: GetValue
     path: ../Tools/Traverse.cs
@@ -364,7 +364,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/Traverse.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: GetValue
     path: ../Tools/Traverse.cs
@@ -405,7 +405,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/Traverse.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: GetValue
     path: ../Tools/Traverse.cs
@@ -447,7 +447,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/Traverse.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: GetValue
     path: ../Tools/Traverse.cs
@@ -492,7 +492,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/Traverse.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: SetValue
     path: ../Tools/Traverse.cs
@@ -531,7 +531,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/Traverse.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: GetValueType
     path: ../Tools/Traverse.cs
@@ -566,7 +566,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/Traverse.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Type
     path: ../Tools/Traverse.cs
@@ -605,7 +605,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/Traverse.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Field
     path: ../Tools/Traverse.cs
@@ -644,7 +644,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/Traverse.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Field
     path: ../Tools/Traverse.cs
@@ -689,7 +689,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/Traverse.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Fields
     path: ../Tools/Traverse.cs
@@ -724,7 +724,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/Traverse.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Property
     path: ../Tools/Traverse.cs
@@ -769,7 +769,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/Traverse.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Property
     path: ../Tools/Traverse.cs
@@ -817,7 +817,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/Traverse.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Properties
     path: ../Tools/Traverse.cs
@@ -852,7 +852,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/Traverse.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Method
     path: ../Tools/Traverse.cs
@@ -897,7 +897,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/Traverse.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Method
     path: ../Tools/Traverse.cs
@@ -945,7 +945,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/Traverse.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Methods
     path: ../Tools/Traverse.cs
@@ -980,7 +980,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/Traverse.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: FieldExists
     path: ../Tools/Traverse.cs
@@ -1015,7 +1015,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/Traverse.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: PropertyExists
     path: ../Tools/Traverse.cs
@@ -1050,7 +1050,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/Traverse.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: MethodExists
     path: ../Tools/Traverse.cs
@@ -1085,7 +1085,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/Traverse.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: TypeExists
     path: ../Tools/Traverse.cs
@@ -1120,7 +1120,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/Traverse.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: IterateFields
     path: ../Tools/Traverse.cs
@@ -1164,7 +1164,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/Traverse.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: IterateFields
     path: ../Tools/Traverse.cs
@@ -1211,7 +1211,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/Traverse.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: IterateFields
     path: ../Tools/Traverse.cs
@@ -1258,7 +1258,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/Traverse.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: IterateProperties
     path: ../Tools/Traverse.cs
@@ -1302,7 +1302,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/Traverse.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: IterateProperties
     path: ../Tools/Traverse.cs
@@ -1349,7 +1349,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/Traverse.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: IterateProperties
     path: ../Tools/Traverse.cs
@@ -1396,7 +1396,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/Traverse.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: CopyFields
     path: ../Tools/Traverse.cs
@@ -1431,7 +1431,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/Traverse.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: ToString
     path: ../Tools/Traverse.cs

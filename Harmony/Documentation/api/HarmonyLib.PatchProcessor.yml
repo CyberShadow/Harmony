@@ -32,7 +32,7 @@ items:
   source:
     remote:
       path: Harmony/Public/PatchProcessor.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: PatchProcessor
     path: ../Public/PatchProcessor.cs
@@ -75,7 +75,7 @@ items:
   source:
     remote:
       path: Harmony/Public/PatchProcessor.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: .ctor
     path: ../Public/PatchProcessor.cs
@@ -114,7 +114,7 @@ items:
   source:
     remote:
       path: Harmony/Public/PatchProcessor.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: AddPrefix
     path: ../Public/PatchProcessor.cs
@@ -152,7 +152,7 @@ items:
   source:
     remote:
       path: Harmony/Public/PatchProcessor.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: AddPrefix
     path: ../Public/PatchProcessor.cs
@@ -190,7 +190,7 @@ items:
   source:
     remote:
       path: Harmony/Public/PatchProcessor.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: AddPostfix
     path: ../Public/PatchProcessor.cs
@@ -228,7 +228,7 @@ items:
   source:
     remote:
       path: Harmony/Public/PatchProcessor.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: AddPostfix
     path: ../Public/PatchProcessor.cs
@@ -266,7 +266,7 @@ items:
   source:
     remote:
       path: Harmony/Public/PatchProcessor.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: AddTranspiler
     path: ../Public/PatchProcessor.cs
@@ -304,7 +304,7 @@ items:
   source:
     remote:
       path: Harmony/Public/PatchProcessor.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: AddTranspiler
     path: ../Public/PatchProcessor.cs
@@ -342,7 +342,7 @@ items:
   source:
     remote:
       path: Harmony/Public/PatchProcessor.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: AddFinalizer
     path: ../Public/PatchProcessor.cs
@@ -380,7 +380,7 @@ items:
   source:
     remote:
       path: Harmony/Public/PatchProcessor.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: AddFinalizer
     path: ../Public/PatchProcessor.cs
@@ -418,7 +418,7 @@ items:
   source:
     remote:
       path: Harmony/Public/PatchProcessor.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: GetAllPatchedMethods
     path: ../Public/PatchProcessor.cs
@@ -455,7 +455,7 @@ items:
   source:
     remote:
       path: Harmony/Public/PatchProcessor.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Patch
     path: ../Public/PatchProcessor.cs
@@ -490,7 +490,7 @@ items:
   source:
     remote:
       path: Harmony/Public/PatchProcessor.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Unpatch
     path: ../Public/PatchProcessor.cs
@@ -531,7 +531,7 @@ items:
   source:
     remote:
       path: Harmony/Public/PatchProcessor.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Unpatch
     path: ../Public/PatchProcessor.cs
@@ -569,7 +569,7 @@ items:
   source:
     remote:
       path: Harmony/Public/PatchProcessor.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: GetPatchInfo
     path: ../Public/PatchProcessor.cs
@@ -610,7 +610,7 @@ items:
   source:
     remote:
       path: Harmony/Public/PatchProcessor.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: VersionInfo
     path: ../Public/PatchProcessor.cs
@@ -654,7 +654,7 @@ items:
   source:
     remote:
       path: Harmony/Public/PatchProcessor.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: GetOriginalInstructions
     path: ../Public/PatchProcessor.cs
@@ -698,7 +698,7 @@ items:
   source:
     remote:
       path: Harmony/Public/PatchProcessor.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: GetOriginalInstructions
     path: ../Public/PatchProcessor.cs

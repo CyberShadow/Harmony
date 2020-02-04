@@ -21,7 +21,7 @@ items:
   source:
     remote:
       path: Harmony/Public/Patches.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Patches
     path: ../Public/Patches.cs
@@ -64,7 +64,7 @@ items:
   source:
     remote:
       path: Harmony/Public/Patches.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Prefixes
     path: ../Public/Patches.cs
@@ -99,7 +99,7 @@ items:
   source:
     remote:
       path: Harmony/Public/Patches.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Postfixes
     path: ../Public/Patches.cs
@@ -134,7 +134,7 @@ items:
   source:
     remote:
       path: Harmony/Public/Patches.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Transpilers
     path: ../Public/Patches.cs
@@ -169,7 +169,7 @@ items:
   source:
     remote:
       path: Harmony/Public/Patches.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Finalizers
     path: ../Public/Patches.cs
@@ -204,7 +204,7 @@ items:
   source:
     remote:
       path: Harmony/Public/Patches.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Owners
     path: ../Public/Patches.cs
@@ -242,7 +242,7 @@ items:
   source:
     remote:
       path: Harmony/Public/Patches.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: .ctor
     path: ../Public/Patches.cs

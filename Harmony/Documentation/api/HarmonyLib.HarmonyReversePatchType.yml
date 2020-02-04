@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: Harmony/Public/Attributes.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: HarmonyReversePatchType
     path: ../Public/Attributes.cs
@@ -50,7 +50,7 @@ items:
   source:
     remote:
       path: Harmony/Public/Attributes.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Original
     path: ../Public/Attributes.cs
@@ -84,7 +84,7 @@ items:
   source:
     remote:
       path: Harmony/Public/Attributes.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Snapshot
     path: ../Public/Attributes.cs

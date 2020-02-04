@@ -31,7 +31,7 @@ items:
   source:
     remote:
       path: Harmony/Public/Harmony.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Harmony
     path: ../Public/Harmony.cs
@@ -74,7 +74,7 @@ items:
   source:
     remote:
       path: Harmony/Public/Harmony.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Id
     path: ../Public/Harmony.cs
@@ -111,7 +111,7 @@ items:
   source:
     remote:
       path: Harmony/Public/Harmony.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: DEBUG
     path: ../Public/Harmony.cs
@@ -146,7 +146,7 @@ items:
   source:
     remote:
       path: Harmony/Public/Harmony.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: .ctor
     path: ../Public/Harmony.cs
@@ -182,7 +182,7 @@ items:
   source:
     remote:
       path: Harmony/Public/Harmony.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: PatchAll
     path: ../Public/Harmony.cs
@@ -214,7 +214,7 @@ items:
   source:
     remote:
       path: Harmony/Public/Harmony.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: ProcessorForAnnotatedClass
     path: ../Public/Harmony.cs
@@ -252,7 +252,7 @@ items:
   source:
     remote:
       path: Harmony/Public/Harmony.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: PatchAll
     path: ../Public/Harmony.cs
@@ -288,7 +288,7 @@ items:
   source:
     remote:
       path: Harmony/Public/Harmony.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Patch
     path: ../Public/Harmony.cs
@@ -339,7 +339,7 @@ items:
   source:
     remote:
       path: Harmony/Public/Harmony.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: ReversePatch
     path: ../Public/Harmony.cs
@@ -383,7 +383,7 @@ items:
   source:
     remote:
       path: Harmony/Public/Harmony.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: UnpatchAll
     path: ../Public/Harmony.cs
@@ -420,7 +420,7 @@ items:
   source:
     remote:
       path: Harmony/Public/Harmony.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Unpatch
     path: ../Public/Harmony.cs
@@ -462,7 +462,7 @@ items:
   source:
     remote:
       path: Harmony/Public/Harmony.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Unpatch
     path: ../Public/Harmony.cs
@@ -501,7 +501,7 @@ items:
   source:
     remote:
       path: Harmony/Public/Harmony.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: HasAnyPatches
     path: ../Public/Harmony.cs
@@ -542,7 +542,7 @@ items:
   source:
     remote:
       path: Harmony/Public/Harmony.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: GetPatchInfo
     path: ../Public/Harmony.cs
@@ -583,7 +583,7 @@ items:
   source:
     remote:
       path: Harmony/Public/Harmony.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: GetPatchedMethods
     path: ../Public/Harmony.cs
@@ -618,7 +618,7 @@ items:
   source:
     remote:
       path: Harmony/Public/Harmony.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: GetAllPatchedMethods
     path: ../Public/Harmony.cs
@@ -655,7 +655,7 @@ items:
   source:
     remote:
       path: Harmony/Public/Harmony.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: VersionInfo
     path: ../Public/Harmony.cs

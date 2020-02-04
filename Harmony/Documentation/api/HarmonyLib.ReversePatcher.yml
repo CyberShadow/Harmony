@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: Harmony/Public/ReversePatcher.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: ReversePatcher
     path: ../Public/ReversePatcher.cs
@@ -60,7 +60,7 @@ items:
   source:
     remote:
       path: Harmony/Public/ReversePatcher.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: .ctor
     path: ../Public/ReversePatcher.cs
@@ -102,7 +102,7 @@ items:
   source:
     remote:
       path: Harmony/Public/ReversePatcher.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Patch
     path: ../Public/ReversePatcher.cs

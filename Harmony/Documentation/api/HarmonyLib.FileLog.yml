@@ -27,7 +27,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/FileLog.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: FileLog
     path: ../Tools/FileLog.cs
@@ -71,7 +71,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/FileLog.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: logPath
     path: ../Tools/FileLog.cs
@@ -106,7 +106,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/FileLog.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: indentChar
     path: ../Tools/FileLog.cs
@@ -141,7 +141,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/FileLog.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: indentLevel
     path: ../Tools/FileLog.cs
@@ -176,7 +176,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/FileLog.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: ChangeIndent
     path: ../Tools/FileLog.cs
@@ -214,7 +214,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/FileLog.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: LogBuffered
     path: ../Tools/FileLog.cs
@@ -255,7 +255,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/FileLog.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: LogBuffered
     path: ../Tools/FileLog.cs
@@ -299,7 +299,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/FileLog.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: GetBuffer
     path: ../Tools/FileLog.cs
@@ -340,7 +340,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/FileLog.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: SetBuffer
     path: ../Tools/FileLog.cs
@@ -381,7 +381,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/FileLog.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: FlushBuffer
     path: ../Tools/FileLog.cs
@@ -415,7 +415,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/FileLog.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Log
     path: ../Tools/FileLog.cs
@@ -453,7 +453,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/FileLog.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Reset
     path: ../Tools/FileLog.cs
@@ -487,7 +487,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/FileLog.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: LogBytes
     path: ../Tools/FileLog.cs

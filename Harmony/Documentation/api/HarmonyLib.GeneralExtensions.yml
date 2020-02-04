@@ -22,7 +22,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/Extensions.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: GeneralExtensions
     path: ../Tools/Extensions.cs
@@ -67,7 +67,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/Extensions.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Join
     path: ../Tools/Extensions.cs
@@ -124,7 +124,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/Extensions.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Description
     path: ../Tools/Extensions.cs
@@ -172,7 +172,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/Extensions.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: FullDescription
     path: ../Tools/Extensions.cs
@@ -217,7 +217,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/Extensions.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: FullDescription
     path: ../Tools/Extensions.cs
@@ -262,7 +262,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/Extensions.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Types
     path: ../Tools/Extensions.cs
@@ -310,7 +310,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/Extensions.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: GetValueSafe
     path: ../Tools/Extensions.cs
@@ -366,7 +366,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/Extensions.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: GetTypedValue
     path: ../Tools/Extensions.cs

@@ -19,7 +19,7 @@ items:
   source:
     remote:
       path: Harmony/Public/Attributes.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: ArgumentType
     path: ../Public/Attributes.cs
@@ -52,7 +52,7 @@ items:
   source:
     remote:
       path: Harmony/Public/Attributes.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Normal
     path: ../Public/Attributes.cs
@@ -86,7 +86,7 @@ items:
   source:
     remote:
       path: Harmony/Public/Attributes.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Ref
     path: ../Public/Attributes.cs
@@ -120,7 +120,7 @@ items:
   source:
     remote:
       path: Harmony/Public/Attributes.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Out
     path: ../Public/Attributes.cs
@@ -154,7 +154,7 @@ items:
   source:
     remote:
       path: Harmony/Public/Attributes.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Pointer
     path: ../Public/Attributes.cs

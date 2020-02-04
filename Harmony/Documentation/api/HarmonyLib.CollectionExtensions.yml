@@ -20,7 +20,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/Extensions.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: CollectionExtensions
     path: ../Tools/Extensions.cs
@@ -65,7 +65,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/Extensions.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Do
     path: ../Tools/Extensions.cs
@@ -116,7 +116,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/Extensions.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: DoIf
     path: ../Tools/Extensions.cs
@@ -170,7 +170,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/Extensions.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: AddItem
     path: ../Tools/Extensions.cs
@@ -224,7 +224,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/Extensions.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: AddToArray
     path: ../Tools/Extensions.cs
@@ -278,7 +278,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/Extensions.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: AddRangeToArray
     path: ../Tools/Extensions.cs

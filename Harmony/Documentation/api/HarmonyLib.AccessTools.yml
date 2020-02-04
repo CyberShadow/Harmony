@@ -73,7 +73,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/AccessTools.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: AccessTools
     path: ../Tools/AccessTools.cs
@@ -117,7 +117,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/AccessTools.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: all
     path: ../Tools/AccessTools.cs
@@ -152,7 +152,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/AccessTools.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: allDeclared
     path: ../Tools/AccessTools.cs
@@ -187,7 +187,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/AccessTools.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: TypeByName
     path: ../Tools/AccessTools.cs
@@ -228,7 +228,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/AccessTools.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: GetTypesFromAssembly
     path: ../Tools/AccessTools.cs
@@ -269,7 +269,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/AccessTools.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: FindIncludingBaseTypes
     path: ../Tools/AccessTools.cs
@@ -321,7 +321,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/AccessTools.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: FindIncludingInnerTypes
     path: ../Tools/AccessTools.cs
@@ -373,7 +373,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/AccessTools.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: DeclaredField
     path: ../Tools/AccessTools.cs
@@ -417,7 +417,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/AccessTools.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Field
     path: ../Tools/AccessTools.cs
@@ -461,7 +461,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/AccessTools.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: DeclaredField
     path: ../Tools/AccessTools.cs
@@ -505,7 +505,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/AccessTools.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: DeclaredProperty
     path: ../Tools/AccessTools.cs
@@ -549,7 +549,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/AccessTools.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: DeclaredPropertyGetter
     path: ../Tools/AccessTools.cs
@@ -593,7 +593,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/AccessTools.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: DeclaredPropertySetter
     path: ../Tools/AccessTools.cs
@@ -637,7 +637,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/AccessTools.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Property
     path: ../Tools/AccessTools.cs
@@ -681,7 +681,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/AccessTools.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: PropertyGetter
     path: ../Tools/AccessTools.cs
@@ -725,7 +725,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/AccessTools.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: PropertySetter
     path: ../Tools/AccessTools.cs
@@ -769,7 +769,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/AccessTools.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: DeclaredMethod
     path: ../Tools/AccessTools.cs
@@ -822,7 +822,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/AccessTools.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Method
     path: ../Tools/AccessTools.cs
@@ -875,7 +875,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/AccessTools.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Method
     path: ../Tools/AccessTools.cs
@@ -925,7 +925,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/AccessTools.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: GetMethodNames
     path: ../Tools/AccessTools.cs
@@ -966,7 +966,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/AccessTools.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: GetMethodNames
     path: ../Tools/AccessTools.cs
@@ -1007,7 +1007,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/AccessTools.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: GetFieldNames
     path: ../Tools/AccessTools.cs
@@ -1048,7 +1048,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/AccessTools.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: GetFieldNames
     path: ../Tools/AccessTools.cs
@@ -1089,7 +1089,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/AccessTools.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: GetPropertyNames
     path: ../Tools/AccessTools.cs
@@ -1130,7 +1130,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/AccessTools.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: GetPropertyNames
     path: ../Tools/AccessTools.cs
@@ -1172,7 +1172,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/AccessTools.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: GetUnderlyingType
     path: ../Tools/AccessTools.cs
@@ -1217,7 +1217,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/AccessTools.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: IsDeclaredMember
     path: ../Tools/AccessTools.cs
@@ -1269,7 +1269,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/AccessTools.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: GetDeclaredMember
     path: ../Tools/AccessTools.cs
@@ -1320,7 +1320,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/AccessTools.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: DeclaredConstructor
     path: ../Tools/AccessTools.cs
@@ -1370,7 +1370,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/AccessTools.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Constructor
     path: ../Tools/AccessTools.cs
@@ -1420,7 +1420,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/AccessTools.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: GetDeclaredConstructors
     path: ../Tools/AccessTools.cs
@@ -1467,7 +1467,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/AccessTools.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: GetDeclaredMethods
     path: ../Tools/AccessTools.cs
@@ -1508,7 +1508,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/AccessTools.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: GetDeclaredProperties
     path: ../Tools/AccessTools.cs
@@ -1549,7 +1549,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/AccessTools.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: GetDeclaredFields
     path: ../Tools/AccessTools.cs
@@ -1590,7 +1590,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/AccessTools.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: GetReturnedType
     path: ../Tools/AccessTools.cs
@@ -1631,7 +1631,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/AccessTools.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Inner
     path: ../Tools/AccessTools.cs
@@ -1675,7 +1675,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/AccessTools.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: FirstInner
     path: ../Tools/AccessTools.cs
@@ -1722,7 +1722,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/AccessTools.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: FirstMethod
     path: ../Tools/AccessTools.cs
@@ -1769,7 +1769,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/AccessTools.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: FirstConstructor
     path: ../Tools/AccessTools.cs
@@ -1816,7 +1816,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/AccessTools.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: FirstProperty
     path: ../Tools/AccessTools.cs
@@ -1863,7 +1863,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/AccessTools.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: GetTypes
     path: ../Tools/AccessTools.cs
@@ -1907,7 +1907,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/AccessTools.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: ActualParameters
     path: ../Tools/AccessTools.cs
@@ -1954,7 +1954,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/AccessTools.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: FieldRefAccess
     path: ../Tools/AccessTools.cs
@@ -2003,7 +2003,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/AccessTools.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: FieldRefAccess
     path: ../Tools/AccessTools.cs
@@ -2055,7 +2055,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/AccessTools.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: FieldRefAccess
     path: ../Tools/AccessTools.cs
@@ -2104,7 +2104,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/AccessTools.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: StaticFieldRefAccess
     path: ../Tools/AccessTools.cs
@@ -2153,7 +2153,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/AccessTools.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: StaticFieldRefAccess
     path: ../Tools/AccessTools.cs
@@ -2200,7 +2200,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/AccessTools.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: GetOutsideCaller
     path: ../Tools/AccessTools.cs
@@ -2237,7 +2237,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/AccessTools.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: ThrowMissingMemberException
     path: ../Tools/AccessTools.cs
@@ -2281,7 +2281,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/AccessTools.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: GetDefaultValue
     path: ../Tools/AccessTools.cs
@@ -2322,7 +2322,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/AccessTools.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: CreateInstance
     path: ../Tools/AccessTools.cs
@@ -2363,7 +2363,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/AccessTools.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: MakeDeepCopy
     path: ../Tools/AccessTools.cs
@@ -2412,7 +2412,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/AccessTools.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: MakeDeepCopy
     path: ../Tools/AccessTools.cs
@@ -2465,7 +2465,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/AccessTools.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: MakeDeepCopy
     path: ../Tools/AccessTools.cs
@@ -2518,7 +2518,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/AccessTools.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: IsStruct
     path: ../Tools/AccessTools.cs
@@ -2559,7 +2559,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/AccessTools.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: IsClass
     path: ../Tools/AccessTools.cs
@@ -2600,7 +2600,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/AccessTools.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: IsValue
     path: ../Tools/AccessTools.cs
@@ -2641,7 +2641,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/AccessTools.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: IsVoid
     path: ../Tools/AccessTools.cs
@@ -2682,7 +2682,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/AccessTools.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: IsOfNullableType
     path: ../Tools/AccessTools.cs

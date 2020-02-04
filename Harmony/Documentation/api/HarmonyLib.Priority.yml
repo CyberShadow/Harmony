@@ -24,7 +24,7 @@ items:
   source:
     remote:
       path: Harmony/Public/Priority.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Priority
     path: ../Public/Priority.cs
@@ -68,7 +68,7 @@ items:
   source:
     remote:
       path: Harmony/Public/Priority.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Last
     path: ../Public/Priority.cs
@@ -103,7 +103,7 @@ items:
   source:
     remote:
       path: Harmony/Public/Priority.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: VeryLow
     path: ../Public/Priority.cs
@@ -138,7 +138,7 @@ items:
   source:
     remote:
       path: Harmony/Public/Priority.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Low
     path: ../Public/Priority.cs
@@ -173,7 +173,7 @@ items:
   source:
     remote:
       path: Harmony/Public/Priority.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: LowerThanNormal
     path: ../Public/Priority.cs
@@ -208,7 +208,7 @@ items:
   source:
     remote:
       path: Harmony/Public/Priority.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Normal
     path: ../Public/Priority.cs
@@ -243,7 +243,7 @@ items:
   source:
     remote:
       path: Harmony/Public/Priority.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: HigherThanNormal
     path: ../Public/Priority.cs
@@ -278,7 +278,7 @@ items:
   source:
     remote:
       path: Harmony/Public/Priority.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: High
     path: ../Public/Priority.cs
@@ -313,7 +313,7 @@ items:
   source:
     remote:
       path: Harmony/Public/Priority.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: VeryHigh
     path: ../Public/Priority.cs
@@ -348,7 +348,7 @@ items:
   source:
     remote:
       path: Harmony/Public/Priority.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: First
     path: ../Public/Priority.cs

@@ -19,7 +19,7 @@ items:
   source:
     remote:
       path: Harmony/Internal/Memory.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Memory
     path: ../Internal/Memory.cs
@@ -63,7 +63,7 @@ items:
   source:
     remote:
       path: Harmony/Internal/Memory.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: MarkForNoInlining
     path: ../Internal/Memory.cs
@@ -101,7 +101,7 @@ items:
   source:
     remote:
       path: Harmony/Internal/Memory.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: DetourMethod
     path: ../Internal/Memory.cs
@@ -145,7 +145,7 @@ items:
   source:
     remote:
       path: Harmony/Internal/Memory.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: WriteJump
     path: ../Internal/Memory.cs
@@ -189,7 +189,7 @@ items:
   source:
     remote:
       path: Harmony/Internal/Memory.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: GetMethodStart
     path: ../Internal/Memory.cs

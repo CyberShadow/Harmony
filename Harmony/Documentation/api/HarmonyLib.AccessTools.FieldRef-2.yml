@@ -15,7 +15,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/AccessTools.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: FieldRef
     path: ../Tools/AccessTools.cs

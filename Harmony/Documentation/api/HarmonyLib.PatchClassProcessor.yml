@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: Harmony/Public/PatchClassProcessor.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: PatchClassProcessor
     path: ../Public/PatchClassProcessor.cs
@@ -60,7 +60,7 @@ items:
   source:
     remote:
       path: Harmony/Public/PatchClassProcessor.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: .ctor
     path: ../Public/PatchClassProcessor.cs
@@ -99,7 +99,7 @@ items:
   source:
     remote:
       path: Harmony/Public/PatchClassProcessor.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Patch
     path: ../Public/PatchClassProcessor.cs

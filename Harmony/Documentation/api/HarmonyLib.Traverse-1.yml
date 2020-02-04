@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/Traverse.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Traverse
     path: ../Tools/Traverse.cs
@@ -66,7 +66,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/Traverse.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: .ctor
     path: ../Tools/Traverse.cs
@@ -104,7 +104,7 @@ items:
   source:
     remote:
       path: Harmony/Tools/Traverse.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Value
     path: ../Tools/Traverse.cs

@@ -19,7 +19,7 @@ items:
   source:
     remote:
       path: Harmony/Public/InlineSignature.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: ModifierType
     path: ../Public/InlineSignature.cs
@@ -71,7 +71,7 @@ items:
   source:
     remote:
       path: Harmony/Public/InlineSignature.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: IsOptional
     path: ../Public/InlineSignature.cs
@@ -104,7 +104,7 @@ items:
   source:
     remote:
       path: Harmony/Public/InlineSignature.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Modifier
     path: ../Public/InlineSignature.cs
@@ -137,7 +137,7 @@ items:
   source:
     remote:
       path: Harmony/Public/InlineSignature.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: Type
     path: ../Public/InlineSignature.cs
@@ -170,7 +170,7 @@ items:
   source:
     remote:
       path: Harmony/Public/InlineSignature.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: ToString
     path: ../Public/InlineSignature.cs

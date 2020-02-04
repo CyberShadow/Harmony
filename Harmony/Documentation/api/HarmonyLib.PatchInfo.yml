@@ -29,7 +29,7 @@ items:
   source:
     remote:
       path: Harmony/Public/Patch.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: PatchInfo
     path: ../Public/Patch.cs
@@ -82,7 +82,7 @@ items:
   source:
     remote:
       path: Harmony/Public/Patch.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: prefixes
     path: ../Public/Patch.cs
@@ -115,7 +115,7 @@ items:
   source:
     remote:
       path: Harmony/Public/Patch.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: postfixes
     path: ../Public/Patch.cs
@@ -148,7 +148,7 @@ items:
   source:
     remote:
       path: Harmony/Public/Patch.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: transpilers
     path: ../Public/Patch.cs
@@ -181,7 +181,7 @@ items:
   source:
     remote:
       path: Harmony/Public/Patch.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: finalizers
     path: ../Public/Patch.cs
@@ -214,7 +214,7 @@ items:
   source:
     remote:
       path: Harmony/Public/Patch.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: .ctor
     path: ../Public/Patch.cs
@@ -246,7 +246,7 @@ items:
   source:
     remote:
       path: Harmony/Public/Patch.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: AddPrefix
     path: ../Public/Patch.cs
@@ -297,7 +297,7 @@ items:
   source:
     remote:
       path: Harmony/Public/Patch.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: RemovePrefix
     path: ../Public/Patch.cs
@@ -333,7 +333,7 @@ items:
   source:
     remote:
       path: Harmony/Public/Patch.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: AddPostfix
     path: ../Public/Patch.cs
@@ -384,7 +384,7 @@ items:
   source:
     remote:
       path: Harmony/Public/Patch.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: RemovePostfix
     path: ../Public/Patch.cs
@@ -420,7 +420,7 @@ items:
   source:
     remote:
       path: Harmony/Public/Patch.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: AddTranspiler
     path: ../Public/Patch.cs
@@ -471,7 +471,7 @@ items:
   source:
     remote:
       path: Harmony/Public/Patch.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: RemoveTranspiler
     path: ../Public/Patch.cs
@@ -507,7 +507,7 @@ items:
   source:
     remote:
       path: Harmony/Public/Patch.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: AddFinalizer
     path: ../Public/Patch.cs
@@ -558,7 +558,7 @@ items:
   source:
     remote:
       path: Harmony/Public/Patch.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: RemoveFinalizer
     path: ../Public/Patch.cs
@@ -594,7 +594,7 @@ items:
   source:
     remote:
       path: Harmony/Public/Patch.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: RemovePatch
     path: ../Public/Patch.cs

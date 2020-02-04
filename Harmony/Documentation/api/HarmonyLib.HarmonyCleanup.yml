@@ -15,7 +15,7 @@ items:
   source:
     remote:
       path: Harmony/Public/Attributes.cs
-      branch: master
+      branch: test-docs
       repo: git@github.com:pardeike/Harmony.git
     id: HarmonyCleanup
     path: ../Public/Attributes.cs
