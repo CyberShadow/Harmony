@@ -1,0 +1,945 @@
+### YamlMime:ManagedReference
+items:
+- uid: HarmonyLib.CollectionExtensions
+  commentId: T:HarmonyLib.CollectionExtensions
+  id: CollectionExtensions
+  parent: HarmonyLib
+  children:
+  - HarmonyLib.CollectionExtensions.AddItem``1(System.Collections.Generic.IEnumerable{``0},``0)
+  - HarmonyLib.CollectionExtensions.AddRangeToArray``1(``0[],``0[])
+  - HarmonyLib.CollectionExtensions.AddToArray``1(``0[],``0)
+  - HarmonyLib.CollectionExtensions.Do``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})
+  - HarmonyLib.CollectionExtensions.DoIf``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean},System.Action{``0})
+  langs:
+  - csharp
+  - vb
+  name: CollectionExtensions
+  nameWithType: CollectionExtensions
+  fullName: HarmonyLib.CollectionExtensions
+  type: Class
+  source:
+    remote:
+      path: Harmony/Tools/Extensions.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: CollectionExtensions
+    path: ../Tools/Extensions.cs
+    startLine: 113
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: General extensions for collections
+  example: []
+  syntax:
+    content: public static class CollectionExtensions
+    content.vb: Public Module CollectionExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: HarmonyLib.CollectionExtensions.Do``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})
+  commentId: M:HarmonyLib.CollectionExtensions.Do``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})
+  id: Do``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})
+  isExtensionMethod: true
+  parent: HarmonyLib.CollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: Do<T>(IEnumerable<T>, Action<T>)
+  nameWithType: CollectionExtensions.Do<T>(IEnumerable<T>, Action<T>)
+  fullName: HarmonyLib.CollectionExtensions.Do<T>(System.Collections.Generic.IEnumerable<T>, System.Action<T>)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/Extensions.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: Do
+    path: ../Tools/Extensions.cs
+    startLine: 120
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: A simple way to execute code for every element in a collection
+  example: []
+  syntax:
+    content: public static void Do<T>(this IEnumerable<T> sequence, Action<T> action)
+    parameters:
+    - id: sequence
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The collection
+    - id: action
+      type: System.Action{{T}}
+      description: The action to execute
+    typeParameters:
+    - id: T
+      description: The inner type of the collection
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub Do(Of T)(sequence As IEnumerable(Of T), action As Action(Of T))
+  overload: HarmonyLib.CollectionExtensions.Do*
+  nameWithType.vb: CollectionExtensions.Do(Of T)(IEnumerable(Of T), Action(Of T))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: HarmonyLib.CollectionExtensions.Do(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Action(Of T))
+  name.vb: Do(Of T)(IEnumerable(Of T), Action(Of T))
+- uid: HarmonyLib.CollectionExtensions.DoIf``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean},System.Action{``0})
+  commentId: M:HarmonyLib.CollectionExtensions.DoIf``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean},System.Action{``0})
+  id: DoIf``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean},System.Action{``0})
+  isExtensionMethod: true
+  parent: HarmonyLib.CollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: DoIf<T>(IEnumerable<T>, Func<T, Boolean>, Action<T>)
+  nameWithType: CollectionExtensions.DoIf<T>(IEnumerable<T>, Func<T, Boolean>, Action<T>)
+  fullName: HarmonyLib.CollectionExtensions.DoIf<T>(System.Collections.Generic.IEnumerable<T>, System.Func<T, System.Boolean>, System.Action<T>)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/Extensions.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: DoIf
+    path: ../Tools/Extensions.cs
+    startLine: 133
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: A simple way to execute code for elements in a collection matching a condition
+  example: []
+  syntax:
+    content: public static void DoIf<T>(this IEnumerable<T> sequence, Func<T, bool> condition, Action<T> action)
+    parameters:
+    - id: sequence
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The collection
+    - id: condition
+      type: System.Func{{T},System.Boolean}
+      description: The predicate
+    - id: action
+      type: System.Action{{T}}
+      description: The action to execute
+    typeParameters:
+    - id: T
+      description: The inner type of the collection
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub DoIf(Of T)(sequence As IEnumerable(Of T), condition As Func(Of T, Boolean), action As Action(Of T))
+  overload: HarmonyLib.CollectionExtensions.DoIf*
+  nameWithType.vb: CollectionExtensions.DoIf(Of T)(IEnumerable(Of T), Func(Of T, Boolean), Action(Of T))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: HarmonyLib.CollectionExtensions.DoIf(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, System.Boolean), System.Action(Of T))
+  name.vb: DoIf(Of T)(IEnumerable(Of T), Func(Of T, Boolean), Action(Of T))
+- uid: HarmonyLib.CollectionExtensions.AddItem``1(System.Collections.Generic.IEnumerable{``0},``0)
+  commentId: M:HarmonyLib.CollectionExtensions.AddItem``1(System.Collections.Generic.IEnumerable{``0},``0)
+  id: AddItem``1(System.Collections.Generic.IEnumerable{``0},``0)
+  isExtensionMethod: true
+  parent: HarmonyLib.CollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddItem<T>(IEnumerable<T>, T)
+  nameWithType: CollectionExtensions.AddItem<T>(IEnumerable<T>, T)
+  fullName: HarmonyLib.CollectionExtensions.AddItem<T>(System.Collections.Generic.IEnumerable<T>, T)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/Extensions.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: AddItem
+    path: ../Tools/Extensions.cs
+    startLine: 147
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: A helper to add an item to a collection
+  example: []
+  syntax:
+    content: public static IEnumerable<T> AddItem<T>(this IEnumerable<T> sequence, T item)
+    parameters:
+    - id: sequence
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The collection
+    - id: item
+      type: '{T}'
+      description: The item to add
+    typeParameters:
+    - id: T
+      description: The inner type of the collection
+    return:
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The collection containing the item
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AddItem(Of T)(sequence As IEnumerable(Of T), item As T) As IEnumerable(Of T)
+  overload: HarmonyLib.CollectionExtensions.AddItem*
+  nameWithType.vb: CollectionExtensions.AddItem(Of T)(IEnumerable(Of T), T)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: HarmonyLib.CollectionExtensions.AddItem(Of T)(System.Collections.Generic.IEnumerable(Of T), T)
+  name.vb: AddItem(Of T)(IEnumerable(Of T), T)
+- uid: HarmonyLib.CollectionExtensions.AddToArray``1(``0[],``0)
+  commentId: M:HarmonyLib.CollectionExtensions.AddToArray``1(``0[],``0)
+  id: AddToArray``1(``0[],``0)
+  isExtensionMethod: true
+  parent: HarmonyLib.CollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddToArray<T>(T[], T)
+  nameWithType: CollectionExtensions.AddToArray<T>(T[], T)
+  fullName: HarmonyLib.CollectionExtensions.AddToArray<T>(T[], T)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/Extensions.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: AddToArray
+    path: ../Tools/Extensions.cs
+    startLine: 158
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: A helper to add an item to an array
+  example: []
+  syntax:
+    content: public static T[] AddToArray<T>(this T[] sequence, T item)
+    parameters:
+    - id: sequence
+      type: '{T}[]'
+      description: The array
+    - id: item
+      type: '{T}'
+      description: The item to add
+    typeParameters:
+    - id: T
+      description: The inner type of the collection
+    return:
+      type: '{T}[]'
+      description: The array containing the item
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AddToArray(Of T)(sequence As T(), item As T) As T()
+  overload: HarmonyLib.CollectionExtensions.AddToArray*
+  nameWithType.vb: CollectionExtensions.AddToArray(Of T)(T(), T)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: HarmonyLib.CollectionExtensions.AddToArray(Of T)(T(), T)
+  name.vb: AddToArray(Of T)(T(), T)
+- uid: HarmonyLib.CollectionExtensions.AddRangeToArray``1(``0[],``0[])
+  commentId: M:HarmonyLib.CollectionExtensions.AddRangeToArray``1(``0[],``0[])
+  id: AddRangeToArray``1(``0[],``0[])
+  isExtensionMethod: true
+  parent: HarmonyLib.CollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddRangeToArray<T>(T[], T[])
+  nameWithType: CollectionExtensions.AddRangeToArray<T>(T[], T[])
+  fullName: HarmonyLib.CollectionExtensions.AddRangeToArray<T>(T[], T[])
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/Extensions.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: AddRangeToArray
+    path: ../Tools/Extensions.cs
+    startLine: 169
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: A helper to add items to an array
+  example: []
+  syntax:
+    content: public static T[] AddRangeToArray<T>(this T[] sequence, T[] items)
+    parameters:
+    - id: sequence
+      type: '{T}[]'
+      description: The array
+    - id: items
+      type: '{T}[]'
+      description: The items to add
+    typeParameters:
+    - id: T
+      description: The inner type of the collection
+    return:
+      type: '{T}[]'
+      description: The array containing the items
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AddRangeToArray(Of T)(sequence As T(), items As T()) As T()
+  overload: HarmonyLib.CollectionExtensions.AddRangeToArray*
+  nameWithType.vb: CollectionExtensions.AddRangeToArray(Of T)(T(), T())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: HarmonyLib.CollectionExtensions.AddRangeToArray(Of T)(T(), T())
+  name.vb: AddRangeToArray(Of T)(T(), T())
+references:
+- uid: HarmonyLib
+  commentId: N:HarmonyLib
+  name: HarmonyLib
+  nameWithType: HarmonyLib
+  fullName: HarmonyLib
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: HarmonyLib.CollectionExtensions.Do*
+  commentId: Overload:HarmonyLib.CollectionExtensions.Do
+  name: Do
+  nameWithType: CollectionExtensions.Do
+  fullName: HarmonyLib.CollectionExtensions.Do
+- uid: System.Collections.Generic.IEnumerable{{T}}
+  commentId: T:System.Collections.Generic.IEnumerable{``0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Action{{T}}
+  commentId: T:System.Action{``0}
+  parent: System
+  definition: System.Action`1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: HarmonyLib.CollectionExtensions.DoIf*
+  commentId: Overload:HarmonyLib.CollectionExtensions.DoIf
+  name: DoIf
+  nameWithType: CollectionExtensions.DoIf
+  fullName: HarmonyLib.CollectionExtensions.DoIf
+- uid: System.Func{{T},System.Boolean}
+  commentId: T:System.Func{``0,System.Boolean}
+  parent: System
+  definition: System.Func`2
+  name: Func<T, Boolean>
+  nameWithType: Func<T, Boolean>
+  fullName: System.Func<T, System.Boolean>
+  nameWithType.vb: Func(Of T, Boolean)
+  fullName.vb: System.Func(Of T, System.Boolean)
+  name.vb: Func(Of T, Boolean)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: HarmonyLib.CollectionExtensions.AddItem*
+  commentId: Overload:HarmonyLib.CollectionExtensions.AddItem
+  name: AddItem
+  nameWithType: CollectionExtensions.AddItem
+  fullName: HarmonyLib.CollectionExtensions.AddItem
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: HarmonyLib.CollectionExtensions.AddToArray*
+  commentId: Overload:HarmonyLib.CollectionExtensions.AddToArray
+  name: AddToArray
+  nameWithType: CollectionExtensions.AddToArray
+  fullName: HarmonyLib.CollectionExtensions.AddToArray
+- uid: '{T}[]'
+  isExternal: true
+  name: T[]
+  nameWithType: T[]
+  fullName: T[]
+  nameWithType.vb: T()
+  fullName.vb: T()
+  name.vb: T()
+  spec.csharp:
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: HarmonyLib.CollectionExtensions.AddRangeToArray*
+  commentId: Overload:HarmonyLib.CollectionExtensions.AddRangeToArray
+  name: AddRangeToArray
+  nameWithType: CollectionExtensions.AddRangeToArray
+  fullName: HarmonyLib.CollectionExtensions.AddRangeToArray

@@ -1,0 +1,975 @@
+### YamlMime:ManagedReference
+items:
+- uid: HarmonyLib.FastAccess
+  commentId: T:HarmonyLib.FastAccess
+  id: FastAccess
+  parent: HarmonyLib
+  children:
+  - HarmonyLib.FastAccess.CreateFieldGetter``2(System.String[])
+  - HarmonyLib.FastAccess.CreateGetterHandler``2(System.Reflection.FieldInfo)
+  - HarmonyLib.FastAccess.CreateGetterHandler``2(System.Reflection.PropertyInfo)
+  - HarmonyLib.FastAccess.CreateInstantiationHandler``1
+  - HarmonyLib.FastAccess.CreateSetterHandler``2(System.Reflection.FieldInfo)
+  - HarmonyLib.FastAccess.CreateSetterHandler``2(System.Reflection.PropertyInfo)
+  langs:
+  - csharp
+  - vb
+  name: FastAccess
+  nameWithType: FastAccess
+  fullName: HarmonyLib.FastAccess
+  type: Class
+  source:
+    remote:
+      path: Harmony/Extras/FastAccess.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: FastAccess
+    path: ../Extras/FastAccess.cs
+    startLine: 33
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: A helper class for fast access to getters and setters
+  example: []
+  syntax:
+    content: public static class FastAccess
+    content.vb: Public Module FastAccess
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: HarmonyLib.FastAccess.CreateInstantiationHandler``1
+  commentId: M:HarmonyLib.FastAccess.CreateInstantiationHandler``1
+  id: CreateInstantiationHandler``1
+  parent: HarmonyLib.FastAccess
+  langs:
+  - csharp
+  - vb
+  name: CreateInstantiationHandler<T>()
+  nameWithType: FastAccess.CreateInstantiationHandler<T>()
+  fullName: HarmonyLib.FastAccess.CreateInstantiationHandler<T>()
+  type: Method
+  source:
+    remote:
+      path: Harmony/Extras/FastAccess.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: CreateInstantiationHandler
+    path: ../Extras/FastAccess.cs
+    startLine: 39
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Creates an instantiation delegate
+  example: []
+  syntax:
+    content: public static InstantiationHandler<T> CreateInstantiationHandler<T>()
+    typeParameters:
+    - id: T
+      description: Type that constructor creates
+    return:
+      type: HarmonyLib.InstantiationHandler{{T}}
+      description: The new instantiation delegate
+    content.vb: Public Shared Function CreateInstantiationHandler(Of T) As InstantiationHandler(Of T)
+  overload: HarmonyLib.FastAccess.CreateInstantiationHandler*
+  nameWithType.vb: FastAccess.CreateInstantiationHandler(Of T)()
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: HarmonyLib.FastAccess.CreateInstantiationHandler(Of T)()
+  name.vb: CreateInstantiationHandler(Of T)()
+- uid: HarmonyLib.FastAccess.CreateGetterHandler``2(System.Reflection.PropertyInfo)
+  commentId: M:HarmonyLib.FastAccess.CreateGetterHandler``2(System.Reflection.PropertyInfo)
+  id: CreateGetterHandler``2(System.Reflection.PropertyInfo)
+  parent: HarmonyLib.FastAccess
+  langs:
+  - csharp
+  - vb
+  name: CreateGetterHandler<T, S>(PropertyInfo)
+  nameWithType: FastAccess.CreateGetterHandler<T, S>(PropertyInfo)
+  fullName: HarmonyLib.FastAccess.CreateGetterHandler<T, S>(System.Reflection.PropertyInfo)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Extras/FastAccess.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: CreateGetterHandler
+    path: ../Extras/FastAccess.cs
+    startLine: 64
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Creates an getter delegate for a property
+  example: []
+  syntax:
+    content: public static GetterHandler<T, S> CreateGetterHandler<T, S>(PropertyInfo propertyInfo)
+    parameters:
+    - id: propertyInfo
+      type: System.Reflection.PropertyInfo
+      description: The property
+    typeParameters:
+    - id: T
+      description: Type that getter reads property from
+    - id: S
+      description: Type of the property that gets accessed
+    return:
+      type: HarmonyLib.GetterHandler{{T},{S}}
+      description: The new getter delegate
+    content.vb: Public Shared Function CreateGetterHandler(Of T, S)(propertyInfo As PropertyInfo) As GetterHandler(Of T, S)
+  overload: HarmonyLib.FastAccess.CreateGetterHandler*
+  nameWithType.vb: FastAccess.CreateGetterHandler(Of T, S)(PropertyInfo)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: HarmonyLib.FastAccess.CreateGetterHandler(Of T, S)(System.Reflection.PropertyInfo)
+  name.vb: CreateGetterHandler(Of T, S)(PropertyInfo)
+- uid: HarmonyLib.FastAccess.CreateGetterHandler``2(System.Reflection.FieldInfo)
+  commentId: M:HarmonyLib.FastAccess.CreateGetterHandler``2(System.Reflection.FieldInfo)
+  id: CreateGetterHandler``2(System.Reflection.FieldInfo)
+  parent: HarmonyLib.FastAccess
+  langs:
+  - csharp
+  - vb
+  name: CreateGetterHandler<T, S>(FieldInfo)
+  nameWithType: FastAccess.CreateGetterHandler<T, S>(FieldInfo)
+  fullName: HarmonyLib.FastAccess.CreateGetterHandler<T, S>(System.Reflection.FieldInfo)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Extras/FastAccess.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: CreateGetterHandler
+    path: ../Extras/FastAccess.cs
+    startLine: 83
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Creates an getter delegate for a field
+  example: []
+  syntax:
+    content: public static GetterHandler<T, S> CreateGetterHandler<T, S>(FieldInfo fieldInfo)
+    parameters:
+    - id: fieldInfo
+      type: System.Reflection.FieldInfo
+      description: The field
+    typeParameters:
+    - id: T
+      description: Type that getter reads field from
+    - id: S
+      description: Type of the field that gets accessed
+    return:
+      type: HarmonyLib.GetterHandler{{T},{S}}
+      description: The new getter delegate
+    content.vb: Public Shared Function CreateGetterHandler(Of T, S)(fieldInfo As FieldInfo) As GetterHandler(Of T, S)
+  overload: HarmonyLib.FastAccess.CreateGetterHandler*
+  nameWithType.vb: FastAccess.CreateGetterHandler(Of T, S)(FieldInfo)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: HarmonyLib.FastAccess.CreateGetterHandler(Of T, S)(System.Reflection.FieldInfo)
+  name.vb: CreateGetterHandler(Of T, S)(FieldInfo)
+- uid: HarmonyLib.FastAccess.CreateFieldGetter``2(System.String[])
+  commentId: M:HarmonyLib.FastAccess.CreateFieldGetter``2(System.String[])
+  id: CreateFieldGetter``2(System.String[])
+  parent: HarmonyLib.FastAccess
+  langs:
+  - csharp
+  - vb
+  name: CreateFieldGetter<T, S>(String[])
+  nameWithType: FastAccess.CreateFieldGetter<T, S>(String[])
+  fullName: HarmonyLib.FastAccess.CreateFieldGetter<T, S>(System.String[])
+  type: Method
+  source:
+    remote:
+      path: Harmony/Extras/FastAccess.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: CreateFieldGetter
+    path: ../Extras/FastAccess.cs
+    startLine: 101
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Creates an getter delegate for a field (with a list of possible field names)
+  example: []
+  syntax:
+    content: public static GetterHandler<T, S> CreateFieldGetter<T, S>(params string[] names)
+    parameters:
+    - id: names
+      type: System.String[]
+      description: A list of possible field names
+    typeParameters:
+    - id: T
+      description: Type that getter reads field/property from
+    - id: S
+      description: Type of the field/property that gets accessed
+    return:
+      type: HarmonyLib.GetterHandler{{T},{S}}
+      description: The new getter delegate
+    content.vb: Public Shared Function CreateFieldGetter(Of T, S)(ParamArray names As String()) As GetterHandler(Of T, S)
+  overload: HarmonyLib.FastAccess.CreateFieldGetter*
+  nameWithType.vb: FastAccess.CreateFieldGetter(Of T, S)(String())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: HarmonyLib.FastAccess.CreateFieldGetter(Of T, S)(System.String())
+  name.vb: CreateFieldGetter(Of T, S)(String())
+- uid: HarmonyLib.FastAccess.CreateSetterHandler``2(System.Reflection.PropertyInfo)
+  commentId: M:HarmonyLib.FastAccess.CreateSetterHandler``2(System.Reflection.PropertyInfo)
+  id: CreateSetterHandler``2(System.Reflection.PropertyInfo)
+  parent: HarmonyLib.FastAccess
+  langs:
+  - csharp
+  - vb
+  name: CreateSetterHandler<T, S>(PropertyInfo)
+  nameWithType: FastAccess.CreateSetterHandler<T, S>(PropertyInfo)
+  fullName: HarmonyLib.FastAccess.CreateSetterHandler<T, S>(System.Reflection.PropertyInfo)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Extras/FastAccess.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: CreateSetterHandler
+    path: ../Extras/FastAccess.cs
+    startLine: 123
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Creates an setter delegate
+  example: []
+  syntax:
+    content: public static SetterHandler<T, S> CreateSetterHandler<T, S>(PropertyInfo propertyInfo)
+    parameters:
+    - id: propertyInfo
+      type: System.Reflection.PropertyInfo
+      description: The property
+    typeParameters:
+    - id: T
+      description: Type that setter assigns property value to
+    - id: S
+      description: Type of the property that gets assigned
+    return:
+      type: HarmonyLib.SetterHandler{{T},{S}}
+      description: The new setter delegate
+    content.vb: Public Shared Function CreateSetterHandler(Of T, S)(propertyInfo As PropertyInfo) As SetterHandler(Of T, S)
+  overload: HarmonyLib.FastAccess.CreateSetterHandler*
+  nameWithType.vb: FastAccess.CreateSetterHandler(Of T, S)(PropertyInfo)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: HarmonyLib.FastAccess.CreateSetterHandler(Of T, S)(System.Reflection.PropertyInfo)
+  name.vb: CreateSetterHandler(Of T, S)(PropertyInfo)
+- uid: HarmonyLib.FastAccess.CreateSetterHandler``2(System.Reflection.FieldInfo)
+  commentId: M:HarmonyLib.FastAccess.CreateSetterHandler``2(System.Reflection.FieldInfo)
+  id: CreateSetterHandler``2(System.Reflection.FieldInfo)
+  parent: HarmonyLib.FastAccess
+  langs:
+  - csharp
+  - vb
+  name: CreateSetterHandler<T, S>(FieldInfo)
+  nameWithType: FastAccess.CreateSetterHandler<T, S>(FieldInfo)
+  fullName: HarmonyLib.FastAccess.CreateSetterHandler<T, S>(System.Reflection.FieldInfo)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Extras/FastAccess.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: CreateSetterHandler
+    path: ../Extras/FastAccess.cs
+    startLine: 143
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Creates an setter delegate for a field
+  example: []
+  syntax:
+    content: public static SetterHandler<T, S> CreateSetterHandler<T, S>(FieldInfo fieldInfo)
+    parameters:
+    - id: fieldInfo
+      type: System.Reflection.FieldInfo
+      description: The field
+    typeParameters:
+    - id: T
+      description: Type that setter assigns field value to
+    - id: S
+      description: Type of the field that gets assigned
+    return:
+      type: HarmonyLib.SetterHandler{{T},{S}}
+      description: The new getter delegate
+    content.vb: Public Shared Function CreateSetterHandler(Of T, S)(fieldInfo As FieldInfo) As SetterHandler(Of T, S)
+  overload: HarmonyLib.FastAccess.CreateSetterHandler*
+  nameWithType.vb: FastAccess.CreateSetterHandler(Of T, S)(FieldInfo)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: HarmonyLib.FastAccess.CreateSetterHandler(Of T, S)(System.Reflection.FieldInfo)
+  name.vb: CreateSetterHandler(Of T, S)(FieldInfo)
+references:
+- uid: HarmonyLib
+  commentId: N:HarmonyLib
+  name: HarmonyLib
+  nameWithType: HarmonyLib
+  fullName: HarmonyLib
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: HarmonyLib.FastAccess.CreateInstantiationHandler*
+  commentId: Overload:HarmonyLib.FastAccess.CreateInstantiationHandler
+  name: CreateInstantiationHandler
+  nameWithType: FastAccess.CreateInstantiationHandler
+  fullName: HarmonyLib.FastAccess.CreateInstantiationHandler
+- uid: HarmonyLib.InstantiationHandler{{T}}
+  commentId: T:HarmonyLib.InstantiationHandler{``0}
+  parent: HarmonyLib
+  definition: HarmonyLib.InstantiationHandler`1
+  name: InstantiationHandler<T>
+  nameWithType: InstantiationHandler<T>
+  fullName: HarmonyLib.InstantiationHandler<T>
+  nameWithType.vb: InstantiationHandler(Of T)
+  fullName.vb: HarmonyLib.InstantiationHandler(Of T)
+  name.vb: InstantiationHandler(Of T)
+  spec.csharp:
+  - uid: HarmonyLib.InstantiationHandler`1
+    name: InstantiationHandler
+    nameWithType: InstantiationHandler
+    fullName: HarmonyLib.InstantiationHandler
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: HarmonyLib.InstantiationHandler`1
+    name: InstantiationHandler
+    nameWithType: InstantiationHandler
+    fullName: HarmonyLib.InstantiationHandler
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: HarmonyLib.InstantiationHandler`1
+  commentId: T:HarmonyLib.InstantiationHandler`1
+  name: InstantiationHandler<T>
+  nameWithType: InstantiationHandler<T>
+  fullName: HarmonyLib.InstantiationHandler<T>
+  nameWithType.vb: InstantiationHandler(Of T)
+  fullName.vb: HarmonyLib.InstantiationHandler(Of T)
+  name.vb: InstantiationHandler(Of T)
+  spec.csharp:
+  - uid: HarmonyLib.InstantiationHandler`1
+    name: InstantiationHandler
+    nameWithType: InstantiationHandler
+    fullName: HarmonyLib.InstantiationHandler
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: HarmonyLib.InstantiationHandler`1
+    name: InstantiationHandler
+    nameWithType: InstantiationHandler
+    fullName: HarmonyLib.InstantiationHandler
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: HarmonyLib.FastAccess.CreateGetterHandler*
+  commentId: Overload:HarmonyLib.FastAccess.CreateGetterHandler
+  name: CreateGetterHandler
+  nameWithType: FastAccess.CreateGetterHandler
+  fullName: HarmonyLib.FastAccess.CreateGetterHandler
+- uid: System.Reflection.PropertyInfo
+  commentId: T:System.Reflection.PropertyInfo
+  parent: System.Reflection
+  isExternal: true
+  name: PropertyInfo
+  nameWithType: PropertyInfo
+  fullName: System.Reflection.PropertyInfo
+- uid: HarmonyLib.GetterHandler{{T},{S}}
+  commentId: T:HarmonyLib.GetterHandler{``0,``1}
+  parent: HarmonyLib
+  definition: HarmonyLib.GetterHandler`2
+  name: GetterHandler<T, S>
+  nameWithType: GetterHandler<T, S>
+  fullName: HarmonyLib.GetterHandler<T, S>
+  nameWithType.vb: GetterHandler(Of T, S)
+  fullName.vb: HarmonyLib.GetterHandler(Of T, S)
+  name.vb: GetterHandler(Of T, S)
+  spec.csharp:
+  - uid: HarmonyLib.GetterHandler`2
+    name: GetterHandler
+    nameWithType: GetterHandler
+    fullName: HarmonyLib.GetterHandler
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: S
+    nameWithType: S
+    fullName: S
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: HarmonyLib.GetterHandler`2
+    name: GetterHandler
+    nameWithType: GetterHandler
+    fullName: HarmonyLib.GetterHandler
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: S
+    nameWithType: S
+    fullName: S
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Reflection
+  commentId: N:System.Reflection
+  isExternal: true
+  name: System.Reflection
+  nameWithType: System.Reflection
+  fullName: System.Reflection
+- uid: HarmonyLib.GetterHandler`2
+  commentId: T:HarmonyLib.GetterHandler`2
+  name: GetterHandler<T, S>
+  nameWithType: GetterHandler<T, S>
+  fullName: HarmonyLib.GetterHandler<T, S>
+  nameWithType.vb: GetterHandler(Of T, S)
+  fullName.vb: HarmonyLib.GetterHandler(Of T, S)
+  name.vb: GetterHandler(Of T, S)
+  spec.csharp:
+  - uid: HarmonyLib.GetterHandler`2
+    name: GetterHandler
+    nameWithType: GetterHandler
+    fullName: HarmonyLib.GetterHandler
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: S
+    nameWithType: S
+    fullName: S
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: HarmonyLib.GetterHandler`2
+    name: GetterHandler
+    nameWithType: GetterHandler
+    fullName: HarmonyLib.GetterHandler
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: S
+    nameWithType: S
+    fullName: S
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Reflection.FieldInfo
+  commentId: T:System.Reflection.FieldInfo
+  parent: System.Reflection
+  isExternal: true
+  name: FieldInfo
+  nameWithType: FieldInfo
+  fullName: System.Reflection.FieldInfo
+- uid: HarmonyLib.FastAccess.CreateFieldGetter*
+  commentId: Overload:HarmonyLib.FastAccess.CreateFieldGetter
+  name: CreateFieldGetter
+  nameWithType: FastAccess.CreateFieldGetter
+  fullName: HarmonyLib.FastAccess.CreateFieldGetter
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  nameWithType.vb: String()
+  fullName.vb: System.String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: HarmonyLib.FastAccess.CreateSetterHandler*
+  commentId: Overload:HarmonyLib.FastAccess.CreateSetterHandler
+  name: CreateSetterHandler
+  nameWithType: FastAccess.CreateSetterHandler
+  fullName: HarmonyLib.FastAccess.CreateSetterHandler
+- uid: HarmonyLib.SetterHandler{{T},{S}}
+  commentId: T:HarmonyLib.SetterHandler{``0,``1}
+  parent: HarmonyLib
+  definition: HarmonyLib.SetterHandler`2
+  name: SetterHandler<T, S>
+  nameWithType: SetterHandler<T, S>
+  fullName: HarmonyLib.SetterHandler<T, S>
+  nameWithType.vb: SetterHandler(Of T, S)
+  fullName.vb: HarmonyLib.SetterHandler(Of T, S)
+  name.vb: SetterHandler(Of T, S)
+  spec.csharp:
+  - uid: HarmonyLib.SetterHandler`2
+    name: SetterHandler
+    nameWithType: SetterHandler
+    fullName: HarmonyLib.SetterHandler
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: S
+    nameWithType: S
+    fullName: S
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: HarmonyLib.SetterHandler`2
+    name: SetterHandler
+    nameWithType: SetterHandler
+    fullName: HarmonyLib.SetterHandler
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: S
+    nameWithType: S
+    fullName: S
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: HarmonyLib.SetterHandler`2
+  commentId: T:HarmonyLib.SetterHandler`2
+  name: SetterHandler<T, S>
+  nameWithType: SetterHandler<T, S>
+  fullName: HarmonyLib.SetterHandler<T, S>
+  nameWithType.vb: SetterHandler(Of T, S)
+  fullName.vb: HarmonyLib.SetterHandler(Of T, S)
+  name.vb: SetterHandler(Of T, S)
+  spec.csharp:
+  - uid: HarmonyLib.SetterHandler`2
+    name: SetterHandler
+    nameWithType: SetterHandler
+    fullName: HarmonyLib.SetterHandler
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: S
+    nameWithType: S
+    fullName: S
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: HarmonyLib.SetterHandler`2
+    name: SetterHandler
+    nameWithType: SetterHandler
+    fullName: HarmonyLib.SetterHandler
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: S
+    nameWithType: S
+    fullName: S
+  - name: )
+    nameWithType: )
+    fullName: )

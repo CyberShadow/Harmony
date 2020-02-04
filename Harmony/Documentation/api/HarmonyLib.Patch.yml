@@ -1,0 +1,937 @@
+### YamlMime:ManagedReference
+items:
+- uid: HarmonyLib.Patch
+  commentId: T:HarmonyLib.Patch
+  id: Patch
+  parent: HarmonyLib
+  children:
+  - HarmonyLib.Patch.#ctor(System.Reflection.MethodInfo,System.Int32,System.String,System.Int32,System.String[],System.String[])
+  - HarmonyLib.Patch.after
+  - HarmonyLib.Patch.before
+  - HarmonyLib.Patch.CompareTo(System.Object)
+  - HarmonyLib.Patch.Equals(System.Object)
+  - HarmonyLib.Patch.GetHashCode
+  - HarmonyLib.Patch.GetMethod(System.Reflection.MethodBase)
+  - HarmonyLib.Patch.index
+  - HarmonyLib.Patch.owner
+  - HarmonyLib.Patch.PatchMethod
+  - HarmonyLib.Patch.priority
+  langs:
+  - csharp
+  - vb
+  name: Patch
+  nameWithType: Patch
+  fullName: HarmonyLib.Patch
+  type: Class
+  source:
+    remote:
+      path: Harmony/Public/Patch.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: Patch
+    path: ../Public/Patch.cs
+    startLine: 226
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: A serializable patch
+  example: []
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class Patch : IComparable
+    content.vb: >-
+      <Serializable>
+
+      Public Class Patch
+          Implements IComparable
+  inheritance:
+  - System.Object
+  implements:
+  - System.IComparable
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: HarmonyLib.Patch.index
+  commentId: F:HarmonyLib.Patch.index
+  id: index
+  parent: HarmonyLib.Patch
+  langs:
+  - csharp
+  - vb
+  name: index
+  nameWithType: Patch.index
+  fullName: HarmonyLib.Patch.index
+  type: Field
+  source:
+    remote:
+      path: Harmony/Public/Patch.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: index
+    path: ../Public/Patch.cs
+    startLine: 233
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Zero-based index
+  example: []
+  syntax:
+    content: public readonly int index
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly index As Integer
+  modifiers.csharp:
+  - public
+  - readonly
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: HarmonyLib.Patch.owner
+  commentId: F:HarmonyLib.Patch.owner
+  id: owner
+  parent: HarmonyLib.Patch
+  langs:
+  - csharp
+  - vb
+  name: owner
+  nameWithType: Patch.owner
+  fullName: HarmonyLib.Patch.owner
+  type: Field
+  source:
+    remote:
+      path: Harmony/Public/Patch.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: owner
+    path: ../Public/Patch.cs
+    startLine: 237
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: The owner (Harmony ID)
+  example: []
+  syntax:
+    content: public readonly string owner
+    return:
+      type: System.String
+    content.vb: Public ReadOnly owner As String
+  modifiers.csharp:
+  - public
+  - readonly
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: HarmonyLib.Patch.priority
+  commentId: F:HarmonyLib.Patch.priority
+  id: priority
+  parent: HarmonyLib.Patch
+  langs:
+  - csharp
+  - vb
+  name: priority
+  nameWithType: Patch.priority
+  fullName: HarmonyLib.Patch.priority
+  type: Field
+  source:
+    remote:
+      path: Harmony/Public/Patch.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: priority
+    path: ../Public/Patch.cs
+    startLine: 241
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: The priority
+  example: []
+  syntax:
+    content: public readonly int priority
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly priority As Integer
+  modifiers.csharp:
+  - public
+  - readonly
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: HarmonyLib.Patch.before
+  commentId: F:HarmonyLib.Patch.before
+  id: before
+  parent: HarmonyLib.Patch
+  langs:
+  - csharp
+  - vb
+  name: before
+  nameWithType: Patch.before
+  fullName: HarmonyLib.Patch.before
+  type: Field
+  source:
+    remote:
+      path: Harmony/Public/Patch.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: before
+    path: ../Public/Patch.cs
+    startLine: 245
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: The before
+  example: []
+  syntax:
+    content: public readonly string[] before
+    return:
+      type: System.String[]
+    content.vb: Public ReadOnly before As String()
+  modifiers.csharp:
+  - public
+  - readonly
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: HarmonyLib.Patch.after
+  commentId: F:HarmonyLib.Patch.after
+  id: after
+  parent: HarmonyLib.Patch
+  langs:
+  - csharp
+  - vb
+  name: after
+  nameWithType: Patch.after
+  fullName: HarmonyLib.Patch.after
+  type: Field
+  source:
+    remote:
+      path: Harmony/Public/Patch.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: after
+    path: ../Public/Patch.cs
+    startLine: 250
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: The after
+  example: []
+  syntax:
+    content: public readonly string[] after
+    return:
+      type: System.String[]
+    content.vb: Public ReadOnly after As String()
+  modifiers.csharp:
+  - public
+  - readonly
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: HarmonyLib.Patch.PatchMethod
+  commentId: P:HarmonyLib.Patch.PatchMethod
+  id: PatchMethod
+  parent: HarmonyLib.Patch
+  langs:
+  - csharp
+  - vb
+  name: PatchMethod
+  nameWithType: Patch.PatchMethod
+  fullName: HarmonyLib.Patch.PatchMethod
+  type: Property
+  source:
+    remote:
+      path: Harmony/Public/Patch.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: PatchMethod
+    path: ../Public/Patch.cs
+    startLine: 260
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: The patch method
+  example: []
+  syntax:
+    content: public MethodInfo PatchMethod { get; set; }
+    parameters: []
+    return:
+      type: System.Reflection.MethodInfo
+    content.vb: Public Property PatchMethod As MethodInfo
+  overload: HarmonyLib.Patch.PatchMethod*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HarmonyLib.Patch.#ctor(System.Reflection.MethodInfo,System.Int32,System.String,System.Int32,System.String[],System.String[])
+  commentId: M:HarmonyLib.Patch.#ctor(System.Reflection.MethodInfo,System.Int32,System.String,System.Int32,System.String[],System.String[])
+  id: '#ctor(System.Reflection.MethodInfo,System.Int32,System.String,System.Int32,System.String[],System.String[])'
+  parent: HarmonyLib.Patch
+  langs:
+  - csharp
+  - vb
+  name: Patch(MethodInfo, Int32, String, Int32, String[], String[])
+  nameWithType: Patch.Patch(MethodInfo, Int32, String, Int32, String[], String[])
+  fullName: HarmonyLib.Patch.Patch(System.Reflection.MethodInfo, System.Int32, System.String, System.Int32, System.String[], System.String[])
+  type: Constructor
+  source:
+    remote:
+      path: Harmony/Public/Patch.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: .ctor
+    path: ../Public/Patch.cs
+    startLine: 290
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Creates a patch
+  example: []
+  syntax:
+    content: public Patch(MethodInfo patch, int index, string owner, int priority, string[] before, string[] after)
+    parameters:
+    - id: patch
+      type: System.Reflection.MethodInfo
+      description: The patch
+    - id: index
+      type: System.Int32
+      description: Zero-based index
+    - id: owner
+      type: System.String
+      description: The owner (Harmony ID)
+    - id: priority
+      type: System.Int32
+      description: The priority
+    - id: before
+      type: System.String[]
+      description: The before parameter
+    - id: after
+      type: System.String[]
+      description: The after parameter
+    content.vb: Public Sub New(patch As MethodInfo, index As Integer, owner As String, priority As Integer, before As String(), after As String())
+  overload: HarmonyLib.Patch.#ctor*
+  nameWithType.vb: Patch.Patch(MethodInfo, Int32, String, Int32, String(), String())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: HarmonyLib.Patch.Patch(System.Reflection.MethodInfo, System.Int32, System.String, System.Int32, System.String(), System.String())
+  name.vb: Patch(MethodInfo, Int32, String, Int32, String(), String())
+- uid: HarmonyLib.Patch.GetMethod(System.Reflection.MethodBase)
+  commentId: M:HarmonyLib.Patch.GetMethod(System.Reflection.MethodBase)
+  id: GetMethod(System.Reflection.MethodBase)
+  parent: HarmonyLib.Patch
+  langs:
+  - csharp
+  - vb
+  name: GetMethod(MethodBase)
+  nameWithType: Patch.GetMethod(MethodBase)
+  fullName: HarmonyLib.Patch.GetMethod(System.Reflection.MethodBase)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Public/Patch.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: GetMethod
+    path: ../Public/Patch.cs
+    startLine: 306
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Gets the patch method
+  example: []
+  syntax:
+    content: public MethodInfo GetMethod(MethodBase original)
+    parameters:
+    - id: original
+      type: System.Reflection.MethodBase
+      description: The original method
+    return:
+      type: System.Reflection.MethodInfo
+      description: The patch method
+    content.vb: Public Function GetMethod(original As MethodBase) As MethodInfo
+  overload: HarmonyLib.Patch.GetMethod*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HarmonyLib.Patch.Equals(System.Object)
+  commentId: M:HarmonyLib.Patch.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: HarmonyLib.Patch
+  langs:
+  - csharp
+  - vb
+  name: Equals(Object)
+  nameWithType: Patch.Equals(Object)
+  fullName: HarmonyLib.Patch.Equals(System.Object)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Public/Patch.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: Equals
+    path: ../Public/Patch.cs
+    startLine: 323
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Determines whether patches are equal
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The other patch
+    return:
+      type: System.Boolean
+      description: true if equal
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.Object.Equals(System.Object)
+  overload: HarmonyLib.Patch.Equals*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: HarmonyLib.Patch.CompareTo(System.Object)
+  commentId: M:HarmonyLib.Patch.CompareTo(System.Object)
+  id: CompareTo(System.Object)
+  parent: HarmonyLib.Patch
+  langs:
+  - csharp
+  - vb
+  name: CompareTo(Object)
+  nameWithType: Patch.CompareTo(Object)
+  fullName: HarmonyLib.Patch.CompareTo(System.Object)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Public/Patch.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: CompareTo
+    path: ../Public/Patch.cs
+    startLine: 332
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Determines how patches sort
+  example: []
+  syntax:
+    content: public int CompareTo(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The other patch
+    return:
+      type: System.Int32
+      description: integer to define sort order (-1, 0, 1)
+    content.vb: Public Function CompareTo(obj As Object) As Integer
+  overload: HarmonyLib.Patch.CompareTo*
+  implements:
+  - System.IComparable.CompareTo(System.Object)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HarmonyLib.Patch.GetHashCode
+  commentId: M:HarmonyLib.Patch.GetHashCode
+  id: GetHashCode
+  parent: HarmonyLib.Patch
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: Patch.GetHashCode()
+  fullName: HarmonyLib.Patch.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: Harmony/Public/Patch.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: GetHashCode
+    path: ../Public/Patch.cs
+    startLine: 340
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Hash function
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: A hash code
+    content.vb: Public Overrides Function GetHashCode As Integer
+  overridden: System.Object.GetHashCode
+  overload: HarmonyLib.Patch.GetHashCode*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: HarmonyLib
+  commentId: N:HarmonyLib
+  name: HarmonyLib
+  nameWithType: HarmonyLib
+  fullName: HarmonyLib
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.IComparable
+  commentId: T:System.IComparable
+  parent: System
+  isExternal: true
+  name: IComparable
+  nameWithType: IComparable
+  fullName: System.IComparable
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  nameWithType.vb: String()
+  fullName.vb: System.String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: HarmonyLib.Patch.PatchMethod*
+  commentId: Overload:HarmonyLib.Patch.PatchMethod
+  name: PatchMethod
+  nameWithType: Patch.PatchMethod
+  fullName: HarmonyLib.Patch.PatchMethod
+- uid: System.Reflection.MethodInfo
+  commentId: T:System.Reflection.MethodInfo
+  parent: System.Reflection
+  isExternal: true
+  name: MethodInfo
+  nameWithType: MethodInfo
+  fullName: System.Reflection.MethodInfo
+- uid: System.Reflection
+  commentId: N:System.Reflection
+  isExternal: true
+  name: System.Reflection
+  nameWithType: System.Reflection
+  fullName: System.Reflection
+- uid: HarmonyLib.Patch.#ctor*
+  commentId: Overload:HarmonyLib.Patch.#ctor
+  name: Patch
+  nameWithType: Patch.Patch
+  fullName: HarmonyLib.Patch.Patch
+- uid: HarmonyLib.Patch.GetMethod*
+  commentId: Overload:HarmonyLib.Patch.GetMethod
+  name: GetMethod
+  nameWithType: Patch.GetMethod
+  fullName: HarmonyLib.Patch.GetMethod
+- uid: System.Reflection.MethodBase
+  commentId: T:System.Reflection.MethodBase
+  parent: System.Reflection
+  isExternal: true
+  name: MethodBase
+  nameWithType: MethodBase
+  fullName: System.Reflection.MethodBase
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: HarmonyLib.Patch.Equals*
+  commentId: Overload:HarmonyLib.Patch.Equals
+  name: Equals
+  nameWithType: Patch.Equals
+  fullName: HarmonyLib.Patch.Equals
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: HarmonyLib.Patch.CompareTo*
+  commentId: Overload:HarmonyLib.Patch.CompareTo
+  name: CompareTo
+  nameWithType: Patch.CompareTo
+  fullName: HarmonyLib.Patch.CompareTo
+- uid: System.IComparable.CompareTo(System.Object)
+  commentId: M:System.IComparable.CompareTo(System.Object)
+  parent: System.IComparable
+  isExternal: true
+  name: CompareTo(Object)
+  nameWithType: IComparable.CompareTo(Object)
+  fullName: System.IComparable.CompareTo(System.Object)
+  spec.csharp:
+  - uid: System.IComparable.CompareTo(System.Object)
+    name: CompareTo
+    nameWithType: IComparable.CompareTo
+    fullName: System.IComparable.CompareTo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IComparable.CompareTo(System.Object)
+    name: CompareTo
+    nameWithType: IComparable.CompareTo
+    fullName: System.IComparable.CompareTo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: HarmonyLib.Patch.GetHashCode*
+  commentId: Overload:HarmonyLib.Patch.GetHashCode
+  name: GetHashCode
+  nameWithType: Patch.GetHashCode
+  fullName: HarmonyLib.Patch.GetHashCode

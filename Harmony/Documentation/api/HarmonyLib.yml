@@ -1,0 +1,589 @@
+### YamlMime:ManagedReference
+items:
+- uid: HarmonyLib
+  commentId: N:HarmonyLib
+  id: HarmonyLib
+  children:
+  - HarmonyLib.AccessTools
+  - HarmonyLib.AccessTools.FieldRef`1
+  - HarmonyLib.AccessTools.FieldRef`2
+  - HarmonyLib.ArgumentType
+  - HarmonyLib.CodeInstruction
+  - HarmonyLib.CodeMatch
+  - HarmonyLib.CodeMatcher
+  - HarmonyLib.CollectionExtensions
+  - HarmonyLib.DelegateTypeFactory
+  - HarmonyLib.ExceptionBlock
+  - HarmonyLib.ExceptionBlockType
+  - HarmonyLib.FastAccess
+  - HarmonyLib.FastInvokeHandler
+  - HarmonyLib.FileLog
+  - HarmonyLib.GeneralExtensions
+  - HarmonyLib.GetterHandler`2
+  - HarmonyLib.Harmony
+  - HarmonyLib.HarmonyAfter
+  - HarmonyLib.HarmonyArgument
+  - HarmonyLib.HarmonyAttribute
+  - HarmonyLib.HarmonyBefore
+  - HarmonyLib.HarmonyCleanup
+  - HarmonyLib.HarmonyFinalizer
+  - HarmonyLib.HarmonyMethod
+  - HarmonyLib.HarmonyMethodExtensions
+  - HarmonyLib.HarmonyPatch
+  - HarmonyLib.HarmonyPatchAll
+  - HarmonyLib.HarmonyPatchType
+  - HarmonyLib.HarmonyPostfix
+  - HarmonyLib.HarmonyPrefix
+  - HarmonyLib.HarmonyPrepare
+  - HarmonyLib.HarmonyPriority
+  - HarmonyLib.HarmonyReversePatch
+  - HarmonyLib.HarmonyReversePatchType
+  - HarmonyLib.HarmonyTargetMethod
+  - HarmonyLib.HarmonyTargetMethods
+  - HarmonyLib.HarmonyTranspiler
+  - HarmonyLib.InlineSignature
+  - HarmonyLib.InlineSignature.ModifierType
+  - HarmonyLib.InstantiationHandler`1
+  - HarmonyLib.Memory
+  - HarmonyLib.MethodInvoker
+  - HarmonyLib.MethodType
+  - HarmonyLib.Patch
+  - HarmonyLib.PatchClassProcessor
+  - HarmonyLib.Patches
+  - HarmonyLib.PatchInfo
+  - HarmonyLib.PatchProcessor
+  - HarmonyLib.Priority
+  - HarmonyLib.ReversePatcher
+  - HarmonyLib.SetterHandler`2
+  - HarmonyLib.SymbolExtensions
+  - HarmonyLib.Transpilers
+  - HarmonyLib.Traverse
+  - HarmonyLib.Traverse`1
+  langs:
+  - csharp
+  - vb
+  name: HarmonyLib
+  nameWithType: HarmonyLib
+  fullName: HarmonyLib
+  type: Namespace
+  assemblies:
+  - 0Harmony
+references:
+- uid: HarmonyLib.DelegateTypeFactory
+  commentId: T:HarmonyLib.DelegateTypeFactory
+  name: DelegateTypeFactory
+  nameWithType: DelegateTypeFactory
+  fullName: HarmonyLib.DelegateTypeFactory
+- uid: HarmonyLib.GetterHandler`2
+  commentId: T:HarmonyLib.GetterHandler`2
+  name: GetterHandler<T, S>
+  nameWithType: GetterHandler<T, S>
+  fullName: HarmonyLib.GetterHandler<T, S>
+  nameWithType.vb: GetterHandler(Of T, S)
+  fullName.vb: HarmonyLib.GetterHandler(Of T, S)
+  name.vb: GetterHandler(Of T, S)
+  spec.csharp:
+  - uid: HarmonyLib.GetterHandler`2
+    name: GetterHandler
+    nameWithType: GetterHandler
+    fullName: HarmonyLib.GetterHandler
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: S
+    nameWithType: S
+    fullName: S
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: HarmonyLib.GetterHandler`2
+    name: GetterHandler
+    nameWithType: GetterHandler
+    fullName: HarmonyLib.GetterHandler
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: S
+    nameWithType: S
+    fullName: S
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: HarmonyLib.SetterHandler`2
+  commentId: T:HarmonyLib.SetterHandler`2
+  name: SetterHandler<T, S>
+  nameWithType: SetterHandler<T, S>
+  fullName: HarmonyLib.SetterHandler<T, S>
+  nameWithType.vb: SetterHandler(Of T, S)
+  fullName.vb: HarmonyLib.SetterHandler(Of T, S)
+  name.vb: SetterHandler(Of T, S)
+  spec.csharp:
+  - uid: HarmonyLib.SetterHandler`2
+    name: SetterHandler
+    nameWithType: SetterHandler
+    fullName: HarmonyLib.SetterHandler
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: S
+    nameWithType: S
+    fullName: S
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: HarmonyLib.SetterHandler`2
+    name: SetterHandler
+    nameWithType: SetterHandler
+    fullName: HarmonyLib.SetterHandler
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: S
+    nameWithType: S
+    fullName: S
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: HarmonyLib.InstantiationHandler`1
+  commentId: T:HarmonyLib.InstantiationHandler`1
+  name: InstantiationHandler<T>
+  nameWithType: InstantiationHandler<T>
+  fullName: HarmonyLib.InstantiationHandler<T>
+  nameWithType.vb: InstantiationHandler(Of T)
+  fullName.vb: HarmonyLib.InstantiationHandler(Of T)
+  name.vb: InstantiationHandler(Of T)
+  spec.csharp:
+  - uid: HarmonyLib.InstantiationHandler`1
+    name: InstantiationHandler
+    nameWithType: InstantiationHandler
+    fullName: HarmonyLib.InstantiationHandler
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: HarmonyLib.InstantiationHandler`1
+    name: InstantiationHandler
+    nameWithType: InstantiationHandler
+    fullName: HarmonyLib.InstantiationHandler
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: HarmonyLib.FastAccess
+  commentId: T:HarmonyLib.FastAccess
+  name: FastAccess
+  nameWithType: FastAccess
+  fullName: HarmonyLib.FastAccess
+- uid: HarmonyLib.FastInvokeHandler
+  commentId: T:HarmonyLib.FastInvokeHandler
+  parent: HarmonyLib
+  name: FastInvokeHandler
+  nameWithType: FastInvokeHandler
+  fullName: HarmonyLib.FastInvokeHandler
+- uid: HarmonyLib.MethodInvoker
+  commentId: T:HarmonyLib.MethodInvoker
+  name: MethodInvoker
+  nameWithType: MethodInvoker
+  fullName: HarmonyLib.MethodInvoker
+- uid: HarmonyLib.Memory
+  commentId: T:HarmonyLib.Memory
+  name: Memory
+  nameWithType: Memory
+  fullName: HarmonyLib.Memory
+- uid: HarmonyLib.MethodType
+  commentId: T:HarmonyLib.MethodType
+  parent: HarmonyLib
+  name: MethodType
+  nameWithType: MethodType
+  fullName: HarmonyLib.MethodType
+- uid: HarmonyLib.ArgumentType
+  commentId: T:HarmonyLib.ArgumentType
+  parent: HarmonyLib
+  name: ArgumentType
+  nameWithType: ArgumentType
+  fullName: HarmonyLib.ArgumentType
+- uid: HarmonyLib.HarmonyPatchType
+  commentId: T:HarmonyLib.HarmonyPatchType
+  parent: HarmonyLib
+  name: HarmonyPatchType
+  nameWithType: HarmonyPatchType
+  fullName: HarmonyLib.HarmonyPatchType
+- uid: HarmonyLib.HarmonyReversePatchType
+  commentId: T:HarmonyLib.HarmonyReversePatchType
+  parent: HarmonyLib
+  name: HarmonyReversePatchType
+  nameWithType: HarmonyReversePatchType
+  fullName: HarmonyLib.HarmonyReversePatchType
+- uid: HarmonyLib.HarmonyAttribute
+  commentId: T:HarmonyLib.HarmonyAttribute
+  parent: HarmonyLib
+  name: HarmonyAttribute
+  nameWithType: HarmonyAttribute
+  fullName: HarmonyLib.HarmonyAttribute
+- uid: HarmonyLib.HarmonyPatch
+  commentId: T:HarmonyLib.HarmonyPatch
+  name: HarmonyPatch
+  nameWithType: HarmonyPatch
+  fullName: HarmonyLib.HarmonyPatch
+- uid: HarmonyLib.HarmonyReversePatch
+  commentId: T:HarmonyLib.HarmonyReversePatch
+  name: HarmonyReversePatch
+  nameWithType: HarmonyReversePatch
+  fullName: HarmonyLib.HarmonyReversePatch
+- uid: HarmonyLib.HarmonyPatchAll
+  commentId: T:HarmonyLib.HarmonyPatchAll
+  name: HarmonyPatchAll
+  nameWithType: HarmonyPatchAll
+  fullName: HarmonyLib.HarmonyPatchAll
+- uid: HarmonyLib.HarmonyPriority
+  commentId: T:HarmonyLib.HarmonyPriority
+  name: HarmonyPriority
+  nameWithType: HarmonyPriority
+  fullName: HarmonyLib.HarmonyPriority
+- uid: HarmonyLib.HarmonyBefore
+  commentId: T:HarmonyLib.HarmonyBefore
+  name: HarmonyBefore
+  nameWithType: HarmonyBefore
+  fullName: HarmonyLib.HarmonyBefore
+- uid: HarmonyLib.HarmonyAfter
+  commentId: T:HarmonyLib.HarmonyAfter
+  name: HarmonyAfter
+  nameWithType: HarmonyAfter
+  fullName: HarmonyLib.HarmonyAfter
+- uid: HarmonyLib.HarmonyPrepare
+  commentId: T:HarmonyLib.HarmonyPrepare
+  name: HarmonyPrepare
+  nameWithType: HarmonyPrepare
+  fullName: HarmonyLib.HarmonyPrepare
+- uid: HarmonyLib.HarmonyCleanup
+  commentId: T:HarmonyLib.HarmonyCleanup
+  name: HarmonyCleanup
+  nameWithType: HarmonyCleanup
+  fullName: HarmonyLib.HarmonyCleanup
+- uid: HarmonyLib.HarmonyTargetMethod
+  commentId: T:HarmonyLib.HarmonyTargetMethod
+  name: HarmonyTargetMethod
+  nameWithType: HarmonyTargetMethod
+  fullName: HarmonyLib.HarmonyTargetMethod
+- uid: HarmonyLib.HarmonyTargetMethods
+  commentId: T:HarmonyLib.HarmonyTargetMethods
+  name: HarmonyTargetMethods
+  nameWithType: HarmonyTargetMethods
+  fullName: HarmonyLib.HarmonyTargetMethods
+- uid: HarmonyLib.HarmonyPrefix
+  commentId: T:HarmonyLib.HarmonyPrefix
+  name: HarmonyPrefix
+  nameWithType: HarmonyPrefix
+  fullName: HarmonyLib.HarmonyPrefix
+- uid: HarmonyLib.HarmonyPostfix
+  commentId: T:HarmonyLib.HarmonyPostfix
+  name: HarmonyPostfix
+  nameWithType: HarmonyPostfix
+  fullName: HarmonyLib.HarmonyPostfix
+- uid: HarmonyLib.HarmonyTranspiler
+  commentId: T:HarmonyLib.HarmonyTranspiler
+  name: HarmonyTranspiler
+  nameWithType: HarmonyTranspiler
+  fullName: HarmonyLib.HarmonyTranspiler
+- uid: HarmonyLib.HarmonyFinalizer
+  commentId: T:HarmonyLib.HarmonyFinalizer
+  name: HarmonyFinalizer
+  nameWithType: HarmonyFinalizer
+  fullName: HarmonyLib.HarmonyFinalizer
+- uid: HarmonyLib.HarmonyArgument
+  commentId: T:HarmonyLib.HarmonyArgument
+  name: HarmonyArgument
+  nameWithType: HarmonyArgument
+  fullName: HarmonyLib.HarmonyArgument
+- uid: HarmonyLib.CodeInstruction
+  commentId: T:HarmonyLib.CodeInstruction
+  parent: HarmonyLib
+  name: CodeInstruction
+  nameWithType: CodeInstruction
+  fullName: HarmonyLib.CodeInstruction
+- uid: HarmonyLib.ExceptionBlockType
+  commentId: T:HarmonyLib.ExceptionBlockType
+  parent: HarmonyLib
+  name: ExceptionBlockType
+  nameWithType: ExceptionBlockType
+  fullName: HarmonyLib.ExceptionBlockType
+- uid: HarmonyLib.ExceptionBlock
+  commentId: T:HarmonyLib.ExceptionBlock
+  name: ExceptionBlock
+  nameWithType: ExceptionBlock
+  fullName: HarmonyLib.ExceptionBlock
+- uid: HarmonyLib.Harmony
+  commentId: T:HarmonyLib.Harmony
+  parent: HarmonyLib
+  name: Harmony
+  nameWithType: Harmony
+  fullName: HarmonyLib.Harmony
+- uid: HarmonyLib.HarmonyMethod
+  commentId: T:HarmonyLib.HarmonyMethod
+  parent: HarmonyLib
+  name: HarmonyMethod
+  nameWithType: HarmonyMethod
+  fullName: HarmonyLib.HarmonyMethod
+- uid: HarmonyLib.HarmonyMethodExtensions
+  commentId: T:HarmonyLib.HarmonyMethodExtensions
+  parent: HarmonyLib
+  name: HarmonyMethodExtensions
+  nameWithType: HarmonyMethodExtensions
+  fullName: HarmonyLib.HarmonyMethodExtensions
+- uid: HarmonyLib.InlineSignature
+  commentId: T:HarmonyLib.InlineSignature
+  name: InlineSignature
+  nameWithType: InlineSignature
+  fullName: HarmonyLib.InlineSignature
+- uid: HarmonyLib.InlineSignature.ModifierType
+  commentId: T:HarmonyLib.InlineSignature.ModifierType
+  name: InlineSignature.ModifierType
+  nameWithType: InlineSignature.ModifierType
+  fullName: HarmonyLib.InlineSignature.ModifierType
+- uid: HarmonyLib.PatchInfo
+  commentId: T:HarmonyLib.PatchInfo
+  name: PatchInfo
+  nameWithType: PatchInfo
+  fullName: HarmonyLib.PatchInfo
+- uid: HarmonyLib.Patch
+  commentId: T:HarmonyLib.Patch
+  name: Patch
+  nameWithType: Patch
+  fullName: HarmonyLib.Patch
+- uid: HarmonyLib.PatchClassProcessor
+  commentId: T:HarmonyLib.PatchClassProcessor
+  parent: HarmonyLib
+  name: PatchClassProcessor
+  nameWithType: PatchClassProcessor
+  fullName: HarmonyLib.PatchClassProcessor
+- uid: HarmonyLib.Patches
+  commentId: T:HarmonyLib.Patches
+  parent: HarmonyLib
+  name: Patches
+  nameWithType: Patches
+  fullName: HarmonyLib.Patches
+- uid: HarmonyLib.PatchProcessor
+  commentId: T:HarmonyLib.PatchProcessor
+  parent: HarmonyLib
+  name: PatchProcessor
+  nameWithType: PatchProcessor
+  fullName: HarmonyLib.PatchProcessor
+- uid: HarmonyLib.Priority
+  commentId: T:HarmonyLib.Priority
+  name: Priority
+  nameWithType: Priority
+  fullName: HarmonyLib.Priority
+- uid: HarmonyLib.ReversePatcher
+  commentId: T:HarmonyLib.ReversePatcher
+  name: ReversePatcher
+  nameWithType: ReversePatcher
+  fullName: HarmonyLib.ReversePatcher
+- uid: HarmonyLib.Transpilers
+  commentId: T:HarmonyLib.Transpilers
+  name: Transpilers
+  nameWithType: Transpilers
+  fullName: HarmonyLib.Transpilers
+- uid: HarmonyLib.AccessTools
+  commentId: T:HarmonyLib.AccessTools
+  name: AccessTools
+  nameWithType: AccessTools
+  fullName: HarmonyLib.AccessTools
+- uid: HarmonyLib.AccessTools.FieldRef`2
+  commentId: T:HarmonyLib.AccessTools.FieldRef`2
+  name: AccessTools.FieldRef<T, F>
+  nameWithType: AccessTools.FieldRef<T, F>
+  fullName: HarmonyLib.AccessTools.FieldRef<T, F>
+  nameWithType.vb: AccessTools.FieldRef(Of T, F)
+  fullName.vb: HarmonyLib.AccessTools.FieldRef(Of T, F)
+  name.vb: AccessTools.FieldRef(Of T, F)
+  spec.csharp:
+  - uid: HarmonyLib.AccessTools.FieldRef`2
+    name: AccessTools.FieldRef
+    nameWithType: AccessTools.FieldRef
+    fullName: HarmonyLib.AccessTools.FieldRef
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: F
+    nameWithType: F
+    fullName: F
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: HarmonyLib.AccessTools.FieldRef`2
+    name: AccessTools.FieldRef
+    nameWithType: AccessTools.FieldRef
+    fullName: HarmonyLib.AccessTools.FieldRef
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: F
+    nameWithType: F
+    fullName: F
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: HarmonyLib.AccessTools.FieldRef`1
+  commentId: T:HarmonyLib.AccessTools.FieldRef`1
+  name: AccessTools.FieldRef<F>
+  nameWithType: AccessTools.FieldRef<F>
+  fullName: HarmonyLib.AccessTools.FieldRef<F>
+  nameWithType.vb: AccessTools.FieldRef(Of F)
+  fullName.vb: HarmonyLib.AccessTools.FieldRef(Of F)
+  name.vb: AccessTools.FieldRef(Of F)
+  spec.csharp:
+  - uid: HarmonyLib.AccessTools.FieldRef`1
+    name: AccessTools.FieldRef
+    nameWithType: AccessTools.FieldRef
+    fullName: HarmonyLib.AccessTools.FieldRef
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: F
+    nameWithType: F
+    fullName: F
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: HarmonyLib.AccessTools.FieldRef`1
+    name: AccessTools.FieldRef
+    nameWithType: AccessTools.FieldRef
+    fullName: HarmonyLib.AccessTools.FieldRef
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: F
+    nameWithType: F
+    fullName: F
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: HarmonyLib.CodeMatch
+  commentId: T:HarmonyLib.CodeMatch
+  name: CodeMatch
+  nameWithType: CodeMatch
+  fullName: HarmonyLib.CodeMatch
+- uid: HarmonyLib.CodeMatcher
+  commentId: T:HarmonyLib.CodeMatcher
+  parent: HarmonyLib
+  name: CodeMatcher
+  nameWithType: CodeMatcher
+  fullName: HarmonyLib.CodeMatcher
+- uid: HarmonyLib.GeneralExtensions
+  commentId: T:HarmonyLib.GeneralExtensions
+  name: GeneralExtensions
+  nameWithType: GeneralExtensions
+  fullName: HarmonyLib.GeneralExtensions
+- uid: HarmonyLib.CollectionExtensions
+  commentId: T:HarmonyLib.CollectionExtensions
+  name: CollectionExtensions
+  nameWithType: CollectionExtensions
+  fullName: HarmonyLib.CollectionExtensions
+- uid: HarmonyLib.FileLog
+  commentId: T:HarmonyLib.FileLog
+  name: FileLog
+  nameWithType: FileLog
+  fullName: HarmonyLib.FileLog
+- uid: HarmonyLib.SymbolExtensions
+  commentId: T:HarmonyLib.SymbolExtensions
+  name: SymbolExtensions
+  nameWithType: SymbolExtensions
+  fullName: HarmonyLib.SymbolExtensions
+- uid: HarmonyLib.Traverse`1
+  commentId: T:HarmonyLib.Traverse`1
+  name: Traverse<T>
+  nameWithType: Traverse<T>
+  fullName: HarmonyLib.Traverse<T>
+  nameWithType.vb: Traverse(Of T)
+  fullName.vb: HarmonyLib.Traverse(Of T)
+  name.vb: Traverse(Of T)
+  spec.csharp:
+  - uid: HarmonyLib.Traverse`1
+    name: Traverse
+    nameWithType: Traverse
+    fullName: HarmonyLib.Traverse
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: HarmonyLib.Traverse`1
+    name: Traverse
+    nameWithType: Traverse
+    fullName: HarmonyLib.Traverse
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: HarmonyLib.Traverse
+  commentId: T:HarmonyLib.Traverse
+  parent: HarmonyLib
+  name: Traverse
+  nameWithType: Traverse
+  fullName: HarmonyLib.Traverse
+- uid: HarmonyLib
+  commentId: N:HarmonyLib
+  name: HarmonyLib
+  nameWithType: HarmonyLib
+  fullName: HarmonyLib

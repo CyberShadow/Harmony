@@ -1,0 +1,188 @@
+### YamlMime:ManagedReference
+items:
+- uid: HarmonyLib.ArgumentType
+  commentId: T:HarmonyLib.ArgumentType
+  id: ArgumentType
+  parent: HarmonyLib
+  children:
+  - HarmonyLib.ArgumentType.Normal
+  - HarmonyLib.ArgumentType.Out
+  - HarmonyLib.ArgumentType.Pointer
+  - HarmonyLib.ArgumentType.Ref
+  langs:
+  - csharp
+  - vb
+  name: ArgumentType
+  nameWithType: ArgumentType
+  fullName: HarmonyLib.ArgumentType
+  type: Enum
+  source:
+    remote:
+      path: Harmony/Public/Attributes.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: ArgumentType
+    path: ../Public/Attributes.cs
+    startLine: 23
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Specifies the type of argument
+  example: []
+  syntax:
+    content: public enum ArgumentType
+    content.vb: Public Enum ArgumentType
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: HarmonyLib.ArgumentType.Normal
+  commentId: F:HarmonyLib.ArgumentType.Normal
+  id: Normal
+  parent: HarmonyLib.ArgumentType
+  langs:
+  - csharp
+  - vb
+  name: Normal
+  nameWithType: ArgumentType.Normal
+  fullName: HarmonyLib.ArgumentType.Normal
+  type: Field
+  source:
+    remote:
+      path: Harmony/Public/Attributes.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: Normal
+    path: ../Public/Attributes.cs
+    startLine: 26
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: This is a normal argument
+  example: []
+  syntax:
+    content: Normal = 0
+    return:
+      type: HarmonyLib.ArgumentType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HarmonyLib.ArgumentType.Ref
+  commentId: F:HarmonyLib.ArgumentType.Ref
+  id: Ref
+  parent: HarmonyLib.ArgumentType
+  langs:
+  - csharp
+  - vb
+  name: Ref
+  nameWithType: ArgumentType.Ref
+  fullName: HarmonyLib.ArgumentType.Ref
+  type: Field
+  source:
+    remote:
+      path: Harmony/Public/Attributes.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: Ref
+    path: ../Public/Attributes.cs
+    startLine: 28
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: This is a reference argument (ref)
+  example: []
+  syntax:
+    content: Ref = 1
+    return:
+      type: HarmonyLib.ArgumentType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HarmonyLib.ArgumentType.Out
+  commentId: F:HarmonyLib.ArgumentType.Out
+  id: Out
+  parent: HarmonyLib.ArgumentType
+  langs:
+  - csharp
+  - vb
+  name: Out
+  nameWithType: ArgumentType.Out
+  fullName: HarmonyLib.ArgumentType.Out
+  type: Field
+  source:
+    remote:
+      path: Harmony/Public/Attributes.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: Out
+    path: ../Public/Attributes.cs
+    startLine: 30
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: This is an out argument (out)
+  example: []
+  syntax:
+    content: Out = 2
+    return:
+      type: HarmonyLib.ArgumentType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HarmonyLib.ArgumentType.Pointer
+  commentId: F:HarmonyLib.ArgumentType.Pointer
+  id: Pointer
+  parent: HarmonyLib.ArgumentType
+  langs:
+  - csharp
+  - vb
+  name: Pointer
+  nameWithType: ArgumentType.Pointer
+  fullName: HarmonyLib.ArgumentType.Pointer
+  type: Field
+  source:
+    remote:
+      path: Harmony/Public/Attributes.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: Pointer
+    path: ../Public/Attributes.cs
+    startLine: 32
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: This is a pointer argument (&amp;)
+  example: []
+  syntax:
+    content: Pointer = 3
+    return:
+      type: HarmonyLib.ArgumentType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: HarmonyLib
+  commentId: N:HarmonyLib
+  name: HarmonyLib
+  nameWithType: HarmonyLib
+  fullName: HarmonyLib
+- uid: HarmonyLib.ArgumentType
+  commentId: T:HarmonyLib.ArgumentType
+  parent: HarmonyLib
+  name: ArgumentType
+  nameWithType: ArgumentType
+  fullName: HarmonyLib.ArgumentType

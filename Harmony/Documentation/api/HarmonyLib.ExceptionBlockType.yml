@@ -1,0 +1,258 @@
+### YamlMime:ManagedReference
+items:
+- uid: HarmonyLib.ExceptionBlockType
+  commentId: T:HarmonyLib.ExceptionBlockType
+  id: ExceptionBlockType
+  parent: HarmonyLib
+  children:
+  - HarmonyLib.ExceptionBlockType.BeginCatchBlock
+  - HarmonyLib.ExceptionBlockType.BeginExceptFilterBlock
+  - HarmonyLib.ExceptionBlockType.BeginExceptionBlock
+  - HarmonyLib.ExceptionBlockType.BeginFaultBlock
+  - HarmonyLib.ExceptionBlockType.BeginFinallyBlock
+  - HarmonyLib.ExceptionBlockType.EndExceptionBlock
+  langs:
+  - csharp
+  - vb
+  name: ExceptionBlockType
+  nameWithType: ExceptionBlockType
+  fullName: HarmonyLib.ExceptionBlockType
+  type: Enum
+  source:
+    remote:
+      path: Harmony/Public/ExceptionBlock.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: ExceptionBlockType
+    path: ../Public/ExceptionBlock.cs
+    startLine: 5
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Exception block types
+  example: []
+  syntax:
+    content: public enum ExceptionBlockType
+    content.vb: Public Enum ExceptionBlockType
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: HarmonyLib.ExceptionBlockType.BeginExceptionBlock
+  commentId: F:HarmonyLib.ExceptionBlockType.BeginExceptionBlock
+  id: BeginExceptionBlock
+  parent: HarmonyLib.ExceptionBlockType
+  langs:
+  - csharp
+  - vb
+  name: BeginExceptionBlock
+  nameWithType: ExceptionBlockType.BeginExceptionBlock
+  fullName: HarmonyLib.ExceptionBlockType.BeginExceptionBlock
+  type: Field
+  source:
+    remote:
+      path: Harmony/Public/ExceptionBlock.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: BeginExceptionBlock
+    path: ../Public/ExceptionBlock.cs
+    startLine: 8
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: The beginning of an exception block
+  example: []
+  syntax:
+    content: BeginExceptionBlock = 0
+    return:
+      type: HarmonyLib.ExceptionBlockType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HarmonyLib.ExceptionBlockType.BeginCatchBlock
+  commentId: F:HarmonyLib.ExceptionBlockType.BeginCatchBlock
+  id: BeginCatchBlock
+  parent: HarmonyLib.ExceptionBlockType
+  langs:
+  - csharp
+  - vb
+  name: BeginCatchBlock
+  nameWithType: ExceptionBlockType.BeginCatchBlock
+  fullName: HarmonyLib.ExceptionBlockType.BeginCatchBlock
+  type: Field
+  source:
+    remote:
+      path: Harmony/Public/ExceptionBlock.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: BeginCatchBlock
+    path: ../Public/ExceptionBlock.cs
+    startLine: 10
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: The beginning of a catch block
+  example: []
+  syntax:
+    content: BeginCatchBlock = 1
+    return:
+      type: HarmonyLib.ExceptionBlockType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HarmonyLib.ExceptionBlockType.BeginExceptFilterBlock
+  commentId: F:HarmonyLib.ExceptionBlockType.BeginExceptFilterBlock
+  id: BeginExceptFilterBlock
+  parent: HarmonyLib.ExceptionBlockType
+  langs:
+  - csharp
+  - vb
+  name: BeginExceptFilterBlock
+  nameWithType: ExceptionBlockType.BeginExceptFilterBlock
+  fullName: HarmonyLib.ExceptionBlockType.BeginExceptFilterBlock
+  type: Field
+  source:
+    remote:
+      path: Harmony/Public/ExceptionBlock.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: BeginExceptFilterBlock
+    path: ../Public/ExceptionBlock.cs
+    startLine: 12
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: The beginning of an except filter block
+  example: []
+  syntax:
+    content: BeginExceptFilterBlock = 2
+    return:
+      type: HarmonyLib.ExceptionBlockType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HarmonyLib.ExceptionBlockType.BeginFaultBlock
+  commentId: F:HarmonyLib.ExceptionBlockType.BeginFaultBlock
+  id: BeginFaultBlock
+  parent: HarmonyLib.ExceptionBlockType
+  langs:
+  - csharp
+  - vb
+  name: BeginFaultBlock
+  nameWithType: ExceptionBlockType.BeginFaultBlock
+  fullName: HarmonyLib.ExceptionBlockType.BeginFaultBlock
+  type: Field
+  source:
+    remote:
+      path: Harmony/Public/ExceptionBlock.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: BeginFaultBlock
+    path: ../Public/ExceptionBlock.cs
+    startLine: 14
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: The beginning of a fault block
+  example: []
+  syntax:
+    content: BeginFaultBlock = 3
+    return:
+      type: HarmonyLib.ExceptionBlockType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HarmonyLib.ExceptionBlockType.BeginFinallyBlock
+  commentId: F:HarmonyLib.ExceptionBlockType.BeginFinallyBlock
+  id: BeginFinallyBlock
+  parent: HarmonyLib.ExceptionBlockType
+  langs:
+  - csharp
+  - vb
+  name: BeginFinallyBlock
+  nameWithType: ExceptionBlockType.BeginFinallyBlock
+  fullName: HarmonyLib.ExceptionBlockType.BeginFinallyBlock
+  type: Field
+  source:
+    remote:
+      path: Harmony/Public/ExceptionBlock.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: BeginFinallyBlock
+    path: ../Public/ExceptionBlock.cs
+    startLine: 16
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: The beginning of a finally block
+  example: []
+  syntax:
+    content: BeginFinallyBlock = 4
+    return:
+      type: HarmonyLib.ExceptionBlockType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HarmonyLib.ExceptionBlockType.EndExceptionBlock
+  commentId: F:HarmonyLib.ExceptionBlockType.EndExceptionBlock
+  id: EndExceptionBlock
+  parent: HarmonyLib.ExceptionBlockType
+  langs:
+  - csharp
+  - vb
+  name: EndExceptionBlock
+  nameWithType: ExceptionBlockType.EndExceptionBlock
+  fullName: HarmonyLib.ExceptionBlockType.EndExceptionBlock
+  type: Field
+  source:
+    remote:
+      path: Harmony/Public/ExceptionBlock.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: EndExceptionBlock
+    path: ../Public/ExceptionBlock.cs
+    startLine: 18
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: The end of an exception block
+  example: []
+  syntax:
+    content: EndExceptionBlock = 5
+    return:
+      type: HarmonyLib.ExceptionBlockType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: HarmonyLib
+  commentId: N:HarmonyLib
+  name: HarmonyLib
+  nameWithType: HarmonyLib
+  fullName: HarmonyLib
+- uid: HarmonyLib.ExceptionBlockType
+  commentId: T:HarmonyLib.ExceptionBlockType
+  parent: HarmonyLib
+  name: ExceptionBlockType
+  nameWithType: ExceptionBlockType
+  fullName: HarmonyLib.ExceptionBlockType

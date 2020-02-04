@@ -1,0 +1,1043 @@
+### YamlMime:ManagedReference
+items:
+- uid: HarmonyLib.PatchInfo
+  commentId: T:HarmonyLib.PatchInfo
+  id: PatchInfo
+  parent: HarmonyLib
+  children:
+  - HarmonyLib.PatchInfo.#ctor
+  - HarmonyLib.PatchInfo.AddFinalizer(System.Reflection.MethodInfo,System.String,System.Int32,System.String[],System.String[])
+  - HarmonyLib.PatchInfo.AddPostfix(System.Reflection.MethodInfo,System.String,System.Int32,System.String[],System.String[])
+  - HarmonyLib.PatchInfo.AddPrefix(System.Reflection.MethodInfo,System.String,System.Int32,System.String[],System.String[])
+  - HarmonyLib.PatchInfo.AddTranspiler(System.Reflection.MethodInfo,System.String,System.Int32,System.String[],System.String[])
+  - HarmonyLib.PatchInfo.finalizers
+  - HarmonyLib.PatchInfo.postfixes
+  - HarmonyLib.PatchInfo.prefixes
+  - HarmonyLib.PatchInfo.RemoveFinalizer(System.String)
+  - HarmonyLib.PatchInfo.RemovePatch(System.Reflection.MethodInfo)
+  - HarmonyLib.PatchInfo.RemovePostfix(System.String)
+  - HarmonyLib.PatchInfo.RemovePrefix(System.String)
+  - HarmonyLib.PatchInfo.RemoveTranspiler(System.String)
+  - HarmonyLib.PatchInfo.transpilers
+  langs:
+  - csharp
+  - vb
+  name: PatchInfo
+  nameWithType: PatchInfo
+  fullName: HarmonyLib.PatchInfo
+  type: Class
+  source:
+    remote:
+      path: Harmony/Public/Patch.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: PatchInfo
+    path: ../Public/Patch.cs
+    startLine: 84
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Serializable patch information
+  example: []
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class PatchInfo
+    content.vb: >-
+      <Serializable>
+
+      Public Class PatchInfo
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: HarmonyLib.PatchInfo.prefixes
+  commentId: F:HarmonyLib.PatchInfo.prefixes
+  id: prefixes
+  parent: HarmonyLib.PatchInfo
+  langs:
+  - csharp
+  - vb
+  name: prefixes
+  nameWithType: PatchInfo.prefixes
+  fullName: HarmonyLib.PatchInfo.prefixes
+  type: Field
+  source:
+    remote:
+      path: Harmony/Public/Patch.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: prefixes
+    path: ../Public/Patch.cs
+    startLine: 88
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: The prefixes
+  example: []
+  syntax:
+    content: public Patch[] prefixes
+    return:
+      type: HarmonyLib.Patch[]
+    content.vb: Public prefixes As Patch()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HarmonyLib.PatchInfo.postfixes
+  commentId: F:HarmonyLib.PatchInfo.postfixes
+  id: postfixes
+  parent: HarmonyLib.PatchInfo
+  langs:
+  - csharp
+  - vb
+  name: postfixes
+  nameWithType: PatchInfo.postfixes
+  fullName: HarmonyLib.PatchInfo.postfixes
+  type: Field
+  source:
+    remote:
+      path: Harmony/Public/Patch.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: postfixes
+    path: ../Public/Patch.cs
+    startLine: 90
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: The postfixes
+  example: []
+  syntax:
+    content: public Patch[] postfixes
+    return:
+      type: HarmonyLib.Patch[]
+    content.vb: Public postfixes As Patch()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HarmonyLib.PatchInfo.transpilers
+  commentId: F:HarmonyLib.PatchInfo.transpilers
+  id: transpilers
+  parent: HarmonyLib.PatchInfo
+  langs:
+  - csharp
+  - vb
+  name: transpilers
+  nameWithType: PatchInfo.transpilers
+  fullName: HarmonyLib.PatchInfo.transpilers
+  type: Field
+  source:
+    remote:
+      path: Harmony/Public/Patch.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: transpilers
+    path: ../Public/Patch.cs
+    startLine: 92
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: The transpilers
+  example: []
+  syntax:
+    content: public Patch[] transpilers
+    return:
+      type: HarmonyLib.Patch[]
+    content.vb: Public transpilers As Patch()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HarmonyLib.PatchInfo.finalizers
+  commentId: F:HarmonyLib.PatchInfo.finalizers
+  id: finalizers
+  parent: HarmonyLib.PatchInfo
+  langs:
+  - csharp
+  - vb
+  name: finalizers
+  nameWithType: PatchInfo.finalizers
+  fullName: HarmonyLib.PatchInfo.finalizers
+  type: Field
+  source:
+    remote:
+      path: Harmony/Public/Patch.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: finalizers
+    path: ../Public/Patch.cs
+    startLine: 94
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: The finalizers
+  example: []
+  syntax:
+    content: public Patch[] finalizers
+    return:
+      type: HarmonyLib.Patch[]
+    content.vb: Public finalizers As Patch()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HarmonyLib.PatchInfo.#ctor
+  commentId: M:HarmonyLib.PatchInfo.#ctor
+  id: '#ctor'
+  parent: HarmonyLib.PatchInfo
+  langs:
+  - csharp
+  - vb
+  name: PatchInfo()
+  nameWithType: PatchInfo.PatchInfo()
+  fullName: HarmonyLib.PatchInfo.PatchInfo()
+  type: Constructor
+  source:
+    remote:
+      path: Harmony/Public/Patch.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: .ctor
+    path: ../Public/Patch.cs
+    startLine: 97
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Default constructor
+  example: []
+  syntax:
+    content: public PatchInfo()
+    content.vb: Public Sub New
+  overload: HarmonyLib.PatchInfo.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HarmonyLib.PatchInfo.AddPrefix(System.Reflection.MethodInfo,System.String,System.Int32,System.String[],System.String[])
+  commentId: M:HarmonyLib.PatchInfo.AddPrefix(System.Reflection.MethodInfo,System.String,System.Int32,System.String[],System.String[])
+  id: AddPrefix(System.Reflection.MethodInfo,System.String,System.Int32,System.String[],System.String[])
+  parent: HarmonyLib.PatchInfo
+  langs:
+  - csharp
+  - vb
+  name: AddPrefix(MethodInfo, String, Int32, String[], String[])
+  nameWithType: PatchInfo.AddPrefix(MethodInfo, String, Int32, String[], String[])
+  fullName: HarmonyLib.PatchInfo.AddPrefix(System.Reflection.MethodInfo, System.String, System.Int32, System.String[], System.String[])
+  type: Method
+  source:
+    remote:
+      path: Harmony/Public/Patch.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: AddPrefix
+    path: ../Public/Patch.cs
+    startLine: 112
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Adds a prefix
+  example: []
+  syntax:
+    content: public void AddPrefix(MethodInfo patch, string owner, int priority, string[] before, string[] after)
+    parameters:
+    - id: patch
+      type: System.Reflection.MethodInfo
+      description: The patch
+    - id: owner
+      type: System.String
+      description: The owner (Harmony ID)
+    - id: priority
+      type: System.Int32
+      description: The priority
+    - id: before
+      type: System.String[]
+      description: The before parameter
+    - id: after
+      type: System.String[]
+      description: The after parameter
+    content.vb: Public Sub AddPrefix(patch As MethodInfo, owner As String, priority As Integer, before As String(), after As String())
+  overload: HarmonyLib.PatchInfo.AddPrefix*
+  nameWithType.vb: PatchInfo.AddPrefix(MethodInfo, String, Int32, String(), String())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: HarmonyLib.PatchInfo.AddPrefix(System.Reflection.MethodInfo, System.String, System.Int32, System.String(), System.String())
+  name.vb: AddPrefix(MethodInfo, String, Int32, String(), String())
+- uid: HarmonyLib.PatchInfo.RemovePrefix(System.String)
+  commentId: M:HarmonyLib.PatchInfo.RemovePrefix(System.String)
+  id: RemovePrefix(System.String)
+  parent: HarmonyLib.PatchInfo
+  langs:
+  - csharp
+  - vb
+  name: RemovePrefix(String)
+  nameWithType: PatchInfo.RemovePrefix(String)
+  fullName: HarmonyLib.PatchInfo.RemovePrefix(System.String)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Public/Patch.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: RemovePrefix
+    path: ../Public/Patch.cs
+    startLine: 122
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Removes a prefix
+  example: []
+  syntax:
+    content: public void RemovePrefix(string owner)
+    parameters:
+    - id: owner
+      type: System.String
+      description: The owner or (*) for any
+    content.vb: Public Sub RemovePrefix(owner As String)
+  overload: HarmonyLib.PatchInfo.RemovePrefix*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HarmonyLib.PatchInfo.AddPostfix(System.Reflection.MethodInfo,System.String,System.Int32,System.String[],System.String[])
+  commentId: M:HarmonyLib.PatchInfo.AddPostfix(System.Reflection.MethodInfo,System.String,System.Int32,System.String[],System.String[])
+  id: AddPostfix(System.Reflection.MethodInfo,System.String,System.Int32,System.String[],System.String[])
+  parent: HarmonyLib.PatchInfo
+  langs:
+  - csharp
+  - vb
+  name: AddPostfix(MethodInfo, String, Int32, String[], String[])
+  nameWithType: PatchInfo.AddPostfix(MethodInfo, String, Int32, String[], String[])
+  fullName: HarmonyLib.PatchInfo.AddPostfix(System.Reflection.MethodInfo, System.String, System.Int32, System.String[], System.String[])
+  type: Method
+  source:
+    remote:
+      path: Harmony/Public/Patch.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: AddPostfix
+    path: ../Public/Patch.cs
+    startLine: 139
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Adds a postfix
+  example: []
+  syntax:
+    content: public void AddPostfix(MethodInfo patch, string owner, int priority, string[] before, string[] after)
+    parameters:
+    - id: patch
+      type: System.Reflection.MethodInfo
+      description: The patch
+    - id: owner
+      type: System.String
+      description: The owner (Harmony ID)
+    - id: priority
+      type: System.Int32
+      description: The priority
+    - id: before
+      type: System.String[]
+      description: The before parameter
+    - id: after
+      type: System.String[]
+      description: The after parameter
+    content.vb: Public Sub AddPostfix(patch As MethodInfo, owner As String, priority As Integer, before As String(), after As String())
+  overload: HarmonyLib.PatchInfo.AddPostfix*
+  nameWithType.vb: PatchInfo.AddPostfix(MethodInfo, String, Int32, String(), String())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: HarmonyLib.PatchInfo.AddPostfix(System.Reflection.MethodInfo, System.String, System.Int32, System.String(), System.String())
+  name.vb: AddPostfix(MethodInfo, String, Int32, String(), String())
+- uid: HarmonyLib.PatchInfo.RemovePostfix(System.String)
+  commentId: M:HarmonyLib.PatchInfo.RemovePostfix(System.String)
+  id: RemovePostfix(System.String)
+  parent: HarmonyLib.PatchInfo
+  langs:
+  - csharp
+  - vb
+  name: RemovePostfix(String)
+  nameWithType: PatchInfo.RemovePostfix(String)
+  fullName: HarmonyLib.PatchInfo.RemovePostfix(System.String)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Public/Patch.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: RemovePostfix
+    path: ../Public/Patch.cs
+    startLine: 149
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Removes a postfix
+  example: []
+  syntax:
+    content: public void RemovePostfix(string owner)
+    parameters:
+    - id: owner
+      type: System.String
+      description: The owner or (*) for any
+    content.vb: Public Sub RemovePostfix(owner As String)
+  overload: HarmonyLib.PatchInfo.RemovePostfix*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HarmonyLib.PatchInfo.AddTranspiler(System.Reflection.MethodInfo,System.String,System.Int32,System.String[],System.String[])
+  commentId: M:HarmonyLib.PatchInfo.AddTranspiler(System.Reflection.MethodInfo,System.String,System.Int32,System.String[],System.String[])
+  id: AddTranspiler(System.Reflection.MethodInfo,System.String,System.Int32,System.String[],System.String[])
+  parent: HarmonyLib.PatchInfo
+  langs:
+  - csharp
+  - vb
+  name: AddTranspiler(MethodInfo, String, Int32, String[], String[])
+  nameWithType: PatchInfo.AddTranspiler(MethodInfo, String, Int32, String[], String[])
+  fullName: HarmonyLib.PatchInfo.AddTranspiler(System.Reflection.MethodInfo, System.String, System.Int32, System.String[], System.String[])
+  type: Method
+  source:
+    remote:
+      path: Harmony/Public/Patch.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: AddTranspiler
+    path: ../Public/Patch.cs
+    startLine: 166
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Adds a transpiler
+  example: []
+  syntax:
+    content: public void AddTranspiler(MethodInfo patch, string owner, int priority, string[] before, string[] after)
+    parameters:
+    - id: patch
+      type: System.Reflection.MethodInfo
+      description: The patch
+    - id: owner
+      type: System.String
+      description: The owner (Harmony ID)
+    - id: priority
+      type: System.Int32
+      description: The priority
+    - id: before
+      type: System.String[]
+      description: The before parameter
+    - id: after
+      type: System.String[]
+      description: The after parameter
+    content.vb: Public Sub AddTranspiler(patch As MethodInfo, owner As String, priority As Integer, before As String(), after As String())
+  overload: HarmonyLib.PatchInfo.AddTranspiler*
+  nameWithType.vb: PatchInfo.AddTranspiler(MethodInfo, String, Int32, String(), String())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: HarmonyLib.PatchInfo.AddTranspiler(System.Reflection.MethodInfo, System.String, System.Int32, System.String(), System.String())
+  name.vb: AddTranspiler(MethodInfo, String, Int32, String(), String())
+- uid: HarmonyLib.PatchInfo.RemoveTranspiler(System.String)
+  commentId: M:HarmonyLib.PatchInfo.RemoveTranspiler(System.String)
+  id: RemoveTranspiler(System.String)
+  parent: HarmonyLib.PatchInfo
+  langs:
+  - csharp
+  - vb
+  name: RemoveTranspiler(String)
+  nameWithType: PatchInfo.RemoveTranspiler(String)
+  fullName: HarmonyLib.PatchInfo.RemoveTranspiler(System.String)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Public/Patch.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: RemoveTranspiler
+    path: ../Public/Patch.cs
+    startLine: 176
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Removes a transpiler
+  example: []
+  syntax:
+    content: public void RemoveTranspiler(string owner)
+    parameters:
+    - id: owner
+      type: System.String
+      description: The owner or (*) for any
+    content.vb: Public Sub RemoveTranspiler(owner As String)
+  overload: HarmonyLib.PatchInfo.RemoveTranspiler*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HarmonyLib.PatchInfo.AddFinalizer(System.Reflection.MethodInfo,System.String,System.Int32,System.String[],System.String[])
+  commentId: M:HarmonyLib.PatchInfo.AddFinalizer(System.Reflection.MethodInfo,System.String,System.Int32,System.String[],System.String[])
+  id: AddFinalizer(System.Reflection.MethodInfo,System.String,System.Int32,System.String[],System.String[])
+  parent: HarmonyLib.PatchInfo
+  langs:
+  - csharp
+  - vb
+  name: AddFinalizer(MethodInfo, String, Int32, String[], String[])
+  nameWithType: PatchInfo.AddFinalizer(MethodInfo, String, Int32, String[], String[])
+  fullName: HarmonyLib.PatchInfo.AddFinalizer(System.Reflection.MethodInfo, System.String, System.Int32, System.String[], System.String[])
+  type: Method
+  source:
+    remote:
+      path: Harmony/Public/Patch.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: AddFinalizer
+    path: ../Public/Patch.cs
+    startLine: 193
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Adds a finalizer
+  example: []
+  syntax:
+    content: public void AddFinalizer(MethodInfo patch, string owner, int priority, string[] before, string[] after)
+    parameters:
+    - id: patch
+      type: System.Reflection.MethodInfo
+      description: The patch
+    - id: owner
+      type: System.String
+      description: The owner (Harmony ID)
+    - id: priority
+      type: System.Int32
+      description: The priority
+    - id: before
+      type: System.String[]
+      description: The before parameter
+    - id: after
+      type: System.String[]
+      description: The after parameter
+    content.vb: Public Sub AddFinalizer(patch As MethodInfo, owner As String, priority As Integer, before As String(), after As String())
+  overload: HarmonyLib.PatchInfo.AddFinalizer*
+  nameWithType.vb: PatchInfo.AddFinalizer(MethodInfo, String, Int32, String(), String())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: HarmonyLib.PatchInfo.AddFinalizer(System.Reflection.MethodInfo, System.String, System.Int32, System.String(), System.String())
+  name.vb: AddFinalizer(MethodInfo, String, Int32, String(), String())
+- uid: HarmonyLib.PatchInfo.RemoveFinalizer(System.String)
+  commentId: M:HarmonyLib.PatchInfo.RemoveFinalizer(System.String)
+  id: RemoveFinalizer(System.String)
+  parent: HarmonyLib.PatchInfo
+  langs:
+  - csharp
+  - vb
+  name: RemoveFinalizer(String)
+  nameWithType: PatchInfo.RemoveFinalizer(String)
+  fullName: HarmonyLib.PatchInfo.RemoveFinalizer(System.String)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Public/Patch.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: RemoveFinalizer
+    path: ../Public/Patch.cs
+    startLine: 203
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Removes a finalizer
+  example: []
+  syntax:
+    content: public void RemoveFinalizer(string owner)
+    parameters:
+    - id: owner
+      type: System.String
+      description: The owner or (*) for any
+    content.vb: Public Sub RemoveFinalizer(owner As String)
+  overload: HarmonyLib.PatchInfo.RemoveFinalizer*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HarmonyLib.PatchInfo.RemovePatch(System.Reflection.MethodInfo)
+  commentId: M:HarmonyLib.PatchInfo.RemovePatch(System.Reflection.MethodInfo)
+  id: RemovePatch(System.Reflection.MethodInfo)
+  parent: HarmonyLib.PatchInfo
+  langs:
+  - csharp
+  - vb
+  name: RemovePatch(MethodInfo)
+  nameWithType: PatchInfo.RemovePatch(MethodInfo)
+  fullName: HarmonyLib.PatchInfo.RemovePatch(System.Reflection.MethodInfo)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Public/Patch.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: RemovePatch
+    path: ../Public/Patch.cs
+    startLine: 216
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Removes a patch
+  example: []
+  syntax:
+    content: public void RemovePatch(MethodInfo patch)
+    parameters:
+    - id: patch
+      type: System.Reflection.MethodInfo
+      description: The patch method
+    content.vb: Public Sub RemovePatch(patch As MethodInfo)
+  overload: HarmonyLib.PatchInfo.RemovePatch*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: HarmonyLib
+  commentId: N:HarmonyLib
+  name: HarmonyLib
+  nameWithType: HarmonyLib
+  fullName: HarmonyLib
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: HarmonyLib.Patch[]
+  isExternal: true
+  name: Patch[]
+  nameWithType: Patch[]
+  fullName: HarmonyLib.Patch[]
+  nameWithType.vb: Patch()
+  fullName.vb: HarmonyLib.Patch()
+  name.vb: Patch()
+  spec.csharp:
+  - uid: HarmonyLib.Patch
+    name: Patch
+    nameWithType: Patch
+    fullName: HarmonyLib.Patch
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: HarmonyLib.Patch
+    name: Patch
+    nameWithType: Patch
+    fullName: HarmonyLib.Patch
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: HarmonyLib.PatchInfo.#ctor*
+  commentId: Overload:HarmonyLib.PatchInfo.#ctor
+  name: PatchInfo
+  nameWithType: PatchInfo.PatchInfo
+  fullName: HarmonyLib.PatchInfo.PatchInfo
+- uid: HarmonyLib.PatchInfo.AddPrefix*
+  commentId: Overload:HarmonyLib.PatchInfo.AddPrefix
+  name: AddPrefix
+  nameWithType: PatchInfo.AddPrefix
+  fullName: HarmonyLib.PatchInfo.AddPrefix
+- uid: System.Reflection.MethodInfo
+  commentId: T:System.Reflection.MethodInfo
+  parent: System.Reflection
+  isExternal: true
+  name: MethodInfo
+  nameWithType: MethodInfo
+  fullName: System.Reflection.MethodInfo
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  nameWithType.vb: String()
+  fullName.vb: System.String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Reflection
+  commentId: N:System.Reflection
+  isExternal: true
+  name: System.Reflection
+  nameWithType: System.Reflection
+  fullName: System.Reflection
+- uid: HarmonyLib.PatchInfo.RemovePrefix*
+  commentId: Overload:HarmonyLib.PatchInfo.RemovePrefix
+  name: RemovePrefix
+  nameWithType: PatchInfo.RemovePrefix
+  fullName: HarmonyLib.PatchInfo.RemovePrefix
+- uid: HarmonyLib.PatchInfo.AddPostfix*
+  commentId: Overload:HarmonyLib.PatchInfo.AddPostfix
+  name: AddPostfix
+  nameWithType: PatchInfo.AddPostfix
+  fullName: HarmonyLib.PatchInfo.AddPostfix
+- uid: HarmonyLib.PatchInfo.RemovePostfix*
+  commentId: Overload:HarmonyLib.PatchInfo.RemovePostfix
+  name: RemovePostfix
+  nameWithType: PatchInfo.RemovePostfix
+  fullName: HarmonyLib.PatchInfo.RemovePostfix
+- uid: HarmonyLib.PatchInfo.AddTranspiler*
+  commentId: Overload:HarmonyLib.PatchInfo.AddTranspiler
+  name: AddTranspiler
+  nameWithType: PatchInfo.AddTranspiler
+  fullName: HarmonyLib.PatchInfo.AddTranspiler
+- uid: HarmonyLib.PatchInfo.RemoveTranspiler*
+  commentId: Overload:HarmonyLib.PatchInfo.RemoveTranspiler
+  name: RemoveTranspiler
+  nameWithType: PatchInfo.RemoveTranspiler
+  fullName: HarmonyLib.PatchInfo.RemoveTranspiler
+- uid: HarmonyLib.PatchInfo.AddFinalizer*
+  commentId: Overload:HarmonyLib.PatchInfo.AddFinalizer
+  name: AddFinalizer
+  nameWithType: PatchInfo.AddFinalizer
+  fullName: HarmonyLib.PatchInfo.AddFinalizer
+- uid: HarmonyLib.PatchInfo.RemoveFinalizer*
+  commentId: Overload:HarmonyLib.PatchInfo.RemoveFinalizer
+  name: RemoveFinalizer
+  nameWithType: PatchInfo.RemoveFinalizer
+  fullName: HarmonyLib.PatchInfo.RemoveFinalizer
+- uid: HarmonyLib.PatchInfo.RemovePatch*
+  commentId: Overload:HarmonyLib.PatchInfo.RemovePatch
+  name: RemovePatch
+  nameWithType: PatchInfo.RemovePatch
+  fullName: HarmonyLib.PatchInfo.RemovePatch

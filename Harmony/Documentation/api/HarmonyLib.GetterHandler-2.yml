@@ -1,0 +1,77 @@
+### YamlMime:ManagedReference
+items:
+- uid: HarmonyLib.GetterHandler`2
+  commentId: T:HarmonyLib.GetterHandler`2
+  id: GetterHandler`2
+  parent: HarmonyLib
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: GetterHandler<T, S>
+  nameWithType: GetterHandler<T, S>
+  fullName: HarmonyLib.GetterHandler<T, S>
+  type: Delegate
+  source:
+    remote:
+      path: Harmony/Extras/FastAccess.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: GetterHandler
+    path: ../Extras/FastAccess.cs
+    startLine: 15
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: A getter delegate type
+  example: []
+  syntax:
+    content: public delegate S GetterHandler<in T, out S>(T source);
+    parameters:
+    - id: source
+      type: '{T}'
+      description: The instance get getter uses
+    typeParameters:
+    - id: T
+      description: Type that getter gets field/property value from
+    - id: S
+      description: Type of the value that getter gets
+    return:
+      type: '{S}'
+      description: An delegate
+    content.vb: Public Delegate Function GetterHandler(Of In T, Out S)(source As T) As S
+  nameWithType.vb: GetterHandler(Of T, S)
+  modifiers.csharp:
+  - public
+  - delegate
+  modifiers.vb:
+  - Public
+  - Delegate
+  fullName.vb: HarmonyLib.GetterHandler(Of T, S)
+  name.vb: GetterHandler(Of T, S)
+references:
+- uid: HarmonyLib
+  commentId: N:HarmonyLib
+  name: HarmonyLib
+  nameWithType: HarmonyLib
+  fullName: HarmonyLib
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: '{S}'
+  commentId: '!:S'
+  definition: S
+  name: S
+  nameWithType: S
+  fullName: S
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: S
+  name: S
+  nameWithType: S
+  fullName: S

@@ -1,0 +1,532 @@
+### YamlMime:ManagedReference
+items:
+- uid: HarmonyLib.PatchClassProcessor
+  commentId: T:HarmonyLib.PatchClassProcessor
+  id: PatchClassProcessor
+  parent: HarmonyLib
+  children:
+  - HarmonyLib.PatchClassProcessor.#ctor(HarmonyLib.Harmony,System.Type)
+  - HarmonyLib.PatchClassProcessor.Patch
+  langs:
+  - csharp
+  - vb
+  name: PatchClassProcessor
+  nameWithType: PatchClassProcessor
+  fullName: HarmonyLib.PatchClassProcessor
+  type: Class
+  source:
+    remote:
+      path: Harmony/Public/PatchClassProcessor.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: PatchClassProcessor
+    path: ../Public/PatchClassProcessor.cs
+    startLine: 8
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: A PatchClassProcessor handles patch annotation on a class
+  example: []
+  syntax:
+    content: public class PatchClassProcessor
+    content.vb: Public Class PatchClassProcessor
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: HarmonyLib.PatchClassProcessor.#ctor(HarmonyLib.Harmony,System.Type)
+  commentId: M:HarmonyLib.PatchClassProcessor.#ctor(HarmonyLib.Harmony,System.Type)
+  id: '#ctor(HarmonyLib.Harmony,System.Type)'
+  parent: HarmonyLib.PatchClassProcessor
+  langs:
+  - csharp
+  - vb
+  name: PatchClassProcessor(Harmony, Type)
+  nameWithType: PatchClassProcessor.PatchClassProcessor(Harmony, Type)
+  fullName: HarmonyLib.PatchClassProcessor.PatchClassProcessor(HarmonyLib.Harmony, System.Type)
+  type: Constructor
+  source:
+    remote:
+      path: Harmony/Public/PatchClassProcessor.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: .ctor
+    path: ../Public/PatchClassProcessor.cs
+    startLine: 30
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Creates an empty patch class processor
+  example: []
+  syntax:
+    content: public PatchClassProcessor(Harmony instance, Type type)
+    parameters:
+    - id: instance
+      type: HarmonyLib.Harmony
+      description: The Harmony instance
+    - id: type
+      type: System.Type
+      description: The class to process
+    content.vb: Public Sub New(instance As Harmony, type As Type)
+  overload: HarmonyLib.PatchClassProcessor.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HarmonyLib.PatchClassProcessor.Patch
+  commentId: M:HarmonyLib.PatchClassProcessor.Patch
+  id: Patch
+  parent: HarmonyLib.PatchClassProcessor
+  langs:
+  - csharp
+  - vb
+  name: Patch()
+  nameWithType: PatchClassProcessor.Patch()
+  fullName: HarmonyLib.PatchClassProcessor.Patch()
+  type: Method
+  source:
+    remote:
+      path: Harmony/Public/PatchClassProcessor.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: Patch
+    path: ../Public/PatchClassProcessor.cs
+    startLine: 67
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Applies the patches
+  example: []
+  syntax:
+    content: public List<MethodInfo> Patch()
+    return:
+      type: System.Collections.Generic.List{System.Reflection.MethodInfo}
+      description: A list of all created dynamic methods or null if patch class is not annotated
+    content.vb: Public Function Patch As List(Of MethodInfo)
+  overload: HarmonyLib.PatchClassProcessor.Patch*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: HarmonyLib
+  commentId: N:HarmonyLib
+  name: HarmonyLib
+  nameWithType: HarmonyLib
+  fullName: HarmonyLib
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: HarmonyLib.PatchClassProcessor.#ctor*
+  commentId: Overload:HarmonyLib.PatchClassProcessor.#ctor
+  name: PatchClassProcessor
+  nameWithType: PatchClassProcessor.PatchClassProcessor
+  fullName: HarmonyLib.PatchClassProcessor.PatchClassProcessor
+- uid: HarmonyLib.Harmony
+  commentId: T:HarmonyLib.Harmony
+  parent: HarmonyLib
+  name: Harmony
+  nameWithType: Harmony
+  fullName: HarmonyLib.Harmony
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: HarmonyLib.PatchClassProcessor.Patch*
+  commentId: Overload:HarmonyLib.PatchClassProcessor.Patch
+  name: Patch
+  nameWithType: PatchClassProcessor.Patch
+  fullName: HarmonyLib.PatchClassProcessor.Patch
+- uid: System.Collections.Generic.List{System.Reflection.MethodInfo}
+  commentId: T:System.Collections.Generic.List{System.Reflection.MethodInfo}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<MethodInfo>
+  nameWithType: List<MethodInfo>
+  fullName: System.Collections.Generic.List<System.Reflection.MethodInfo>
+  nameWithType.vb: List(Of MethodInfo)
+  fullName.vb: System.Collections.Generic.List(Of System.Reflection.MethodInfo)
+  name.vb: List(Of MethodInfo)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Reflection.MethodInfo
+    name: MethodInfo
+    nameWithType: MethodInfo
+    fullName: System.Reflection.MethodInfo
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Reflection.MethodInfo
+    name: MethodInfo
+    nameWithType: MethodInfo
+    fullName: System.Reflection.MethodInfo
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic

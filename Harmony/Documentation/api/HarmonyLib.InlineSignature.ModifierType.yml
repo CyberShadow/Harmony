@@ -1,0 +1,520 @@
+### YamlMime:ManagedReference
+items:
+- uid: HarmonyLib.InlineSignature.ModifierType
+  commentId: T:HarmonyLib.InlineSignature.ModifierType
+  id: InlineSignature.ModifierType
+  parent: HarmonyLib
+  children:
+  - HarmonyLib.InlineSignature.ModifierType.IsOptional
+  - HarmonyLib.InlineSignature.ModifierType.Modifier
+  - HarmonyLib.InlineSignature.ModifierType.ToString
+  - HarmonyLib.InlineSignature.ModifierType.Type
+  langs:
+  - csharp
+  - vb
+  name: InlineSignature.ModifierType
+  nameWithType: InlineSignature.ModifierType
+  fullName: HarmonyLib.InlineSignature.ModifierType
+  type: Class
+  source:
+    remote:
+      path: Harmony/Public/InlineSignature.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: ModifierType
+    path: ../Public/InlineSignature.cs
+    startLine: 97
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: "\nA mutable representation of a parameter type with an attached type modifier,\nsimilar to Mono.Cecil&apos;s OptionalModifierType / RequiredModifierType and C#&apos;s modopt / modreq\n"
+  example: []
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class ModifierType
+    content.vb: >-
+      <Serializable>
+
+      Public Class ModifierType
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: HarmonyLib.InlineSignature.ModifierType.IsOptional
+  commentId: F:HarmonyLib.InlineSignature.ModifierType.IsOptional
+  id: IsOptional
+  parent: HarmonyLib.InlineSignature.ModifierType
+  langs:
+  - csharp
+  - vb
+  name: IsOptional
+  nameWithType: InlineSignature.ModifierType.IsOptional
+  fullName: HarmonyLib.InlineSignature.ModifierType.IsOptional
+  type: Field
+  source:
+    remote:
+      path: Harmony/Public/InlineSignature.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: IsOptional
+    path: ../Public/InlineSignature.cs
+    startLine: 102
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Whether this is a modopt (optional modifier type) or a modreq (required modifier type)
+  example: []
+  syntax:
+    content: public bool IsOptional
+    return:
+      type: System.Boolean
+    content.vb: Public IsOptional As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HarmonyLib.InlineSignature.ModifierType.Modifier
+  commentId: F:HarmonyLib.InlineSignature.ModifierType.Modifier
+  id: Modifier
+  parent: HarmonyLib.InlineSignature.ModifierType
+  langs:
+  - csharp
+  - vb
+  name: Modifier
+  nameWithType: InlineSignature.ModifierType.Modifier
+  fullName: HarmonyLib.InlineSignature.ModifierType.Modifier
+  type: Field
+  source:
+    remote:
+      path: Harmony/Public/InlineSignature.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: Modifier
+    path: ../Public/InlineSignature.cs
+    startLine: 106
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: The modifier type attached to the parameter type
+  example: []
+  syntax:
+    content: public Type Modifier
+    return:
+      type: System.Type
+    content.vb: Public Modifier As Type
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HarmonyLib.InlineSignature.ModifierType.Type
+  commentId: F:HarmonyLib.InlineSignature.ModifierType.Type
+  id: Type
+  parent: HarmonyLib.InlineSignature.ModifierType
+  langs:
+  - csharp
+  - vb
+  name: Type
+  nameWithType: InlineSignature.ModifierType.Type
+  fullName: HarmonyLib.InlineSignature.ModifierType.Type
+  type: Field
+  source:
+    remote:
+      path: Harmony/Public/InlineSignature.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: Type
+    path: ../Public/InlineSignature.cs
+    startLine: 110
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: The modified parameter type
+  example: []
+  syntax:
+    content: public object Type
+    return:
+      type: System.Object
+    content.vb: Public Type As Object
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HarmonyLib.InlineSignature.ModifierType.ToString
+  commentId: M:HarmonyLib.InlineSignature.ModifierType.ToString
+  id: ToString
+  parent: HarmonyLib.InlineSignature.ModifierType
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: InlineSignature.ModifierType.ToString()
+  fullName: HarmonyLib.InlineSignature.ModifierType.ToString()
+  type: Method
+  source:
+    remote:
+      path: Harmony/Public/InlineSignature.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: ToString
+    path: ../Public/InlineSignature.cs
+    startLine: 115
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Returns a string representation of the modifier type
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: A string representation of the modifier type
+    content.vb: Public Overrides Function ToString As String
+  overridden: System.Object.ToString
+  overload: HarmonyLib.InlineSignature.ModifierType.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: HarmonyLib
+  commentId: N:HarmonyLib
+  name: HarmonyLib
+  nameWithType: HarmonyLib
+  fullName: HarmonyLib
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: HarmonyLib.InlineSignature.ModifierType.ToString*
+  commentId: Overload:HarmonyLib.InlineSignature.ModifierType.ToString
+  name: ToString
+  nameWithType: InlineSignature.ModifierType.ToString
+  fullName: HarmonyLib.InlineSignature.ModifierType.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

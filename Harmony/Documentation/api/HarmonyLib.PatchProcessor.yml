@@ -1,0 +1,1444 @@
+### YamlMime:ManagedReference
+items:
+- uid: HarmonyLib.PatchProcessor
+  commentId: T:HarmonyLib.PatchProcessor
+  id: PatchProcessor
+  parent: HarmonyLib
+  children:
+  - HarmonyLib.PatchProcessor.#ctor(HarmonyLib.Harmony,System.Reflection.MethodBase)
+  - HarmonyLib.PatchProcessor.AddFinalizer(HarmonyLib.HarmonyMethod)
+  - HarmonyLib.PatchProcessor.AddFinalizer(System.Reflection.MethodInfo)
+  - HarmonyLib.PatchProcessor.AddPostfix(HarmonyLib.HarmonyMethod)
+  - HarmonyLib.PatchProcessor.AddPostfix(System.Reflection.MethodInfo)
+  - HarmonyLib.PatchProcessor.AddPrefix(HarmonyLib.HarmonyMethod)
+  - HarmonyLib.PatchProcessor.AddPrefix(System.Reflection.MethodInfo)
+  - HarmonyLib.PatchProcessor.AddTranspiler(HarmonyLib.HarmonyMethod)
+  - HarmonyLib.PatchProcessor.AddTranspiler(System.Reflection.MethodInfo)
+  - HarmonyLib.PatchProcessor.GetAllPatchedMethods
+  - HarmonyLib.PatchProcessor.GetOriginalInstructions(System.Reflection.MethodBase,System.Reflection.Emit.ILGenerator)
+  - HarmonyLib.PatchProcessor.GetOriginalInstructions(System.Reflection.MethodBase,System.Reflection.Emit.ILGenerator@)
+  - HarmonyLib.PatchProcessor.GetPatchInfo(System.Reflection.MethodBase)
+  - HarmonyLib.PatchProcessor.Patch
+  - HarmonyLib.PatchProcessor.Unpatch(HarmonyLib.HarmonyPatchType,System.String)
+  - HarmonyLib.PatchProcessor.Unpatch(System.Reflection.MethodInfo)
+  - HarmonyLib.PatchProcessor.VersionInfo(System.Version@)
+  langs:
+  - csharp
+  - vb
+  name: PatchProcessor
+  nameWithType: PatchProcessor
+  fullName: HarmonyLib.PatchProcessor
+  type: Class
+  source:
+    remote:
+      path: Harmony/Public/PatchProcessor.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: PatchProcessor
+    path: ../Public/PatchProcessor.cs
+    startLine: 21
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: A PatchProcessor handles patches on a method/constructor
+  example: []
+  syntax:
+    content: public class PatchProcessor
+    content.vb: Public Class PatchProcessor
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: HarmonyLib.PatchProcessor.#ctor(HarmonyLib.Harmony,System.Reflection.MethodBase)
+  commentId: M:HarmonyLib.PatchProcessor.#ctor(HarmonyLib.Harmony,System.Reflection.MethodBase)
+  id: '#ctor(HarmonyLib.Harmony,System.Reflection.MethodBase)'
+  parent: HarmonyLib.PatchProcessor
+  langs:
+  - csharp
+  - vb
+  name: PatchProcessor(Harmony, MethodBase)
+  nameWithType: PatchProcessor.PatchProcessor(Harmony, MethodBase)
+  fullName: HarmonyLib.PatchProcessor.PatchProcessor(HarmonyLib.Harmony, System.Reflection.MethodBase)
+  type: Constructor
+  source:
+    remote:
+      path: Harmony/Public/PatchProcessor.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: .ctor
+    path: ../Public/PatchProcessor.cs
+    startLine: 37
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Creates an empty patch processor
+  example: []
+  syntax:
+    content: public PatchProcessor(Harmony instance, MethodBase original)
+    parameters:
+    - id: instance
+      type: HarmonyLib.Harmony
+      description: The Harmony instance
+    - id: original
+      type: System.Reflection.MethodBase
+      description: An optional original method
+    content.vb: Public Sub New(instance As Harmony, original As MethodBase)
+  overload: HarmonyLib.PatchProcessor.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HarmonyLib.PatchProcessor.AddPrefix(HarmonyLib.HarmonyMethod)
+  commentId: M:HarmonyLib.PatchProcessor.AddPrefix(HarmonyLib.HarmonyMethod)
+  id: AddPrefix(HarmonyLib.HarmonyMethod)
+  parent: HarmonyLib.PatchProcessor
+  langs:
+  - csharp
+  - vb
+  name: AddPrefix(HarmonyMethod)
+  nameWithType: PatchProcessor.AddPrefix(HarmonyMethod)
+  fullName: HarmonyLib.PatchProcessor.AddPrefix(HarmonyLib.HarmonyMethod)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Public/PatchProcessor.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: AddPrefix
+    path: ../Public/PatchProcessor.cs
+    startLine: 46
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Add a prefix
+  example: []
+  syntax:
+    content: public PatchProcessor AddPrefix(HarmonyMethod prefix)
+    parameters:
+    - id: prefix
+      type: HarmonyLib.HarmonyMethod
+      description: The prefix.
+    return:
+      type: HarmonyLib.PatchProcessor
+    content.vb: Public Function AddPrefix(prefix As HarmonyMethod) As PatchProcessor
+  overload: HarmonyLib.PatchProcessor.AddPrefix*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HarmonyLib.PatchProcessor.AddPrefix(System.Reflection.MethodInfo)
+  commentId: M:HarmonyLib.PatchProcessor.AddPrefix(System.Reflection.MethodInfo)
+  id: AddPrefix(System.Reflection.MethodInfo)
+  parent: HarmonyLib.PatchProcessor
+  langs:
+  - csharp
+  - vb
+  name: AddPrefix(MethodInfo)
+  nameWithType: PatchProcessor.AddPrefix(MethodInfo)
+  fullName: HarmonyLib.PatchProcessor.AddPrefix(System.Reflection.MethodInfo)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Public/PatchProcessor.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: AddPrefix
+    path: ../Public/PatchProcessor.cs
+    startLine: 55
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Add a prefix
+  example: []
+  syntax:
+    content: public PatchProcessor AddPrefix(MethodInfo fixMethod)
+    parameters:
+    - id: fixMethod
+      type: System.Reflection.MethodInfo
+      description: The method.
+    return:
+      type: HarmonyLib.PatchProcessor
+    content.vb: Public Function AddPrefix(fixMethod As MethodInfo) As PatchProcessor
+  overload: HarmonyLib.PatchProcessor.AddPrefix*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HarmonyLib.PatchProcessor.AddPostfix(HarmonyLib.HarmonyMethod)
+  commentId: M:HarmonyLib.PatchProcessor.AddPostfix(HarmonyLib.HarmonyMethod)
+  id: AddPostfix(HarmonyLib.HarmonyMethod)
+  parent: HarmonyLib.PatchProcessor
+  langs:
+  - csharp
+  - vb
+  name: AddPostfix(HarmonyMethod)
+  nameWithType: PatchProcessor.AddPostfix(HarmonyMethod)
+  fullName: HarmonyLib.PatchProcessor.AddPostfix(HarmonyLib.HarmonyMethod)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Public/PatchProcessor.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: AddPostfix
+    path: ../Public/PatchProcessor.cs
+    startLine: 64
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Add a postfix
+  example: []
+  syntax:
+    content: public PatchProcessor AddPostfix(HarmonyMethod postfix)
+    parameters:
+    - id: postfix
+      type: HarmonyLib.HarmonyMethod
+      description: The postfix.
+    return:
+      type: HarmonyLib.PatchProcessor
+    content.vb: Public Function AddPostfix(postfix As HarmonyMethod) As PatchProcessor
+  overload: HarmonyLib.PatchProcessor.AddPostfix*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HarmonyLib.PatchProcessor.AddPostfix(System.Reflection.MethodInfo)
+  commentId: M:HarmonyLib.PatchProcessor.AddPostfix(System.Reflection.MethodInfo)
+  id: AddPostfix(System.Reflection.MethodInfo)
+  parent: HarmonyLib.PatchProcessor
+  langs:
+  - csharp
+  - vb
+  name: AddPostfix(MethodInfo)
+  nameWithType: PatchProcessor.AddPostfix(MethodInfo)
+  fullName: HarmonyLib.PatchProcessor.AddPostfix(System.Reflection.MethodInfo)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Public/PatchProcessor.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: AddPostfix
+    path: ../Public/PatchProcessor.cs
+    startLine: 73
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Add a postfix
+  example: []
+  syntax:
+    content: public PatchProcessor AddPostfix(MethodInfo fixMethod)
+    parameters:
+    - id: fixMethod
+      type: System.Reflection.MethodInfo
+      description: The method.
+    return:
+      type: HarmonyLib.PatchProcessor
+    content.vb: Public Function AddPostfix(fixMethod As MethodInfo) As PatchProcessor
+  overload: HarmonyLib.PatchProcessor.AddPostfix*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HarmonyLib.PatchProcessor.AddTranspiler(HarmonyLib.HarmonyMethod)
+  commentId: M:HarmonyLib.PatchProcessor.AddTranspiler(HarmonyLib.HarmonyMethod)
+  id: AddTranspiler(HarmonyLib.HarmonyMethod)
+  parent: HarmonyLib.PatchProcessor
+  langs:
+  - csharp
+  - vb
+  name: AddTranspiler(HarmonyMethod)
+  nameWithType: PatchProcessor.AddTranspiler(HarmonyMethod)
+  fullName: HarmonyLib.PatchProcessor.AddTranspiler(HarmonyLib.HarmonyMethod)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Public/PatchProcessor.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: AddTranspiler
+    path: ../Public/PatchProcessor.cs
+    startLine: 82
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Add a transpiler
+  example: []
+  syntax:
+    content: public PatchProcessor AddTranspiler(HarmonyMethod transpiler)
+    parameters:
+    - id: transpiler
+      type: HarmonyLib.HarmonyMethod
+      description: The transpiler.
+    return:
+      type: HarmonyLib.PatchProcessor
+    content.vb: Public Function AddTranspiler(transpiler As HarmonyMethod) As PatchProcessor
+  overload: HarmonyLib.PatchProcessor.AddTranspiler*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HarmonyLib.PatchProcessor.AddTranspiler(System.Reflection.MethodInfo)
+  commentId: M:HarmonyLib.PatchProcessor.AddTranspiler(System.Reflection.MethodInfo)
+  id: AddTranspiler(System.Reflection.MethodInfo)
+  parent: HarmonyLib.PatchProcessor
+  langs:
+  - csharp
+  - vb
+  name: AddTranspiler(MethodInfo)
+  nameWithType: PatchProcessor.AddTranspiler(MethodInfo)
+  fullName: HarmonyLib.PatchProcessor.AddTranspiler(System.Reflection.MethodInfo)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Public/PatchProcessor.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: AddTranspiler
+    path: ../Public/PatchProcessor.cs
+    startLine: 91
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Add a transpiler
+  example: []
+  syntax:
+    content: public PatchProcessor AddTranspiler(MethodInfo fixMethod)
+    parameters:
+    - id: fixMethod
+      type: System.Reflection.MethodInfo
+      description: The method.
+    return:
+      type: HarmonyLib.PatchProcessor
+    content.vb: Public Function AddTranspiler(fixMethod As MethodInfo) As PatchProcessor
+  overload: HarmonyLib.PatchProcessor.AddTranspiler*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HarmonyLib.PatchProcessor.AddFinalizer(HarmonyLib.HarmonyMethod)
+  commentId: M:HarmonyLib.PatchProcessor.AddFinalizer(HarmonyLib.HarmonyMethod)
+  id: AddFinalizer(HarmonyLib.HarmonyMethod)
+  parent: HarmonyLib.PatchProcessor
+  langs:
+  - csharp
+  - vb
+  name: AddFinalizer(HarmonyMethod)
+  nameWithType: PatchProcessor.AddFinalizer(HarmonyMethod)
+  fullName: HarmonyLib.PatchProcessor.AddFinalizer(HarmonyLib.HarmonyMethod)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Public/PatchProcessor.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: AddFinalizer
+    path: ../Public/PatchProcessor.cs
+    startLine: 100
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Add a finalizer
+  example: []
+  syntax:
+    content: public PatchProcessor AddFinalizer(HarmonyMethod finalizer)
+    parameters:
+    - id: finalizer
+      type: HarmonyLib.HarmonyMethod
+      description: The finalizer.
+    return:
+      type: HarmonyLib.PatchProcessor
+    content.vb: Public Function AddFinalizer(finalizer As HarmonyMethod) As PatchProcessor
+  overload: HarmonyLib.PatchProcessor.AddFinalizer*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HarmonyLib.PatchProcessor.AddFinalizer(System.Reflection.MethodInfo)
+  commentId: M:HarmonyLib.PatchProcessor.AddFinalizer(System.Reflection.MethodInfo)
+  id: AddFinalizer(System.Reflection.MethodInfo)
+  parent: HarmonyLib.PatchProcessor
+  langs:
+  - csharp
+  - vb
+  name: AddFinalizer(MethodInfo)
+  nameWithType: PatchProcessor.AddFinalizer(MethodInfo)
+  fullName: HarmonyLib.PatchProcessor.AddFinalizer(System.Reflection.MethodInfo)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Public/PatchProcessor.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: AddFinalizer
+    path: ../Public/PatchProcessor.cs
+    startLine: 109
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Add a finalizer
+  example: []
+  syntax:
+    content: public PatchProcessor AddFinalizer(MethodInfo fixMethod)
+    parameters:
+    - id: fixMethod
+      type: System.Reflection.MethodInfo
+      description: The method.
+    return:
+      type: HarmonyLib.PatchProcessor
+    content.vb: Public Function AddFinalizer(fixMethod As MethodInfo) As PatchProcessor
+  overload: HarmonyLib.PatchProcessor.AddFinalizer*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HarmonyLib.PatchProcessor.GetAllPatchedMethods
+  commentId: M:HarmonyLib.PatchProcessor.GetAllPatchedMethods
+  id: GetAllPatchedMethods
+  parent: HarmonyLib.PatchProcessor
+  langs:
+  - csharp
+  - vb
+  name: GetAllPatchedMethods()
+  nameWithType: PatchProcessor.GetAllPatchedMethods()
+  fullName: HarmonyLib.PatchProcessor.GetAllPatchedMethods()
+  type: Method
+  source:
+    remote:
+      path: Harmony/Public/PatchProcessor.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: GetAllPatchedMethods
+    path: ../Public/PatchProcessor.cs
+    startLine: 118
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Gets all patched original methods in the appdomain
+  example: []
+  syntax:
+    content: public static IEnumerable<MethodBase> GetAllPatchedMethods()
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Reflection.MethodBase}
+      description: An enumeration of patched original methods
+    content.vb: Public Shared Function GetAllPatchedMethods As IEnumerable(Of MethodBase)
+  overload: HarmonyLib.PatchProcessor.GetAllPatchedMethods*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: HarmonyLib.PatchProcessor.Patch
+  commentId: M:HarmonyLib.PatchProcessor.Patch
+  id: Patch
+  parent: HarmonyLib.PatchProcessor
+  langs:
+  - csharp
+  - vb
+  name: Patch()
+  nameWithType: PatchProcessor.Patch()
+  fullName: HarmonyLib.PatchProcessor.Patch()
+  type: Method
+  source:
+    remote:
+      path: Harmony/Public/PatchProcessor.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: Patch
+    path: ../Public/PatchProcessor.cs
+    startLine: 129
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Applies the patch
+  example: []
+  syntax:
+    content: public MethodInfo Patch()
+    return:
+      type: System.Reflection.MethodInfo
+      description: A list of all created dynamic methods
+    content.vb: Public Function Patch As MethodInfo
+  overload: HarmonyLib.PatchProcessor.Patch*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HarmonyLib.PatchProcessor.Unpatch(HarmonyLib.HarmonyPatchType,System.String)
+  commentId: M:HarmonyLib.PatchProcessor.Unpatch(HarmonyLib.HarmonyPatchType,System.String)
+  id: Unpatch(HarmonyLib.HarmonyPatchType,System.String)
+  parent: HarmonyLib.PatchProcessor
+  langs:
+  - csharp
+  - vb
+  name: Unpatch(HarmonyPatchType, String)
+  nameWithType: PatchProcessor.Unpatch(HarmonyPatchType, String)
+  fullName: HarmonyLib.PatchProcessor.Unpatch(HarmonyLib.HarmonyPatchType, System.String)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Public/PatchProcessor.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: Unpatch
+    path: ../Public/PatchProcessor.cs
+    startLine: 160
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Unpatches patches of a given type and/or Harmony ID
+  example: []
+  syntax:
+    content: public PatchProcessor Unpatch(HarmonyPatchType type, string harmonyID)
+    parameters:
+    - id: type
+      type: HarmonyLib.HarmonyPatchType
+      description: The patch type
+    - id: harmonyID
+      type: System.String
+      description: Harmony ID or (*) for any
+    return:
+      type: HarmonyLib.PatchProcessor
+    content.vb: Public Function Unpatch(type As HarmonyPatchType, harmonyID As String) As PatchProcessor
+  overload: HarmonyLib.PatchProcessor.Unpatch*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HarmonyLib.PatchProcessor.Unpatch(System.Reflection.MethodInfo)
+  commentId: M:HarmonyLib.PatchProcessor.Unpatch(System.Reflection.MethodInfo)
+  id: Unpatch(System.Reflection.MethodInfo)
+  parent: HarmonyLib.PatchProcessor
+  langs:
+  - csharp
+  - vb
+  name: Unpatch(MethodInfo)
+  nameWithType: PatchProcessor.Unpatch(MethodInfo)
+  fullName: HarmonyLib.PatchProcessor.Unpatch(System.Reflection.MethodInfo)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Public/PatchProcessor.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: Unpatch
+    path: ../Public/PatchProcessor.cs
+    startLine: 185
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Unpatches the given patch
+  example: []
+  syntax:
+    content: public PatchProcessor Unpatch(MethodInfo patch)
+    parameters:
+    - id: patch
+      type: System.Reflection.MethodInfo
+      description: The patch
+    return:
+      type: HarmonyLib.PatchProcessor
+    content.vb: Public Function Unpatch(patch As MethodInfo) As PatchProcessor
+  overload: HarmonyLib.PatchProcessor.Unpatch*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HarmonyLib.PatchProcessor.GetPatchInfo(System.Reflection.MethodBase)
+  commentId: M:HarmonyLib.PatchProcessor.GetPatchInfo(System.Reflection.MethodBase)
+  id: GetPatchInfo(System.Reflection.MethodBase)
+  parent: HarmonyLib.PatchProcessor
+  langs:
+  - csharp
+  - vb
+  name: GetPatchInfo(MethodBase)
+  nameWithType: PatchProcessor.GetPatchInfo(MethodBase)
+  fullName: HarmonyLib.PatchProcessor.GetPatchInfo(System.Reflection.MethodBase)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Public/PatchProcessor.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: GetPatchInfo
+    path: ../Public/PatchProcessor.cs
+    startLine: 204
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Gets patch information
+  example: []
+  syntax:
+    content: public static Patches GetPatchInfo(MethodBase method)
+    parameters:
+    - id: method
+      type: System.Reflection.MethodBase
+      description: The original method
+    return:
+      type: HarmonyLib.Patches
+      description: The patch information
+    content.vb: Public Shared Function GetPatchInfo(method As MethodBase) As Patches
+  overload: HarmonyLib.PatchProcessor.GetPatchInfo*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: HarmonyLib.PatchProcessor.VersionInfo(System.Version@)
+  commentId: M:HarmonyLib.PatchProcessor.VersionInfo(System.Version@)
+  id: VersionInfo(System.Version@)
+  parent: HarmonyLib.PatchProcessor
+  langs:
+  - csharp
+  - vb
+  name: VersionInfo(out Version)
+  nameWithType: PatchProcessor.VersionInfo(out Version)
+  fullName: HarmonyLib.PatchProcessor.VersionInfo(out System.Version)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Public/PatchProcessor.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: VersionInfo
+    path: ../Public/PatchProcessor.cs
+    startLine: 216
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Gets Harmony version for all active Harmony instances
+  example: []
+  syntax:
+    content: public static Dictionary<string, Version> VersionInfo(out Version currentVersion)
+    parameters:
+    - id: currentVersion
+      type: System.Version
+      description: '[out] The current Harmony version'
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,System.Version}
+      description: A dictionary containing assembly versions keyed by Harmony IDs
+    content.vb: Public Shared Function VersionInfo(ByRef currentVersion As Version) As Dictionary(Of String, Version)
+  overload: HarmonyLib.PatchProcessor.VersionInfo*
+  nameWithType.vb: PatchProcessor.VersionInfo(ByRef Version)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: HarmonyLib.PatchProcessor.VersionInfo(ByRef System.Version)
+  name.vb: VersionInfo(ByRef Version)
+- uid: HarmonyLib.PatchProcessor.GetOriginalInstructions(System.Reflection.MethodBase,System.Reflection.Emit.ILGenerator)
+  commentId: M:HarmonyLib.PatchProcessor.GetOriginalInstructions(System.Reflection.MethodBase,System.Reflection.Emit.ILGenerator)
+  id: GetOriginalInstructions(System.Reflection.MethodBase,System.Reflection.Emit.ILGenerator)
+  parent: HarmonyLib.PatchProcessor
+  langs:
+  - csharp
+  - vb
+  name: GetOriginalInstructions(MethodBase, ILGenerator)
+  nameWithType: PatchProcessor.GetOriginalInstructions(MethodBase, ILGenerator)
+  fullName: HarmonyLib.PatchProcessor.GetOriginalInstructions(System.Reflection.MethodBase, System.Reflection.Emit.ILGenerator)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Public/PatchProcessor.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: GetOriginalInstructions
+    path: ../Public/PatchProcessor.cs
+    startLine: 244
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Returns the methods unmodified list of CodeInstructions
+  example: []
+  syntax:
+    content: public static List<CodeInstruction> GetOriginalInstructions(MethodBase original, ILGenerator generator = null)
+    parameters:
+    - id: original
+      type: System.Reflection.MethodBase
+      description: The original method
+    - id: generator
+      type: System.Reflection.Emit.ILGenerator
+      description: Optionally an existing generator that will be used to create all local variables and labels contained in the result (if not specified, an internal generator is used)
+    return:
+      type: System.Collections.Generic.List{HarmonyLib.CodeInstruction}
+      description: A list containing all the original CodeInstructions
+    content.vb: Public Shared Function GetOriginalInstructions(original As MethodBase, generator As ILGenerator = Nothing) As List(Of CodeInstruction)
+  overload: HarmonyLib.PatchProcessor.GetOriginalInstructions*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: HarmonyLib.PatchProcessor.GetOriginalInstructions(System.Reflection.MethodBase,System.Reflection.Emit.ILGenerator@)
+  commentId: M:HarmonyLib.PatchProcessor.GetOriginalInstructions(System.Reflection.MethodBase,System.Reflection.Emit.ILGenerator@)
+  id: GetOriginalInstructions(System.Reflection.MethodBase,System.Reflection.Emit.ILGenerator@)
+  parent: HarmonyLib.PatchProcessor
+  langs:
+  - csharp
+  - vb
+  name: GetOriginalInstructions(MethodBase, out ILGenerator)
+  nameWithType: PatchProcessor.GetOriginalInstructions(MethodBase, out ILGenerator)
+  fullName: HarmonyLib.PatchProcessor.GetOriginalInstructions(System.Reflection.MethodBase, out System.Reflection.Emit.ILGenerator)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Public/PatchProcessor.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: GetOriginalInstructions
+    path: ../Public/PatchProcessor.cs
+    startLine: 256
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Returns the methods unmodified list of CodeInstructions
+  example: []
+  syntax:
+    content: public static List<CodeInstruction> GetOriginalInstructions(MethodBase original, out ILGenerator generator)
+    parameters:
+    - id: original
+      type: System.Reflection.MethodBase
+      description: The original method
+    - id: generator
+      type: System.Reflection.Emit.ILGenerator
+      description: A new generator that now contains all local variables and labels contained in the result
+    return:
+      type: System.Collections.Generic.List{HarmonyLib.CodeInstruction}
+      description: A list containing all the original CodeInstructions
+    content.vb: Public Shared Function GetOriginalInstructions(original As MethodBase, ByRef generator As ILGenerator) As List(Of CodeInstruction)
+  overload: HarmonyLib.PatchProcessor.GetOriginalInstructions*
+  nameWithType.vb: PatchProcessor.GetOriginalInstructions(MethodBase, ByRef ILGenerator)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: HarmonyLib.PatchProcessor.GetOriginalInstructions(System.Reflection.MethodBase, ByRef System.Reflection.Emit.ILGenerator)
+  name.vb: GetOriginalInstructions(MethodBase, ByRef ILGenerator)
+references:
+- uid: HarmonyLib
+  commentId: N:HarmonyLib
+  name: HarmonyLib
+  nameWithType: HarmonyLib
+  fullName: HarmonyLib
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: HarmonyLib.PatchProcessor.#ctor*
+  commentId: Overload:HarmonyLib.PatchProcessor.#ctor
+  name: PatchProcessor
+  nameWithType: PatchProcessor.PatchProcessor
+  fullName: HarmonyLib.PatchProcessor.PatchProcessor
+- uid: HarmonyLib.Harmony
+  commentId: T:HarmonyLib.Harmony
+  parent: HarmonyLib
+  name: Harmony
+  nameWithType: Harmony
+  fullName: HarmonyLib.Harmony
+- uid: System.Reflection.MethodBase
+  commentId: T:System.Reflection.MethodBase
+  parent: System.Reflection
+  isExternal: true
+  name: MethodBase
+  nameWithType: MethodBase
+  fullName: System.Reflection.MethodBase
+- uid: System.Reflection
+  commentId: N:System.Reflection
+  isExternal: true
+  name: System.Reflection
+  nameWithType: System.Reflection
+  fullName: System.Reflection
+- uid: HarmonyLib.PatchProcessor.AddPrefix*
+  commentId: Overload:HarmonyLib.PatchProcessor.AddPrefix
+  name: AddPrefix
+  nameWithType: PatchProcessor.AddPrefix
+  fullName: HarmonyLib.PatchProcessor.AddPrefix
+- uid: HarmonyLib.HarmonyMethod
+  commentId: T:HarmonyLib.HarmonyMethod
+  parent: HarmonyLib
+  name: HarmonyMethod
+  nameWithType: HarmonyMethod
+  fullName: HarmonyLib.HarmonyMethod
+- uid: HarmonyLib.PatchProcessor
+  commentId: T:HarmonyLib.PatchProcessor
+  parent: HarmonyLib
+  name: PatchProcessor
+  nameWithType: PatchProcessor
+  fullName: HarmonyLib.PatchProcessor
+- uid: System.Reflection.MethodInfo
+  commentId: T:System.Reflection.MethodInfo
+  parent: System.Reflection
+  isExternal: true
+  name: MethodInfo
+  nameWithType: MethodInfo
+  fullName: System.Reflection.MethodInfo
+- uid: HarmonyLib.PatchProcessor.AddPostfix*
+  commentId: Overload:HarmonyLib.PatchProcessor.AddPostfix
+  name: AddPostfix
+  nameWithType: PatchProcessor.AddPostfix
+  fullName: HarmonyLib.PatchProcessor.AddPostfix
+- uid: HarmonyLib.PatchProcessor.AddTranspiler*
+  commentId: Overload:HarmonyLib.PatchProcessor.AddTranspiler
+  name: AddTranspiler
+  nameWithType: PatchProcessor.AddTranspiler
+  fullName: HarmonyLib.PatchProcessor.AddTranspiler
+- uid: HarmonyLib.PatchProcessor.AddFinalizer*
+  commentId: Overload:HarmonyLib.PatchProcessor.AddFinalizer
+  name: AddFinalizer
+  nameWithType: PatchProcessor.AddFinalizer
+  fullName: HarmonyLib.PatchProcessor.AddFinalizer
+- uid: HarmonyLib.PatchProcessor.GetAllPatchedMethods*
+  commentId: Overload:HarmonyLib.PatchProcessor.GetAllPatchedMethods
+  name: GetAllPatchedMethods
+  nameWithType: PatchProcessor.GetAllPatchedMethods
+  fullName: HarmonyLib.PatchProcessor.GetAllPatchedMethods
+- uid: System.Collections.Generic.IEnumerable{System.Reflection.MethodBase}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Reflection.MethodBase}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<MethodBase>
+  nameWithType: IEnumerable<MethodBase>
+  fullName: System.Collections.Generic.IEnumerable<System.Reflection.MethodBase>
+  nameWithType.vb: IEnumerable(Of MethodBase)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Reflection.MethodBase)
+  name.vb: IEnumerable(Of MethodBase)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Reflection.MethodBase
+    name: MethodBase
+    nameWithType: MethodBase
+    fullName: System.Reflection.MethodBase
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Reflection.MethodBase
+    name: MethodBase
+    nameWithType: MethodBase
+    fullName: System.Reflection.MethodBase
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: HarmonyLib.PatchProcessor.Patch*
+  commentId: Overload:HarmonyLib.PatchProcessor.Patch
+  name: Patch
+  nameWithType: PatchProcessor.Patch
+  fullName: HarmonyLib.PatchProcessor.Patch
+- uid: HarmonyLib.PatchProcessor.Unpatch*
+  commentId: Overload:HarmonyLib.PatchProcessor.Unpatch
+  name: Unpatch
+  nameWithType: PatchProcessor.Unpatch
+  fullName: HarmonyLib.PatchProcessor.Unpatch
+- uid: HarmonyLib.HarmonyPatchType
+  commentId: T:HarmonyLib.HarmonyPatchType
+  parent: HarmonyLib
+  name: HarmonyPatchType
+  nameWithType: HarmonyPatchType
+  fullName: HarmonyLib.HarmonyPatchType
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: HarmonyLib.PatchProcessor.GetPatchInfo*
+  commentId: Overload:HarmonyLib.PatchProcessor.GetPatchInfo
+  name: GetPatchInfo
+  nameWithType: PatchProcessor.GetPatchInfo
+  fullName: HarmonyLib.PatchProcessor.GetPatchInfo
+- uid: HarmonyLib.Patches
+  commentId: T:HarmonyLib.Patches
+  parent: HarmonyLib
+  name: Patches
+  nameWithType: Patches
+  fullName: HarmonyLib.Patches
+- uid: HarmonyLib.PatchProcessor.VersionInfo*
+  commentId: Overload:HarmonyLib.PatchProcessor.VersionInfo
+  name: VersionInfo
+  nameWithType: PatchProcessor.VersionInfo
+  fullName: HarmonyLib.PatchProcessor.VersionInfo
+- uid: System.Version
+  commentId: T:System.Version
+  parent: System
+  isExternal: true
+  name: Version
+  nameWithType: Version
+  fullName: System.Version
+- uid: System.Collections.Generic.Dictionary{System.String,System.Version}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,System.Version}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  name: Dictionary<String, Version>
+  nameWithType: Dictionary<String, Version>
+  fullName: System.Collections.Generic.Dictionary<System.String, System.Version>
+  nameWithType.vb: Dictionary(Of String, Version)
+  fullName.vb: System.Collections.Generic.Dictionary(Of System.String, System.Version)
+  name.vb: Dictionary(Of String, Version)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Version
+    name: Version
+    nameWithType: Version
+    fullName: System.Version
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Version
+    name: Version
+    nameWithType: Version
+    fullName: System.Version
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: HarmonyLib.PatchProcessor.GetOriginalInstructions*
+  commentId: Overload:HarmonyLib.PatchProcessor.GetOriginalInstructions
+  name: GetOriginalInstructions
+  nameWithType: PatchProcessor.GetOriginalInstructions
+  fullName: HarmonyLib.PatchProcessor.GetOriginalInstructions
+- uid: System.Reflection.Emit.ILGenerator
+  commentId: T:System.Reflection.Emit.ILGenerator
+  parent: System.Reflection.Emit
+  isExternal: true
+  name: ILGenerator
+  nameWithType: ILGenerator
+  fullName: System.Reflection.Emit.ILGenerator
+- uid: System.Collections.Generic.List{HarmonyLib.CodeInstruction}
+  commentId: T:System.Collections.Generic.List{HarmonyLib.CodeInstruction}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<CodeInstruction>
+  nameWithType: List<CodeInstruction>
+  fullName: System.Collections.Generic.List<HarmonyLib.CodeInstruction>
+  nameWithType.vb: List(Of CodeInstruction)
+  fullName.vb: System.Collections.Generic.List(Of HarmonyLib.CodeInstruction)
+  name.vb: List(Of CodeInstruction)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: HarmonyLib.CodeInstruction
+    name: CodeInstruction
+    nameWithType: CodeInstruction
+    fullName: HarmonyLib.CodeInstruction
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: HarmonyLib.CodeInstruction
+    name: CodeInstruction
+    nameWithType: CodeInstruction
+    fullName: HarmonyLib.CodeInstruction
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Reflection.Emit
+  commentId: N:System.Reflection.Emit
+  isExternal: true
+  name: System.Reflection.Emit
+  nameWithType: System.Reflection.Emit
+  fullName: System.Reflection.Emit
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )

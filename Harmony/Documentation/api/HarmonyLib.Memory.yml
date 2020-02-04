@@ -1,0 +1,576 @@
+### YamlMime:ManagedReference
+items:
+- uid: HarmonyLib.Memory
+  commentId: T:HarmonyLib.Memory
+  id: Memory
+  parent: HarmonyLib
+  children:
+  - HarmonyLib.Memory.DetourMethod(System.Reflection.MethodBase,System.Reflection.MethodBase)
+  - HarmonyLib.Memory.GetMethodStart(System.Reflection.MethodBase,System.Exception@)
+  - HarmonyLib.Memory.MarkForNoInlining(System.Reflection.MethodBase)
+  - HarmonyLib.Memory.WriteJump(System.Int64,System.Int64)
+  langs:
+  - csharp
+  - vb
+  name: Memory
+  nameWithType: Memory
+  fullName: HarmonyLib.Memory
+  type: Class
+  source:
+    remote:
+      path: Harmony/Internal/Memory.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: Memory
+    path: ../Internal/Memory.cs
+    startLine: 8
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: A low level memory helper
+  example: []
+  syntax:
+    content: public static class Memory
+    content.vb: Public Module Memory
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: HarmonyLib.Memory.MarkForNoInlining(System.Reflection.MethodBase)
+  commentId: M:HarmonyLib.Memory.MarkForNoInlining(System.Reflection.MethodBase)
+  id: MarkForNoInlining(System.Reflection.MethodBase)
+  parent: HarmonyLib.Memory
+  langs:
+  - csharp
+  - vb
+  name: MarkForNoInlining(MethodBase)
+  nameWithType: Memory.MarkForNoInlining(MethodBase)
+  fullName: HarmonyLib.Memory.MarkForNoInlining(System.Reflection.MethodBase)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Internal/Memory.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: MarkForNoInlining
+    path: ../Internal/Memory.cs
+    startLine: 12
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Mark method for no inlining
+  example: []
+  syntax:
+    content: public static void MarkForNoInlining(MethodBase method)
+    parameters:
+    - id: method
+      type: System.Reflection.MethodBase
+      description: The method to change
+    content.vb: Public Shared Sub MarkForNoInlining(method As MethodBase)
+  overload: HarmonyLib.Memory.MarkForNoInlining*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: HarmonyLib.Memory.DetourMethod(System.Reflection.MethodBase,System.Reflection.MethodBase)
+  commentId: M:HarmonyLib.Memory.DetourMethod(System.Reflection.MethodBase,System.Reflection.MethodBase)
+  id: DetourMethod(System.Reflection.MethodBase,System.Reflection.MethodBase)
+  parent: HarmonyLib.Memory
+  langs:
+  - csharp
+  - vb
+  name: DetourMethod(MethodBase, MethodBase)
+  nameWithType: Memory.DetourMethod(MethodBase, MethodBase)
+  fullName: HarmonyLib.Memory.DetourMethod(System.Reflection.MethodBase, System.Reflection.MethodBase)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Internal/Memory.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: DetourMethod
+    path: ../Internal/Memory.cs
+    startLine: 29
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Detours a method
+  example: []
+  syntax:
+    content: public static string DetourMethod(MethodBase original, MethodBase replacement)
+    parameters:
+    - id: original
+      type: System.Reflection.MethodBase
+      description: The original method
+    - id: replacement
+      type: System.Reflection.MethodBase
+      description: The replacement method
+    return:
+      type: System.String
+      description: An error string
+    content.vb: Public Shared Function DetourMethod(original As MethodBase, replacement As MethodBase) As String
+  overload: HarmonyLib.Memory.DetourMethod*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: HarmonyLib.Memory.WriteJump(System.Int64,System.Int64)
+  commentId: M:HarmonyLib.Memory.WriteJump(System.Int64,System.Int64)
+  id: WriteJump(System.Int64,System.Int64)
+  parent: HarmonyLib.Memory
+  langs:
+  - csharp
+  - vb
+  name: WriteJump(Int64, Int64)
+  nameWithType: Memory.WriteJump(Int64, Int64)
+  fullName: HarmonyLib.Memory.WriteJump(System.Int64, System.Int64)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Internal/Memory.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: WriteJump
+    path: ../Internal/Memory.cs
+    startLine: 54
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Writes a jump to memory
+  example: []
+  syntax:
+    content: public static string WriteJump(long memory, long destination)
+    parameters:
+    - id: memory
+      type: System.Int64
+      description: The memory address
+    - id: destination
+      type: System.Int64
+      description: Jump destination
+    return:
+      type: System.String
+      description: An error string
+    content.vb: Public Shared Function WriteJump(memory As Long, destination As Long) As String
+  overload: HarmonyLib.Memory.WriteJump*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: HarmonyLib.Memory.GetMethodStart(System.Reflection.MethodBase,System.Exception@)
+  commentId: M:HarmonyLib.Memory.GetMethodStart(System.Reflection.MethodBase,System.Exception@)
+  id: GetMethodStart(System.Reflection.MethodBase,System.Exception@)
+  parent: HarmonyLib.Memory
+  langs:
+  - csharp
+  - vb
+  name: GetMethodStart(MethodBase, out Exception)
+  nameWithType: Memory.GetMethodStart(MethodBase, out Exception)
+  fullName: HarmonyLib.Memory.GetMethodStart(System.Reflection.MethodBase, out System.Exception)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Internal/Memory.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: GetMethodStart
+    path: ../Internal/Memory.cs
+    startLine: 70
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Gets the start of a method in memory
+  example: []
+  syntax:
+    content: public static long GetMethodStart(MethodBase method, out Exception exception)
+    parameters:
+    - id: method
+      type: System.Reflection.MethodBase
+      description: The method
+    - id: exception
+      type: System.Exception
+      description: '[out] Details of the exception'
+    return:
+      type: System.Int64
+      description: The method start address
+    content.vb: Public Shared Function GetMethodStart(method As MethodBase, ByRef exception As Exception) As Long
+  overload: HarmonyLib.Memory.GetMethodStart*
+  nameWithType.vb: Memory.GetMethodStart(MethodBase, ByRef Exception)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: HarmonyLib.Memory.GetMethodStart(System.Reflection.MethodBase, ByRef System.Exception)
+  name.vb: GetMethodStart(MethodBase, ByRef Exception)
+references:
+- uid: HarmonyLib
+  commentId: N:HarmonyLib
+  name: HarmonyLib
+  nameWithType: HarmonyLib
+  fullName: HarmonyLib
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: HarmonyLib.Memory.MarkForNoInlining*
+  commentId: Overload:HarmonyLib.Memory.MarkForNoInlining
+  name: MarkForNoInlining
+  nameWithType: Memory.MarkForNoInlining
+  fullName: HarmonyLib.Memory.MarkForNoInlining
+- uid: System.Reflection.MethodBase
+  commentId: T:System.Reflection.MethodBase
+  parent: System.Reflection
+  isExternal: true
+  name: MethodBase
+  nameWithType: MethodBase
+  fullName: System.Reflection.MethodBase
+- uid: System.Reflection
+  commentId: N:System.Reflection
+  isExternal: true
+  name: System.Reflection
+  nameWithType: System.Reflection
+  fullName: System.Reflection
+- uid: HarmonyLib.Memory.DetourMethod*
+  commentId: Overload:HarmonyLib.Memory.DetourMethod
+  name: DetourMethod
+  nameWithType: Memory.DetourMethod
+  fullName: HarmonyLib.Memory.DetourMethod
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: HarmonyLib.Memory.WriteJump*
+  commentId: Overload:HarmonyLib.Memory.WriteJump
+  name: WriteJump
+  nameWithType: Memory.WriteJump
+  fullName: HarmonyLib.Memory.WriteJump
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  nameWithType: Int64
+  fullName: System.Int64
+- uid: HarmonyLib.Memory.GetMethodStart*
+  commentId: Overload:HarmonyLib.Memory.GetMethodStart
+  name: GetMethodStart
+  nameWithType: Memory.GetMethodStart
+  fullName: HarmonyLib.Memory.GetMethodStart
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception

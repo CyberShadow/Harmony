@@ -1,0 +1,780 @@
+### YamlMime:ManagedReference
+items:
+- uid: HarmonyLib.SymbolExtensions
+  commentId: T:HarmonyLib.SymbolExtensions
+  id: SymbolExtensions
+  parent: HarmonyLib
+  children:
+  - HarmonyLib.SymbolExtensions.GetMethodInfo(System.Linq.Expressions.Expression{System.Action})
+  - HarmonyLib.SymbolExtensions.GetMethodInfo(System.Linq.Expressions.LambdaExpression)
+  - HarmonyLib.SymbolExtensions.GetMethodInfo``1(System.Linq.Expressions.Expression{System.Action{``0}})
+  - HarmonyLib.SymbolExtensions.GetMethodInfo``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})
+  langs:
+  - csharp
+  - vb
+  name: SymbolExtensions
+  nameWithType: SymbolExtensions
+  fullName: HarmonyLib.SymbolExtensions
+  type: Class
+  source:
+    remote:
+      path: Harmony/Tools/SymbolExtensions.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: SymbolExtensions
+    path: ../Tools/SymbolExtensions.cs
+    startLine: 7
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: A helper class to retrieve reflection info for non-private methods
+  example: []
+  syntax:
+    content: public static class SymbolExtensions
+    content.vb: Public Module SymbolExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: HarmonyLib.SymbolExtensions.GetMethodInfo(System.Linq.Expressions.Expression{System.Action})
+  commentId: M:HarmonyLib.SymbolExtensions.GetMethodInfo(System.Linq.Expressions.Expression{System.Action})
+  id: GetMethodInfo(System.Linq.Expressions.Expression{System.Action})
+  parent: HarmonyLib.SymbolExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetMethodInfo(Expression<Action>)
+  nameWithType: SymbolExtensions.GetMethodInfo(Expression<Action>)
+  fullName: HarmonyLib.SymbolExtensions.GetMethodInfo(System.Linq.Expressions.Expression<System.Action>)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/SymbolExtensions.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: GetMethodInfo
+    path: ../Tools/SymbolExtensions.cs
+    startLine: 13
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Given a lambda expression that calls a method, returns the method info
+  example: []
+  syntax:
+    content: public static MethodInfo GetMethodInfo(Expression<Action> expression)
+    parameters:
+    - id: expression
+      type: System.Linq.Expressions.Expression{System.Action}
+      description: The lambda expression using the method
+    return:
+      type: System.Reflection.MethodInfo
+      description: The MethodInfo for the method in the lambda expression
+    content.vb: Public Shared Function GetMethodInfo(expression As Expression(Of Action)) As MethodInfo
+  overload: HarmonyLib.SymbolExtensions.GetMethodInfo*
+  nameWithType.vb: SymbolExtensions.GetMethodInfo(Expression(Of Action))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: HarmonyLib.SymbolExtensions.GetMethodInfo(System.Linq.Expressions.Expression(Of System.Action))
+  name.vb: GetMethodInfo(Expression(Of Action))
+- uid: HarmonyLib.SymbolExtensions.GetMethodInfo``1(System.Linq.Expressions.Expression{System.Action{``0}})
+  commentId: M:HarmonyLib.SymbolExtensions.GetMethodInfo``1(System.Linq.Expressions.Expression{System.Action{``0}})
+  id: GetMethodInfo``1(System.Linq.Expressions.Expression{System.Action{``0}})
+  parent: HarmonyLib.SymbolExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetMethodInfo<T>(Expression<Action<T>>)
+  nameWithType: SymbolExtensions.GetMethodInfo<T>(Expression<Action<T>>)
+  fullName: HarmonyLib.SymbolExtensions.GetMethodInfo<T>(System.Linq.Expressions.Expression<System.Action<T>>)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/SymbolExtensions.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: GetMethodInfo
+    path: ../Tools/SymbolExtensions.cs
+    startLine: 23
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Given a lambda expression that calls a method, returns the method info
+  example: []
+  syntax:
+    content: public static MethodInfo GetMethodInfo<T>(Expression<Action<T>> expression)
+    parameters:
+    - id: expression
+      type: System.Linq.Expressions.Expression{System.Action{{T}}}
+      description: The lambda expression using the method
+    typeParameters:
+    - id: T
+      description: ''
+    return:
+      type: System.Reflection.MethodInfo
+      description: The MethodInfo for the method in the lambda expression
+    content.vb: Public Shared Function GetMethodInfo(Of T)(expression As Expression(Of Action(Of T))) As MethodInfo
+  overload: HarmonyLib.SymbolExtensions.GetMethodInfo*
+  nameWithType.vb: SymbolExtensions.GetMethodInfo(Of T)(Expression(Of Action(Of T)))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: HarmonyLib.SymbolExtensions.GetMethodInfo(Of T)(System.Linq.Expressions.Expression(Of System.Action(Of T)))
+  name.vb: GetMethodInfo(Of T)(Expression(Of Action(Of T)))
+- uid: HarmonyLib.SymbolExtensions.GetMethodInfo``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})
+  commentId: M:HarmonyLib.SymbolExtensions.GetMethodInfo``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})
+  id: GetMethodInfo``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})
+  parent: HarmonyLib.SymbolExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetMethodInfo<T, TResult>(Expression<Func<T, TResult>>)
+  nameWithType: SymbolExtensions.GetMethodInfo<T, TResult>(Expression<Func<T, TResult>>)
+  fullName: HarmonyLib.SymbolExtensions.GetMethodInfo<T, TResult>(System.Linq.Expressions.Expression<System.Func<T, TResult>>)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/SymbolExtensions.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: GetMethodInfo
+    path: ../Tools/SymbolExtensions.cs
+    startLine: 34
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Given a lambda expression that calls a method, returns the method info
+  example: []
+  syntax:
+    content: public static MethodInfo GetMethodInfo<T, TResult>(Expression<Func<T, TResult>> expression)
+    parameters:
+    - id: expression
+      type: System.Linq.Expressions.Expression{System.Func{{T},{TResult}}}
+      description: The lambda expression using the method
+    typeParameters:
+    - id: T
+      description: ''
+    - id: TResult
+      description: ''
+    return:
+      type: System.Reflection.MethodInfo
+      description: The MethodInfo for the method in the lambda expression
+    content.vb: Public Shared Function GetMethodInfo(Of T, TResult)(expression As Expression(Of Func(Of T, TResult))) As MethodInfo
+  overload: HarmonyLib.SymbolExtensions.GetMethodInfo*
+  nameWithType.vb: SymbolExtensions.GetMethodInfo(Of T, TResult)(Expression(Of Func(Of T, TResult)))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: HarmonyLib.SymbolExtensions.GetMethodInfo(Of T, TResult)(System.Linq.Expressions.Expression(Of System.Func(Of T, TResult)))
+  name.vb: GetMethodInfo(Of T, TResult)(Expression(Of Func(Of T, TResult)))
+- uid: HarmonyLib.SymbolExtensions.GetMethodInfo(System.Linq.Expressions.LambdaExpression)
+  commentId: M:HarmonyLib.SymbolExtensions.GetMethodInfo(System.Linq.Expressions.LambdaExpression)
+  id: GetMethodInfo(System.Linq.Expressions.LambdaExpression)
+  parent: HarmonyLib.SymbolExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetMethodInfo(LambdaExpression)
+  nameWithType: SymbolExtensions.GetMethodInfo(LambdaExpression)
+  fullName: HarmonyLib.SymbolExtensions.GetMethodInfo(System.Linq.Expressions.LambdaExpression)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/SymbolExtensions.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: GetMethodInfo
+    path: ../Tools/SymbolExtensions.cs
+    startLine: 43
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Given a lambda expression that calls a method, returns the method info
+  example: []
+  syntax:
+    content: public static MethodInfo GetMethodInfo(LambdaExpression expression)
+    parameters:
+    - id: expression
+      type: System.Linq.Expressions.LambdaExpression
+      description: The lambda expression using the method
+    return:
+      type: System.Reflection.MethodInfo
+      description: The MethodInfo for the method in the lambda expression
+    content.vb: Public Shared Function GetMethodInfo(expression As LambdaExpression) As MethodInfo
+  overload: HarmonyLib.SymbolExtensions.GetMethodInfo*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: HarmonyLib
+  commentId: N:HarmonyLib
+  name: HarmonyLib
+  nameWithType: HarmonyLib
+  fullName: HarmonyLib
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: HarmonyLib.SymbolExtensions.GetMethodInfo*
+  commentId: Overload:HarmonyLib.SymbolExtensions.GetMethodInfo
+  name: GetMethodInfo
+  nameWithType: SymbolExtensions.GetMethodInfo
+  fullName: HarmonyLib.SymbolExtensions.GetMethodInfo
+- uid: System.Linq.Expressions.Expression{System.Action}
+  commentId: T:System.Linq.Expressions.Expression{System.Action}
+  parent: System.Linq.Expressions
+  definition: System.Linq.Expressions.Expression`1
+  name: Expression<Action>
+  nameWithType: Expression<Action>
+  fullName: System.Linq.Expressions.Expression<System.Action>
+  nameWithType.vb: Expression(Of Action)
+  fullName.vb: System.Linq.Expressions.Expression(Of System.Action)
+  name.vb: Expression(Of Action)
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Reflection.MethodInfo
+  commentId: T:System.Reflection.MethodInfo
+  parent: System.Reflection
+  isExternal: true
+  name: MethodInfo
+  nameWithType: MethodInfo
+  fullName: System.Reflection.MethodInfo
+- uid: System.Linq.Expressions.Expression`1
+  commentId: T:System.Linq.Expressions.Expression`1
+  isExternal: true
+  name: Expression<TDelegate>
+  nameWithType: Expression<TDelegate>
+  fullName: System.Linq.Expressions.Expression<TDelegate>
+  nameWithType.vb: Expression(Of TDelegate)
+  fullName.vb: System.Linq.Expressions.Expression(Of TDelegate)
+  name.vb: Expression(Of TDelegate)
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TDelegate
+    nameWithType: TDelegate
+    fullName: TDelegate
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TDelegate
+    nameWithType: TDelegate
+    fullName: TDelegate
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Linq.Expressions
+  commentId: N:System.Linq.Expressions
+  isExternal: true
+  name: System.Linq.Expressions
+  nameWithType: System.Linq.Expressions
+  fullName: System.Linq.Expressions
+- uid: System.Reflection
+  commentId: N:System.Reflection
+  isExternal: true
+  name: System.Reflection
+  nameWithType: System.Reflection
+  fullName: System.Reflection
+- uid: System.Linq.Expressions.Expression{System.Action{{T}}}
+  commentId: T:System.Linq.Expressions.Expression{System.Action{``0}}
+  parent: System.Linq.Expressions
+  definition: System.Linq.Expressions.Expression`1
+  name: Expression<Action<T>>
+  nameWithType: Expression<Action<T>>
+  fullName: System.Linq.Expressions.Expression<System.Action<T>>
+  nameWithType.vb: Expression(Of Action(Of T))
+  fullName.vb: System.Linq.Expressions.Expression(Of System.Action(Of T))
+  name.vb: Expression(Of Action(Of T))
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Linq.Expressions.Expression{System.Func{{T},{TResult}}}
+  commentId: T:System.Linq.Expressions.Expression{System.Func{``0,``1}}
+  parent: System.Linq.Expressions
+  definition: System.Linq.Expressions.Expression`1
+  name: Expression<Func<T, TResult>>
+  nameWithType: Expression<Func<T, TResult>>
+  fullName: System.Linq.Expressions.Expression<System.Func<T, TResult>>
+  nameWithType.vb: Expression(Of Func(Of T, TResult))
+  fullName.vb: System.Linq.Expressions.Expression(Of System.Func(Of T, TResult))
+  name.vb: Expression(Of Func(Of T, TResult))
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Linq.Expressions.LambdaExpression
+  commentId: T:System.Linq.Expressions.LambdaExpression
+  parent: System.Linq.Expressions
+  isExternal: true
+  name: LambdaExpression
+  nameWithType: LambdaExpression
+  fullName: System.Linq.Expressions.LambdaExpression

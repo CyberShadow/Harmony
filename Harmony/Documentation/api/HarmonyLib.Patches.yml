@@ -1,0 +1,741 @@
+### YamlMime:ManagedReference
+items:
+- uid: HarmonyLib.Patches
+  commentId: T:HarmonyLib.Patches
+  id: Patches
+  parent: HarmonyLib
+  children:
+  - HarmonyLib.Patches.#ctor(HarmonyLib.Patch[],HarmonyLib.Patch[],HarmonyLib.Patch[],HarmonyLib.Patch[])
+  - HarmonyLib.Patches.Finalizers
+  - HarmonyLib.Patches.Owners
+  - HarmonyLib.Patches.Postfixes
+  - HarmonyLib.Patches.Prefixes
+  - HarmonyLib.Patches.Transpilers
+  langs:
+  - csharp
+  - vb
+  name: Patches
+  nameWithType: Patches
+  fullName: HarmonyLib.Patches
+  type: Class
+  source:
+    remote:
+      path: Harmony/Public/Patches.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: Patches
+    path: ../Public/Patches.cs
+    startLine: 7
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: A group of patches
+  example: []
+  syntax:
+    content: public class Patches
+    content.vb: Public Class Patches
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: HarmonyLib.Patches.Prefixes
+  commentId: F:HarmonyLib.Patches.Prefixes
+  id: Prefixes
+  parent: HarmonyLib.Patches
+  langs:
+  - csharp
+  - vb
+  name: Prefixes
+  nameWithType: Patches.Prefixes
+  fullName: HarmonyLib.Patches.Prefixes
+  type: Field
+  source:
+    remote:
+      path: Harmony/Public/Patches.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: Prefixes
+    path: ../Public/Patches.cs
+    startLine: 10
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: The prefixes
+  example: []
+  syntax:
+    content: public readonly ReadOnlyCollection<Patch> Prefixes
+    return:
+      type: System.Collections.ObjectModel.ReadOnlyCollection{HarmonyLib.Patch}
+    content.vb: Public ReadOnly Prefixes As ReadOnlyCollection(Of Patch)
+  modifiers.csharp:
+  - public
+  - readonly
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: HarmonyLib.Patches.Postfixes
+  commentId: F:HarmonyLib.Patches.Postfixes
+  id: Postfixes
+  parent: HarmonyLib.Patches
+  langs:
+  - csharp
+  - vb
+  name: Postfixes
+  nameWithType: Patches.Postfixes
+  fullName: HarmonyLib.Patches.Postfixes
+  type: Field
+  source:
+    remote:
+      path: Harmony/Public/Patches.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: Postfixes
+    path: ../Public/Patches.cs
+    startLine: 12
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: The postfixes
+  example: []
+  syntax:
+    content: public readonly ReadOnlyCollection<Patch> Postfixes
+    return:
+      type: System.Collections.ObjectModel.ReadOnlyCollection{HarmonyLib.Patch}
+    content.vb: Public ReadOnly Postfixes As ReadOnlyCollection(Of Patch)
+  modifiers.csharp:
+  - public
+  - readonly
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: HarmonyLib.Patches.Transpilers
+  commentId: F:HarmonyLib.Patches.Transpilers
+  id: Transpilers
+  parent: HarmonyLib.Patches
+  langs:
+  - csharp
+  - vb
+  name: Transpilers
+  nameWithType: Patches.Transpilers
+  fullName: HarmonyLib.Patches.Transpilers
+  type: Field
+  source:
+    remote:
+      path: Harmony/Public/Patches.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: Transpilers
+    path: ../Public/Patches.cs
+    startLine: 14
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: The transpilers
+  example: []
+  syntax:
+    content: public readonly ReadOnlyCollection<Patch> Transpilers
+    return:
+      type: System.Collections.ObjectModel.ReadOnlyCollection{HarmonyLib.Patch}
+    content.vb: Public ReadOnly Transpilers As ReadOnlyCollection(Of Patch)
+  modifiers.csharp:
+  - public
+  - readonly
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: HarmonyLib.Patches.Finalizers
+  commentId: F:HarmonyLib.Patches.Finalizers
+  id: Finalizers
+  parent: HarmonyLib.Patches
+  langs:
+  - csharp
+  - vb
+  name: Finalizers
+  nameWithType: Patches.Finalizers
+  fullName: HarmonyLib.Patches.Finalizers
+  type: Field
+  source:
+    remote:
+      path: Harmony/Public/Patches.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: Finalizers
+    path: ../Public/Patches.cs
+    startLine: 16
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: The finalizers
+  example: []
+  syntax:
+    content: public readonly ReadOnlyCollection<Patch> Finalizers
+    return:
+      type: System.Collections.ObjectModel.ReadOnlyCollection{HarmonyLib.Patch}
+    content.vb: Public ReadOnly Finalizers As ReadOnlyCollection(Of Patch)
+  modifiers.csharp:
+  - public
+  - readonly
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: HarmonyLib.Patches.Owners
+  commentId: P:HarmonyLib.Patches.Owners
+  id: Owners
+  parent: HarmonyLib.Patches
+  langs:
+  - csharp
+  - vb
+  name: Owners
+  nameWithType: Patches.Owners
+  fullName: HarmonyLib.Patches.Owners
+  type: Property
+  source:
+    remote:
+      path: Harmony/Public/Patches.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: Owners
+    path: ../Public/Patches.cs
+    startLine: 21
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Gets all owners (Harmony IDs) or all known patches
+  example: []
+  syntax:
+    content: public ReadOnlyCollection<string> Owners { get; }
+    parameters: []
+    return:
+      type: System.Collections.ObjectModel.ReadOnlyCollection{System.String}
+      description: The patch owners
+    content.vb: Public ReadOnly Property Owners As ReadOnlyCollection(Of String)
+  overload: HarmonyLib.Patches.Owners*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: HarmonyLib.Patches.#ctor(HarmonyLib.Patch[],HarmonyLib.Patch[],HarmonyLib.Patch[],HarmonyLib.Patch[])
+  commentId: M:HarmonyLib.Patches.#ctor(HarmonyLib.Patch[],HarmonyLib.Patch[],HarmonyLib.Patch[],HarmonyLib.Patch[])
+  id: '#ctor(HarmonyLib.Patch[],HarmonyLib.Patch[],HarmonyLib.Patch[],HarmonyLib.Patch[])'
+  parent: HarmonyLib.Patches
+  langs:
+  - csharp
+  - vb
+  name: Patches(Patch[], Patch[], Patch[], Patch[])
+  nameWithType: Patches.Patches(Patch[], Patch[], Patch[], Patch[])
+  fullName: HarmonyLib.Patches.Patches(HarmonyLib.Patch[], HarmonyLib.Patch[], HarmonyLib.Patch[], HarmonyLib.Patch[])
+  type: Constructor
+  source:
+    remote:
+      path: Harmony/Public/Patches.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: .ctor
+    path: ../Public/Patches.cs
+    startLine: 40
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Creates a group of patches
+  example: []
+  syntax:
+    content: public Patches(Patch[] prefixes, Patch[] postfixes, Patch[] transpilers, Patch[] finalizers)
+    parameters:
+    - id: prefixes
+      type: HarmonyLib.Patch[]
+      description: The prefixes
+    - id: postfixes
+      type: HarmonyLib.Patch[]
+      description: The postfixes
+    - id: transpilers
+      type: HarmonyLib.Patch[]
+      description: The transpilers
+    - id: finalizers
+      type: HarmonyLib.Patch[]
+      description: The transpilers
+    content.vb: Public Sub New(prefixes As Patch(), postfixes As Patch(), transpilers As Patch(), finalizers As Patch())
+  overload: HarmonyLib.Patches.#ctor*
+  nameWithType.vb: Patches.Patches(Patch(), Patch(), Patch(), Patch())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: HarmonyLib.Patches.Patches(HarmonyLib.Patch(), HarmonyLib.Patch(), HarmonyLib.Patch(), HarmonyLib.Patch())
+  name.vb: Patches(Patch(), Patch(), Patch(), Patch())
+references:
+- uid: HarmonyLib
+  commentId: N:HarmonyLib
+  name: HarmonyLib
+  nameWithType: HarmonyLib
+  fullName: HarmonyLib
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.ObjectModel.ReadOnlyCollection{HarmonyLib.Patch}
+  commentId: T:System.Collections.ObjectModel.ReadOnlyCollection{HarmonyLib.Patch}
+  parent: System.Collections.ObjectModel
+  definition: System.Collections.ObjectModel.ReadOnlyCollection`1
+  name: ReadOnlyCollection<Patch>
+  nameWithType: ReadOnlyCollection<Patch>
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<HarmonyLib.Patch>
+  nameWithType.vb: ReadOnlyCollection(Of Patch)
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of HarmonyLib.Patch)
+  name.vb: ReadOnlyCollection(Of Patch)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    nameWithType: ReadOnlyCollection
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: HarmonyLib.Patch
+    name: Patch
+    nameWithType: Patch
+    fullName: HarmonyLib.Patch
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    nameWithType: ReadOnlyCollection
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: HarmonyLib.Patch
+    name: Patch
+    nameWithType: Patch
+    fullName: HarmonyLib.Patch
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+  commentId: T:System.Collections.ObjectModel.ReadOnlyCollection`1
+  isExternal: true
+  name: ReadOnlyCollection<T>
+  nameWithType: ReadOnlyCollection<T>
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>
+  nameWithType.vb: ReadOnlyCollection(Of T)
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of T)
+  name.vb: ReadOnlyCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    nameWithType: ReadOnlyCollection
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    nameWithType: ReadOnlyCollection
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel
+  commentId: N:System.Collections.ObjectModel
+  isExternal: true
+  name: System.Collections.ObjectModel
+  nameWithType: System.Collections.ObjectModel
+  fullName: System.Collections.ObjectModel
+- uid: HarmonyLib.Patches.Owners*
+  commentId: Overload:HarmonyLib.Patches.Owners
+  name: Owners
+  nameWithType: Patches.Owners
+  fullName: HarmonyLib.Patches.Owners
+- uid: System.Collections.ObjectModel.ReadOnlyCollection{System.String}
+  commentId: T:System.Collections.ObjectModel.ReadOnlyCollection{System.String}
+  parent: System.Collections.ObjectModel
+  definition: System.Collections.ObjectModel.ReadOnlyCollection`1
+  name: ReadOnlyCollection<String>
+  nameWithType: ReadOnlyCollection<String>
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<System.String>
+  nameWithType.vb: ReadOnlyCollection(Of String)
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of System.String)
+  name.vb: ReadOnlyCollection(Of String)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    nameWithType: ReadOnlyCollection
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    nameWithType: ReadOnlyCollection
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: HarmonyLib.Patches.#ctor*
+  commentId: Overload:HarmonyLib.Patches.#ctor
+  name: Patches
+  nameWithType: Patches.Patches
+  fullName: HarmonyLib.Patches.Patches
+- uid: HarmonyLib.Patch[]
+  isExternal: true
+  name: Patch[]
+  nameWithType: Patch[]
+  fullName: HarmonyLib.Patch[]
+  nameWithType.vb: Patch()
+  fullName.vb: HarmonyLib.Patch()
+  name.vb: Patch()
+  spec.csharp:
+  - uid: HarmonyLib.Patch
+    name: Patch
+    nameWithType: Patch
+    fullName: HarmonyLib.Patch
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: HarmonyLib.Patch
+    name: Patch
+    nameWithType: Patch
+    fullName: HarmonyLib.Patch
+  - name: ()
+    nameWithType: ()
+    fullName: ()

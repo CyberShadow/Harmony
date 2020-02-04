@@ -1,0 +1,61 @@
+### YamlMime:ManagedReference
+items:
+- uid: HarmonyLib.AccessTools.FieldRef`1
+  commentId: T:HarmonyLib.AccessTools.FieldRef`1
+  id: AccessTools.FieldRef`1
+  parent: HarmonyLib
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: AccessTools.FieldRef<F>
+  nameWithType: AccessTools.FieldRef<F>
+  fullName: HarmonyLib.AccessTools.FieldRef<F>
+  type: Delegate
+  source:
+    remote:
+      path: Harmony/Tools/AccessTools.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: FieldRef
+    path: ../Tools/AccessTools.cs
+    startLine: 838
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: A read/writable reference delegate to a static field
+  example: []
+  syntax:
+    content: public delegate F FieldRef<F>();
+    typeParameters:
+    - id: F
+      description: The type of the field
+    return:
+      type: '{F}'
+      description: An readable/assignable object representing the static field
+    content.vb: Public Delegate Function FieldRef(Of F) As F
+  nameWithType.vb: AccessTools.FieldRef(Of F)
+  modifiers.csharp:
+  - public
+  - delegate
+  modifiers.vb:
+  - Public
+  - Delegate
+  fullName.vb: HarmonyLib.AccessTools.FieldRef(Of F)
+  name.vb: AccessTools.FieldRef(Of F)
+references:
+- uid: HarmonyLib
+  commentId: N:HarmonyLib
+  name: HarmonyLib
+  nameWithType: HarmonyLib
+  fullName: HarmonyLib
+- uid: '{F}'
+  commentId: '!:F'
+  definition: F
+  name: F
+  nameWithType: F
+  fullName: F
+- uid: F
+  name: F
+  nameWithType: F
+  fullName: F

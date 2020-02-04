@@ -1,0 +1,77 @@
+### YamlMime:ManagedReference
+items:
+- uid: HarmonyLib.AccessTools.FieldRef`2
+  commentId: T:HarmonyLib.AccessTools.FieldRef`2
+  id: AccessTools.FieldRef`2
+  parent: HarmonyLib
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: AccessTools.FieldRef<T, F>
+  nameWithType: AccessTools.FieldRef<T, F>
+  fullName: HarmonyLib.AccessTools.FieldRef<T, F>
+  type: Delegate
+  source:
+    remote:
+      path: Harmony/Tools/AccessTools.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: FieldRef
+    path: ../Tools/AccessTools.cs
+    startLine: 776
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: A read/writable reference to an instance field
+  example: []
+  syntax:
+    content: public delegate F FieldRef<T, F>(T obj = null);
+    parameters:
+    - id: obj
+      type: '{T}'
+      description: The runtime instance to access the field (leave empty for static fields)
+    typeParameters:
+    - id: T
+      description: The class the field is defined in or &quot;object&quot; if type cannot be accessed at compile time
+    - id: F
+      description: The type of the field
+    return:
+      type: '{F}'
+      description: An readable/assignable object representing the field
+    content.vb: Public Delegate Function FieldRef(Of T, F)(obj As T = Nothing) As F
+  nameWithType.vb: AccessTools.FieldRef(Of T, F)
+  modifiers.csharp:
+  - public
+  - delegate
+  modifiers.vb:
+  - Public
+  - Delegate
+  fullName.vb: HarmonyLib.AccessTools.FieldRef(Of T, F)
+  name.vb: AccessTools.FieldRef(Of T, F)
+references:
+- uid: HarmonyLib
+  commentId: N:HarmonyLib
+  name: HarmonyLib
+  nameWithType: HarmonyLib
+  fullName: HarmonyLib
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: '{F}'
+  commentId: '!:F'
+  definition: F
+  name: F
+  nameWithType: F
+  fullName: F
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: F
+  name: F
+  nameWithType: F
+  fullName: F

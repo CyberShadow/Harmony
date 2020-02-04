@@ -1,0 +1,77 @@
+### YamlMime:ManagedReference
+items:
+- uid: HarmonyLib.SetterHandler`2
+  commentId: T:HarmonyLib.SetterHandler`2
+  id: SetterHandler`2
+  parent: HarmonyLib
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: SetterHandler<T, S>
+  nameWithType: SetterHandler<T, S>
+  fullName: HarmonyLib.SetterHandler<T, S>
+  type: Delegate
+  source:
+    remote:
+      path: Harmony/Extras/FastAccess.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: SetterHandler
+    path: ../Extras/FastAccess.cs
+    startLine: 24
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: A setter delegate type
+  example: []
+  syntax:
+    content: public delegate void SetterHandler<in T, in S>(T source, S value);
+    parameters:
+    - id: source
+      type: '{T}'
+      description: The instance the setter uses
+    - id: value
+      type: '{S}'
+      description: The value the setter uses
+    typeParameters:
+    - id: T
+      description: Type that setter sets field/property value for
+    - id: S
+      description: Type of the value that setter sets
+    content.vb: Public Delegate Sub SetterHandler(Of In T, In S)(source As T, value As S)
+  nameWithType.vb: SetterHandler(Of T, S)
+  modifiers.csharp:
+  - public
+  - delegate
+  modifiers.vb:
+  - Public
+  - Delegate
+  fullName.vb: HarmonyLib.SetterHandler(Of T, S)
+  name.vb: SetterHandler(Of T, S)
+references:
+- uid: HarmonyLib
+  commentId: N:HarmonyLib
+  name: HarmonyLib
+  nameWithType: HarmonyLib
+  fullName: HarmonyLib
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: '{S}'
+  commentId: '!:S'
+  definition: S
+  name: S
+  nameWithType: S
+  fullName: S
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: S
+  name: S
+  nameWithType: S
+  fullName: S

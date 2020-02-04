@@ -1,0 +1,3332 @@
+### YamlMime:ManagedReference
+items:
+- uid: HarmonyLib.CodeMatcher
+  commentId: T:HarmonyLib.CodeMatcher
+  id: CodeMatcher
+  parent: HarmonyLib
+  children:
+  - HarmonyLib.CodeMatcher.#ctor
+  - HarmonyLib.CodeMatcher.#ctor(System.Collections.Generic.IEnumerable{HarmonyLib.CodeInstruction},System.Reflection.Emit.ILGenerator)
+  - HarmonyLib.CodeMatcher.AddLabels(System.Collections.Generic.IEnumerable{System.Reflection.Emit.Label})
+  - HarmonyLib.CodeMatcher.AddLabelsAt(System.Int32,System.Collections.Generic.IEnumerable{System.Reflection.Emit.Label})
+  - HarmonyLib.CodeMatcher.Advance(System.Int32)
+  - HarmonyLib.CodeMatcher.Blocks
+  - HarmonyLib.CodeMatcher.Clone
+  - HarmonyLib.CodeMatcher.CreateLabel(System.Reflection.Emit.Label@)
+  - HarmonyLib.CodeMatcher.CreateLabelAt(System.Int32,System.Reflection.Emit.Label@)
+  - HarmonyLib.CodeMatcher.DistinctLabels(System.Collections.Generic.IEnumerable{HarmonyLib.CodeInstruction})
+  - HarmonyLib.CodeMatcher.End
+  - HarmonyLib.CodeMatcher.Insert(HarmonyLib.CodeInstruction[])
+  - HarmonyLib.CodeMatcher.Insert(System.Collections.Generic.IEnumerable{HarmonyLib.CodeInstruction})
+  - HarmonyLib.CodeMatcher.InsertAndAdvance(HarmonyLib.CodeInstruction[])
+  - HarmonyLib.CodeMatcher.InsertAndAdvance(System.Collections.Generic.IEnumerable{HarmonyLib.CodeInstruction})
+  - HarmonyLib.CodeMatcher.InsertBranch(System.Reflection.Emit.OpCode,System.Int32)
+  - HarmonyLib.CodeMatcher.InsertBranchAndAdvance(System.Reflection.Emit.OpCode,System.Int32)
+  - HarmonyLib.CodeMatcher.Instruction
+  - HarmonyLib.CodeMatcher.InstructionAt(System.Int32)
+  - HarmonyLib.CodeMatcher.InstructionEnumeration
+  - HarmonyLib.CodeMatcher.Instructions
+  - HarmonyLib.CodeMatcher.Instructions(System.Int32)
+  - HarmonyLib.CodeMatcher.InstructionsInRange(System.Int32,System.Int32)
+  - HarmonyLib.CodeMatcher.InstructionsWithOffsets(System.Int32,System.Int32)
+  - HarmonyLib.CodeMatcher.IsInvalid
+  - HarmonyLib.CodeMatcher.IsValid
+  - HarmonyLib.CodeMatcher.Labels
+  - HarmonyLib.CodeMatcher.Length
+  - HarmonyLib.CodeMatcher.MatchBack(System.Boolean,HarmonyLib.CodeMatch[])
+  - HarmonyLib.CodeMatcher.MatchForward(System.Boolean,HarmonyLib.CodeMatch[])
+  - HarmonyLib.CodeMatcher.NamedMatch(System.String)
+  - HarmonyLib.CodeMatcher.Opcode
+  - HarmonyLib.CodeMatcher.Operand
+  - HarmonyLib.CodeMatcher.Pos
+  - HarmonyLib.CodeMatcher.Remaining
+  - HarmonyLib.CodeMatcher.RemoveInstruction
+  - HarmonyLib.CodeMatcher.RemoveInstructions(System.Int32)
+  - HarmonyLib.CodeMatcher.RemoveInstructionsInRange(System.Int32,System.Int32)
+  - HarmonyLib.CodeMatcher.RemoveInstructionsWithOffsets(System.Int32,System.Int32)
+  - HarmonyLib.CodeMatcher.Repeat(System.Action{HarmonyLib.CodeMatcher},System.Action{System.String})
+  - HarmonyLib.CodeMatcher.ReportFailure(System.Reflection.MethodBase,System.Action{System.String})
+  - HarmonyLib.CodeMatcher.SearchBack(System.Func{HarmonyLib.CodeInstruction,System.Boolean})
+  - HarmonyLib.CodeMatcher.SearchForward(System.Func{HarmonyLib.CodeInstruction,System.Boolean})
+  - HarmonyLib.CodeMatcher.Set(System.Reflection.Emit.OpCode,System.Object)
+  - HarmonyLib.CodeMatcher.SetAndAdvance(System.Reflection.Emit.OpCode,System.Object)
+  - HarmonyLib.CodeMatcher.SetInstruction(HarmonyLib.CodeInstruction)
+  - HarmonyLib.CodeMatcher.SetInstructionAndAdvance(HarmonyLib.CodeInstruction)
+  - HarmonyLib.CodeMatcher.SetJumpTo(System.Reflection.Emit.OpCode,System.Int32,System.Reflection.Emit.Label@)
+  - HarmonyLib.CodeMatcher.SetOpcodeAndAdvance(System.Reflection.Emit.OpCode)
+  - HarmonyLib.CodeMatcher.SetOperandAndAdvance(System.Object)
+  - HarmonyLib.CodeMatcher.Start
+  langs:
+  - csharp
+  - vb
+  name: CodeMatcher
+  nameWithType: CodeMatcher
+  fullName: HarmonyLib.CodeMatcher
+  type: Class
+  source:
+    remote:
+      path: Harmony/Tools/CodeMatcher.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: CodeMatcher
+    path: ../Tools/CodeMatcher.cs
+    startLine: 111
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: A CodeInstruction matcher
+  example: []
+  syntax:
+    content: public class CodeMatcher
+    content.vb: Public Class CodeMatcher
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: HarmonyLib.CodeMatcher.Pos
+  commentId: P:HarmonyLib.CodeMatcher.Pos
+  id: Pos
+  parent: HarmonyLib.CodeMatcher
+  langs:
+  - csharp
+  - vb
+  name: Pos
+  nameWithType: CodeMatcher.Pos
+  fullName: HarmonyLib.CodeMatcher.Pos
+  type: Property
+  source:
+    remote:
+      path: Harmony/Tools/CodeMatcher.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: Pos
+    path: ../Tools/CodeMatcher.cs
+    startLine: 119
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: The current position
+  example: []
+  syntax:
+    content: public int Pos { get; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: The index or -1 if out of bounds
+    content.vb: Public ReadOnly Property Pos As Integer
+  overload: HarmonyLib.CodeMatcher.Pos*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: HarmonyLib.CodeMatcher.Length
+  commentId: P:HarmonyLib.CodeMatcher.Length
+  id: Length
+  parent: HarmonyLib.CodeMatcher
+  langs:
+  - csharp
+  - vb
+  name: Length
+  nameWithType: CodeMatcher.Length
+  fullName: HarmonyLib.CodeMatcher.Length
+  type: Property
+  source:
+    remote:
+      path: Harmony/Tools/CodeMatcher.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: Length
+    path: ../Tools/CodeMatcher.cs
+    startLine: 131
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Gets the number of code instructions in this matcher
+  example: []
+  syntax:
+    content: public int Length { get; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: The count
+    content.vb: Public ReadOnly Property Length As Integer
+  overload: HarmonyLib.CodeMatcher.Length*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: HarmonyLib.CodeMatcher.IsValid
+  commentId: P:HarmonyLib.CodeMatcher.IsValid
+  id: IsValid
+  parent: HarmonyLib.CodeMatcher
+  langs:
+  - csharp
+  - vb
+  name: IsValid
+  nameWithType: CodeMatcher.IsValid
+  fullName: HarmonyLib.CodeMatcher.IsValid
+  type: Property
+  source:
+    remote:
+      path: Harmony/Tools/CodeMatcher.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: IsValid
+    path: ../Tools/CodeMatcher.cs
+    startLine: 136
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Checks whether the position of this CodeMatcher is within bounds
+  example: []
+  syntax:
+    content: public bool IsValid { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: True if this CodeMatcher is valid
+    content.vb: Public ReadOnly Property IsValid As Boolean
+  overload: HarmonyLib.CodeMatcher.IsValid*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: HarmonyLib.CodeMatcher.IsInvalid
+  commentId: P:HarmonyLib.CodeMatcher.IsInvalid
+  id: IsInvalid
+  parent: HarmonyLib.CodeMatcher
+  langs:
+  - csharp
+  - vb
+  name: IsInvalid
+  nameWithType: CodeMatcher.IsInvalid
+  fullName: HarmonyLib.CodeMatcher.IsInvalid
+  type: Property
+  source:
+    remote:
+      path: Harmony/Tools/CodeMatcher.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: IsInvalid
+    path: ../Tools/CodeMatcher.cs
+    startLine: 141
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Checks whether the position of this CodeMatcher is outside its bounds
+  example: []
+  syntax:
+    content: public bool IsInvalid { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: True if this CodeMatcher is invalid
+    content.vb: Public ReadOnly Property IsInvalid As Boolean
+  overload: HarmonyLib.CodeMatcher.IsInvalid*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: HarmonyLib.CodeMatcher.Remaining
+  commentId: P:HarmonyLib.CodeMatcher.Remaining
+  id: Remaining
+  parent: HarmonyLib.CodeMatcher
+  langs:
+  - csharp
+  - vb
+  name: Remaining
+  nameWithType: CodeMatcher.Remaining
+  fullName: HarmonyLib.CodeMatcher.Remaining
+  type: Property
+  source:
+    remote:
+      path: Harmony/Tools/CodeMatcher.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: Remaining
+    path: ../Tools/CodeMatcher.cs
+    startLine: 146
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Gets the remaining code instructions
+  example: []
+  syntax:
+    content: public int Remaining { get; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: The remaining count
+    content.vb: Public ReadOnly Property Remaining As Integer
+  overload: HarmonyLib.CodeMatcher.Remaining*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: HarmonyLib.CodeMatcher.Opcode
+  commentId: P:HarmonyLib.CodeMatcher.Opcode
+  id: Opcode
+  parent: HarmonyLib.CodeMatcher
+  langs:
+  - csharp
+  - vb
+  name: Opcode
+  nameWithType: CodeMatcher.Opcode
+  fullName: HarmonyLib.CodeMatcher.Opcode
+  type: Property
+  source:
+    remote:
+      path: Harmony/Tools/CodeMatcher.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: Opcode
+    path: ../Tools/CodeMatcher.cs
+    startLine: 151
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Gets the opcode at the current position
+  example: []
+  syntax:
+    content: public OpCode Opcode { get; }
+    parameters: []
+    return:
+      type: System.Reflection.Emit.OpCode
+      description: The opcode
+    content.vb: Public ReadOnly Property Opcode As OpCode
+  overload: HarmonyLib.CodeMatcher.Opcode*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: HarmonyLib.CodeMatcher.Operand
+  commentId: P:HarmonyLib.CodeMatcher.Operand
+  id: Operand
+  parent: HarmonyLib.CodeMatcher
+  langs:
+  - csharp
+  - vb
+  name: Operand
+  nameWithType: CodeMatcher.Operand
+  fullName: HarmonyLib.CodeMatcher.Operand
+  type: Property
+  source:
+    remote:
+      path: Harmony/Tools/CodeMatcher.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: Operand
+    path: ../Tools/CodeMatcher.cs
+    startLine: 156
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Gets the operand at the current position
+  example: []
+  syntax:
+    content: public object Operand { get; }
+    parameters: []
+    return:
+      type: System.Object
+      description: The operand
+    content.vb: Public ReadOnly Property Operand As Object
+  overload: HarmonyLib.CodeMatcher.Operand*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: HarmonyLib.CodeMatcher.Labels
+  commentId: P:HarmonyLib.CodeMatcher.Labels
+  id: Labels
+  parent: HarmonyLib.CodeMatcher
+  langs:
+  - csharp
+  - vb
+  name: Labels
+  nameWithType: CodeMatcher.Labels
+  fullName: HarmonyLib.CodeMatcher.Labels
+  type: Property
+  source:
+    remote:
+      path: Harmony/Tools/CodeMatcher.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: Labels
+    path: ../Tools/CodeMatcher.cs
+    startLine: 161
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Gets the labels at the current position
+  example: []
+  syntax:
+    content: public List<Label> Labels { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{System.Reflection.Emit.Label}
+      description: The labels
+    content.vb: Public ReadOnly Property Labels As List(Of Label)
+  overload: HarmonyLib.CodeMatcher.Labels*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: HarmonyLib.CodeMatcher.Blocks
+  commentId: P:HarmonyLib.CodeMatcher.Blocks
+  id: Blocks
+  parent: HarmonyLib.CodeMatcher
+  langs:
+  - csharp
+  - vb
+  name: Blocks
+  nameWithType: CodeMatcher.Blocks
+  fullName: HarmonyLib.CodeMatcher.Blocks
+  type: Property
+  source:
+    remote:
+      path: Harmony/Tools/CodeMatcher.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: Blocks
+    path: ../Tools/CodeMatcher.cs
+    startLine: 166
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Gets the exception blocks at the current position
+  example: []
+  syntax:
+    content: public List<ExceptionBlock> Blocks { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{HarmonyLib.ExceptionBlock}
+      description: The blocks
+    content.vb: Public ReadOnly Property Blocks As List(Of ExceptionBlock)
+  overload: HarmonyLib.CodeMatcher.Blocks*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: HarmonyLib.CodeMatcher.#ctor
+  commentId: M:HarmonyLib.CodeMatcher.#ctor
+  id: '#ctor'
+  parent: HarmonyLib.CodeMatcher
+  langs:
+  - csharp
+  - vb
+  name: CodeMatcher()
+  nameWithType: CodeMatcher.CodeMatcher()
+  fullName: HarmonyLib.CodeMatcher.CodeMatcher()
+  type: Constructor
+  source:
+    remote:
+      path: Harmony/Tools/CodeMatcher.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: .ctor
+    path: ../Tools/CodeMatcher.cs
+    startLine: 169
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Creates an empty code matcher
+  example: []
+  syntax:
+    content: public CodeMatcher()
+    content.vb: Public Sub New
+  overload: HarmonyLib.CodeMatcher.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HarmonyLib.CodeMatcher.#ctor(System.Collections.Generic.IEnumerable{HarmonyLib.CodeInstruction},System.Reflection.Emit.ILGenerator)
+  commentId: M:HarmonyLib.CodeMatcher.#ctor(System.Collections.Generic.IEnumerable{HarmonyLib.CodeInstruction},System.Reflection.Emit.ILGenerator)
+  id: '#ctor(System.Collections.Generic.IEnumerable{HarmonyLib.CodeInstruction},System.Reflection.Emit.ILGenerator)'
+  parent: HarmonyLib.CodeMatcher
+  langs:
+  - csharp
+  - vb
+  name: CodeMatcher(IEnumerable<CodeInstruction>, ILGenerator)
+  nameWithType: CodeMatcher.CodeMatcher(IEnumerable<CodeInstruction>, ILGenerator)
+  fullName: HarmonyLib.CodeMatcher.CodeMatcher(System.Collections.Generic.IEnumerable<HarmonyLib.CodeInstruction>, System.Reflection.Emit.ILGenerator)
+  type: Constructor
+  source:
+    remote:
+      path: Harmony/Tools/CodeMatcher.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: .ctor
+    path: ../Tools/CodeMatcher.cs
+    startLine: 177
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Creates a code matcher from an enumeration of instructions
+  example: []
+  syntax:
+    content: public CodeMatcher(IEnumerable<CodeInstruction> instructions, ILGenerator generator = null)
+    parameters:
+    - id: instructions
+      type: System.Collections.Generic.IEnumerable{HarmonyLib.CodeInstruction}
+      description: The instructions (transpiler argument)
+    - id: generator
+      type: System.Reflection.Emit.ILGenerator
+      description: An optional IL generator
+    content.vb: Public Sub New(instructions As IEnumerable(Of CodeInstruction), generator As ILGenerator = Nothing)
+  overload: HarmonyLib.CodeMatcher.#ctor*
+  nameWithType.vb: CodeMatcher.CodeMatcher(IEnumerable(Of CodeInstruction), ILGenerator)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: HarmonyLib.CodeMatcher.CodeMatcher(System.Collections.Generic.IEnumerable(Of HarmonyLib.CodeInstruction), System.Reflection.Emit.ILGenerator)
+  name.vb: CodeMatcher(IEnumerable(Of CodeInstruction), ILGenerator)
+- uid: HarmonyLib.CodeMatcher.Clone
+  commentId: M:HarmonyLib.CodeMatcher.Clone
+  id: Clone
+  parent: HarmonyLib.CodeMatcher
+  langs:
+  - csharp
+  - vb
+  name: Clone()
+  nameWithType: CodeMatcher.Clone()
+  fullName: HarmonyLib.CodeMatcher.Clone()
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/CodeMatcher.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: Clone
+    path: ../Tools/CodeMatcher.cs
+    startLine: 186
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Makes a clone of this instruction matcher
+  example: []
+  syntax:
+    content: public CodeMatcher Clone()
+    return:
+      type: HarmonyLib.CodeMatcher
+      description: A copy of this matcher
+    content.vb: Public Function Clone As CodeMatcher
+  overload: HarmonyLib.CodeMatcher.Clone*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HarmonyLib.CodeMatcher.Instruction
+  commentId: P:HarmonyLib.CodeMatcher.Instruction
+  id: Instruction
+  parent: HarmonyLib.CodeMatcher
+  langs:
+  - csharp
+  - vb
+  name: Instruction
+  nameWithType: CodeMatcher.Instruction
+  fullName: HarmonyLib.CodeMatcher.Instruction
+  type: Property
+  source:
+    remote:
+      path: Harmony/Tools/CodeMatcher.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: Instruction
+    path: ../Tools/CodeMatcher.cs
+    startLine: 201
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Gets instructions at the current position
+  example: []
+  syntax:
+    content: public CodeInstruction Instruction { get; }
+    parameters: []
+    return:
+      type: HarmonyLib.CodeInstruction
+      description: The instruction
+    content.vb: Public ReadOnly Property Instruction As CodeInstruction
+  overload: HarmonyLib.CodeMatcher.Instruction*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: HarmonyLib.CodeMatcher.InstructionAt(System.Int32)
+  commentId: M:HarmonyLib.CodeMatcher.InstructionAt(System.Int32)
+  id: InstructionAt(System.Int32)
+  parent: HarmonyLib.CodeMatcher
+  langs:
+  - csharp
+  - vb
+  name: InstructionAt(Int32)
+  nameWithType: CodeMatcher.InstructionAt(Int32)
+  fullName: HarmonyLib.CodeMatcher.InstructionAt(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/CodeMatcher.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: InstructionAt
+    path: ../Tools/CodeMatcher.cs
+    startLine: 207
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Gets instructions at the current position with offset
+  example: []
+  syntax:
+    content: public CodeInstruction InstructionAt(int offset)
+    parameters:
+    - id: offset
+      type: System.Int32
+      description: The offset
+    return:
+      type: HarmonyLib.CodeInstruction
+      description: The instruction
+    content.vb: Public Function InstructionAt(offset As Integer) As CodeInstruction
+  overload: HarmonyLib.CodeMatcher.InstructionAt*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HarmonyLib.CodeMatcher.Instructions
+  commentId: M:HarmonyLib.CodeMatcher.Instructions
+  id: Instructions
+  parent: HarmonyLib.CodeMatcher
+  langs:
+  - csharp
+  - vb
+  name: Instructions()
+  nameWithType: CodeMatcher.Instructions()
+  fullName: HarmonyLib.CodeMatcher.Instructions()
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/CodeMatcher.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: Instructions
+    path: ../Tools/CodeMatcher.cs
+    startLine: 215
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Gets all instructions
+  example: []
+  syntax:
+    content: public List<CodeInstruction> Instructions()
+    return:
+      type: System.Collections.Generic.List{HarmonyLib.CodeInstruction}
+      description: A list of instructions
+    content.vb: Public Function Instructions As List(Of CodeInstruction)
+  overload: HarmonyLib.CodeMatcher.Instructions*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HarmonyLib.CodeMatcher.InstructionEnumeration
+  commentId: M:HarmonyLib.CodeMatcher.InstructionEnumeration
+  id: InstructionEnumeration
+  parent: HarmonyLib.CodeMatcher
+  langs:
+  - csharp
+  - vb
+  name: InstructionEnumeration()
+  nameWithType: CodeMatcher.InstructionEnumeration()
+  fullName: HarmonyLib.CodeMatcher.InstructionEnumeration()
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/CodeMatcher.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: InstructionEnumeration
+    path: ../Tools/CodeMatcher.cs
+    startLine: 223
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Gets all instructions as an enumeration
+  example: []
+  syntax:
+    content: public IEnumerable<CodeInstruction> InstructionEnumeration()
+    return:
+      type: System.Collections.Generic.IEnumerable{HarmonyLib.CodeInstruction}
+      description: A list of instructions
+    content.vb: Public Function InstructionEnumeration As IEnumerable(Of CodeInstruction)
+  overload: HarmonyLib.CodeMatcher.InstructionEnumeration*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HarmonyLib.CodeMatcher.Instructions(System.Int32)
+  commentId: M:HarmonyLib.CodeMatcher.Instructions(System.Int32)
+  id: Instructions(System.Int32)
+  parent: HarmonyLib.CodeMatcher
+  langs:
+  - csharp
+  - vb
+  name: Instructions(Int32)
+  nameWithType: CodeMatcher.Instructions(Int32)
+  fullName: HarmonyLib.CodeMatcher.Instructions(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/CodeMatcher.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: Instructions
+    path: ../Tools/CodeMatcher.cs
+    startLine: 232
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Gets some instructions counting from current position
+  example: []
+  syntax:
+    content: public List<CodeInstruction> Instructions(int count)
+    parameters:
+    - id: count
+      type: System.Int32
+      description: Number of instructions
+    return:
+      type: System.Collections.Generic.List{HarmonyLib.CodeInstruction}
+      description: A list of instructions
+    content.vb: Public Function Instructions(count As Integer) As List(Of CodeInstruction)
+  overload: HarmonyLib.CodeMatcher.Instructions*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HarmonyLib.CodeMatcher.InstructionsInRange(System.Int32,System.Int32)
+  commentId: M:HarmonyLib.CodeMatcher.InstructionsInRange(System.Int32,System.Int32)
+  id: InstructionsInRange(System.Int32,System.Int32)
+  parent: HarmonyLib.CodeMatcher
+  langs:
+  - csharp
+  - vb
+  name: InstructionsInRange(Int32, Int32)
+  nameWithType: CodeMatcher.InstructionsInRange(Int32, Int32)
+  fullName: HarmonyLib.CodeMatcher.InstructionsInRange(System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/CodeMatcher.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: InstructionsInRange
+    path: ../Tools/CodeMatcher.cs
+    startLine: 242
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Gets all instructions within a range
+  example: []
+  syntax:
+    content: public List<CodeInstruction> InstructionsInRange(int start, int end)
+    parameters:
+    - id: start
+      type: System.Int32
+      description: The start index
+    - id: end
+      type: System.Int32
+      description: The end index
+    return:
+      type: System.Collections.Generic.List{HarmonyLib.CodeInstruction}
+      description: A list of instructions
+    content.vb: Public Function InstructionsInRange(start As Integer, end As Integer) As List(Of CodeInstruction)
+  overload: HarmonyLib.CodeMatcher.InstructionsInRange*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HarmonyLib.CodeMatcher.InstructionsWithOffsets(System.Int32,System.Int32)
+  commentId: M:HarmonyLib.CodeMatcher.InstructionsWithOffsets(System.Int32,System.Int32)
+  id: InstructionsWithOffsets(System.Int32,System.Int32)
+  parent: HarmonyLib.CodeMatcher
+  langs:
+  - csharp
+  - vb
+  name: InstructionsWithOffsets(Int32, Int32)
+  nameWithType: CodeMatcher.InstructionsWithOffsets(Int32, Int32)
+  fullName: HarmonyLib.CodeMatcher.InstructionsWithOffsets(System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/CodeMatcher.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: InstructionsWithOffsets
+    path: ../Tools/CodeMatcher.cs
+    startLine: 255
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Gets all instructions within a range (relative to current position)
+  example: []
+  syntax:
+    content: public List<CodeInstruction> InstructionsWithOffsets(int startOffset, int endOffset)
+    parameters:
+    - id: startOffset
+      type: System.Int32
+      description: The start offset
+    - id: endOffset
+      type: System.Int32
+      description: The end offset
+    return:
+      type: System.Collections.Generic.List{HarmonyLib.CodeInstruction}
+      description: A list of instructions
+    content.vb: Public Function InstructionsWithOffsets(startOffset As Integer, endOffset As Integer) As List(Of CodeInstruction)
+  overload: HarmonyLib.CodeMatcher.InstructionsWithOffsets*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HarmonyLib.CodeMatcher.DistinctLabels(System.Collections.Generic.IEnumerable{HarmonyLib.CodeInstruction})
+  commentId: M:HarmonyLib.CodeMatcher.DistinctLabels(System.Collections.Generic.IEnumerable{HarmonyLib.CodeInstruction})
+  id: DistinctLabels(System.Collections.Generic.IEnumerable{HarmonyLib.CodeInstruction})
+  parent: HarmonyLib.CodeMatcher
+  langs:
+  - csharp
+  - vb
+  name: DistinctLabels(IEnumerable<CodeInstruction>)
+  nameWithType: CodeMatcher.DistinctLabels(IEnumerable<CodeInstruction>)
+  fullName: HarmonyLib.CodeMatcher.DistinctLabels(System.Collections.Generic.IEnumerable<HarmonyLib.CodeInstruction>)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/CodeMatcher.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: DistinctLabels
+    path: ../Tools/CodeMatcher.cs
+    startLine: 264
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Gets a list of all distinct labels
+  example: []
+  syntax:
+    content: public static List<Label> DistinctLabels(IEnumerable<CodeInstruction> instructions)
+    parameters:
+    - id: instructions
+      type: System.Collections.Generic.IEnumerable{HarmonyLib.CodeInstruction}
+      description: The instructions (transpiler argument)
+    return:
+      type: System.Collections.Generic.List{System.Reflection.Emit.Label}
+      description: A list of Labels
+    content.vb: Public Shared Function DistinctLabels(instructions As IEnumerable(Of CodeInstruction)) As List(Of Label)
+  overload: HarmonyLib.CodeMatcher.DistinctLabels*
+  nameWithType.vb: CodeMatcher.DistinctLabels(IEnumerable(Of CodeInstruction))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: HarmonyLib.CodeMatcher.DistinctLabels(System.Collections.Generic.IEnumerable(Of HarmonyLib.CodeInstruction))
+  name.vb: DistinctLabels(IEnumerable(Of CodeInstruction))
+- uid: HarmonyLib.CodeMatcher.ReportFailure(System.Reflection.MethodBase,System.Action{System.String})
+  commentId: M:HarmonyLib.CodeMatcher.ReportFailure(System.Reflection.MethodBase,System.Action{System.String})
+  id: ReportFailure(System.Reflection.MethodBase,System.Action{System.String})
+  parent: HarmonyLib.CodeMatcher
+  langs:
+  - csharp
+  - vb
+  name: ReportFailure(MethodBase, Action<String>)
+  nameWithType: CodeMatcher.ReportFailure(MethodBase, Action<String>)
+  fullName: HarmonyLib.CodeMatcher.ReportFailure(System.Reflection.MethodBase, System.Action<System.String>)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/CodeMatcher.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: ReportFailure
+    path: ../Tools/CodeMatcher.cs
+    startLine: 274
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Reports a failure
+  example: []
+  syntax:
+    content: public bool ReportFailure(MethodBase method, Action<string> logger)
+    parameters:
+    - id: method
+      type: System.Reflection.MethodBase
+      description: The method involved
+    - id: logger
+      type: System.Action{System.String}
+      description: The logger
+    return:
+      type: System.Boolean
+      description: True if current position is invalid and error was logged
+    content.vb: Public Function ReportFailure(method As MethodBase, logger As Action(Of String)) As Boolean
+  overload: HarmonyLib.CodeMatcher.ReportFailure*
+  nameWithType.vb: CodeMatcher.ReportFailure(MethodBase, Action(Of String))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: HarmonyLib.CodeMatcher.ReportFailure(System.Reflection.MethodBase, System.Action(Of System.String))
+  name.vb: ReportFailure(MethodBase, Action(Of String))
+- uid: HarmonyLib.CodeMatcher.SetInstruction(HarmonyLib.CodeInstruction)
+  commentId: M:HarmonyLib.CodeMatcher.SetInstruction(HarmonyLib.CodeInstruction)
+  id: SetInstruction(HarmonyLib.CodeInstruction)
+  parent: HarmonyLib.CodeMatcher
+  langs:
+  - csharp
+  - vb
+  name: SetInstruction(CodeInstruction)
+  nameWithType: CodeMatcher.SetInstruction(CodeInstruction)
+  fullName: HarmonyLib.CodeMatcher.SetInstruction(HarmonyLib.CodeInstruction)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/CodeMatcher.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: SetInstruction
+    path: ../Tools/CodeMatcher.cs
+    startLine: 285
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Sets an instruction at current position
+  example: []
+  syntax:
+    content: public CodeMatcher SetInstruction(CodeInstruction instruction)
+    parameters:
+    - id: instruction
+      type: HarmonyLib.CodeInstruction
+      description: The instruction to set
+    return:
+      type: HarmonyLib.CodeMatcher
+      description: The same code matcher
+    content.vb: Public Function SetInstruction(instruction As CodeInstruction) As CodeMatcher
+  overload: HarmonyLib.CodeMatcher.SetInstruction*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HarmonyLib.CodeMatcher.SetInstructionAndAdvance(HarmonyLib.CodeInstruction)
+  commentId: M:HarmonyLib.CodeMatcher.SetInstructionAndAdvance(HarmonyLib.CodeInstruction)
+  id: SetInstructionAndAdvance(HarmonyLib.CodeInstruction)
+  parent: HarmonyLib.CodeMatcher
+  langs:
+  - csharp
+  - vb
+  name: SetInstructionAndAdvance(CodeInstruction)
+  nameWithType: CodeMatcher.SetInstructionAndAdvance(CodeInstruction)
+  fullName: HarmonyLib.CodeMatcher.SetInstructionAndAdvance(HarmonyLib.CodeInstruction)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/CodeMatcher.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: SetInstructionAndAdvance
+    path: ../Tools/CodeMatcher.cs
+    startLine: 295
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Sets instruction at current position and advances
+  example: []
+  syntax:
+    content: public CodeMatcher SetInstructionAndAdvance(CodeInstruction instruction)
+    parameters:
+    - id: instruction
+      type: HarmonyLib.CodeInstruction
+      description: The instruction
+    return:
+      type: HarmonyLib.CodeMatcher
+      description: The same code matcher
+    content.vb: Public Function SetInstructionAndAdvance(instruction As CodeInstruction) As CodeMatcher
+  overload: HarmonyLib.CodeMatcher.SetInstructionAndAdvance*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HarmonyLib.CodeMatcher.Set(System.Reflection.Emit.OpCode,System.Object)
+  commentId: M:HarmonyLib.CodeMatcher.Set(System.Reflection.Emit.OpCode,System.Object)
+  id: Set(System.Reflection.Emit.OpCode,System.Object)
+  parent: HarmonyLib.CodeMatcher
+  langs:
+  - csharp
+  - vb
+  name: Set(OpCode, Object)
+  nameWithType: CodeMatcher.Set(OpCode, Object)
+  fullName: HarmonyLib.CodeMatcher.Set(System.Reflection.Emit.OpCode, System.Object)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/CodeMatcher.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: Set
+    path: ../Tools/CodeMatcher.cs
+    startLine: 307
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Sets opcode and operand at current position
+  example: []
+  syntax:
+    content: public CodeMatcher Set(OpCode opcode, object operand)
+    parameters:
+    - id: opcode
+      type: System.Reflection.Emit.OpCode
+      description: The opcode
+    - id: operand
+      type: System.Object
+      description: The operand
+    return:
+      type: HarmonyLib.CodeMatcher
+      description: The same code matcher
+    content.vb: Public Function Set(opcode As OpCode, operand As Object) As CodeMatcher
+  overload: HarmonyLib.CodeMatcher.Set*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HarmonyLib.CodeMatcher.SetAndAdvance(System.Reflection.Emit.OpCode,System.Object)
+  commentId: M:HarmonyLib.CodeMatcher.SetAndAdvance(System.Reflection.Emit.OpCode,System.Object)
+  id: SetAndAdvance(System.Reflection.Emit.OpCode,System.Object)
+  parent: HarmonyLib.CodeMatcher
+  langs:
+  - csharp
+  - vb
+  name: SetAndAdvance(OpCode, Object)
+  nameWithType: CodeMatcher.SetAndAdvance(OpCode, Object)
+  fullName: HarmonyLib.CodeMatcher.SetAndAdvance(System.Reflection.Emit.OpCode, System.Object)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/CodeMatcher.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: SetAndAdvance
+    path: ../Tools/CodeMatcher.cs
+    startLine: 319
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Sets opcode and operand at current position and advances
+  example: []
+  syntax:
+    content: public CodeMatcher SetAndAdvance(OpCode opcode, object operand)
+    parameters:
+    - id: opcode
+      type: System.Reflection.Emit.OpCode
+      description: The opcode
+    - id: operand
+      type: System.Object
+      description: The operand
+    return:
+      type: HarmonyLib.CodeMatcher
+      description: The same code matcher
+    content.vb: Public Function SetAndAdvance(opcode As OpCode, operand As Object) As CodeMatcher
+  overload: HarmonyLib.CodeMatcher.SetAndAdvance*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HarmonyLib.CodeMatcher.SetOpcodeAndAdvance(System.Reflection.Emit.OpCode)
+  commentId: M:HarmonyLib.CodeMatcher.SetOpcodeAndAdvance(System.Reflection.Emit.OpCode)
+  id: SetOpcodeAndAdvance(System.Reflection.Emit.OpCode)
+  parent: HarmonyLib.CodeMatcher
+  langs:
+  - csharp
+  - vb
+  name: SetOpcodeAndAdvance(OpCode)
+  nameWithType: CodeMatcher.SetOpcodeAndAdvance(OpCode)
+  fullName: HarmonyLib.CodeMatcher.SetOpcodeAndAdvance(System.Reflection.Emit.OpCode)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/CodeMatcher.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: SetOpcodeAndAdvance
+    path: ../Tools/CodeMatcher.cs
+    startLine: 330
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Sets opcode at current position and advances
+  example: []
+  syntax:
+    content: public CodeMatcher SetOpcodeAndAdvance(OpCode opcode)
+    parameters:
+    - id: opcode
+      type: System.Reflection.Emit.OpCode
+      description: The opcode
+    return:
+      type: HarmonyLib.CodeMatcher
+      description: The same code matcher
+    content.vb: Public Function SetOpcodeAndAdvance(opcode As OpCode) As CodeMatcher
+  overload: HarmonyLib.CodeMatcher.SetOpcodeAndAdvance*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HarmonyLib.CodeMatcher.SetOperandAndAdvance(System.Object)
+  commentId: M:HarmonyLib.CodeMatcher.SetOperandAndAdvance(System.Object)
+  id: SetOperandAndAdvance(System.Object)
+  parent: HarmonyLib.CodeMatcher
+  langs:
+  - csharp
+  - vb
+  name: SetOperandAndAdvance(Object)
+  nameWithType: CodeMatcher.SetOperandAndAdvance(Object)
+  fullName: HarmonyLib.CodeMatcher.SetOperandAndAdvance(System.Object)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/CodeMatcher.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: SetOperandAndAdvance
+    path: ../Tools/CodeMatcher.cs
+    startLine: 341
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Sets operand at current position and advances
+  example: []
+  syntax:
+    content: public CodeMatcher SetOperandAndAdvance(object operand)
+    parameters:
+    - id: operand
+      type: System.Object
+      description: The operand
+    return:
+      type: HarmonyLib.CodeMatcher
+      description: The same code matcher
+    content.vb: Public Function SetOperandAndAdvance(operand As Object) As CodeMatcher
+  overload: HarmonyLib.CodeMatcher.SetOperandAndAdvance*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HarmonyLib.CodeMatcher.CreateLabel(System.Reflection.Emit.Label@)
+  commentId: M:HarmonyLib.CodeMatcher.CreateLabel(System.Reflection.Emit.Label@)
+  id: CreateLabel(System.Reflection.Emit.Label@)
+  parent: HarmonyLib.CodeMatcher
+  langs:
+  - csharp
+  - vb
+  name: CreateLabel(out Label)
+  nameWithType: CodeMatcher.CreateLabel(out Label)
+  fullName: HarmonyLib.CodeMatcher.CreateLabel(out System.Reflection.Emit.Label)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/CodeMatcher.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: CreateLabel
+    path: ../Tools/CodeMatcher.cs
+    startLine: 352
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Creates a label at current position
+  example: []
+  syntax:
+    content: public CodeMatcher CreateLabel(out Label label)
+    parameters:
+    - id: label
+      type: System.Reflection.Emit.Label
+      description: '[out] The label'
+    return:
+      type: HarmonyLib.CodeMatcher
+      description: The same code matcher
+    content.vb: Public Function CreateLabel(ByRef label As Label) As CodeMatcher
+  overload: HarmonyLib.CodeMatcher.CreateLabel*
+  nameWithType.vb: CodeMatcher.CreateLabel(ByRef Label)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: HarmonyLib.CodeMatcher.CreateLabel(ByRef System.Reflection.Emit.Label)
+  name.vb: CreateLabel(ByRef Label)
+- uid: HarmonyLib.CodeMatcher.CreateLabelAt(System.Int32,System.Reflection.Emit.Label@)
+  commentId: M:HarmonyLib.CodeMatcher.CreateLabelAt(System.Int32,System.Reflection.Emit.Label@)
+  id: CreateLabelAt(System.Int32,System.Reflection.Emit.Label@)
+  parent: HarmonyLib.CodeMatcher
+  langs:
+  - csharp
+  - vb
+  name: CreateLabelAt(Int32, out Label)
+  nameWithType: CodeMatcher.CreateLabelAt(Int32, out Label)
+  fullName: HarmonyLib.CodeMatcher.CreateLabelAt(System.Int32, out System.Reflection.Emit.Label)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/CodeMatcher.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: CreateLabelAt
+    path: ../Tools/CodeMatcher.cs
+    startLine: 364
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Creates a label at a position
+  example: []
+  syntax:
+    content: public CodeMatcher CreateLabelAt(int position, out Label label)
+    parameters:
+    - id: position
+      type: System.Int32
+      description: The position
+    - id: label
+      type: System.Reflection.Emit.Label
+      description: '[out] The new label'
+    return:
+      type: HarmonyLib.CodeMatcher
+      description: The same code matcher
+    content.vb: Public Function CreateLabelAt(position As Integer, ByRef label As Label) As CodeMatcher
+  overload: HarmonyLib.CodeMatcher.CreateLabelAt*
+  nameWithType.vb: CodeMatcher.CreateLabelAt(Int32, ByRef Label)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: HarmonyLib.CodeMatcher.CreateLabelAt(System.Int32, ByRef System.Reflection.Emit.Label)
+  name.vb: CreateLabelAt(Int32, ByRef Label)
+- uid: HarmonyLib.CodeMatcher.AddLabels(System.Collections.Generic.IEnumerable{System.Reflection.Emit.Label})
+  commentId: M:HarmonyLib.CodeMatcher.AddLabels(System.Collections.Generic.IEnumerable{System.Reflection.Emit.Label})
+  id: AddLabels(System.Collections.Generic.IEnumerable{System.Reflection.Emit.Label})
+  parent: HarmonyLib.CodeMatcher
+  langs:
+  - csharp
+  - vb
+  name: AddLabels(IEnumerable<Label>)
+  nameWithType: CodeMatcher.AddLabels(IEnumerable<Label>)
+  fullName: HarmonyLib.CodeMatcher.AddLabels(System.Collections.Generic.IEnumerable<System.Reflection.Emit.Label>)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/CodeMatcher.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: AddLabels
+    path: ../Tools/CodeMatcher.cs
+    startLine: 375
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Adds an enumeration of labels to current position
+  example: []
+  syntax:
+    content: public CodeMatcher AddLabels(IEnumerable<Label> labels)
+    parameters:
+    - id: labels
+      type: System.Collections.Generic.IEnumerable{System.Reflection.Emit.Label}
+      description: The labels
+    return:
+      type: HarmonyLib.CodeMatcher
+      description: The same code matcher
+    content.vb: Public Function AddLabels(labels As IEnumerable(Of Label)) As CodeMatcher
+  overload: HarmonyLib.CodeMatcher.AddLabels*
+  nameWithType.vb: CodeMatcher.AddLabels(IEnumerable(Of Label))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: HarmonyLib.CodeMatcher.AddLabels(System.Collections.Generic.IEnumerable(Of System.Reflection.Emit.Label))
+  name.vb: AddLabels(IEnumerable(Of Label))
+- uid: HarmonyLib.CodeMatcher.AddLabelsAt(System.Int32,System.Collections.Generic.IEnumerable{System.Reflection.Emit.Label})
+  commentId: M:HarmonyLib.CodeMatcher.AddLabelsAt(System.Int32,System.Collections.Generic.IEnumerable{System.Reflection.Emit.Label})
+  id: AddLabelsAt(System.Int32,System.Collections.Generic.IEnumerable{System.Reflection.Emit.Label})
+  parent: HarmonyLib.CodeMatcher
+  langs:
+  - csharp
+  - vb
+  name: AddLabelsAt(Int32, IEnumerable<Label>)
+  nameWithType: CodeMatcher.AddLabelsAt(Int32, IEnumerable<Label>)
+  fullName: HarmonyLib.CodeMatcher.AddLabelsAt(System.Int32, System.Collections.Generic.IEnumerable<System.Reflection.Emit.Label>)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/CodeMatcher.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: AddLabelsAt
+    path: ../Tools/CodeMatcher.cs
+    startLine: 386
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Adds an enumeration of labels at a position
+  example: []
+  syntax:
+    content: public CodeMatcher AddLabelsAt(int position, IEnumerable<Label> labels)
+    parameters:
+    - id: position
+      type: System.Int32
+      description: The position
+    - id: labels
+      type: System.Collections.Generic.IEnumerable{System.Reflection.Emit.Label}
+      description: The labels
+    return:
+      type: HarmonyLib.CodeMatcher
+      description: The same code matcher
+    content.vb: Public Function AddLabelsAt(position As Integer, labels As IEnumerable(Of Label)) As CodeMatcher
+  overload: HarmonyLib.CodeMatcher.AddLabelsAt*
+  nameWithType.vb: CodeMatcher.AddLabelsAt(Int32, IEnumerable(Of Label))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: HarmonyLib.CodeMatcher.AddLabelsAt(System.Int32, System.Collections.Generic.IEnumerable(Of System.Reflection.Emit.Label))
+  name.vb: AddLabelsAt(Int32, IEnumerable(Of Label))
+- uid: HarmonyLib.CodeMatcher.SetJumpTo(System.Reflection.Emit.OpCode,System.Int32,System.Reflection.Emit.Label@)
+  commentId: M:HarmonyLib.CodeMatcher.SetJumpTo(System.Reflection.Emit.OpCode,System.Int32,System.Reflection.Emit.Label@)
+  id: SetJumpTo(System.Reflection.Emit.OpCode,System.Int32,System.Reflection.Emit.Label@)
+  parent: HarmonyLib.CodeMatcher
+  langs:
+  - csharp
+  - vb
+  name: SetJumpTo(OpCode, Int32, out Label)
+  nameWithType: CodeMatcher.SetJumpTo(OpCode, Int32, out Label)
+  fullName: HarmonyLib.CodeMatcher.SetJumpTo(System.Reflection.Emit.OpCode, System.Int32, out System.Reflection.Emit.Label)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/CodeMatcher.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: SetJumpTo
+    path: ../Tools/CodeMatcher.cs
+    startLine: 398
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Sets jump to
+  example: []
+  syntax:
+    content: public CodeMatcher SetJumpTo(OpCode opcode, int destination, out Label label)
+    parameters:
+    - id: opcode
+      type: System.Reflection.Emit.OpCode
+      description: Branch instruction
+    - id: destination
+      type: System.Int32
+      description: Destination for the jump
+    - id: label
+      type: System.Reflection.Emit.Label
+      description: '[out] The created label'
+    return:
+      type: HarmonyLib.CodeMatcher
+      description: The same code matcher
+    content.vb: Public Function SetJumpTo(opcode As OpCode, destination As Integer, ByRef label As Label) As CodeMatcher
+  overload: HarmonyLib.CodeMatcher.SetJumpTo*
+  nameWithType.vb: CodeMatcher.SetJumpTo(OpCode, Int32, ByRef Label)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: HarmonyLib.CodeMatcher.SetJumpTo(System.Reflection.Emit.OpCode, System.Int32, ByRef System.Reflection.Emit.Label)
+  name.vb: SetJumpTo(OpCode, Int32, ByRef Label)
+- uid: HarmonyLib.CodeMatcher.Insert(HarmonyLib.CodeInstruction[])
+  commentId: M:HarmonyLib.CodeMatcher.Insert(HarmonyLib.CodeInstruction[])
+  id: Insert(HarmonyLib.CodeInstruction[])
+  parent: HarmonyLib.CodeMatcher
+  langs:
+  - csharp
+  - vb
+  name: Insert(CodeInstruction[])
+  nameWithType: CodeMatcher.Insert(CodeInstruction[])
+  fullName: HarmonyLib.CodeMatcher.Insert(HarmonyLib.CodeInstruction[])
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/CodeMatcher.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: Insert
+    path: ../Tools/CodeMatcher.cs
+    startLine: 409
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Inserts some instructions
+  example: []
+  syntax:
+    content: public CodeMatcher Insert(params CodeInstruction[] instructions)
+    parameters:
+    - id: instructions
+      type: HarmonyLib.CodeInstruction[]
+      description: The instructions
+    return:
+      type: HarmonyLib.CodeMatcher
+      description: The same code matcher
+    content.vb: Public Function Insert(ParamArray instructions As CodeInstruction()) As CodeMatcher
+  overload: HarmonyLib.CodeMatcher.Insert*
+  nameWithType.vb: CodeMatcher.Insert(CodeInstruction())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: HarmonyLib.CodeMatcher.Insert(HarmonyLib.CodeInstruction())
+  name.vb: Insert(CodeInstruction())
+- uid: HarmonyLib.CodeMatcher.Insert(System.Collections.Generic.IEnumerable{HarmonyLib.CodeInstruction})
+  commentId: M:HarmonyLib.CodeMatcher.Insert(System.Collections.Generic.IEnumerable{HarmonyLib.CodeInstruction})
+  id: Insert(System.Collections.Generic.IEnumerable{HarmonyLib.CodeInstruction})
+  parent: HarmonyLib.CodeMatcher
+  langs:
+  - csharp
+  - vb
+  name: Insert(IEnumerable<CodeInstruction>)
+  nameWithType: CodeMatcher.Insert(IEnumerable<CodeInstruction>)
+  fullName: HarmonyLib.CodeMatcher.Insert(System.Collections.Generic.IEnumerable<HarmonyLib.CodeInstruction>)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/CodeMatcher.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: Insert
+    path: ../Tools/CodeMatcher.cs
+    startLine: 419
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Inserts an enumeration of instructions
+  example: []
+  syntax:
+    content: public CodeMatcher Insert(IEnumerable<CodeInstruction> instructions)
+    parameters:
+    - id: instructions
+      type: System.Collections.Generic.IEnumerable{HarmonyLib.CodeInstruction}
+      description: The instructions
+    return:
+      type: HarmonyLib.CodeMatcher
+      description: The same code matcher
+    content.vb: Public Function Insert(instructions As IEnumerable(Of CodeInstruction)) As CodeMatcher
+  overload: HarmonyLib.CodeMatcher.Insert*
+  nameWithType.vb: CodeMatcher.Insert(IEnumerable(Of CodeInstruction))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: HarmonyLib.CodeMatcher.Insert(System.Collections.Generic.IEnumerable(Of HarmonyLib.CodeInstruction))
+  name.vb: Insert(IEnumerable(Of CodeInstruction))
+- uid: HarmonyLib.CodeMatcher.InsertBranch(System.Reflection.Emit.OpCode,System.Int32)
+  commentId: M:HarmonyLib.CodeMatcher.InsertBranch(System.Reflection.Emit.OpCode,System.Int32)
+  id: InsertBranch(System.Reflection.Emit.OpCode,System.Int32)
+  parent: HarmonyLib.CodeMatcher
+  langs:
+  - csharp
+  - vb
+  name: InsertBranch(OpCode, Int32)
+  nameWithType: CodeMatcher.InsertBranch(OpCode, Int32)
+  fullName: HarmonyLib.CodeMatcher.InsertBranch(System.Reflection.Emit.OpCode, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/CodeMatcher.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: InsertBranch
+    path: ../Tools/CodeMatcher.cs
+    startLine: 430
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Inserts a branch
+  example: []
+  syntax:
+    content: public CodeMatcher InsertBranch(OpCode opcode, int destination)
+    parameters:
+    - id: opcode
+      type: System.Reflection.Emit.OpCode
+      description: The branch opcode
+    - id: destination
+      type: System.Int32
+      description: Branch destination
+    return:
+      type: HarmonyLib.CodeMatcher
+      description: The same code matcher
+    content.vb: Public Function InsertBranch(opcode As OpCode, destination As Integer) As CodeMatcher
+  overload: HarmonyLib.CodeMatcher.InsertBranch*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HarmonyLib.CodeMatcher.InsertAndAdvance(HarmonyLib.CodeInstruction[])
+  commentId: M:HarmonyLib.CodeMatcher.InsertAndAdvance(HarmonyLib.CodeInstruction[])
+  id: InsertAndAdvance(HarmonyLib.CodeInstruction[])
+  parent: HarmonyLib.CodeMatcher
+  langs:
+  - csharp
+  - vb
+  name: InsertAndAdvance(CodeInstruction[])
+  nameWithType: CodeMatcher.InsertAndAdvance(CodeInstruction[])
+  fullName: HarmonyLib.CodeMatcher.InsertAndAdvance(HarmonyLib.CodeInstruction[])
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/CodeMatcher.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: InsertAndAdvance
+    path: ../Tools/CodeMatcher.cs
+    startLine: 441
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Inserts some instructions and advances the position
+  example: []
+  syntax:
+    content: public CodeMatcher InsertAndAdvance(params CodeInstruction[] instructions)
+    parameters:
+    - id: instructions
+      type: HarmonyLib.CodeInstruction[]
+      description: The instructions
+    return:
+      type: HarmonyLib.CodeMatcher
+      description: The same code matcher
+    content.vb: Public Function InsertAndAdvance(ParamArray instructions As CodeInstruction()) As CodeMatcher
+  overload: HarmonyLib.CodeMatcher.InsertAndAdvance*
+  nameWithType.vb: CodeMatcher.InsertAndAdvance(CodeInstruction())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: HarmonyLib.CodeMatcher.InsertAndAdvance(HarmonyLib.CodeInstruction())
+  name.vb: InsertAndAdvance(CodeInstruction())
+- uid: HarmonyLib.CodeMatcher.InsertAndAdvance(System.Collections.Generic.IEnumerable{HarmonyLib.CodeInstruction})
+  commentId: M:HarmonyLib.CodeMatcher.InsertAndAdvance(System.Collections.Generic.IEnumerable{HarmonyLib.CodeInstruction})
+  id: InsertAndAdvance(System.Collections.Generic.IEnumerable{HarmonyLib.CodeInstruction})
+  parent: HarmonyLib.CodeMatcher
+  langs:
+  - csharp
+  - vb
+  name: InsertAndAdvance(IEnumerable<CodeInstruction>)
+  nameWithType: CodeMatcher.InsertAndAdvance(IEnumerable<CodeInstruction>)
+  fullName: HarmonyLib.CodeMatcher.InsertAndAdvance(System.Collections.Generic.IEnumerable<HarmonyLib.CodeInstruction>)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/CodeMatcher.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: InsertAndAdvance
+    path: ../Tools/CodeMatcher.cs
+    startLine: 455
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Inserts an enumeration of instructions and advances the position
+  example: []
+  syntax:
+    content: public CodeMatcher InsertAndAdvance(IEnumerable<CodeInstruction> instructions)
+    parameters:
+    - id: instructions
+      type: System.Collections.Generic.IEnumerable{HarmonyLib.CodeInstruction}
+      description: The instructions
+    return:
+      type: HarmonyLib.CodeMatcher
+      description: The same code matcher
+    content.vb: Public Function InsertAndAdvance(instructions As IEnumerable(Of CodeInstruction)) As CodeMatcher
+  overload: HarmonyLib.CodeMatcher.InsertAndAdvance*
+  nameWithType.vb: CodeMatcher.InsertAndAdvance(IEnumerable(Of CodeInstruction))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: HarmonyLib.CodeMatcher.InsertAndAdvance(System.Collections.Generic.IEnumerable(Of HarmonyLib.CodeInstruction))
+  name.vb: InsertAndAdvance(IEnumerable(Of CodeInstruction))
+- uid: HarmonyLib.CodeMatcher.InsertBranchAndAdvance(System.Reflection.Emit.OpCode,System.Int32)
+  commentId: M:HarmonyLib.CodeMatcher.InsertBranchAndAdvance(System.Reflection.Emit.OpCode,System.Int32)
+  id: InsertBranchAndAdvance(System.Reflection.Emit.OpCode,System.Int32)
+  parent: HarmonyLib.CodeMatcher
+  langs:
+  - csharp
+  - vb
+  name: InsertBranchAndAdvance(OpCode, Int32)
+  nameWithType: CodeMatcher.InsertBranchAndAdvance(OpCode, Int32)
+  fullName: HarmonyLib.CodeMatcher.InsertBranchAndAdvance(System.Reflection.Emit.OpCode, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/CodeMatcher.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: InsertBranchAndAdvance
+    path: ../Tools/CodeMatcher.cs
+    startLine: 466
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Inserts a branch and advances the position
+  example: []
+  syntax:
+    content: public CodeMatcher InsertBranchAndAdvance(OpCode opcode, int destination)
+    parameters:
+    - id: opcode
+      type: System.Reflection.Emit.OpCode
+      description: The branch opcode
+    - id: destination
+      type: System.Int32
+      description: Branch destination
+    return:
+      type: HarmonyLib.CodeMatcher
+      description: The same code matcher
+    content.vb: Public Function InsertBranchAndAdvance(opcode As OpCode, destination As Integer) As CodeMatcher
+  overload: HarmonyLib.CodeMatcher.InsertBranchAndAdvance*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HarmonyLib.CodeMatcher.RemoveInstruction
+  commentId: M:HarmonyLib.CodeMatcher.RemoveInstruction
+  id: RemoveInstruction
+  parent: HarmonyLib.CodeMatcher
+  langs:
+  - csharp
+  - vb
+  name: RemoveInstruction()
+  nameWithType: CodeMatcher.RemoveInstruction()
+  fullName: HarmonyLib.CodeMatcher.RemoveInstruction()
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/CodeMatcher.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: RemoveInstruction
+    path: ../Tools/CodeMatcher.cs
+    startLine: 476
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Removes current instruction
+  example: []
+  syntax:
+    content: public CodeMatcher RemoveInstruction()
+    return:
+      type: HarmonyLib.CodeMatcher
+      description: The same code matcher
+    content.vb: Public Function RemoveInstruction As CodeMatcher
+  overload: HarmonyLib.CodeMatcher.RemoveInstruction*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HarmonyLib.CodeMatcher.RemoveInstructions(System.Int32)
+  commentId: M:HarmonyLib.CodeMatcher.RemoveInstructions(System.Int32)
+  id: RemoveInstructions(System.Int32)
+  parent: HarmonyLib.CodeMatcher
+  langs:
+  - csharp
+  - vb
+  name: RemoveInstructions(Int32)
+  nameWithType: CodeMatcher.RemoveInstructions(Int32)
+  fullName: HarmonyLib.CodeMatcher.RemoveInstructions(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/CodeMatcher.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: RemoveInstructions
+    path: ../Tools/CodeMatcher.cs
+    startLine: 486
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Removes some instruction fro current position by count
+  example: []
+  syntax:
+    content: public CodeMatcher RemoveInstructions(int count)
+    parameters:
+    - id: count
+      type: System.Int32
+      description: Number of instructions
+    return:
+      type: HarmonyLib.CodeMatcher
+      description: The same code matcher
+    content.vb: Public Function RemoveInstructions(count As Integer) As CodeMatcher
+  overload: HarmonyLib.CodeMatcher.RemoveInstructions*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HarmonyLib.CodeMatcher.RemoveInstructionsInRange(System.Int32,System.Int32)
+  commentId: M:HarmonyLib.CodeMatcher.RemoveInstructionsInRange(System.Int32,System.Int32)
+  id: RemoveInstructionsInRange(System.Int32,System.Int32)
+  parent: HarmonyLib.CodeMatcher
+  langs:
+  - csharp
+  - vb
+  name: RemoveInstructionsInRange(Int32, Int32)
+  nameWithType: CodeMatcher.RemoveInstructionsInRange(Int32, Int32)
+  fullName: HarmonyLib.CodeMatcher.RemoveInstructionsInRange(System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/CodeMatcher.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: RemoveInstructionsInRange
+    path: ../Tools/CodeMatcher.cs
+    startLine: 497
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Removes the instructions in a range
+  example: []
+  syntax:
+    content: public CodeMatcher RemoveInstructionsInRange(int start, int end)
+    parameters:
+    - id: start
+      type: System.Int32
+      description: The start
+    - id: end
+      type: System.Int32
+      description: The end
+    return:
+      type: HarmonyLib.CodeMatcher
+      description: The same code matcher
+    content.vb: Public Function RemoveInstructionsInRange(start As Integer, end As Integer) As CodeMatcher
+  overload: HarmonyLib.CodeMatcher.RemoveInstructionsInRange*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HarmonyLib.CodeMatcher.RemoveInstructionsWithOffsets(System.Int32,System.Int32)
+  commentId: M:HarmonyLib.CodeMatcher.RemoveInstructionsWithOffsets(System.Int32,System.Int32)
+  id: RemoveInstructionsWithOffsets(System.Int32,System.Int32)
+  parent: HarmonyLib.CodeMatcher
+  langs:
+  - csharp
+  - vb
+  name: RemoveInstructionsWithOffsets(Int32, Int32)
+  nameWithType: CodeMatcher.RemoveInstructionsWithOffsets(Int32, Int32)
+  fullName: HarmonyLib.CodeMatcher.RemoveInstructionsWithOffsets(System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/CodeMatcher.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: RemoveInstructionsWithOffsets
+    path: ../Tools/CodeMatcher.cs
+    startLine: 509
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Removes the instructions in a offset range
+  example: []
+  syntax:
+    content: public CodeMatcher RemoveInstructionsWithOffsets(int startOffset, int endOffset)
+    parameters:
+    - id: startOffset
+      type: System.Int32
+      description: The start offset
+    - id: endOffset
+      type: System.Int32
+      description: The end offset
+    return:
+      type: HarmonyLib.CodeMatcher
+      description: The same code matcher
+    content.vb: Public Function RemoveInstructionsWithOffsets(startOffset As Integer, endOffset As Integer) As CodeMatcher
+  overload: HarmonyLib.CodeMatcher.RemoveInstructionsWithOffsets*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HarmonyLib.CodeMatcher.Advance(System.Int32)
+  commentId: M:HarmonyLib.CodeMatcher.Advance(System.Int32)
+  id: Advance(System.Int32)
+  parent: HarmonyLib.CodeMatcher
+  langs:
+  - csharp
+  - vb
+  name: Advance(Int32)
+  nameWithType: CodeMatcher.Advance(Int32)
+  fullName: HarmonyLib.CodeMatcher.Advance(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/CodeMatcher.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: Advance
+    path: ../Tools/CodeMatcher.cs
+    startLine: 519
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Advances the current position
+  example: []
+  syntax:
+    content: public CodeMatcher Advance(int offset)
+    parameters:
+    - id: offset
+      type: System.Int32
+      description: The offset
+    return:
+      type: HarmonyLib.CodeMatcher
+      description: The same code matcher
+    content.vb: Public Function Advance(offset As Integer) As CodeMatcher
+  overload: HarmonyLib.CodeMatcher.Advance*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HarmonyLib.CodeMatcher.Start
+  commentId: M:HarmonyLib.CodeMatcher.Start
+  id: Start
+  parent: HarmonyLib.CodeMatcher
+  langs:
+  - csharp
+  - vb
+  name: Start()
+  nameWithType: CodeMatcher.Start()
+  fullName: HarmonyLib.CodeMatcher.Start()
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/CodeMatcher.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: Start
+    path: ../Tools/CodeMatcher.cs
+    startLine: 529
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Moves the current position to the start
+  example: []
+  syntax:
+    content: public CodeMatcher Start()
+    return:
+      type: HarmonyLib.CodeMatcher
+      description: The same code matcher
+    content.vb: Public Function Start As CodeMatcher
+  overload: HarmonyLib.CodeMatcher.Start*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HarmonyLib.CodeMatcher.End
+  commentId: M:HarmonyLib.CodeMatcher.End
+  id: End
+  parent: HarmonyLib.CodeMatcher
+  langs:
+  - csharp
+  - vb
+  name: End()
+  nameWithType: CodeMatcher.End()
+  fullName: HarmonyLib.CodeMatcher.End()
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/CodeMatcher.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: End
+    path: ../Tools/CodeMatcher.cs
+    startLine: 538
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Moves the current position to the end
+  example: []
+  syntax:
+    content: public CodeMatcher End()
+    return:
+      type: HarmonyLib.CodeMatcher
+      description: The same code matcher
+    content.vb: Public Function End As CodeMatcher
+  overload: HarmonyLib.CodeMatcher.End*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HarmonyLib.CodeMatcher.SearchForward(System.Func{HarmonyLib.CodeInstruction,System.Boolean})
+  commentId: M:HarmonyLib.CodeMatcher.SearchForward(System.Func{HarmonyLib.CodeInstruction,System.Boolean})
+  id: SearchForward(System.Func{HarmonyLib.CodeInstruction,System.Boolean})
+  parent: HarmonyLib.CodeMatcher
+  langs:
+  - csharp
+  - vb
+  name: SearchForward(Func<CodeInstruction, Boolean>)
+  nameWithType: CodeMatcher.SearchForward(Func<CodeInstruction, Boolean>)
+  fullName: HarmonyLib.CodeMatcher.SearchForward(System.Func<HarmonyLib.CodeInstruction, System.Boolean>)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/CodeMatcher.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: SearchForward
+    path: ../Tools/CodeMatcher.cs
+    startLine: 548
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Searches forward with a predicate and advances position
+  example: []
+  syntax:
+    content: public CodeMatcher SearchForward(Func<CodeInstruction, bool> predicate)
+    parameters:
+    - id: predicate
+      type: System.Func{HarmonyLib.CodeInstruction,System.Boolean}
+      description: The predicate
+    return:
+      type: HarmonyLib.CodeMatcher
+      description: The same code matcher
+    content.vb: Public Function SearchForward(predicate As Func(Of CodeInstruction, Boolean)) As CodeMatcher
+  overload: HarmonyLib.CodeMatcher.SearchForward*
+  nameWithType.vb: CodeMatcher.SearchForward(Func(Of CodeInstruction, Boolean))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: HarmonyLib.CodeMatcher.SearchForward(System.Func(Of HarmonyLib.CodeInstruction, System.Boolean))
+  name.vb: SearchForward(Func(Of CodeInstruction, Boolean))
+- uid: HarmonyLib.CodeMatcher.SearchBack(System.Func{HarmonyLib.CodeInstruction,System.Boolean})
+  commentId: M:HarmonyLib.CodeMatcher.SearchBack(System.Func{HarmonyLib.CodeInstruction,System.Boolean})
+  id: SearchBack(System.Func{HarmonyLib.CodeInstruction,System.Boolean})
+  parent: HarmonyLib.CodeMatcher
+  langs:
+  - csharp
+  - vb
+  name: SearchBack(Func<CodeInstruction, Boolean>)
+  nameWithType: CodeMatcher.SearchBack(Func<CodeInstruction, Boolean>)
+  fullName: HarmonyLib.CodeMatcher.SearchBack(System.Func<HarmonyLib.CodeInstruction, System.Boolean>)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/CodeMatcher.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: SearchBack
+    path: ../Tools/CodeMatcher.cs
+    startLine: 557
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Searches backwards with a predicate and reverses position
+  example: []
+  syntax:
+    content: public CodeMatcher SearchBack(Func<CodeInstruction, bool> predicate)
+    parameters:
+    - id: predicate
+      type: System.Func{HarmonyLib.CodeInstruction,System.Boolean}
+      description: The predicate
+    return:
+      type: HarmonyLib.CodeMatcher
+      description: The same code matcher
+    content.vb: Public Function SearchBack(predicate As Func(Of CodeInstruction, Boolean)) As CodeMatcher
+  overload: HarmonyLib.CodeMatcher.SearchBack*
+  nameWithType.vb: CodeMatcher.SearchBack(Func(Of CodeInstruction, Boolean))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: HarmonyLib.CodeMatcher.SearchBack(System.Func(Of HarmonyLib.CodeInstruction, System.Boolean))
+  name.vb: SearchBack(Func(Of CodeInstruction, Boolean))
+- uid: HarmonyLib.CodeMatcher.MatchForward(System.Boolean,HarmonyLib.CodeMatch[])
+  commentId: M:HarmonyLib.CodeMatcher.MatchForward(System.Boolean,HarmonyLib.CodeMatch[])
+  id: MatchForward(System.Boolean,HarmonyLib.CodeMatch[])
+  parent: HarmonyLib.CodeMatcher
+  langs:
+  - csharp
+  - vb
+  name: MatchForward(Boolean, CodeMatch[])
+  nameWithType: CodeMatcher.MatchForward(Boolean, CodeMatch[])
+  fullName: HarmonyLib.CodeMatcher.MatchForward(System.Boolean, HarmonyLib.CodeMatch[])
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/CodeMatcher.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: MatchForward
+    path: ../Tools/CodeMatcher.cs
+    startLine: 576
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Matches forward and advances position
+  example: []
+  syntax:
+    content: public CodeMatcher MatchForward(bool useEnd, params CodeMatch[] matches)
+    parameters:
+    - id: useEnd
+      type: System.Boolean
+      description: True to set position to end of match, false to set it to the beginning of the match
+    - id: matches
+      type: HarmonyLib.CodeMatch[]
+      description: Some code matches
+    return:
+      type: HarmonyLib.CodeMatcher
+      description: The same code matcher
+    content.vb: Public Function MatchForward(useEnd As Boolean, ParamArray matches As CodeMatch()) As CodeMatcher
+  overload: HarmonyLib.CodeMatcher.MatchForward*
+  nameWithType.vb: CodeMatcher.MatchForward(Boolean, CodeMatch())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: HarmonyLib.CodeMatcher.MatchForward(System.Boolean, HarmonyLib.CodeMatch())
+  name.vb: MatchForward(Boolean, CodeMatch())
+- uid: HarmonyLib.CodeMatcher.MatchBack(System.Boolean,HarmonyLib.CodeMatch[])
+  commentId: M:HarmonyLib.CodeMatcher.MatchBack(System.Boolean,HarmonyLib.CodeMatch[])
+  id: MatchBack(System.Boolean,HarmonyLib.CodeMatch[])
+  parent: HarmonyLib.CodeMatcher
+  langs:
+  - csharp
+  - vb
+  name: MatchBack(Boolean, CodeMatch[])
+  nameWithType: CodeMatcher.MatchBack(Boolean, CodeMatch[])
+  fullName: HarmonyLib.CodeMatcher.MatchBack(System.Boolean, HarmonyLib.CodeMatch[])
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/CodeMatcher.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: MatchBack
+    path: ../Tools/CodeMatcher.cs
+    startLine: 586
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Matches backwards and reverses position
+  example: []
+  syntax:
+    content: public CodeMatcher MatchBack(bool useEnd, params CodeMatch[] matches)
+    parameters:
+    - id: useEnd
+      type: System.Boolean
+      description: True to set position to end of match, false to set it to the beginning of the match
+    - id: matches
+      type: HarmonyLib.CodeMatch[]
+      description: Some code matches
+    return:
+      type: HarmonyLib.CodeMatcher
+      description: The same code matcher
+    content.vb: Public Function MatchBack(useEnd As Boolean, ParamArray matches As CodeMatch()) As CodeMatcher
+  overload: HarmonyLib.CodeMatcher.MatchBack*
+  nameWithType.vb: CodeMatcher.MatchBack(Boolean, CodeMatch())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: HarmonyLib.CodeMatcher.MatchBack(System.Boolean, HarmonyLib.CodeMatch())
+  name.vb: MatchBack(Boolean, CodeMatch())
+- uid: HarmonyLib.CodeMatcher.Repeat(System.Action{HarmonyLib.CodeMatcher},System.Action{System.String})
+  commentId: M:HarmonyLib.CodeMatcher.Repeat(System.Action{HarmonyLib.CodeMatcher},System.Action{System.String})
+  id: Repeat(System.Action{HarmonyLib.CodeMatcher},System.Action{System.String})
+  parent: HarmonyLib.CodeMatcher
+  langs:
+  - csharp
+  - vb
+  name: Repeat(Action<CodeMatcher>, Action<String>)
+  nameWithType: CodeMatcher.Repeat(Action<CodeMatcher>, Action<String>)
+  fullName: HarmonyLib.CodeMatcher.Repeat(System.Action<HarmonyLib.CodeMatcher>, System.Action<System.String>)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/CodeMatcher.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: Repeat
+    path: ../Tools/CodeMatcher.cs
+    startLine: 614
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Repeats a match action until boundaries are met
+  example: []
+  syntax:
+    content: public CodeMatcher Repeat(Action<CodeMatcher> matchAction, Action<string> notFoundAction = null)
+    parameters:
+    - id: matchAction
+      type: System.Action{HarmonyLib.CodeMatcher}
+      description: The match action
+    - id: notFoundAction
+      type: System.Action{System.String}
+      description: An optional action that is executed when no match is found
+    return:
+      type: HarmonyLib.CodeMatcher
+      description: The same code matcher
+    content.vb: Public Function Repeat(matchAction As Action(Of CodeMatcher), notFoundAction As Action(Of String) = Nothing) As CodeMatcher
+  overload: HarmonyLib.CodeMatcher.Repeat*
+  nameWithType.vb: CodeMatcher.Repeat(Action(Of CodeMatcher), Action(Of String))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: HarmonyLib.CodeMatcher.Repeat(System.Action(Of HarmonyLib.CodeMatcher), System.Action(Of System.String))
+  name.vb: Repeat(Action(Of CodeMatcher), Action(Of String))
+- uid: HarmonyLib.CodeMatcher.NamedMatch(System.String)
+  commentId: M:HarmonyLib.CodeMatcher.NamedMatch(System.String)
+  id: NamedMatch(System.String)
+  parent: HarmonyLib.CodeMatcher
+  langs:
+  - csharp
+  - vb
+  name: NamedMatch(String)
+  nameWithType: CodeMatcher.NamedMatch(String)
+  fullName: HarmonyLib.CodeMatcher.NamedMatch(System.String)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/CodeMatcher.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: NamedMatch
+    path: ../Tools/CodeMatcher.cs
+    startLine: 638
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Gets a match by its name
+  example: []
+  syntax:
+    content: public CodeInstruction NamedMatch(string name)
+    parameters:
+    - id: name
+      type: System.String
+      description: The match name
+    return:
+      type: HarmonyLib.CodeInstruction
+      description: An instruction
+    content.vb: Public Function NamedMatch(name As String) As CodeInstruction
+  overload: HarmonyLib.CodeMatcher.NamedMatch*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: HarmonyLib
+  commentId: N:HarmonyLib
+  name: HarmonyLib
+  nameWithType: HarmonyLib
+  fullName: HarmonyLib
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: HarmonyLib.CodeMatcher.Pos*
+  commentId: Overload:HarmonyLib.CodeMatcher.Pos
+  name: Pos
+  nameWithType: CodeMatcher.Pos
+  fullName: HarmonyLib.CodeMatcher.Pos
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: HarmonyLib.CodeMatcher.Length*
+  commentId: Overload:HarmonyLib.CodeMatcher.Length
+  name: Length
+  nameWithType: CodeMatcher.Length
+  fullName: HarmonyLib.CodeMatcher.Length
+- uid: HarmonyLib.CodeMatcher.IsValid*
+  commentId: Overload:HarmonyLib.CodeMatcher.IsValid
+  name: IsValid
+  nameWithType: CodeMatcher.IsValid
+  fullName: HarmonyLib.CodeMatcher.IsValid
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: HarmonyLib.CodeMatcher.IsInvalid*
+  commentId: Overload:HarmonyLib.CodeMatcher.IsInvalid
+  name: IsInvalid
+  nameWithType: CodeMatcher.IsInvalid
+  fullName: HarmonyLib.CodeMatcher.IsInvalid
+- uid: HarmonyLib.CodeMatcher.Remaining*
+  commentId: Overload:HarmonyLib.CodeMatcher.Remaining
+  name: Remaining
+  nameWithType: CodeMatcher.Remaining
+  fullName: HarmonyLib.CodeMatcher.Remaining
+- uid: HarmonyLib.CodeMatcher.Opcode*
+  commentId: Overload:HarmonyLib.CodeMatcher.Opcode
+  name: Opcode
+  nameWithType: CodeMatcher.Opcode
+  fullName: HarmonyLib.CodeMatcher.Opcode
+- uid: System.Reflection.Emit.OpCode
+  commentId: T:System.Reflection.Emit.OpCode
+  parent: System.Reflection.Emit
+  isExternal: true
+  name: OpCode
+  nameWithType: OpCode
+  fullName: System.Reflection.Emit.OpCode
+- uid: System.Reflection.Emit
+  commentId: N:System.Reflection.Emit
+  isExternal: true
+  name: System.Reflection.Emit
+  nameWithType: System.Reflection.Emit
+  fullName: System.Reflection.Emit
+- uid: HarmonyLib.CodeMatcher.Operand*
+  commentId: Overload:HarmonyLib.CodeMatcher.Operand
+  name: Operand
+  nameWithType: CodeMatcher.Operand
+  fullName: HarmonyLib.CodeMatcher.Operand
+- uid: HarmonyLib.CodeMatcher.Labels*
+  commentId: Overload:HarmonyLib.CodeMatcher.Labels
+  name: Labels
+  nameWithType: CodeMatcher.Labels
+  fullName: HarmonyLib.CodeMatcher.Labels
+- uid: System.Collections.Generic.List{System.Reflection.Emit.Label}
+  commentId: T:System.Collections.Generic.List{System.Reflection.Emit.Label}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Label>
+  nameWithType: List<Label>
+  fullName: System.Collections.Generic.List<System.Reflection.Emit.Label>
+  nameWithType.vb: List(Of Label)
+  fullName.vb: System.Collections.Generic.List(Of System.Reflection.Emit.Label)
+  name.vb: List(Of Label)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Reflection.Emit.Label
+    name: Label
+    nameWithType: Label
+    fullName: System.Reflection.Emit.Label
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Reflection.Emit.Label
+    name: Label
+    nameWithType: Label
+    fullName: System.Reflection.Emit.Label
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: HarmonyLib.CodeMatcher.Blocks*
+  commentId: Overload:HarmonyLib.CodeMatcher.Blocks
+  name: Blocks
+  nameWithType: CodeMatcher.Blocks
+  fullName: HarmonyLib.CodeMatcher.Blocks
+- uid: System.Collections.Generic.List{HarmonyLib.ExceptionBlock}
+  commentId: T:System.Collections.Generic.List{HarmonyLib.ExceptionBlock}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<ExceptionBlock>
+  nameWithType: List<ExceptionBlock>
+  fullName: System.Collections.Generic.List<HarmonyLib.ExceptionBlock>
+  nameWithType.vb: List(Of ExceptionBlock)
+  fullName.vb: System.Collections.Generic.List(Of HarmonyLib.ExceptionBlock)
+  name.vb: List(Of ExceptionBlock)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: HarmonyLib.ExceptionBlock
+    name: ExceptionBlock
+    nameWithType: ExceptionBlock
+    fullName: HarmonyLib.ExceptionBlock
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: HarmonyLib.ExceptionBlock
+    name: ExceptionBlock
+    nameWithType: ExceptionBlock
+    fullName: HarmonyLib.ExceptionBlock
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: HarmonyLib.CodeMatcher.#ctor*
+  commentId: Overload:HarmonyLib.CodeMatcher.#ctor
+  name: CodeMatcher
+  nameWithType: CodeMatcher.CodeMatcher
+  fullName: HarmonyLib.CodeMatcher.CodeMatcher
+- uid: System.Collections.Generic.IEnumerable{HarmonyLib.CodeInstruction}
+  commentId: T:System.Collections.Generic.IEnumerable{HarmonyLib.CodeInstruction}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<CodeInstruction>
+  nameWithType: IEnumerable<CodeInstruction>
+  fullName: System.Collections.Generic.IEnumerable<HarmonyLib.CodeInstruction>
+  nameWithType.vb: IEnumerable(Of CodeInstruction)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of HarmonyLib.CodeInstruction)
+  name.vb: IEnumerable(Of CodeInstruction)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: HarmonyLib.CodeInstruction
+    name: CodeInstruction
+    nameWithType: CodeInstruction
+    fullName: HarmonyLib.CodeInstruction
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: HarmonyLib.CodeInstruction
+    name: CodeInstruction
+    nameWithType: CodeInstruction
+    fullName: HarmonyLib.CodeInstruction
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Reflection.Emit.ILGenerator
+  commentId: T:System.Reflection.Emit.ILGenerator
+  parent: System.Reflection.Emit
+  isExternal: true
+  name: ILGenerator
+  nameWithType: ILGenerator
+  fullName: System.Reflection.Emit.ILGenerator
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: HarmonyLib.CodeMatcher.Clone*
+  commentId: Overload:HarmonyLib.CodeMatcher.Clone
+  name: Clone
+  nameWithType: CodeMatcher.Clone
+  fullName: HarmonyLib.CodeMatcher.Clone
+- uid: HarmonyLib.CodeMatcher
+  commentId: T:HarmonyLib.CodeMatcher
+  parent: HarmonyLib
+  name: CodeMatcher
+  nameWithType: CodeMatcher
+  fullName: HarmonyLib.CodeMatcher
+- uid: HarmonyLib.CodeMatcher.Instruction*
+  commentId: Overload:HarmonyLib.CodeMatcher.Instruction
+  name: Instruction
+  nameWithType: CodeMatcher.Instruction
+  fullName: HarmonyLib.CodeMatcher.Instruction
+- uid: HarmonyLib.CodeInstruction
+  commentId: T:HarmonyLib.CodeInstruction
+  parent: HarmonyLib
+  name: CodeInstruction
+  nameWithType: CodeInstruction
+  fullName: HarmonyLib.CodeInstruction
+- uid: HarmonyLib.CodeMatcher.InstructionAt*
+  commentId: Overload:HarmonyLib.CodeMatcher.InstructionAt
+  name: InstructionAt
+  nameWithType: CodeMatcher.InstructionAt
+  fullName: HarmonyLib.CodeMatcher.InstructionAt
+- uid: HarmonyLib.CodeMatcher.Instructions*
+  commentId: Overload:HarmonyLib.CodeMatcher.Instructions
+  name: Instructions
+  nameWithType: CodeMatcher.Instructions
+  fullName: HarmonyLib.CodeMatcher.Instructions
+- uid: System.Collections.Generic.List{HarmonyLib.CodeInstruction}
+  commentId: T:System.Collections.Generic.List{HarmonyLib.CodeInstruction}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<CodeInstruction>
+  nameWithType: List<CodeInstruction>
+  fullName: System.Collections.Generic.List<HarmonyLib.CodeInstruction>
+  nameWithType.vb: List(Of CodeInstruction)
+  fullName.vb: System.Collections.Generic.List(Of HarmonyLib.CodeInstruction)
+  name.vb: List(Of CodeInstruction)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: HarmonyLib.CodeInstruction
+    name: CodeInstruction
+    nameWithType: CodeInstruction
+    fullName: HarmonyLib.CodeInstruction
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: HarmonyLib.CodeInstruction
+    name: CodeInstruction
+    nameWithType: CodeInstruction
+    fullName: HarmonyLib.CodeInstruction
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: HarmonyLib.CodeMatcher.InstructionEnumeration*
+  commentId: Overload:HarmonyLib.CodeMatcher.InstructionEnumeration
+  name: InstructionEnumeration
+  nameWithType: CodeMatcher.InstructionEnumeration
+  fullName: HarmonyLib.CodeMatcher.InstructionEnumeration
+- uid: HarmonyLib.CodeMatcher.InstructionsInRange*
+  commentId: Overload:HarmonyLib.CodeMatcher.InstructionsInRange
+  name: InstructionsInRange
+  nameWithType: CodeMatcher.InstructionsInRange
+  fullName: HarmonyLib.CodeMatcher.InstructionsInRange
+- uid: HarmonyLib.CodeMatcher.InstructionsWithOffsets*
+  commentId: Overload:HarmonyLib.CodeMatcher.InstructionsWithOffsets
+  name: InstructionsWithOffsets
+  nameWithType: CodeMatcher.InstructionsWithOffsets
+  fullName: HarmonyLib.CodeMatcher.InstructionsWithOffsets
+- uid: HarmonyLib.CodeMatcher.DistinctLabels*
+  commentId: Overload:HarmonyLib.CodeMatcher.DistinctLabels
+  name: DistinctLabels
+  nameWithType: CodeMatcher.DistinctLabels
+  fullName: HarmonyLib.CodeMatcher.DistinctLabels
+- uid: HarmonyLib.CodeMatcher.ReportFailure*
+  commentId: Overload:HarmonyLib.CodeMatcher.ReportFailure
+  name: ReportFailure
+  nameWithType: CodeMatcher.ReportFailure
+  fullName: HarmonyLib.CodeMatcher.ReportFailure
+- uid: System.Reflection.MethodBase
+  commentId: T:System.Reflection.MethodBase
+  parent: System.Reflection
+  isExternal: true
+  name: MethodBase
+  nameWithType: MethodBase
+  fullName: System.Reflection.MethodBase
+- uid: System.Action{System.String}
+  commentId: T:System.Action{System.String}
+  parent: System
+  definition: System.Action`1
+  name: Action<String>
+  nameWithType: Action<String>
+  fullName: System.Action<System.String>
+  nameWithType.vb: Action(Of String)
+  fullName.vb: System.Action(Of System.String)
+  name.vb: Action(Of String)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Reflection
+  commentId: N:System.Reflection
+  isExternal: true
+  name: System.Reflection
+  nameWithType: System.Reflection
+  fullName: System.Reflection
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: HarmonyLib.CodeMatcher.SetInstruction*
+  commentId: Overload:HarmonyLib.CodeMatcher.SetInstruction
+  name: SetInstruction
+  nameWithType: CodeMatcher.SetInstruction
+  fullName: HarmonyLib.CodeMatcher.SetInstruction
+- uid: HarmonyLib.CodeMatcher.SetInstructionAndAdvance*
+  commentId: Overload:HarmonyLib.CodeMatcher.SetInstructionAndAdvance
+  name: SetInstructionAndAdvance
+  nameWithType: CodeMatcher.SetInstructionAndAdvance
+  fullName: HarmonyLib.CodeMatcher.SetInstructionAndAdvance
+- uid: HarmonyLib.CodeMatcher.Set*
+  commentId: Overload:HarmonyLib.CodeMatcher.Set
+  name: Set
+  nameWithType: CodeMatcher.Set
+  fullName: HarmonyLib.CodeMatcher.Set
+- uid: HarmonyLib.CodeMatcher.SetAndAdvance*
+  commentId: Overload:HarmonyLib.CodeMatcher.SetAndAdvance
+  name: SetAndAdvance
+  nameWithType: CodeMatcher.SetAndAdvance
+  fullName: HarmonyLib.CodeMatcher.SetAndAdvance
+- uid: HarmonyLib.CodeMatcher.SetOpcodeAndAdvance*
+  commentId: Overload:HarmonyLib.CodeMatcher.SetOpcodeAndAdvance
+  name: SetOpcodeAndAdvance
+  nameWithType: CodeMatcher.SetOpcodeAndAdvance
+  fullName: HarmonyLib.CodeMatcher.SetOpcodeAndAdvance
+- uid: HarmonyLib.CodeMatcher.SetOperandAndAdvance*
+  commentId: Overload:HarmonyLib.CodeMatcher.SetOperandAndAdvance
+  name: SetOperandAndAdvance
+  nameWithType: CodeMatcher.SetOperandAndAdvance
+  fullName: HarmonyLib.CodeMatcher.SetOperandAndAdvance
+- uid: HarmonyLib.CodeMatcher.CreateLabel*
+  commentId: Overload:HarmonyLib.CodeMatcher.CreateLabel
+  name: CreateLabel
+  nameWithType: CodeMatcher.CreateLabel
+  fullName: HarmonyLib.CodeMatcher.CreateLabel
+- uid: System.Reflection.Emit.Label
+  commentId: T:System.Reflection.Emit.Label
+  parent: System.Reflection.Emit
+  isExternal: true
+  name: Label
+  nameWithType: Label
+  fullName: System.Reflection.Emit.Label
+- uid: HarmonyLib.CodeMatcher.CreateLabelAt*
+  commentId: Overload:HarmonyLib.CodeMatcher.CreateLabelAt
+  name: CreateLabelAt
+  nameWithType: CodeMatcher.CreateLabelAt
+  fullName: HarmonyLib.CodeMatcher.CreateLabelAt
+- uid: HarmonyLib.CodeMatcher.AddLabels*
+  commentId: Overload:HarmonyLib.CodeMatcher.AddLabels
+  name: AddLabels
+  nameWithType: CodeMatcher.AddLabels
+  fullName: HarmonyLib.CodeMatcher.AddLabels
+- uid: System.Collections.Generic.IEnumerable{System.Reflection.Emit.Label}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Reflection.Emit.Label}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<Label>
+  nameWithType: IEnumerable<Label>
+  fullName: System.Collections.Generic.IEnumerable<System.Reflection.Emit.Label>
+  nameWithType.vb: IEnumerable(Of Label)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Reflection.Emit.Label)
+  name.vb: IEnumerable(Of Label)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Reflection.Emit.Label
+    name: Label
+    nameWithType: Label
+    fullName: System.Reflection.Emit.Label
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Reflection.Emit.Label
+    name: Label
+    nameWithType: Label
+    fullName: System.Reflection.Emit.Label
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: HarmonyLib.CodeMatcher.AddLabelsAt*
+  commentId: Overload:HarmonyLib.CodeMatcher.AddLabelsAt
+  name: AddLabelsAt
+  nameWithType: CodeMatcher.AddLabelsAt
+  fullName: HarmonyLib.CodeMatcher.AddLabelsAt
+- uid: HarmonyLib.CodeMatcher.SetJumpTo*
+  commentId: Overload:HarmonyLib.CodeMatcher.SetJumpTo
+  name: SetJumpTo
+  nameWithType: CodeMatcher.SetJumpTo
+  fullName: HarmonyLib.CodeMatcher.SetJumpTo
+- uid: HarmonyLib.CodeMatcher.Insert*
+  commentId: Overload:HarmonyLib.CodeMatcher.Insert
+  name: Insert
+  nameWithType: CodeMatcher.Insert
+  fullName: HarmonyLib.CodeMatcher.Insert
+- uid: HarmonyLib.CodeInstruction[]
+  isExternal: true
+  name: CodeInstruction[]
+  nameWithType: CodeInstruction[]
+  fullName: HarmonyLib.CodeInstruction[]
+  nameWithType.vb: CodeInstruction()
+  fullName.vb: HarmonyLib.CodeInstruction()
+  name.vb: CodeInstruction()
+  spec.csharp:
+  - uid: HarmonyLib.CodeInstruction
+    name: CodeInstruction
+    nameWithType: CodeInstruction
+    fullName: HarmonyLib.CodeInstruction
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: HarmonyLib.CodeInstruction
+    name: CodeInstruction
+    nameWithType: CodeInstruction
+    fullName: HarmonyLib.CodeInstruction
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: HarmonyLib.CodeMatcher.InsertBranch*
+  commentId: Overload:HarmonyLib.CodeMatcher.InsertBranch
+  name: InsertBranch
+  nameWithType: CodeMatcher.InsertBranch
+  fullName: HarmonyLib.CodeMatcher.InsertBranch
+- uid: HarmonyLib.CodeMatcher.InsertAndAdvance*
+  commentId: Overload:HarmonyLib.CodeMatcher.InsertAndAdvance
+  name: InsertAndAdvance
+  nameWithType: CodeMatcher.InsertAndAdvance
+  fullName: HarmonyLib.CodeMatcher.InsertAndAdvance
+- uid: HarmonyLib.CodeMatcher.InsertBranchAndAdvance*
+  commentId: Overload:HarmonyLib.CodeMatcher.InsertBranchAndAdvance
+  name: InsertBranchAndAdvance
+  nameWithType: CodeMatcher.InsertBranchAndAdvance
+  fullName: HarmonyLib.CodeMatcher.InsertBranchAndAdvance
+- uid: HarmonyLib.CodeMatcher.RemoveInstruction*
+  commentId: Overload:HarmonyLib.CodeMatcher.RemoveInstruction
+  name: RemoveInstruction
+  nameWithType: CodeMatcher.RemoveInstruction
+  fullName: HarmonyLib.CodeMatcher.RemoveInstruction
+- uid: HarmonyLib.CodeMatcher.RemoveInstructions*
+  commentId: Overload:HarmonyLib.CodeMatcher.RemoveInstructions
+  name: RemoveInstructions
+  nameWithType: CodeMatcher.RemoveInstructions
+  fullName: HarmonyLib.CodeMatcher.RemoveInstructions
+- uid: HarmonyLib.CodeMatcher.RemoveInstructionsInRange*
+  commentId: Overload:HarmonyLib.CodeMatcher.RemoveInstructionsInRange
+  name: RemoveInstructionsInRange
+  nameWithType: CodeMatcher.RemoveInstructionsInRange
+  fullName: HarmonyLib.CodeMatcher.RemoveInstructionsInRange
+- uid: HarmonyLib.CodeMatcher.RemoveInstructionsWithOffsets*
+  commentId: Overload:HarmonyLib.CodeMatcher.RemoveInstructionsWithOffsets
+  name: RemoveInstructionsWithOffsets
+  nameWithType: CodeMatcher.RemoveInstructionsWithOffsets
+  fullName: HarmonyLib.CodeMatcher.RemoveInstructionsWithOffsets
+- uid: HarmonyLib.CodeMatcher.Advance*
+  commentId: Overload:HarmonyLib.CodeMatcher.Advance
+  name: Advance
+  nameWithType: CodeMatcher.Advance
+  fullName: HarmonyLib.CodeMatcher.Advance
+- uid: HarmonyLib.CodeMatcher.Start*
+  commentId: Overload:HarmonyLib.CodeMatcher.Start
+  name: Start
+  nameWithType: CodeMatcher.Start
+  fullName: HarmonyLib.CodeMatcher.Start
+- uid: HarmonyLib.CodeMatcher.End*
+  commentId: Overload:HarmonyLib.CodeMatcher.End
+  name: End
+  nameWithType: CodeMatcher.End
+  fullName: HarmonyLib.CodeMatcher.End
+- uid: HarmonyLib.CodeMatcher.SearchForward*
+  commentId: Overload:HarmonyLib.CodeMatcher.SearchForward
+  name: SearchForward
+  nameWithType: CodeMatcher.SearchForward
+  fullName: HarmonyLib.CodeMatcher.SearchForward
+- uid: System.Func{HarmonyLib.CodeInstruction,System.Boolean}
+  commentId: T:System.Func{HarmonyLib.CodeInstruction,System.Boolean}
+  parent: System
+  definition: System.Func`2
+  name: Func<CodeInstruction, Boolean>
+  nameWithType: Func<CodeInstruction, Boolean>
+  fullName: System.Func<HarmonyLib.CodeInstruction, System.Boolean>
+  nameWithType.vb: Func(Of CodeInstruction, Boolean)
+  fullName.vb: System.Func(Of HarmonyLib.CodeInstruction, System.Boolean)
+  name.vb: Func(Of CodeInstruction, Boolean)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: HarmonyLib.CodeInstruction
+    name: CodeInstruction
+    nameWithType: CodeInstruction
+    fullName: HarmonyLib.CodeInstruction
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: HarmonyLib.CodeInstruction
+    name: CodeInstruction
+    nameWithType: CodeInstruction
+    fullName: HarmonyLib.CodeInstruction
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: HarmonyLib.CodeMatcher.SearchBack*
+  commentId: Overload:HarmonyLib.CodeMatcher.SearchBack
+  name: SearchBack
+  nameWithType: CodeMatcher.SearchBack
+  fullName: HarmonyLib.CodeMatcher.SearchBack
+- uid: HarmonyLib.CodeMatcher.MatchForward*
+  commentId: Overload:HarmonyLib.CodeMatcher.MatchForward
+  name: MatchForward
+  nameWithType: CodeMatcher.MatchForward
+  fullName: HarmonyLib.CodeMatcher.MatchForward
+- uid: HarmonyLib.CodeMatch[]
+  isExternal: true
+  name: CodeMatch[]
+  nameWithType: CodeMatch[]
+  fullName: HarmonyLib.CodeMatch[]
+  nameWithType.vb: CodeMatch()
+  fullName.vb: HarmonyLib.CodeMatch()
+  name.vb: CodeMatch()
+  spec.csharp:
+  - uid: HarmonyLib.CodeMatch
+    name: CodeMatch
+    nameWithType: CodeMatch
+    fullName: HarmonyLib.CodeMatch
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: HarmonyLib.CodeMatch
+    name: CodeMatch
+    nameWithType: CodeMatch
+    fullName: HarmonyLib.CodeMatch
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: HarmonyLib.CodeMatcher.MatchBack*
+  commentId: Overload:HarmonyLib.CodeMatcher.MatchBack
+  name: MatchBack
+  nameWithType: CodeMatcher.MatchBack
+  fullName: HarmonyLib.CodeMatcher.MatchBack
+- uid: HarmonyLib.CodeMatcher.Repeat*
+  commentId: Overload:HarmonyLib.CodeMatcher.Repeat
+  name: Repeat
+  nameWithType: CodeMatcher.Repeat
+  fullName: HarmonyLib.CodeMatcher.Repeat
+- uid: System.Action{HarmonyLib.CodeMatcher}
+  commentId: T:System.Action{HarmonyLib.CodeMatcher}
+  parent: System
+  definition: System.Action`1
+  name: Action<CodeMatcher>
+  nameWithType: Action<CodeMatcher>
+  fullName: System.Action<HarmonyLib.CodeMatcher>
+  nameWithType.vb: Action(Of CodeMatcher)
+  fullName.vb: System.Action(Of HarmonyLib.CodeMatcher)
+  name.vb: Action(Of CodeMatcher)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: HarmonyLib.CodeMatcher
+    name: CodeMatcher
+    nameWithType: CodeMatcher
+    fullName: HarmonyLib.CodeMatcher
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: HarmonyLib.CodeMatcher
+    name: CodeMatcher
+    nameWithType: CodeMatcher
+    fullName: HarmonyLib.CodeMatcher
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: HarmonyLib.CodeMatcher.NamedMatch*
+  commentId: Overload:HarmonyLib.CodeMatcher.NamedMatch
+  name: NamedMatch
+  nameWithType: CodeMatcher.NamedMatch
+  fullName: HarmonyLib.CodeMatcher.NamedMatch
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

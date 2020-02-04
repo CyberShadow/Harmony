@@ -1,0 +1,2430 @@
+### YamlMime:ManagedReference
+items:
+- uid: HarmonyLib.Traverse
+  commentId: T:HarmonyLib.Traverse
+  id: Traverse
+  parent: HarmonyLib
+  children:
+  - HarmonyLib.Traverse.#ctor(System.Object)
+  - HarmonyLib.Traverse.#ctor(System.Type)
+  - HarmonyLib.Traverse.CopyFields
+  - HarmonyLib.Traverse.Create(System.Object)
+  - HarmonyLib.Traverse.Create(System.Type)
+  - HarmonyLib.Traverse.Create``1
+  - HarmonyLib.Traverse.CreateWithType(System.String)
+  - HarmonyLib.Traverse.Field(System.String)
+  - HarmonyLib.Traverse.Field``1(System.String)
+  - HarmonyLib.Traverse.FieldExists
+  - HarmonyLib.Traverse.Fields
+  - HarmonyLib.Traverse.GetValue
+  - HarmonyLib.Traverse.GetValue(System.Object[])
+  - HarmonyLib.Traverse.GetValue``1
+  - HarmonyLib.Traverse.GetValue``1(System.Object[])
+  - HarmonyLib.Traverse.GetValueType
+  - HarmonyLib.Traverse.IterateFields(System.Object,System.Action{HarmonyLib.Traverse})
+  - HarmonyLib.Traverse.IterateFields(System.Object,System.Object,System.Action{HarmonyLib.Traverse,HarmonyLib.Traverse})
+  - HarmonyLib.Traverse.IterateFields(System.Object,System.Object,System.Action{System.String,HarmonyLib.Traverse,HarmonyLib.Traverse})
+  - HarmonyLib.Traverse.IterateProperties(System.Object,System.Action{HarmonyLib.Traverse})
+  - HarmonyLib.Traverse.IterateProperties(System.Object,System.Object,System.Action{HarmonyLib.Traverse,HarmonyLib.Traverse})
+  - HarmonyLib.Traverse.IterateProperties(System.Object,System.Object,System.Action{System.String,HarmonyLib.Traverse,HarmonyLib.Traverse})
+  - HarmonyLib.Traverse.Method(System.String,System.Object[])
+  - HarmonyLib.Traverse.Method(System.String,System.Type[],System.Object[])
+  - HarmonyLib.Traverse.MethodExists
+  - HarmonyLib.Traverse.Methods
+  - HarmonyLib.Traverse.Properties
+  - HarmonyLib.Traverse.Property(System.String,System.Object[])
+  - HarmonyLib.Traverse.Property``1(System.String,System.Object[])
+  - HarmonyLib.Traverse.PropertyExists
+  - HarmonyLib.Traverse.SetValue(System.Object)
+  - HarmonyLib.Traverse.ToString
+  - HarmonyLib.Traverse.Type(System.String)
+  - HarmonyLib.Traverse.TypeExists
+  langs:
+  - csharp
+  - vb
+  name: Traverse
+  nameWithType: Traverse
+  fullName: HarmonyLib.Traverse
+  type: Class
+  source:
+    remote:
+      path: Harmony/Tools/Traverse.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: Traverse
+    path: ../Tools/Traverse.cs
+    startLine: 38
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: A reflection helper to read and write private elements
+  example: []
+  syntax:
+    content: public class Traverse
+    content.vb: Public Class Traverse
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: HarmonyLib.Traverse.Create(System.Type)
+  commentId: M:HarmonyLib.Traverse.Create(System.Type)
+  id: Create(System.Type)
+  parent: HarmonyLib.Traverse
+  langs:
+  - csharp
+  - vb
+  name: Create(Type)
+  nameWithType: Traverse.Create(Type)
+  fullName: HarmonyLib.Traverse.Create(System.Type)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/Traverse.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: Create
+    path: ../Tools/Traverse.cs
+    startLine: 59
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Creates a new traverse instance from a class
+  example: []
+  syntax:
+    content: public static Traverse Create(Type type)
+    parameters:
+    - id: type
+      type: System.Type
+      description: The class
+    return:
+      type: HarmonyLib.Traverse
+      description: A traverse instance
+    content.vb: Public Shared Function Create(type As Type) As Traverse
+  overload: HarmonyLib.Traverse.Create*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: HarmonyLib.Traverse.Create``1
+  commentId: M:HarmonyLib.Traverse.Create``1
+  id: Create``1
+  parent: HarmonyLib.Traverse
+  langs:
+  - csharp
+  - vb
+  name: Create<T>()
+  nameWithType: Traverse.Create<T>()
+  fullName: HarmonyLib.Traverse.Create<T>()
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/Traverse.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: Create
+    path: ../Tools/Traverse.cs
+    startLine: 68
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Creates a new traverse instance from a class T
+  example: []
+  syntax:
+    content: public static Traverse Create<T>()
+    typeParameters:
+    - id: T
+      description: The class
+    return:
+      type: HarmonyLib.Traverse
+      description: A traverse instance
+    content.vb: Public Shared Function Create(Of T) As Traverse
+  overload: HarmonyLib.Traverse.Create*
+  nameWithType.vb: Traverse.Create(Of T)()
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: HarmonyLib.Traverse.Create(Of T)()
+  name.vb: Create(Of T)()
+- uid: HarmonyLib.Traverse.Create(System.Object)
+  commentId: M:HarmonyLib.Traverse.Create(System.Object)
+  id: Create(System.Object)
+  parent: HarmonyLib.Traverse
+  langs:
+  - csharp
+  - vb
+  name: Create(Object)
+  nameWithType: Traverse.Create(Object)
+  fullName: HarmonyLib.Traverse.Create(System.Object)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/Traverse.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: Create
+    path: ../Tools/Traverse.cs
+    startLine: 77
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Creates a new traverse instance from an instance
+  example: []
+  syntax:
+    content: public static Traverse Create(object root)
+    parameters:
+    - id: root
+      type: System.Object
+      description: The object
+    return:
+      type: HarmonyLib.Traverse
+      description: A traverse instance
+    content.vb: Public Shared Function Create(root As Object) As Traverse
+  overload: HarmonyLib.Traverse.Create*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: HarmonyLib.Traverse.CreateWithType(System.String)
+  commentId: M:HarmonyLib.Traverse.CreateWithType(System.String)
+  id: CreateWithType(System.String)
+  parent: HarmonyLib.Traverse
+  langs:
+  - csharp
+  - vb
+  name: CreateWithType(String)
+  nameWithType: Traverse.CreateWithType(String)
+  fullName: HarmonyLib.Traverse.CreateWithType(System.String)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/Traverse.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: CreateWithType
+    path: ../Tools/Traverse.cs
+    startLine: 86
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Creates a new traverse instance from a named type
+  example: []
+  syntax:
+    content: public static Traverse CreateWithType(string name)
+    parameters:
+    - id: name
+      type: System.String
+      description: The type name
+    return:
+      type: HarmonyLib.Traverse
+      description: A traverse instance
+    content.vb: Public Shared Function CreateWithType(name As String) As Traverse
+  overload: HarmonyLib.Traverse.CreateWithType*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: HarmonyLib.Traverse.#ctor(System.Type)
+  commentId: M:HarmonyLib.Traverse.#ctor(System.Type)
+  id: '#ctor(System.Type)'
+  parent: HarmonyLib.Traverse
+  langs:
+  - csharp
+  - vb
+  name: Traverse(Type)
+  nameWithType: Traverse.Traverse(Type)
+  fullName: HarmonyLib.Traverse.Traverse(System.Type)
+  type: Constructor
+  source:
+    remote:
+      path: Harmony/Tools/Traverse.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: .ctor
+    path: ../Tools/Traverse.cs
+    startLine: 102
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Creates a new traverse instance from a class
+  example: []
+  syntax:
+    content: public Traverse(Type type)
+    parameters:
+    - id: type
+      type: System.Type
+      description: The class
+    content.vb: Public Sub New(type As Type)
+  overload: HarmonyLib.Traverse.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HarmonyLib.Traverse.#ctor(System.Object)
+  commentId: M:HarmonyLib.Traverse.#ctor(System.Object)
+  id: '#ctor(System.Object)'
+  parent: HarmonyLib.Traverse
+  langs:
+  - csharp
+  - vb
+  name: Traverse(Object)
+  nameWithType: Traverse.Traverse(Object)
+  fullName: HarmonyLib.Traverse.Traverse(System.Object)
+  type: Constructor
+  source:
+    remote:
+      path: Harmony/Tools/Traverse.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: .ctor
+    path: ../Tools/Traverse.cs
+    startLine: 111
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Creates a new traverse instance from an instance
+  example: []
+  syntax:
+    content: public Traverse(object root)
+    parameters:
+    - id: root
+      type: System.Object
+      description: The object
+    content.vb: Public Sub New(root As Object)
+  overload: HarmonyLib.Traverse.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HarmonyLib.Traverse.GetValue
+  commentId: M:HarmonyLib.Traverse.GetValue
+  id: GetValue
+  parent: HarmonyLib.Traverse
+  langs:
+  - csharp
+  - vb
+  name: GetValue()
+  nameWithType: Traverse.GetValue()
+  fullName: HarmonyLib.Traverse.GetValue()
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/Traverse.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: GetValue
+    path: ../Tools/Traverse.cs
+    startLine: 136
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Gets the current value
+  example: []
+  syntax:
+    content: public object GetValue()
+    return:
+      type: System.Object
+      description: The value
+    content.vb: Public Function GetValue As Object
+  overload: HarmonyLib.Traverse.GetValue*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HarmonyLib.Traverse.GetValue``1
+  commentId: M:HarmonyLib.Traverse.GetValue``1
+  id: GetValue``1
+  parent: HarmonyLib.Traverse
+  langs:
+  - csharp
+  - vb
+  name: GetValue<T>()
+  nameWithType: Traverse.GetValue<T>()
+  fullName: HarmonyLib.Traverse.GetValue<T>()
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/Traverse.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: GetValue
+    path: ../Tools/Traverse.cs
+    startLine: 152
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Gets the current value
+  example: []
+  syntax:
+    content: public T GetValue<T>()
+    typeParameters:
+    - id: T
+      description: The type of the value
+    return:
+      type: '{T}'
+      description: The value
+    content.vb: Public Function GetValue(Of T) As T
+  overload: HarmonyLib.Traverse.GetValue*
+  nameWithType.vb: Traverse.GetValue(Of T)()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: HarmonyLib.Traverse.GetValue(Of T)()
+  name.vb: GetValue(Of T)()
+- uid: HarmonyLib.Traverse.GetValue(System.Object[])
+  commentId: M:HarmonyLib.Traverse.GetValue(System.Object[])
+  id: GetValue(System.Object[])
+  parent: HarmonyLib.Traverse
+  langs:
+  - csharp
+  - vb
+  name: GetValue(Object[])
+  nameWithType: Traverse.GetValue(Object[])
+  fullName: HarmonyLib.Traverse.GetValue(System.Object[])
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/Traverse.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: GetValue
+    path: ../Tools/Traverse.cs
+    startLine: 163
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Invokes the current method with arguments and returns the result
+  example: []
+  syntax:
+    content: public object GetValue(params object[] arguments)
+    parameters:
+    - id: arguments
+      type: System.Object[]
+      description: The method arguments
+    return:
+      type: System.Object
+      description: The value returned by the method
+    content.vb: Public Function GetValue(ParamArray arguments As Object()) As Object
+  overload: HarmonyLib.Traverse.GetValue*
+  nameWithType.vb: Traverse.GetValue(Object())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: HarmonyLib.Traverse.GetValue(System.Object())
+  name.vb: GetValue(Object())
+- uid: HarmonyLib.Traverse.GetValue``1(System.Object[])
+  commentId: M:HarmonyLib.Traverse.GetValue``1(System.Object[])
+  id: GetValue``1(System.Object[])
+  parent: HarmonyLib.Traverse
+  langs:
+  - csharp
+  - vb
+  name: GetValue<T>(Object[])
+  nameWithType: Traverse.GetValue<T>(Object[])
+  fullName: HarmonyLib.Traverse.GetValue<T>(System.Object[])
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/Traverse.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: GetValue
+    path: ../Tools/Traverse.cs
+    startLine: 175
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Invokes the current method with arguments and returns the result
+  example: []
+  syntax:
+    content: public T GetValue<T>(params object[] arguments)
+    parameters:
+    - id: arguments
+      type: System.Object[]
+      description: The method arguments
+    typeParameters:
+    - id: T
+      description: The type of the value
+    return:
+      type: '{T}'
+      description: The value returned by the method
+    content.vb: Public Function GetValue(Of T)(ParamArray arguments As Object()) As T
+  overload: HarmonyLib.Traverse.GetValue*
+  nameWithType.vb: Traverse.GetValue(Of T)(Object())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: HarmonyLib.Traverse.GetValue(Of T)(System.Object())
+  name.vb: GetValue(Of T)(Object())
+- uid: HarmonyLib.Traverse.SetValue(System.Object)
+  commentId: M:HarmonyLib.Traverse.SetValue(System.Object)
+  id: SetValue(System.Object)
+  parent: HarmonyLib.Traverse
+  langs:
+  - csharp
+  - vb
+  name: SetValue(Object)
+  nameWithType: Traverse.SetValue(Object)
+  fullName: HarmonyLib.Traverse.SetValue(System.Object)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/Traverse.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: SetValue
+    path: ../Tools/Traverse.cs
+    startLine: 186
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Sets a value of the current field or property
+  example: []
+  syntax:
+    content: public Traverse SetValue(object value)
+    parameters:
+    - id: value
+      type: System.Object
+      description: The value
+    return:
+      type: HarmonyLib.Traverse
+      description: The same traverse instance
+    content.vb: Public Function SetValue(value As Object) As Traverse
+  overload: HarmonyLib.Traverse.SetValue*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HarmonyLib.Traverse.GetValueType
+  commentId: M:HarmonyLib.Traverse.GetValueType
+  id: GetValueType
+  parent: HarmonyLib.Traverse
+  langs:
+  - csharp
+  - vb
+  name: GetValueType()
+  nameWithType: Traverse.GetValueType()
+  fullName: HarmonyLib.Traverse.GetValueType()
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/Traverse.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: GetValueType
+    path: ../Tools/Traverse.cs
+    startLine: 200
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Gets the type of the current field or property
+  example: []
+  syntax:
+    content: public Type GetValueType()
+    return:
+      type: System.Type
+      description: The type
+    content.vb: Public Function GetValueType As Type
+  overload: HarmonyLib.Traverse.GetValueType*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HarmonyLib.Traverse.Type(System.String)
+  commentId: M:HarmonyLib.Traverse.Type(System.String)
+  id: Type(System.String)
+  parent: HarmonyLib.Traverse
+  langs:
+  - csharp
+  - vb
+  name: Type(String)
+  nameWithType: Traverse.Type(String)
+  fullName: HarmonyLib.Traverse.Type(System.String)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/Traverse.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: Type
+    path: ../Tools/Traverse.cs
+    startLine: 219
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Moves the current traverse instance to a inner type
+  example: []
+  syntax:
+    content: public Traverse Type(string name)
+    parameters:
+    - id: name
+      type: System.String
+      description: The type name
+    return:
+      type: HarmonyLib.Traverse
+      description: A traverse instance
+    content.vb: Public Function Type(name As String) As Traverse
+  overload: HarmonyLib.Traverse.Type*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HarmonyLib.Traverse.Field(System.String)
+  commentId: M:HarmonyLib.Traverse.Field(System.String)
+  id: Field(System.String)
+  parent: HarmonyLib.Traverse
+  langs:
+  - csharp
+  - vb
+  name: Field(String)
+  nameWithType: Traverse.Field(String)
+  fullName: HarmonyLib.Traverse.Field(System.String)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/Traverse.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: Field
+    path: ../Tools/Traverse.cs
+    startLine: 232
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Moves the current traverse instance to a field
+  example: []
+  syntax:
+    content: public Traverse Field(string name)
+    parameters:
+    - id: name
+      type: System.String
+      description: The type name
+    return:
+      type: HarmonyLib.Traverse
+      description: A traverse instance
+    content.vb: Public Function Field(name As String) As Traverse
+  overload: HarmonyLib.Traverse.Field*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HarmonyLib.Traverse.Field``1(System.String)
+  commentId: M:HarmonyLib.Traverse.Field``1(System.String)
+  id: Field``1(System.String)
+  parent: HarmonyLib.Traverse
+  langs:
+  - csharp
+  - vb
+  name: Field<T>(String)
+  nameWithType: Traverse.Field<T>(String)
+  fullName: HarmonyLib.Traverse.Field<T>(System.String)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/Traverse.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: Field
+    path: ../Tools/Traverse.cs
+    startLine: 248
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Moves the current traverse instance to a field
+  example: []
+  syntax:
+    content: public Traverse<T> Field<T>(string name)
+    parameters:
+    - id: name
+      type: System.String
+      description: The type name
+    typeParameters:
+    - id: T
+      description: The type of the field
+    return:
+      type: HarmonyLib.Traverse{{T}}
+      description: A traverse instance
+    content.vb: Public Function Field(Of T)(name As String) As Traverse(Of T)
+  overload: HarmonyLib.Traverse.Field*
+  nameWithType.vb: Traverse.Field(Of T)(String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: HarmonyLib.Traverse.Field(Of T)(System.String)
+  name.vb: Field(Of T)(String)
+- uid: HarmonyLib.Traverse.Fields
+  commentId: M:HarmonyLib.Traverse.Fields
+  id: Fields
+  parent: HarmonyLib.Traverse
+  langs:
+  - csharp
+  - vb
+  name: Fields()
+  nameWithType: Traverse.Fields()
+  fullName: HarmonyLib.Traverse.Fields()
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/Traverse.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: Fields
+    path: ../Tools/Traverse.cs
+    startLine: 256
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Gets all fields of the current type
+  example: []
+  syntax:
+    content: public List<string> Fields()
+    return:
+      type: System.Collections.Generic.List{System.String}
+      description: A list of field names
+    content.vb: Public Function Fields As List(Of String)
+  overload: HarmonyLib.Traverse.Fields*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HarmonyLib.Traverse.Property(System.String,System.Object[])
+  commentId: M:HarmonyLib.Traverse.Property(System.String,System.Object[])
+  id: Property(System.String,System.Object[])
+  parent: HarmonyLib.Traverse
+  langs:
+  - csharp
+  - vb
+  name: Property(String, Object[])
+  nameWithType: Traverse.Property(String, Object[])
+  fullName: HarmonyLib.Traverse.Property(System.String, System.Object[])
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/Traverse.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: Property
+    path: ../Tools/Traverse.cs
+    startLine: 267
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Moves the current traverse instance to a property
+  example: []
+  syntax:
+    content: public Traverse Property(string name, object[] index = null)
+    parameters:
+    - id: name
+      type: System.String
+      description: The type name
+    - id: index
+      type: System.Object[]
+      description: Optional property index
+    return:
+      type: HarmonyLib.Traverse
+      description: A traverse instance
+    content.vb: Public Function Property(name As String, index As Object() = Nothing) As Traverse
+  overload: HarmonyLib.Traverse.Property*
+  nameWithType.vb: Traverse.Property(String, Object())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: HarmonyLib.Traverse.Property(System.String, System.Object())
+  name.vb: Property(String, Object())
+- uid: HarmonyLib.Traverse.Property``1(System.String,System.Object[])
+  commentId: M:HarmonyLib.Traverse.Property``1(System.String,System.Object[])
+  id: Property``1(System.String,System.Object[])
+  parent: HarmonyLib.Traverse
+  langs:
+  - csharp
+  - vb
+  name: Property<T>(String, Object[])
+  nameWithType: Traverse.Property<T>(String, Object[])
+  fullName: HarmonyLib.Traverse.Property<T>(System.String, System.Object[])
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/Traverse.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: Property
+    path: ../Tools/Traverse.cs
+    startLine: 283
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Moves the current traverse instance to a field
+  example: []
+  syntax:
+    content: public Traverse<T> Property<T>(string name, object[] index = null)
+    parameters:
+    - id: name
+      type: System.String
+      description: The type name
+    - id: index
+      type: System.Object[]
+      description: Optional property index
+    typeParameters:
+    - id: T
+      description: The type of the property
+    return:
+      type: HarmonyLib.Traverse{{T}}
+      description: A traverse instance
+    content.vb: Public Function Property(Of T)(name As String, index As Object() = Nothing) As Traverse(Of T)
+  overload: HarmonyLib.Traverse.Property*
+  nameWithType.vb: Traverse.Property(Of T)(String, Object())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: HarmonyLib.Traverse.Property(Of T)(System.String, System.Object())
+  name.vb: Property(Of T)(String, Object())
+- uid: HarmonyLib.Traverse.Properties
+  commentId: M:HarmonyLib.Traverse.Properties
+  id: Properties
+  parent: HarmonyLib.Traverse
+  langs:
+  - csharp
+  - vb
+  name: Properties()
+  nameWithType: Traverse.Properties()
+  fullName: HarmonyLib.Traverse.Properties()
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/Traverse.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: Properties
+    path: ../Tools/Traverse.cs
+    startLine: 291
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Gets all properties of the current type
+  example: []
+  syntax:
+    content: public List<string> Properties()
+    return:
+      type: System.Collections.Generic.List{System.String}
+      description: A list of property names
+    content.vb: Public Function Properties As List(Of String)
+  overload: HarmonyLib.Traverse.Properties*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HarmonyLib.Traverse.Method(System.String,System.Object[])
+  commentId: M:HarmonyLib.Traverse.Method(System.String,System.Object[])
+  id: Method(System.String,System.Object[])
+  parent: HarmonyLib.Traverse
+  langs:
+  - csharp
+  - vb
+  name: Method(String, Object[])
+  nameWithType: Traverse.Method(String, Object[])
+  fullName: HarmonyLib.Traverse.Method(System.String, System.Object[])
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/Traverse.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: Method
+    path: ../Tools/Traverse.cs
+    startLine: 302
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Moves the current traverse instance to a method
+  example: []
+  syntax:
+    content: public Traverse Method(string name, params object[] arguments)
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of the method
+    - id: arguments
+      type: System.Object[]
+      description: The arguments defining the argument types of the method overload
+    return:
+      type: HarmonyLib.Traverse
+      description: A traverse instance
+    content.vb: Public Function Method(name As String, ParamArray arguments As Object()) As Traverse
+  overload: HarmonyLib.Traverse.Method*
+  nameWithType.vb: Traverse.Method(String, Object())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: HarmonyLib.Traverse.Method(System.String, System.Object())
+  name.vb: Method(String, Object())
+- uid: HarmonyLib.Traverse.Method(System.String,System.Type[],System.Object[])
+  commentId: M:HarmonyLib.Traverse.Method(System.String,System.Type[],System.Object[])
+  id: Method(System.String,System.Type[],System.Object[])
+  parent: HarmonyLib.Traverse
+  langs:
+  - csharp
+  - vb
+  name: Method(String, Type[], Object[])
+  nameWithType: Traverse.Method(String, Type[], Object[])
+  fullName: HarmonyLib.Traverse.Method(System.String, System.Type[], System.Object[])
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/Traverse.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: Method
+    path: ../Tools/Traverse.cs
+    startLine: 319
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Moves the current traverse instance to a method
+  example: []
+  syntax:
+    content: public Traverse Method(string name, Type[] paramTypes, object[] arguments = null)
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of the method
+    - id: paramTypes
+      type: System.Type[]
+      description: The argument types of the method
+    - id: arguments
+      type: System.Object[]
+      description: The arguments for the method
+    return:
+      type: HarmonyLib.Traverse
+      description: A traverse instance
+    content.vb: Public Function Method(name As String, paramTypes As Type(), arguments As Object() = Nothing) As Traverse
+  overload: HarmonyLib.Traverse.Method*
+  nameWithType.vb: Traverse.Method(String, Type(), Object())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: HarmonyLib.Traverse.Method(System.String, System.Type(), System.Object())
+  name.vb: Method(String, Type(), Object())
+- uid: HarmonyLib.Traverse.Methods
+  commentId: M:HarmonyLib.Traverse.Methods
+  id: Methods
+  parent: HarmonyLib.Traverse
+  langs:
+  - csharp
+  - vb
+  name: Methods()
+  nameWithType: Traverse.Methods()
+  fullName: HarmonyLib.Traverse.Methods()
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/Traverse.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: Methods
+    path: ../Tools/Traverse.cs
+    startLine: 332
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Gets all methods of the current type
+  example: []
+  syntax:
+    content: public List<string> Methods()
+    return:
+      type: System.Collections.Generic.List{System.String}
+      description: A list of method names
+    content.vb: Public Function Methods As List(Of String)
+  overload: HarmonyLib.Traverse.Methods*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HarmonyLib.Traverse.FieldExists
+  commentId: M:HarmonyLib.Traverse.FieldExists
+  id: FieldExists
+  parent: HarmonyLib.Traverse
+  langs:
+  - csharp
+  - vb
+  name: FieldExists()
+  nameWithType: Traverse.FieldExists()
+  fullName: HarmonyLib.Traverse.FieldExists()
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/Traverse.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: FieldExists
+    path: ../Tools/Traverse.cs
+    startLine: 341
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Checks if the current traverse instance is for a field
+  example: []
+  syntax:
+    content: public bool FieldExists()
+    return:
+      type: System.Boolean
+      description: True if its a field
+    content.vb: Public Function FieldExists As Boolean
+  overload: HarmonyLib.Traverse.FieldExists*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HarmonyLib.Traverse.PropertyExists
+  commentId: M:HarmonyLib.Traverse.PropertyExists
+  id: PropertyExists
+  parent: HarmonyLib.Traverse
+  langs:
+  - csharp
+  - vb
+  name: PropertyExists()
+  nameWithType: Traverse.PropertyExists()
+  fullName: HarmonyLib.Traverse.PropertyExists()
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/Traverse.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: PropertyExists
+    path: ../Tools/Traverse.cs
+    startLine: 349
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Checks if the current traverse instance is for a property
+  example: []
+  syntax:
+    content: public bool PropertyExists()
+    return:
+      type: System.Boolean
+      description: True if its a property
+    content.vb: Public Function PropertyExists As Boolean
+  overload: HarmonyLib.Traverse.PropertyExists*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HarmonyLib.Traverse.MethodExists
+  commentId: M:HarmonyLib.Traverse.MethodExists
+  id: MethodExists
+  parent: HarmonyLib.Traverse
+  langs:
+  - csharp
+  - vb
+  name: MethodExists()
+  nameWithType: Traverse.MethodExists()
+  fullName: HarmonyLib.Traverse.MethodExists()
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/Traverse.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: MethodExists
+    path: ../Tools/Traverse.cs
+    startLine: 357
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Checks if the current traverse instance is for a method
+  example: []
+  syntax:
+    content: public bool MethodExists()
+    return:
+      type: System.Boolean
+      description: True if its a method
+    content.vb: Public Function MethodExists As Boolean
+  overload: HarmonyLib.Traverse.MethodExists*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HarmonyLib.Traverse.TypeExists
+  commentId: M:HarmonyLib.Traverse.TypeExists
+  id: TypeExists
+  parent: HarmonyLib.Traverse
+  langs:
+  - csharp
+  - vb
+  name: TypeExists()
+  nameWithType: Traverse.TypeExists()
+  fullName: HarmonyLib.Traverse.TypeExists()
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/Traverse.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: TypeExists
+    path: ../Tools/Traverse.cs
+    startLine: 365
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Checks if the current traverse instance is for a type
+  example: []
+  syntax:
+    content: public bool TypeExists()
+    return:
+      type: System.Boolean
+      description: True if its a type
+    content.vb: Public Function TypeExists As Boolean
+  overload: HarmonyLib.Traverse.TypeExists*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HarmonyLib.Traverse.IterateFields(System.Object,System.Action{HarmonyLib.Traverse})
+  commentId: M:HarmonyLib.Traverse.IterateFields(System.Object,System.Action{HarmonyLib.Traverse})
+  id: IterateFields(System.Object,System.Action{HarmonyLib.Traverse})
+  parent: HarmonyLib.Traverse
+  langs:
+  - csharp
+  - vb
+  name: IterateFields(Object, Action<Traverse>)
+  nameWithType: Traverse.IterateFields(Object, Action<Traverse>)
+  fullName: HarmonyLib.Traverse.IterateFields(System.Object, System.Action<HarmonyLib.Traverse>)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/Traverse.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: IterateFields
+    path: ../Tools/Traverse.cs
+    startLine: 374
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Iterates over all fields of the current type and executes a traverse action
+  example: []
+  syntax:
+    content: public static void IterateFields(object source, Action<Traverse> action)
+    parameters:
+    - id: source
+      type: System.Object
+      description: Original object
+    - id: action
+      type: System.Action{HarmonyLib.Traverse}
+      description: The action receiving a traverse for each field
+    content.vb: Public Shared Sub IterateFields(source As Object, action As Action(Of Traverse))
+  overload: HarmonyLib.Traverse.IterateFields*
+  nameWithType.vb: Traverse.IterateFields(Object, Action(Of Traverse))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: HarmonyLib.Traverse.IterateFields(System.Object, System.Action(Of HarmonyLib.Traverse))
+  name.vb: IterateFields(Object, Action(Of Traverse))
+- uid: HarmonyLib.Traverse.IterateFields(System.Object,System.Object,System.Action{HarmonyLib.Traverse,HarmonyLib.Traverse})
+  commentId: M:HarmonyLib.Traverse.IterateFields(System.Object,System.Object,System.Action{HarmonyLib.Traverse,HarmonyLib.Traverse})
+  id: IterateFields(System.Object,System.Object,System.Action{HarmonyLib.Traverse,HarmonyLib.Traverse})
+  parent: HarmonyLib.Traverse
+  langs:
+  - csharp
+  - vb
+  name: IterateFields(Object, Object, Action<Traverse, Traverse>)
+  nameWithType: Traverse.IterateFields(Object, Object, Action<Traverse, Traverse>)
+  fullName: HarmonyLib.Traverse.IterateFields(System.Object, System.Object, System.Action<HarmonyLib.Traverse, HarmonyLib.Traverse>)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/Traverse.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: IterateFields
+    path: ../Tools/Traverse.cs
+    startLine: 385
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Iterates over all fields of the current type and executes a traverse action
+  example: []
+  syntax:
+    content: public static void IterateFields(object source, object target, Action<Traverse, Traverse> action)
+    parameters:
+    - id: source
+      type: System.Object
+      description: Original object
+    - id: target
+      type: System.Object
+      description: Target object
+    - id: action
+      type: System.Action{HarmonyLib.Traverse,HarmonyLib.Traverse}
+      description: The action receiving a traverse for each field traverse pair
+    content.vb: Public Shared Sub IterateFields(source As Object, target As Object, action As Action(Of Traverse, Traverse))
+  overload: HarmonyLib.Traverse.IterateFields*
+  nameWithType.vb: Traverse.IterateFields(Object, Object, Action(Of Traverse, Traverse))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: HarmonyLib.Traverse.IterateFields(System.Object, System.Object, System.Action(Of HarmonyLib.Traverse, HarmonyLib.Traverse))
+  name.vb: IterateFields(Object, Object, Action(Of Traverse, Traverse))
+- uid: HarmonyLib.Traverse.IterateFields(System.Object,System.Object,System.Action{System.String,HarmonyLib.Traverse,HarmonyLib.Traverse})
+  commentId: M:HarmonyLib.Traverse.IterateFields(System.Object,System.Object,System.Action{System.String,HarmonyLib.Traverse,HarmonyLib.Traverse})
+  id: IterateFields(System.Object,System.Object,System.Action{System.String,HarmonyLib.Traverse,HarmonyLib.Traverse})
+  parent: HarmonyLib.Traverse
+  langs:
+  - csharp
+  - vb
+  name: IterateFields(Object, Object, Action<String, Traverse, Traverse>)
+  nameWithType: Traverse.IterateFields(Object, Object, Action<String, Traverse, Traverse>)
+  fullName: HarmonyLib.Traverse.IterateFields(System.Object, System.Object, System.Action<System.String, HarmonyLib.Traverse, HarmonyLib.Traverse>)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/Traverse.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: IterateFields
+    path: ../Tools/Traverse.cs
+    startLine: 397
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Iterates over all fields of the current type and executes a traverse action
+  example: []
+  syntax:
+    content: public static void IterateFields(object source, object target, Action<string, Traverse, Traverse> action)
+    parameters:
+    - id: source
+      type: System.Object
+      description: Original object
+    - id: target
+      type: System.Object
+      description: Target object
+    - id: action
+      type: System.Action{System.String,HarmonyLib.Traverse,HarmonyLib.Traverse}
+      description: The action receiving a field dot path and a field pair
+    content.vb: Public Shared Sub IterateFields(source As Object, target As Object, action As Action(Of String, Traverse, Traverse))
+  overload: HarmonyLib.Traverse.IterateFields*
+  nameWithType.vb: Traverse.IterateFields(Object, Object, Action(Of String, Traverse, Traverse))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: HarmonyLib.Traverse.IterateFields(System.Object, System.Object, System.Action(Of System.String, HarmonyLib.Traverse, HarmonyLib.Traverse))
+  name.vb: IterateFields(Object, Object, Action(Of String, Traverse, Traverse))
+- uid: HarmonyLib.Traverse.IterateProperties(System.Object,System.Action{HarmonyLib.Traverse})
+  commentId: M:HarmonyLib.Traverse.IterateProperties(System.Object,System.Action{HarmonyLib.Traverse})
+  id: IterateProperties(System.Object,System.Action{HarmonyLib.Traverse})
+  parent: HarmonyLib.Traverse
+  langs:
+  - csharp
+  - vb
+  name: IterateProperties(Object, Action<Traverse>)
+  nameWithType: Traverse.IterateProperties(Object, Action<Traverse>)
+  fullName: HarmonyLib.Traverse.IterateProperties(System.Object, System.Action<HarmonyLib.Traverse>)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/Traverse.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: IterateProperties
+    path: ../Tools/Traverse.cs
+    startLine: 408
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Iterates over all properties of the current type and executes a traverse action
+  example: []
+  syntax:
+    content: public static void IterateProperties(object source, Action<Traverse> action)
+    parameters:
+    - id: source
+      type: System.Object
+      description: Original object
+    - id: action
+      type: System.Action{HarmonyLib.Traverse}
+      description: The action receiving a traverse for each property
+    content.vb: Public Shared Sub IterateProperties(source As Object, action As Action(Of Traverse))
+  overload: HarmonyLib.Traverse.IterateProperties*
+  nameWithType.vb: Traverse.IterateProperties(Object, Action(Of Traverse))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: HarmonyLib.Traverse.IterateProperties(System.Object, System.Action(Of HarmonyLib.Traverse))
+  name.vb: IterateProperties(Object, Action(Of Traverse))
+- uid: HarmonyLib.Traverse.IterateProperties(System.Object,System.Object,System.Action{HarmonyLib.Traverse,HarmonyLib.Traverse})
+  commentId: M:HarmonyLib.Traverse.IterateProperties(System.Object,System.Object,System.Action{HarmonyLib.Traverse,HarmonyLib.Traverse})
+  id: IterateProperties(System.Object,System.Object,System.Action{HarmonyLib.Traverse,HarmonyLib.Traverse})
+  parent: HarmonyLib.Traverse
+  langs:
+  - csharp
+  - vb
+  name: IterateProperties(Object, Object, Action<Traverse, Traverse>)
+  nameWithType: Traverse.IterateProperties(Object, Object, Action<Traverse, Traverse>)
+  fullName: HarmonyLib.Traverse.IterateProperties(System.Object, System.Object, System.Action<HarmonyLib.Traverse, HarmonyLib.Traverse>)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/Traverse.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: IterateProperties
+    path: ../Tools/Traverse.cs
+    startLine: 419
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Iterates over all properties of the current type and executes a traverse action
+  example: []
+  syntax:
+    content: public static void IterateProperties(object source, object target, Action<Traverse, Traverse> action)
+    parameters:
+    - id: source
+      type: System.Object
+      description: Original object
+    - id: target
+      type: System.Object
+      description: Target object
+    - id: action
+      type: System.Action{HarmonyLib.Traverse,HarmonyLib.Traverse}
+      description: The action receiving a traverse for each property traverse pair
+    content.vb: Public Shared Sub IterateProperties(source As Object, target As Object, action As Action(Of Traverse, Traverse))
+  overload: HarmonyLib.Traverse.IterateProperties*
+  nameWithType.vb: Traverse.IterateProperties(Object, Object, Action(Of Traverse, Traverse))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: HarmonyLib.Traverse.IterateProperties(System.Object, System.Object, System.Action(Of HarmonyLib.Traverse, HarmonyLib.Traverse))
+  name.vb: IterateProperties(Object, Object, Action(Of Traverse, Traverse))
+- uid: HarmonyLib.Traverse.IterateProperties(System.Object,System.Object,System.Action{System.String,HarmonyLib.Traverse,HarmonyLib.Traverse})
+  commentId: M:HarmonyLib.Traverse.IterateProperties(System.Object,System.Object,System.Action{System.String,HarmonyLib.Traverse,HarmonyLib.Traverse})
+  id: IterateProperties(System.Object,System.Object,System.Action{System.String,HarmonyLib.Traverse,HarmonyLib.Traverse})
+  parent: HarmonyLib.Traverse
+  langs:
+  - csharp
+  - vb
+  name: IterateProperties(Object, Object, Action<String, Traverse, Traverse>)
+  nameWithType: Traverse.IterateProperties(Object, Object, Action<String, Traverse, Traverse>)
+  fullName: HarmonyLib.Traverse.IterateProperties(System.Object, System.Object, System.Action<System.String, HarmonyLib.Traverse, HarmonyLib.Traverse>)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/Traverse.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: IterateProperties
+    path: ../Tools/Traverse.cs
+    startLine: 431
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Iterates over all properties of the current type and executes a traverse action
+  example: []
+  syntax:
+    content: public static void IterateProperties(object source, object target, Action<string, Traverse, Traverse> action)
+    parameters:
+    - id: source
+      type: System.Object
+      description: Original object
+    - id: target
+      type: System.Object
+      description: Target object
+    - id: action
+      type: System.Action{System.String,HarmonyLib.Traverse,HarmonyLib.Traverse}
+      description: The action receiving a property dot path and a property pair
+    content.vb: Public Shared Sub IterateProperties(source As Object, target As Object, action As Action(Of String, Traverse, Traverse))
+  overload: HarmonyLib.Traverse.IterateProperties*
+  nameWithType.vb: Traverse.IterateProperties(Object, Object, Action(Of String, Traverse, Traverse))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: HarmonyLib.Traverse.IterateProperties(System.Object, System.Object, System.Action(Of System.String, HarmonyLib.Traverse, HarmonyLib.Traverse))
+  name.vb: IterateProperties(Object, Object, Action(Of String, Traverse, Traverse))
+- uid: HarmonyLib.Traverse.CopyFields
+  commentId: F:HarmonyLib.Traverse.CopyFields
+  id: CopyFields
+  parent: HarmonyLib.Traverse
+  langs:
+  - csharp
+  - vb
+  name: CopyFields
+  nameWithType: Traverse.CopyFields
+  fullName: HarmonyLib.Traverse.CopyFields
+  type: Field
+  source:
+    remote:
+      path: Harmony/Tools/Traverse.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: CopyFields
+    path: ../Tools/Traverse.cs
+    startLine: 440
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: A default field action that copies fields to fields
+  example: []
+  syntax:
+    content: public static Action<Traverse, Traverse> CopyFields
+    return:
+      type: System.Action{HarmonyLib.Traverse,HarmonyLib.Traverse}
+    content.vb: Public Shared CopyFields As Action(Of Traverse, Traverse)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: HarmonyLib.Traverse.ToString
+  commentId: M:HarmonyLib.Traverse.ToString
+  id: ToString
+  parent: HarmonyLib.Traverse
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: Traverse.ToString()
+  fullName: HarmonyLib.Traverse.ToString()
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/Traverse.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: ToString
+    path: ../Tools/Traverse.cs
+    startLine: 445
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Returns a string that represents the current traverse
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: A string representation
+    content.vb: Public Overrides Function ToString As String
+  overridden: System.Object.ToString
+  overload: HarmonyLib.Traverse.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: HarmonyLib
+  commentId: N:HarmonyLib
+  name: HarmonyLib
+  nameWithType: HarmonyLib
+  fullName: HarmonyLib
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: HarmonyLib.Traverse.Create*
+  commentId: Overload:HarmonyLib.Traverse.Create
+  name: Create
+  nameWithType: Traverse.Create
+  fullName: HarmonyLib.Traverse.Create
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: HarmonyLib.Traverse
+  commentId: T:HarmonyLib.Traverse
+  parent: HarmonyLib
+  name: Traverse
+  nameWithType: Traverse
+  fullName: HarmonyLib.Traverse
+- uid: HarmonyLib.Traverse.CreateWithType*
+  commentId: Overload:HarmonyLib.Traverse.CreateWithType
+  name: CreateWithType
+  nameWithType: Traverse.CreateWithType
+  fullName: HarmonyLib.Traverse.CreateWithType
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: HarmonyLib.Traverse.#ctor*
+  commentId: Overload:HarmonyLib.Traverse.#ctor
+  name: Traverse
+  nameWithType: Traverse.Traverse
+  fullName: HarmonyLib.Traverse.Traverse
+- uid: HarmonyLib.Traverse.GetValue*
+  commentId: Overload:HarmonyLib.Traverse.GetValue
+  name: GetValue
+  nameWithType: Traverse.GetValue
+  fullName: HarmonyLib.Traverse.GetValue
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.Object[]
+  isExternal: true
+  name: Object[]
+  nameWithType: Object[]
+  fullName: System.Object[]
+  nameWithType.vb: Object()
+  fullName.vb: System.Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: HarmonyLib.Traverse.SetValue*
+  commentId: Overload:HarmonyLib.Traverse.SetValue
+  name: SetValue
+  nameWithType: Traverse.SetValue
+  fullName: HarmonyLib.Traverse.SetValue
+- uid: HarmonyLib.Traverse.GetValueType*
+  commentId: Overload:HarmonyLib.Traverse.GetValueType
+  name: GetValueType
+  nameWithType: Traverse.GetValueType
+  fullName: HarmonyLib.Traverse.GetValueType
+- uid: HarmonyLib.Traverse.Type*
+  commentId: Overload:HarmonyLib.Traverse.Type
+  name: Type
+  nameWithType: Traverse.Type
+  fullName: HarmonyLib.Traverse.Type
+- uid: HarmonyLib.Traverse.Field*
+  commentId: Overload:HarmonyLib.Traverse.Field
+  name: Field
+  nameWithType: Traverse.Field
+  fullName: HarmonyLib.Traverse.Field
+- uid: HarmonyLib.Traverse{{T}}
+  commentId: T:HarmonyLib.Traverse{``0}
+  parent: HarmonyLib
+  definition: HarmonyLib.Traverse`1
+  name: Traverse<T>
+  nameWithType: Traverse<T>
+  fullName: HarmonyLib.Traverse<T>
+  nameWithType.vb: Traverse(Of T)
+  fullName.vb: HarmonyLib.Traverse(Of T)
+  name.vb: Traverse(Of T)
+  spec.csharp:
+  - uid: HarmonyLib.Traverse`1
+    name: Traverse
+    nameWithType: Traverse
+    fullName: HarmonyLib.Traverse
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: HarmonyLib.Traverse`1
+    name: Traverse
+    nameWithType: Traverse
+    fullName: HarmonyLib.Traverse
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: HarmonyLib.Traverse`1
+  commentId: T:HarmonyLib.Traverse`1
+  name: Traverse<T>
+  nameWithType: Traverse<T>
+  fullName: HarmonyLib.Traverse<T>
+  nameWithType.vb: Traverse(Of T)
+  fullName.vb: HarmonyLib.Traverse(Of T)
+  name.vb: Traverse(Of T)
+  spec.csharp:
+  - uid: HarmonyLib.Traverse`1
+    name: Traverse
+    nameWithType: Traverse
+    fullName: HarmonyLib.Traverse
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: HarmonyLib.Traverse`1
+    name: Traverse
+    nameWithType: Traverse
+    fullName: HarmonyLib.Traverse
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: HarmonyLib.Traverse.Fields*
+  commentId: Overload:HarmonyLib.Traverse.Fields
+  name: Fields
+  nameWithType: Traverse.Fields
+  fullName: HarmonyLib.Traverse.Fields
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<String>
+  nameWithType: List<String>
+  fullName: System.Collections.Generic.List<System.String>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of System.String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: HarmonyLib.Traverse.Property*
+  commentId: Overload:HarmonyLib.Traverse.Property
+  name: Property
+  nameWithType: Traverse.Property
+  fullName: HarmonyLib.Traverse.Property
+- uid: HarmonyLib.Traverse.Properties*
+  commentId: Overload:HarmonyLib.Traverse.Properties
+  name: Properties
+  nameWithType: Traverse.Properties
+  fullName: HarmonyLib.Traverse.Properties
+- uid: HarmonyLib.Traverse.Method*
+  commentId: Overload:HarmonyLib.Traverse.Method
+  name: Method
+  nameWithType: Traverse.Method
+  fullName: HarmonyLib.Traverse.Method
+- uid: System.Type[]
+  isExternal: true
+  name: Type[]
+  nameWithType: Type[]
+  fullName: System.Type[]
+  nameWithType.vb: Type()
+  fullName.vb: System.Type()
+  name.vb: Type()
+  spec.csharp:
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: HarmonyLib.Traverse.Methods*
+  commentId: Overload:HarmonyLib.Traverse.Methods
+  name: Methods
+  nameWithType: Traverse.Methods
+  fullName: HarmonyLib.Traverse.Methods
+- uid: HarmonyLib.Traverse.FieldExists*
+  commentId: Overload:HarmonyLib.Traverse.FieldExists
+  name: FieldExists
+  nameWithType: Traverse.FieldExists
+  fullName: HarmonyLib.Traverse.FieldExists
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: HarmonyLib.Traverse.PropertyExists*
+  commentId: Overload:HarmonyLib.Traverse.PropertyExists
+  name: PropertyExists
+  nameWithType: Traverse.PropertyExists
+  fullName: HarmonyLib.Traverse.PropertyExists
+- uid: HarmonyLib.Traverse.MethodExists*
+  commentId: Overload:HarmonyLib.Traverse.MethodExists
+  name: MethodExists
+  nameWithType: Traverse.MethodExists
+  fullName: HarmonyLib.Traverse.MethodExists
+- uid: HarmonyLib.Traverse.TypeExists*
+  commentId: Overload:HarmonyLib.Traverse.TypeExists
+  name: TypeExists
+  nameWithType: Traverse.TypeExists
+  fullName: HarmonyLib.Traverse.TypeExists
+- uid: HarmonyLib.Traverse.IterateFields*
+  commentId: Overload:HarmonyLib.Traverse.IterateFields
+  name: IterateFields
+  nameWithType: Traverse.IterateFields
+  fullName: HarmonyLib.Traverse.IterateFields
+- uid: System.Action{HarmonyLib.Traverse}
+  commentId: T:System.Action{HarmonyLib.Traverse}
+  parent: System
+  definition: System.Action`1
+  name: Action<Traverse>
+  nameWithType: Action<Traverse>
+  fullName: System.Action<HarmonyLib.Traverse>
+  nameWithType.vb: Action(Of Traverse)
+  fullName.vb: System.Action(Of HarmonyLib.Traverse)
+  name.vb: Action(Of Traverse)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: HarmonyLib.Traverse
+    name: Traverse
+    nameWithType: Traverse
+    fullName: HarmonyLib.Traverse
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: HarmonyLib.Traverse
+    name: Traverse
+    nameWithType: Traverse
+    fullName: HarmonyLib.Traverse
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Action{HarmonyLib.Traverse,HarmonyLib.Traverse}
+  commentId: T:System.Action{HarmonyLib.Traverse,HarmonyLib.Traverse}
+  parent: System
+  definition: System.Action`2
+  name: Action<Traverse, Traverse>
+  nameWithType: Action<Traverse, Traverse>
+  fullName: System.Action<HarmonyLib.Traverse, HarmonyLib.Traverse>
+  nameWithType.vb: Action(Of Traverse, Traverse)
+  fullName.vb: System.Action(Of HarmonyLib.Traverse, HarmonyLib.Traverse)
+  name.vb: Action(Of Traverse, Traverse)
+  spec.csharp:
+  - uid: System.Action`2
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: HarmonyLib.Traverse
+    name: Traverse
+    nameWithType: Traverse
+    fullName: HarmonyLib.Traverse
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: HarmonyLib.Traverse
+    name: Traverse
+    nameWithType: Traverse
+    fullName: HarmonyLib.Traverse
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`2
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: HarmonyLib.Traverse
+    name: Traverse
+    nameWithType: Traverse
+    fullName: HarmonyLib.Traverse
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: HarmonyLib.Traverse
+    name: Traverse
+    nameWithType: Traverse
+    fullName: HarmonyLib.Traverse
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Action`2
+  commentId: T:System.Action`2
+  isExternal: true
+  name: Action<T1, T2>
+  nameWithType: Action<T1, T2>
+  fullName: System.Action<T1, T2>
+  nameWithType.vb: Action(Of T1, T2)
+  fullName.vb: System.Action(Of T1, T2)
+  name.vb: Action(Of T1, T2)
+  spec.csharp:
+  - uid: System.Action`2
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T1
+    nameWithType: T1
+    fullName: T1
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T2
+    nameWithType: T2
+    fullName: T2
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`2
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T1
+    nameWithType: T1
+    fullName: T1
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T2
+    nameWithType: T2
+    fullName: T2
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Action{System.String,HarmonyLib.Traverse,HarmonyLib.Traverse}
+  commentId: T:System.Action{System.String,HarmonyLib.Traverse,HarmonyLib.Traverse}
+  parent: System
+  definition: System.Action`3
+  name: Action<String, Traverse, Traverse>
+  nameWithType: Action<String, Traverse, Traverse>
+  fullName: System.Action<System.String, HarmonyLib.Traverse, HarmonyLib.Traverse>
+  nameWithType.vb: Action(Of String, Traverse, Traverse)
+  fullName.vb: System.Action(Of System.String, HarmonyLib.Traverse, HarmonyLib.Traverse)
+  name.vb: Action(Of String, Traverse, Traverse)
+  spec.csharp:
+  - uid: System.Action`3
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: HarmonyLib.Traverse
+    name: Traverse
+    nameWithType: Traverse
+    fullName: HarmonyLib.Traverse
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: HarmonyLib.Traverse
+    name: Traverse
+    nameWithType: Traverse
+    fullName: HarmonyLib.Traverse
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`3
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: HarmonyLib.Traverse
+    name: Traverse
+    nameWithType: Traverse
+    fullName: HarmonyLib.Traverse
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: HarmonyLib.Traverse
+    name: Traverse
+    nameWithType: Traverse
+    fullName: HarmonyLib.Traverse
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Action`3
+  commentId: T:System.Action`3
+  isExternal: true
+  name: Action<T1, T2, T3>
+  nameWithType: Action<T1, T2, T3>
+  fullName: System.Action<T1, T2, T3>
+  nameWithType.vb: Action(Of T1, T2, T3)
+  fullName.vb: System.Action(Of T1, T2, T3)
+  name.vb: Action(Of T1, T2, T3)
+  spec.csharp:
+  - uid: System.Action`3
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T1
+    nameWithType: T1
+    fullName: T1
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T2
+    nameWithType: T2
+    fullName: T2
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T3
+    nameWithType: T3
+    fullName: T3
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`3
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T1
+    nameWithType: T1
+    fullName: T1
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T2
+    nameWithType: T2
+    fullName: T2
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T3
+    nameWithType: T3
+    fullName: T3
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: HarmonyLib.Traverse.IterateProperties*
+  commentId: Overload:HarmonyLib.Traverse.IterateProperties
+  name: IterateProperties
+  nameWithType: Traverse.IterateProperties
+  fullName: HarmonyLib.Traverse.IterateProperties
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: HarmonyLib.Traverse.ToString*
+  commentId: Overload:HarmonyLib.Traverse.ToString
+  name: ToString
+  nameWithType: Traverse.ToString
+  fullName: HarmonyLib.Traverse.ToString

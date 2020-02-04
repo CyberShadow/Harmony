@@ -1,103 +1,120 @@
 ### YamlMime:TableOfContent
-- uid: Harmony
-  name: Harmony
+- uid: HarmonyLib
+  name: HarmonyLib
   items:
-  - uid: Harmony.AccessTools
+  - uid: HarmonyLib.AccessTools
     name: AccessTools
-  - uid: Harmony.AccessTools.FieldRef`2
-    name: AccessTools.FieldRef<T, U>
-    name.vb: AccessTools.FieldRef(Of T, U)
-  - uid: Harmony.ArgumentType
+  - uid: HarmonyLib.AccessTools.FieldRef`1
+    name: AccessTools.FieldRef<F>
+    name.vb: AccessTools.FieldRef(Of F)
+  - uid: HarmonyLib.AccessTools.FieldRef`2
+    name: AccessTools.FieldRef<T, F>
+    name.vb: AccessTools.FieldRef(Of T, F)
+  - uid: HarmonyLib.ArgumentType
     name: ArgumentType
-  - uid: Harmony.CodeInstruction
+  - uid: HarmonyLib.CodeInstruction
     name: CodeInstruction
-  - uid: Harmony.CodeMatch
+  - uid: HarmonyLib.CodeMatch
     name: CodeMatch
-  - uid: Harmony.CodeMatcher
+  - uid: HarmonyLib.CodeMatcher
     name: CodeMatcher
-  - uid: Harmony.CollectionExtensions
+  - uid: HarmonyLib.CollectionExtensions
     name: CollectionExtensions
-  - uid: Harmony.DelegateTypeFactory
+  - uid: HarmonyLib.DelegateTypeFactory
     name: DelegateTypeFactory
-  - uid: Harmony.ExceptionBlock
+  - uid: HarmonyLib.ExceptionBlock
     name: ExceptionBlock
-  - uid: Harmony.ExceptionBlockType
+  - uid: HarmonyLib.ExceptionBlockType
     name: ExceptionBlockType
-  - uid: Harmony.FastAccess
+  - uid: HarmonyLib.FastAccess
     name: FastAccess
-  - uid: Harmony.FastInvokeHandler
+  - uid: HarmonyLib.FastInvokeHandler
     name: FastInvokeHandler
-  - uid: Harmony.FileLog
+  - uid: HarmonyLib.FileLog
     name: FileLog
-  - uid: Harmony.GeneralExtensions
+  - uid: HarmonyLib.GeneralExtensions
     name: GeneralExtensions
-  - uid: Harmony.GetterHandler`2
+  - uid: HarmonyLib.GetterHandler`2
     name: GetterHandler<T, S>
     name.vb: GetterHandler(Of T, S)
-  - uid: Harmony.HarmonyAfter
+  - uid: HarmonyLib.Harmony
+    name: Harmony
+  - uid: HarmonyLib.HarmonyAfter
     name: HarmonyAfter
-  - uid: Harmony.HarmonyArgument
+  - uid: HarmonyLib.HarmonyArgument
     name: HarmonyArgument
-  - uid: Harmony.HarmonyAttribute
+  - uid: HarmonyLib.HarmonyAttribute
     name: HarmonyAttribute
-  - uid: Harmony.HarmonyBefore
+  - uid: HarmonyLib.HarmonyBefore
     name: HarmonyBefore
-  - uid: Harmony.HarmonyCleanup
+  - uid: HarmonyLib.HarmonyCleanup
     name: HarmonyCleanup
-  - uid: Harmony.HarmonyInstance
-    name: HarmonyInstance
-  - uid: Harmony.HarmonyMethod
+  - uid: HarmonyLib.HarmonyFinalizer
+    name: HarmonyFinalizer
+  - uid: HarmonyLib.HarmonyMethod
     name: HarmonyMethod
-  - uid: Harmony.HarmonyMethodExtensions
+  - uid: HarmonyLib.HarmonyMethodExtensions
     name: HarmonyMethodExtensions
-  - uid: Harmony.HarmonyPatch
+  - uid: HarmonyLib.HarmonyPatch
     name: HarmonyPatch
-  - uid: Harmony.HarmonyPatchAll
+  - uid: HarmonyLib.HarmonyPatchAll
     name: HarmonyPatchAll
-  - uid: Harmony.HarmonyPatchType
+  - uid: HarmonyLib.HarmonyPatchType
     name: HarmonyPatchType
-  - uid: Harmony.HarmonyPostfix
+  - uid: HarmonyLib.HarmonyPostfix
     name: HarmonyPostfix
-  - uid: Harmony.HarmonyPrefix
+  - uid: HarmonyLib.HarmonyPrefix
     name: HarmonyPrefix
-  - uid: Harmony.HarmonyPrepare
+  - uid: HarmonyLib.HarmonyPrepare
     name: HarmonyPrepare
-  - uid: Harmony.HarmonyPriority
+  - uid: HarmonyLib.HarmonyPriority
     name: HarmonyPriority
-  - uid: Harmony.HarmonyTargetMethod
+  - uid: HarmonyLib.HarmonyReversePatch
+    name: HarmonyReversePatch
+  - uid: HarmonyLib.HarmonyReversePatchType
+    name: HarmonyReversePatchType
+  - uid: HarmonyLib.HarmonyTargetMethod
     name: HarmonyTargetMethod
-  - uid: Harmony.HarmonyTargetMethods
+  - uid: HarmonyLib.HarmonyTargetMethods
     name: HarmonyTargetMethods
-  - uid: Harmony.HarmonyTranspiler
+  - uid: HarmonyLib.HarmonyTranspiler
     name: HarmonyTranspiler
-  - uid: Harmony.InstantiationHandler`1
+  - uid: HarmonyLib.InlineSignature
+    name: InlineSignature
+  - uid: HarmonyLib.InlineSignature.ModifierType
+    name: InlineSignature.ModifierType
+  - uid: HarmonyLib.InstantiationHandler`1
     name: InstantiationHandler<T>
     name.vb: InstantiationHandler(Of T)
-  - uid: Harmony.Memory
+  - uid: HarmonyLib.Memory
     name: Memory
-  - uid: Harmony.MethodInvoker
+  - uid: HarmonyLib.MethodInvoker
     name: MethodInvoker
-  - uid: Harmony.MethodType
+  - uid: HarmonyLib.MethodType
     name: MethodType
-  - uid: Harmony.Patch
+  - uid: HarmonyLib.Patch
     name: Patch
-  - uid: Harmony.Patches
+  - uid: HarmonyLib.PatchClassProcessor
+    name: PatchClassProcessor
+  - uid: HarmonyLib.Patches
     name: Patches
-  - uid: Harmony.PatchInfo
+  - uid: HarmonyLib.PatchInfo
     name: PatchInfo
-  - uid: Harmony.PatchProcessor
+  - uid: HarmonyLib.PatchProcessor
     name: PatchProcessor
-  - uid: Harmony.Priority
+  - uid: HarmonyLib.Priority
     name: Priority
-  - uid: Harmony.SetterHandler`2
+  - uid: HarmonyLib.ReversePatcher
+    name: ReversePatcher
+  - uid: HarmonyLib.SetterHandler`2
     name: SetterHandler<T, S>
     name.vb: SetterHandler(Of T, S)
-  - uid: Harmony.SymbolExtensions
+  - uid: HarmonyLib.SymbolExtensions
     name: SymbolExtensions
-  - uid: Harmony.Transpilers
+  - uid: HarmonyLib.Transpilers
     name: Transpilers
-  - uid: Harmony.Traverse
+  - uid: HarmonyLib.Traverse
     name: Traverse
-  - uid: Harmony.Traverse`1
+  - uid: HarmonyLib.Traverse`1
     name: Traverse<T>
     name.vb: Traverse(Of T)

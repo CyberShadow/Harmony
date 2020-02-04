@@ -1,0 +1,713 @@
+### YamlMime:ManagedReference
+items:
+- uid: HarmonyLib.MethodInvoker
+  commentId: T:HarmonyLib.MethodInvoker
+  id: MethodInvoker
+  parent: HarmonyLib
+  children:
+  - HarmonyLib.MethodInvoker.#ctor(System.Boolean)
+  - HarmonyLib.MethodInvoker.Emit(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.OpCode)
+  - HarmonyLib.MethodInvoker.Emit(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.OpCode,System.Type)
+  - HarmonyLib.MethodInvoker.EmitCall(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.OpCode,System.Reflection.MethodInfo)
+  - HarmonyLib.MethodInvoker.EmitFastInt(System.Reflection.Emit.ILGenerator,System.Int32)
+  - HarmonyLib.MethodInvoker.GetHandler(System.Reflection.MethodInfo)
+  - HarmonyLib.MethodInvoker.Handler(System.Reflection.MethodInfo)
+  langs:
+  - csharp
+  - vb
+  name: MethodInvoker
+  nameWithType: MethodInvoker
+  fullName: HarmonyLib.MethodInvoker
+  type: Class
+  source:
+    remote:
+      path: Harmony/Extras/MethodInvoker.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: MethodInvoker
+    path: ../Extras/MethodInvoker.cs
+    startLine: 16
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: A helper class to invoke method with delegates
+  example: []
+  syntax:
+    content: public class MethodInvoker
+    content.vb: Public Class MethodInvoker
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: HarmonyLib.MethodInvoker.GetHandler(System.Reflection.MethodInfo)
+  commentId: M:HarmonyLib.MethodInvoker.GetHandler(System.Reflection.MethodInfo)
+  id: GetHandler(System.Reflection.MethodInfo)
+  parent: HarmonyLib.MethodInvoker
+  langs:
+  - csharp
+  - vb
+  name: GetHandler(MethodInfo)
+  nameWithType: MethodInvoker.GetHandler(MethodInfo)
+  fullName: HarmonyLib.MethodInvoker.GetHandler(System.Reflection.MethodInfo)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Extras/MethodInvoker.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: GetHandler
+    path: ../Extras/MethodInvoker.cs
+    startLine: 21
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Creates a fast invocation handler from a method
+  example: []
+  syntax:
+    content: public static FastInvokeHandler GetHandler(MethodInfo methodInfo)
+    parameters:
+    - id: methodInfo
+      type: System.Reflection.MethodInfo
+      description: The method to invoke
+    return:
+      type: HarmonyLib.FastInvokeHandler
+      description: The fast invocation handler
+    content.vb: Public Shared Function GetHandler(methodInfo As MethodInfo) As FastInvokeHandler
+  overload: HarmonyLib.MethodInvoker.GetHandler*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: HarmonyLib.MethodInvoker.#ctor(System.Boolean)
+  commentId: M:HarmonyLib.MethodInvoker.#ctor(System.Boolean)
+  id: '#ctor(System.Boolean)'
+  parent: HarmonyLib.MethodInvoker
+  langs:
+  - csharp
+  - vb
+  name: MethodInvoker(Boolean)
+  nameWithType: MethodInvoker.MethodInvoker(Boolean)
+  fullName: HarmonyLib.MethodInvoker.MethodInvoker(System.Boolean)
+  type: Constructor
+  source:
+    remote:
+      path: Harmony/Extras/MethodInvoker.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: .ctor
+    path: ../Extras/MethodInvoker.cs
+    startLine: 58
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Creates a MethodInvoker that can create a fast invocation handler
+  example: []
+  syntax:
+    content: public MethodInvoker(bool directBoxValueAccess = false)
+    parameters:
+    - id: directBoxValueAccess
+      type: System.Boolean
+      description: "\n<p>\nThis option controls how value types passed by reference (e.g. ref int, out my_struct) are handled in the arguments array\npassed to the fast invocation handler.\nSince the arguments array is an object array, any value types contained within it are actually references to a boxed value object.\nLike any other object, there can be other references to such boxed value objects, other than the reference within the arguments array.\n<example>For example,\n<pre><code>var val = 5;\nvar box = (object)val;\nvar arr = new object[] { box };\nhandler(arr); // for a method with parameter signature: ref/out/in int</code></pre>\n</example>\n</p>\n<p>\nIf <code>directBoxValueAccess</code> is <code>true</code>, the boxed value object is accessed (and potentially updated) directly when the handler is called,\nsuch that all references to the boxed object reflect the potentially updated value.\nIn the above example, if the method associated with the handler updates the passed (boxed) value to 10, both <code>box</code> and <code>arr[0]</code>\nnow reflect the value 10. Note that the original <code>val</code> is not updated, since boxing always copies the value into the new boxed value object.\n</p>\n<p>\nIf <code>directBoxValueAccess</code> is <code>false</code> (default), the boxed value object in the arguments array is replaced with a &quot;reboxed&quot; value object,\nsuch that potential updates to the value are reflected only in the arguments array.\nIn the above example, if the method associated with the handler updates the passed (boxed) value to 10, only <code>arr[0]</code> now reflects the value 10.\n</p>\n"
+    content.vb: Public Sub New(directBoxValueAccess As Boolean = False)
+  overload: HarmonyLib.MethodInvoker.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HarmonyLib.MethodInvoker.Handler(System.Reflection.MethodInfo)
+  commentId: M:HarmonyLib.MethodInvoker.Handler(System.Reflection.MethodInfo)
+  id: Handler(System.Reflection.MethodInfo)
+  parent: HarmonyLib.MethodInvoker
+  langs:
+  - csharp
+  - vb
+  name: Handler(MethodInfo)
+  nameWithType: MethodInvoker.Handler(MethodInfo)
+  fullName: HarmonyLib.MethodInvoker.Handler(System.Reflection.MethodInfo)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Extras/MethodInvoker.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: Handler
+    path: ../Extras/MethodInvoker.cs
+    startLine: 66
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Creates a fast invocation handler from a method and a module
+  example: []
+  syntax:
+    content: public FastInvokeHandler Handler(MethodInfo methodInfo)
+    parameters:
+    - id: methodInfo
+      type: System.Reflection.MethodInfo
+      description: The method to invoke
+    return:
+      type: HarmonyLib.FastInvokeHandler
+      description: The fast invocation handler
+    content.vb: Public Function Handler(methodInfo As MethodInfo) As FastInvokeHandler
+  overload: HarmonyLib.MethodInvoker.Handler*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HarmonyLib.MethodInvoker.Emit(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.OpCode)
+  commentId: M:HarmonyLib.MethodInvoker.Emit(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.OpCode)
+  id: Emit(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.OpCode)
+  parent: HarmonyLib.MethodInvoker
+  langs:
+  - csharp
+  - vb
+  name: Emit(ILGenerator, OpCode)
+  nameWithType: MethodInvoker.Emit(ILGenerator, OpCode)
+  fullName: HarmonyLib.MethodInvoker.Emit(System.Reflection.Emit.ILGenerator, System.Reflection.Emit.OpCode)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Extras/MethodInvoker.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: Emit
+    path: ../Extras/MethodInvoker.cs
+    startLine: 164
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  example: []
+  syntax:
+    content: protected virtual void Emit(ILGenerator il, OpCode opcode)
+    parameters:
+    - id: il
+      type: System.Reflection.Emit.ILGenerator
+    - id: opcode
+      type: System.Reflection.Emit.OpCode
+    content.vb: Protected Overridable Sub Emit(il As ILGenerator, opcode As OpCode)
+  overload: HarmonyLib.MethodInvoker.Emit*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: HarmonyLib.MethodInvoker.Emit(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.OpCode,System.Type)
+  commentId: M:HarmonyLib.MethodInvoker.Emit(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.OpCode,System.Type)
+  id: Emit(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.OpCode,System.Type)
+  parent: HarmonyLib.MethodInvoker
+  langs:
+  - csharp
+  - vb
+  name: Emit(ILGenerator, OpCode, Type)
+  nameWithType: MethodInvoker.Emit(ILGenerator, OpCode, Type)
+  fullName: HarmonyLib.MethodInvoker.Emit(System.Reflection.Emit.ILGenerator, System.Reflection.Emit.OpCode, System.Type)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Extras/MethodInvoker.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: Emit
+    path: ../Extras/MethodInvoker.cs
+    startLine: 170
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  example: []
+  syntax:
+    content: protected virtual void Emit(ILGenerator il, OpCode opcode, Type type)
+    parameters:
+    - id: il
+      type: System.Reflection.Emit.ILGenerator
+    - id: opcode
+      type: System.Reflection.Emit.OpCode
+    - id: type
+      type: System.Type
+    content.vb: Protected Overridable Sub Emit(il As ILGenerator, opcode As OpCode, type As Type)
+  overload: HarmonyLib.MethodInvoker.Emit*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: HarmonyLib.MethodInvoker.EmitCall(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.OpCode,System.Reflection.MethodInfo)
+  commentId: M:HarmonyLib.MethodInvoker.EmitCall(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.OpCode,System.Reflection.MethodInfo)
+  id: EmitCall(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.OpCode,System.Reflection.MethodInfo)
+  parent: HarmonyLib.MethodInvoker
+  langs:
+  - csharp
+  - vb
+  name: EmitCall(ILGenerator, OpCode, MethodInfo)
+  nameWithType: MethodInvoker.EmitCall(ILGenerator, OpCode, MethodInfo)
+  fullName: HarmonyLib.MethodInvoker.EmitCall(System.Reflection.Emit.ILGenerator, System.Reflection.Emit.OpCode, System.Reflection.MethodInfo)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Extras/MethodInvoker.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: EmitCall
+    path: ../Extras/MethodInvoker.cs
+    startLine: 176
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  example: []
+  syntax:
+    content: protected virtual void EmitCall(ILGenerator il, OpCode opcode, MethodInfo methodInfo)
+    parameters:
+    - id: il
+      type: System.Reflection.Emit.ILGenerator
+    - id: opcode
+      type: System.Reflection.Emit.OpCode
+    - id: methodInfo
+      type: System.Reflection.MethodInfo
+    content.vb: Protected Overridable Sub EmitCall(il As ILGenerator, opcode As OpCode, methodInfo As MethodInfo)
+  overload: HarmonyLib.MethodInvoker.EmitCall*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: HarmonyLib.MethodInvoker.EmitFastInt(System.Reflection.Emit.ILGenerator,System.Int32)
+  commentId: M:HarmonyLib.MethodInvoker.EmitFastInt(System.Reflection.Emit.ILGenerator,System.Int32)
+  id: EmitFastInt(System.Reflection.Emit.ILGenerator,System.Int32)
+  parent: HarmonyLib.MethodInvoker
+  langs:
+  - csharp
+  - vb
+  name: EmitFastInt(ILGenerator, Int32)
+  nameWithType: MethodInvoker.EmitFastInt(ILGenerator, Int32)
+  fullName: HarmonyLib.MethodInvoker.EmitFastInt(System.Reflection.Emit.ILGenerator, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Extras/MethodInvoker.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: EmitFastInt
+    path: ../Extras/MethodInvoker.cs
+    startLine: 194
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  example: []
+  syntax:
+    content: protected virtual void EmitFastInt(ILGenerator il, int value)
+    parameters:
+    - id: il
+      type: System.Reflection.Emit.ILGenerator
+    - id: value
+      type: System.Int32
+    content.vb: Protected Overridable Sub EmitFastInt(il As ILGenerator, value As Integer)
+  overload: HarmonyLib.MethodInvoker.EmitFastInt*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+references:
+- uid: HarmonyLib
+  commentId: N:HarmonyLib
+  name: HarmonyLib
+  nameWithType: HarmonyLib
+  fullName: HarmonyLib
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: HarmonyLib.MethodInvoker.GetHandler*
+  commentId: Overload:HarmonyLib.MethodInvoker.GetHandler
+  name: GetHandler
+  nameWithType: MethodInvoker.GetHandler
+  fullName: HarmonyLib.MethodInvoker.GetHandler
+- uid: System.Reflection.MethodInfo
+  commentId: T:System.Reflection.MethodInfo
+  parent: System.Reflection
+  isExternal: true
+  name: MethodInfo
+  nameWithType: MethodInfo
+  fullName: System.Reflection.MethodInfo
+- uid: HarmonyLib.FastInvokeHandler
+  commentId: T:HarmonyLib.FastInvokeHandler
+  parent: HarmonyLib
+  name: FastInvokeHandler
+  nameWithType: FastInvokeHandler
+  fullName: HarmonyLib.FastInvokeHandler
+- uid: System.Reflection
+  commentId: N:System.Reflection
+  isExternal: true
+  name: System.Reflection
+  nameWithType: System.Reflection
+  fullName: System.Reflection
+- uid: HarmonyLib.MethodInvoker.#ctor*
+  commentId: Overload:HarmonyLib.MethodInvoker.#ctor
+  name: MethodInvoker
+  nameWithType: MethodInvoker.MethodInvoker
+  fullName: HarmonyLib.MethodInvoker.MethodInvoker
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: HarmonyLib.MethodInvoker.Handler*
+  commentId: Overload:HarmonyLib.MethodInvoker.Handler
+  name: Handler
+  nameWithType: MethodInvoker.Handler
+  fullName: HarmonyLib.MethodInvoker.Handler
+- uid: HarmonyLib.MethodInvoker.Emit*
+  commentId: Overload:HarmonyLib.MethodInvoker.Emit
+  name: Emit
+  nameWithType: MethodInvoker.Emit
+  fullName: HarmonyLib.MethodInvoker.Emit
+- uid: System.Reflection.Emit.ILGenerator
+  commentId: T:System.Reflection.Emit.ILGenerator
+  parent: System.Reflection.Emit
+  isExternal: true
+  name: ILGenerator
+  nameWithType: ILGenerator
+  fullName: System.Reflection.Emit.ILGenerator
+- uid: System.Reflection.Emit.OpCode
+  commentId: T:System.Reflection.Emit.OpCode
+  parent: System.Reflection.Emit
+  isExternal: true
+  name: OpCode
+  nameWithType: OpCode
+  fullName: System.Reflection.Emit.OpCode
+- uid: System.Reflection.Emit
+  commentId: N:System.Reflection.Emit
+  isExternal: true
+  name: System.Reflection.Emit
+  nameWithType: System.Reflection.Emit
+  fullName: System.Reflection.Emit
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: HarmonyLib.MethodInvoker.EmitCall*
+  commentId: Overload:HarmonyLib.MethodInvoker.EmitCall
+  name: EmitCall
+  nameWithType: MethodInvoker.EmitCall
+  fullName: HarmonyLib.MethodInvoker.EmitCall
+- uid: HarmonyLib.MethodInvoker.EmitFastInt*
+  commentId: Overload:HarmonyLib.MethodInvoker.EmitFastInt
+  name: EmitFastInt
+  nameWithType: MethodInvoker.EmitFastInt
+  fullName: HarmonyLib.MethodInvoker.EmitFastInt
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32

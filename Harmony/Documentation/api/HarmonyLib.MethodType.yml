@@ -1,0 +1,223 @@
+### YamlMime:ManagedReference
+items:
+- uid: HarmonyLib.MethodType
+  commentId: T:HarmonyLib.MethodType
+  id: MethodType
+  parent: HarmonyLib
+  children:
+  - HarmonyLib.MethodType.Constructor
+  - HarmonyLib.MethodType.Getter
+  - HarmonyLib.MethodType.Normal
+  - HarmonyLib.MethodType.Setter
+  - HarmonyLib.MethodType.StaticConstructor
+  langs:
+  - csharp
+  - vb
+  name: MethodType
+  nameWithType: MethodType
+  fullName: HarmonyLib.MethodType
+  type: Enum
+  source:
+    remote:
+      path: Harmony/Public/Attributes.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: MethodType
+    path: ../Public/Attributes.cs
+    startLine: 7
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Specifies the type of method
+  example: []
+  syntax:
+    content: public enum MethodType
+    content.vb: Public Enum MethodType
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: HarmonyLib.MethodType.Normal
+  commentId: F:HarmonyLib.MethodType.Normal
+  id: Normal
+  parent: HarmonyLib.MethodType
+  langs:
+  - csharp
+  - vb
+  name: Normal
+  nameWithType: MethodType.Normal
+  fullName: HarmonyLib.MethodType.Normal
+  type: Field
+  source:
+    remote:
+      path: Harmony/Public/Attributes.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: Normal
+    path: ../Public/Attributes.cs
+    startLine: 10
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: This is a normal method
+  example: []
+  syntax:
+    content: Normal = 0
+    return:
+      type: HarmonyLib.MethodType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HarmonyLib.MethodType.Getter
+  commentId: F:HarmonyLib.MethodType.Getter
+  id: Getter
+  parent: HarmonyLib.MethodType
+  langs:
+  - csharp
+  - vb
+  name: Getter
+  nameWithType: MethodType.Getter
+  fullName: HarmonyLib.MethodType.Getter
+  type: Field
+  source:
+    remote:
+      path: Harmony/Public/Attributes.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: Getter
+    path: ../Public/Attributes.cs
+    startLine: 12
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: This is a getter
+  example: []
+  syntax:
+    content: Getter = 1
+    return:
+      type: HarmonyLib.MethodType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HarmonyLib.MethodType.Setter
+  commentId: F:HarmonyLib.MethodType.Setter
+  id: Setter
+  parent: HarmonyLib.MethodType
+  langs:
+  - csharp
+  - vb
+  name: Setter
+  nameWithType: MethodType.Setter
+  fullName: HarmonyLib.MethodType.Setter
+  type: Field
+  source:
+    remote:
+      path: Harmony/Public/Attributes.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: Setter
+    path: ../Public/Attributes.cs
+    startLine: 14
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: This is a setter
+  example: []
+  syntax:
+    content: Setter = 2
+    return:
+      type: HarmonyLib.MethodType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HarmonyLib.MethodType.Constructor
+  commentId: F:HarmonyLib.MethodType.Constructor
+  id: Constructor
+  parent: HarmonyLib.MethodType
+  langs:
+  - csharp
+  - vb
+  name: Constructor
+  nameWithType: MethodType.Constructor
+  fullName: HarmonyLib.MethodType.Constructor
+  type: Field
+  source:
+    remote:
+      path: Harmony/Public/Attributes.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: Constructor
+    path: ../Public/Attributes.cs
+    startLine: 16
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: This is a constructor
+  example: []
+  syntax:
+    content: Constructor = 3
+    return:
+      type: HarmonyLib.MethodType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HarmonyLib.MethodType.StaticConstructor
+  commentId: F:HarmonyLib.MethodType.StaticConstructor
+  id: StaticConstructor
+  parent: HarmonyLib.MethodType
+  langs:
+  - csharp
+  - vb
+  name: StaticConstructor
+  nameWithType: MethodType.StaticConstructor
+  fullName: HarmonyLib.MethodType.StaticConstructor
+  type: Field
+  source:
+    remote:
+      path: Harmony/Public/Attributes.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: StaticConstructor
+    path: ../Public/Attributes.cs
+    startLine: 18
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: This is a static constructor
+  example: []
+  syntax:
+    content: StaticConstructor = 4
+    return:
+      type: HarmonyLib.MethodType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: HarmonyLib
+  commentId: N:HarmonyLib
+  name: HarmonyLib
+  nameWithType: HarmonyLib
+  fullName: HarmonyLib
+- uid: HarmonyLib.MethodType
+  commentId: T:HarmonyLib.MethodType
+  parent: HarmonyLib
+  name: MethodType
+  nameWithType: MethodType
+  fullName: HarmonyLib.MethodType

@@ -1,0 +1,91 @@
+### YamlMime:ManagedReference
+items:
+- uid: HarmonyLib.FastInvokeHandler
+  commentId: T:HarmonyLib.FastInvokeHandler
+  id: FastInvokeHandler
+  parent: HarmonyLib
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: FastInvokeHandler
+  nameWithType: FastInvokeHandler
+  fullName: HarmonyLib.FastInvokeHandler
+  type: Delegate
+  source:
+    remote:
+      path: Harmony/Extras/MethodInvoker.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: FastInvokeHandler
+    path: ../Extras/MethodInvoker.cs
+    startLine: 13
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: A delegate to invoke a method
+  example: []
+  syntax:
+    content: public delegate object FastInvokeHandler(object target, object[] parameters);
+    parameters:
+    - id: target
+      type: System.Object
+      description: The instance
+    - id: parameters
+      type: System.Object[]
+      description: The method parameters
+    return:
+      type: System.Object
+      description: The method result
+    content.vb: Public Delegate Function FastInvokeHandler(target As Object, parameters As Object()) As Object
+  modifiers.csharp:
+  - public
+  - delegate
+  modifiers.vb:
+  - Public
+  - Delegate
+references:
+- uid: HarmonyLib
+  commentId: N:HarmonyLib
+  name: HarmonyLib
+  nameWithType: HarmonyLib
+  fullName: HarmonyLib
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object[]
+  isExternal: true
+  name: Object[]
+  nameWithType: Object[]
+  fullName: System.Object[]
+  nameWithType.vb: Object()
+  fullName.vb: System.Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System

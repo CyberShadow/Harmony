@@ -1,0 +1,118 @@
+### YamlMime:ManagedReference
+items:
+- uid: HarmonyLib.HarmonyReversePatchType
+  commentId: T:HarmonyLib.HarmonyReversePatchType
+  id: HarmonyReversePatchType
+  parent: HarmonyLib
+  children:
+  - HarmonyLib.HarmonyReversePatchType.Original
+  - HarmonyLib.HarmonyReversePatchType.Snapshot
+  langs:
+  - csharp
+  - vb
+  name: HarmonyReversePatchType
+  nameWithType: HarmonyReversePatchType
+  fullName: HarmonyLib.HarmonyReversePatchType
+  type: Enum
+  source:
+    remote:
+      path: Harmony/Public/Attributes.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: HarmonyReversePatchType
+    path: ../Public/Attributes.cs
+    startLine: 55
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Specifies the type of reverse patch
+  example: []
+  syntax:
+    content: public enum HarmonyReversePatchType
+    content.vb: Public Enum HarmonyReversePatchType
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: HarmonyLib.HarmonyReversePatchType.Original
+  commentId: F:HarmonyLib.HarmonyReversePatchType.Original
+  id: Original
+  parent: HarmonyLib.HarmonyReversePatchType
+  langs:
+  - csharp
+  - vb
+  name: Original
+  nameWithType: HarmonyReversePatchType.Original
+  fullName: HarmonyLib.HarmonyReversePatchType.Original
+  type: Field
+  source:
+    remote:
+      path: Harmony/Public/Attributes.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: Original
+    path: ../Public/Attributes.cs
+    startLine: 58
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Use the unmodified original method (directly from IL)
+  example: []
+  syntax:
+    content: Original = 0
+    return:
+      type: HarmonyLib.HarmonyReversePatchType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HarmonyLib.HarmonyReversePatchType.Snapshot
+  commentId: F:HarmonyLib.HarmonyReversePatchType.Snapshot
+  id: Snapshot
+  parent: HarmonyLib.HarmonyReversePatchType
+  langs:
+  - csharp
+  - vb
+  name: Snapshot
+  nameWithType: HarmonyReversePatchType.Snapshot
+  fullName: HarmonyLib.HarmonyReversePatchType.Snapshot
+  type: Field
+  source:
+    remote:
+      path: Harmony/Public/Attributes.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: Snapshot
+    path: ../Public/Attributes.cs
+    startLine: 60
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Use the original as it is right now including previous patches but excluding future ones
+  example: []
+  syntax:
+    content: Snapshot = 1
+    return:
+      type: HarmonyLib.HarmonyReversePatchType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: HarmonyLib
+  commentId: N:HarmonyLib
+  name: HarmonyLib
+  nameWithType: HarmonyLib
+  fullName: HarmonyLib
+- uid: HarmonyLib.HarmonyReversePatchType
+  commentId: T:HarmonyLib.HarmonyReversePatchType
+  parent: HarmonyLib
+  name: HarmonyReversePatchType
+  nameWithType: HarmonyReversePatchType
+  fullName: HarmonyLib.HarmonyReversePatchType

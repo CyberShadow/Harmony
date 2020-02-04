@@ -1,0 +1,978 @@
+### YamlMime:ManagedReference
+items:
+- uid: HarmonyLib.FileLog
+  commentId: T:HarmonyLib.FileLog
+  id: FileLog
+  parent: HarmonyLib
+  children:
+  - HarmonyLib.FileLog.ChangeIndent(System.Int32)
+  - HarmonyLib.FileLog.FlushBuffer
+  - HarmonyLib.FileLog.GetBuffer(System.Boolean)
+  - HarmonyLib.FileLog.indentChar
+  - HarmonyLib.FileLog.indentLevel
+  - HarmonyLib.FileLog.Log(System.String)
+  - HarmonyLib.FileLog.LogBuffered(System.Collections.Generic.List{System.String})
+  - HarmonyLib.FileLog.LogBuffered(System.String)
+  - HarmonyLib.FileLog.LogBytes(System.Int64,System.Int32)
+  - HarmonyLib.FileLog.logPath
+  - HarmonyLib.FileLog.Reset
+  - HarmonyLib.FileLog.SetBuffer(System.Collections.Generic.List{System.String})
+  langs:
+  - csharp
+  - vb
+  name: FileLog
+  nameWithType: FileLog
+  fullName: HarmonyLib.FileLog
+  type: Class
+  source:
+    remote:
+      path: Harmony/Tools/FileLog.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: FileLog
+    path: ../Tools/FileLog.cs
+    startLine: 10
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: A file log for debugging
+  example: []
+  syntax:
+    content: public static class FileLog
+    content.vb: Public Module FileLog
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: HarmonyLib.FileLog.logPath
+  commentId: F:HarmonyLib.FileLog.logPath
+  id: logPath
+  parent: HarmonyLib.FileLog
+  langs:
+  - csharp
+  - vb
+  name: logPath
+  nameWithType: FileLog.logPath
+  fullName: HarmonyLib.FileLog.logPath
+  type: Field
+  source:
+    remote:
+      path: Harmony/Tools/FileLog.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: logPath
+    path: ../Tools/FileLog.cs
+    startLine: 13
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Full pathname of the log file
+  example: []
+  syntax:
+    content: public static string logPath
+    return:
+      type: System.String
+    content.vb: Public Shared logPath As String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: HarmonyLib.FileLog.indentChar
+  commentId: F:HarmonyLib.FileLog.indentChar
+  id: indentChar
+  parent: HarmonyLib.FileLog
+  langs:
+  - csharp
+  - vb
+  name: indentChar
+  nameWithType: FileLog.indentChar
+  fullName: HarmonyLib.FileLog.indentChar
+  type: Field
+  source:
+    remote:
+      path: Harmony/Tools/FileLog.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: indentChar
+    path: ../Tools/FileLog.cs
+    startLine: 16
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: The indent character
+  example: []
+  syntax:
+    content: public static char indentChar
+    return:
+      type: System.Char
+    content.vb: Public Shared indentChar As Char
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: HarmonyLib.FileLog.indentLevel
+  commentId: F:HarmonyLib.FileLog.indentLevel
+  id: indentLevel
+  parent: HarmonyLib.FileLog
+  langs:
+  - csharp
+  - vb
+  name: indentLevel
+  nameWithType: FileLog.indentLevel
+  fullName: HarmonyLib.FileLog.indentLevel
+  type: Field
+  source:
+    remote:
+      path: Harmony/Tools/FileLog.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: indentLevel
+    path: ../Tools/FileLog.cs
+    startLine: 19
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: The indent level
+  example: []
+  syntax:
+    content: public static int indentLevel
+    return:
+      type: System.Int32
+    content.vb: Public Shared indentLevel As Integer
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: HarmonyLib.FileLog.ChangeIndent(System.Int32)
+  commentId: M:HarmonyLib.FileLog.ChangeIndent(System.Int32)
+  id: ChangeIndent(System.Int32)
+  parent: HarmonyLib.FileLog
+  langs:
+  - csharp
+  - vb
+  name: ChangeIndent(Int32)
+  nameWithType: FileLog.ChangeIndent(Int32)
+  fullName: HarmonyLib.FileLog.ChangeIndent(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/FileLog.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: ChangeIndent
+    path: ../Tools/FileLog.cs
+    startLine: 32
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Changes indent depth
+  example: []
+  syntax:
+    content: public static void ChangeIndent(int delta)
+    parameters:
+    - id: delta
+      type: System.Int32
+      description: The value to add to the indent level
+    content.vb: Public Shared Sub ChangeIndent(delta As Integer)
+  overload: HarmonyLib.FileLog.ChangeIndent*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: HarmonyLib.FileLog.LogBuffered(System.String)
+  commentId: M:HarmonyLib.FileLog.LogBuffered(System.String)
+  id: LogBuffered(System.String)
+  parent: HarmonyLib.FileLog
+  langs:
+  - csharp
+  - vb
+  name: LogBuffered(String)
+  nameWithType: FileLog.LogBuffered(String)
+  fullName: HarmonyLib.FileLog.LogBuffered(System.String)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/FileLog.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: LogBuffered
+    path: ../Tools/FileLog.cs
+    startLine: 41
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: >-
+    Log a string in a buffered way. Use this method only if you are sure that FlushBuffer will be called
+
+    or else logging information is incomplete in case of a crash
+  example: []
+  syntax:
+    content: public static void LogBuffered(string str)
+    parameters:
+    - id: str
+      type: System.String
+      description: The string to log
+    content.vb: Public Shared Sub LogBuffered(str As String)
+  overload: HarmonyLib.FileLog.LogBuffered*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: HarmonyLib.FileLog.LogBuffered(System.Collections.Generic.List{System.String})
+  commentId: M:HarmonyLib.FileLog.LogBuffered(System.Collections.Generic.List{System.String})
+  id: LogBuffered(System.Collections.Generic.List{System.String})
+  parent: HarmonyLib.FileLog
+  langs:
+  - csharp
+  - vb
+  name: LogBuffered(List<String>)
+  nameWithType: FileLog.LogBuffered(List<String>)
+  fullName: HarmonyLib.FileLog.LogBuffered(System.Collections.Generic.List<System.String>)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/FileLog.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: LogBuffered
+    path: ../Tools/FileLog.cs
+    startLine: 53
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: >-
+    Logs a list of string in a buffered way. Use this method only if you are sure that FlushBuffer will be called
+
+    or else logging information is incomplete in case of a crash
+  example: []
+  syntax:
+    content: public static void LogBuffered(List<string> strings)
+    parameters:
+    - id: strings
+      type: System.Collections.Generic.List{System.String}
+      description: The strings to log (they will not be re-indented)
+    content.vb: Public Shared Sub LogBuffered(strings As List(Of String))
+  overload: HarmonyLib.FileLog.LogBuffered*
+  nameWithType.vb: FileLog.LogBuffered(List(Of String))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: HarmonyLib.FileLog.LogBuffered(System.Collections.Generic.List(Of System.String))
+  name.vb: LogBuffered(List(Of String))
+- uid: HarmonyLib.FileLog.GetBuffer(System.Boolean)
+  commentId: M:HarmonyLib.FileLog.GetBuffer(System.Boolean)
+  id: GetBuffer(System.Boolean)
+  parent: HarmonyLib.FileLog
+  langs:
+  - csharp
+  - vb
+  name: GetBuffer(Boolean)
+  nameWithType: FileLog.GetBuffer(Boolean)
+  fullName: HarmonyLib.FileLog.GetBuffer(System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/FileLog.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: GetBuffer
+    path: ../Tools/FileLog.cs
+    startLine: 65
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Returns the log buffer and optionally empties it
+  example: []
+  syntax:
+    content: public static List<string> GetBuffer(bool clear)
+    parameters:
+    - id: clear
+      type: System.Boolean
+      description: True to empty the buffer
+    return:
+      type: System.Collections.Generic.List{System.String}
+      description: The buffer.
+    content.vb: Public Shared Function GetBuffer(clear As Boolean) As List(Of String)
+  overload: HarmonyLib.FileLog.GetBuffer*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: HarmonyLib.FileLog.SetBuffer(System.Collections.Generic.List{System.String})
+  commentId: M:HarmonyLib.FileLog.SetBuffer(System.Collections.Generic.List{System.String})
+  id: SetBuffer(System.Collections.Generic.List{System.String})
+  parent: HarmonyLib.FileLog
+  langs:
+  - csharp
+  - vb
+  name: SetBuffer(List<String>)
+  nameWithType: FileLog.SetBuffer(List<String>)
+  fullName: HarmonyLib.FileLog.SetBuffer(System.Collections.Generic.List<System.String>)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/FileLog.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: SetBuffer
+    path: ../Tools/FileLog.cs
+    startLine: 79
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Replaces the buffer with new lines
+  example: []
+  syntax:
+    content: public static void SetBuffer(List<string> buffer)
+    parameters:
+    - id: buffer
+      type: System.Collections.Generic.List{System.String}
+      description: The lines to store
+    content.vb: Public Shared Sub SetBuffer(buffer As List(Of String))
+  overload: HarmonyLib.FileLog.SetBuffer*
+  nameWithType.vb: FileLog.SetBuffer(List(Of String))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: HarmonyLib.FileLog.SetBuffer(System.Collections.Generic.List(Of System.String))
+  name.vb: SetBuffer(List(Of String))
+- uid: HarmonyLib.FileLog.FlushBuffer
+  commentId: M:HarmonyLib.FileLog.FlushBuffer
+  id: FlushBuffer
+  parent: HarmonyLib.FileLog
+  langs:
+  - csharp
+  - vb
+  name: FlushBuffer()
+  nameWithType: FileLog.FlushBuffer()
+  fullName: HarmonyLib.FileLog.FlushBuffer()
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/FileLog.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: FlushBuffer
+    path: ../Tools/FileLog.cs
+    startLine: 88
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Flushes the log buffer to disk (use in combination with LogBuffered)
+  example: []
+  syntax:
+    content: public static void FlushBuffer()
+    content.vb: Public Shared Sub FlushBuffer
+  overload: HarmonyLib.FileLog.FlushBuffer*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: HarmonyLib.FileLog.Log(System.String)
+  commentId: M:HarmonyLib.FileLog.Log(System.String)
+  id: Log(System.String)
+  parent: HarmonyLib.FileLog
+  langs:
+  - csharp
+  - vb
+  name: Log(String)
+  nameWithType: FileLog.Log(String)
+  fullName: HarmonyLib.FileLog.Log(System.String)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/FileLog.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: Log
+    path: ../Tools/FileLog.cs
+    startLine: 107
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Log a string directly to disk. Slower method that prevents missing information in case of a crash
+  example: []
+  syntax:
+    content: public static void Log(string str)
+    parameters:
+    - id: str
+      type: System.String
+      description: The string to log.
+    content.vb: Public Shared Sub Log(str As String)
+  overload: HarmonyLib.FileLog.Log*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: HarmonyLib.FileLog.Reset
+  commentId: M:HarmonyLib.FileLog.Reset
+  id: Reset
+  parent: HarmonyLib.FileLog
+  langs:
+  - csharp
+  - vb
+  name: Reset()
+  nameWithType: FileLog.Reset()
+  fullName: HarmonyLib.FileLog.Reset()
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/FileLog.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: Reset
+    path: ../Tools/FileLog.cs
+    startLine: 119
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Resets and deletes the log
+  example: []
+  syntax:
+    content: public static void Reset()
+    content.vb: Public Shared Sub Reset
+  overload: HarmonyLib.FileLog.Reset*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: HarmonyLib.FileLog.LogBytes(System.Int64,System.Int32)
+  commentId: M:HarmonyLib.FileLog.LogBytes(System.Int64,System.Int32)
+  id: LogBytes(System.Int64,System.Int32)
+  parent: HarmonyLib.FileLog
+  langs:
+  - csharp
+  - vb
+  name: LogBytes(Int64, Int32)
+  nameWithType: FileLog.LogBytes(Int64, Int32)
+  fullName: HarmonyLib.FileLog.LogBytes(System.Int64, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/FileLog.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: LogBytes
+    path: ../Tools/FileLog.cs
+    startLine: 132
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Logs some bytes as hex values
+  example: []
+  syntax:
+    content: public static void LogBytes(long ptr, int len)
+    parameters:
+    - id: ptr
+      type: System.Int64
+      description: The pointer to some memory
+    - id: len
+      type: System.Int32
+      description: The length of bytes to log
+    content.vb: Public Shared Sub LogBytes(ptr As Long, len As Integer)
+  overload: HarmonyLib.FileLog.LogBytes*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: HarmonyLib
+  commentId: N:HarmonyLib
+  name: HarmonyLib
+  nameWithType: HarmonyLib
+  fullName: HarmonyLib
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Char
+  commentId: T:System.Char
+  parent: System
+  isExternal: true
+  name: Char
+  nameWithType: Char
+  fullName: System.Char
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: HarmonyLib.FileLog.ChangeIndent*
+  commentId: Overload:HarmonyLib.FileLog.ChangeIndent
+  name: ChangeIndent
+  nameWithType: FileLog.ChangeIndent
+  fullName: HarmonyLib.FileLog.ChangeIndent
+- uid: HarmonyLib.FileLog.LogBuffered*
+  commentId: Overload:HarmonyLib.FileLog.LogBuffered
+  name: LogBuffered
+  nameWithType: FileLog.LogBuffered
+  fullName: HarmonyLib.FileLog.LogBuffered
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<String>
+  nameWithType: List<String>
+  fullName: System.Collections.Generic.List<System.String>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of System.String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: HarmonyLib.FileLog.GetBuffer*
+  commentId: Overload:HarmonyLib.FileLog.GetBuffer
+  name: GetBuffer
+  nameWithType: FileLog.GetBuffer
+  fullName: HarmonyLib.FileLog.GetBuffer
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: HarmonyLib.FileLog.SetBuffer*
+  commentId: Overload:HarmonyLib.FileLog.SetBuffer
+  name: SetBuffer
+  nameWithType: FileLog.SetBuffer
+  fullName: HarmonyLib.FileLog.SetBuffer
+- uid: HarmonyLib.FileLog.FlushBuffer*
+  commentId: Overload:HarmonyLib.FileLog.FlushBuffer
+  name: FlushBuffer
+  nameWithType: FileLog.FlushBuffer
+  fullName: HarmonyLib.FileLog.FlushBuffer
+- uid: HarmonyLib.FileLog.Log*
+  commentId: Overload:HarmonyLib.FileLog.Log
+  name: Log
+  nameWithType: FileLog.Log
+  fullName: HarmonyLib.FileLog.Log
+- uid: HarmonyLib.FileLog.Reset*
+  commentId: Overload:HarmonyLib.FileLog.Reset
+  name: Reset
+  nameWithType: FileLog.Reset
+  fullName: HarmonyLib.FileLog.Reset
+- uid: HarmonyLib.FileLog.LogBytes*
+  commentId: Overload:HarmonyLib.FileLog.LogBytes
+  name: LogBytes
+  nameWithType: FileLog.LogBytes
+  fullName: HarmonyLib.FileLog.LogBytes
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  nameWithType: Int64
+  fullName: System.Int64

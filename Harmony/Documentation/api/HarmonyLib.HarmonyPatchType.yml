@@ -1,0 +1,258 @@
+### YamlMime:ManagedReference
+items:
+- uid: HarmonyLib.HarmonyPatchType
+  commentId: T:HarmonyLib.HarmonyPatchType
+  id: HarmonyPatchType
+  parent: HarmonyLib
+  children:
+  - HarmonyLib.HarmonyPatchType.All
+  - HarmonyLib.HarmonyPatchType.Finalizer
+  - HarmonyLib.HarmonyPatchType.Postfix
+  - HarmonyLib.HarmonyPatchType.Prefix
+  - HarmonyLib.HarmonyPatchType.ReversePatch
+  - HarmonyLib.HarmonyPatchType.Transpiler
+  langs:
+  - csharp
+  - vb
+  name: HarmonyPatchType
+  nameWithType: HarmonyPatchType
+  fullName: HarmonyLib.HarmonyPatchType
+  type: Enum
+  source:
+    remote:
+      path: Harmony/Public/Attributes.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: HarmonyPatchType
+    path: ../Public/Attributes.cs
+    startLine: 37
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Specifies the type of patch
+  example: []
+  syntax:
+    content: public enum HarmonyPatchType
+    content.vb: Public Enum HarmonyPatchType
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: HarmonyLib.HarmonyPatchType.All
+  commentId: F:HarmonyLib.HarmonyPatchType.All
+  id: All
+  parent: HarmonyLib.HarmonyPatchType
+  langs:
+  - csharp
+  - vb
+  name: All
+  nameWithType: HarmonyPatchType.All
+  fullName: HarmonyLib.HarmonyPatchType.All
+  type: Field
+  source:
+    remote:
+      path: Harmony/Public/Attributes.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: All
+    path: ../Public/Attributes.cs
+    startLine: 40
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Any patch
+  example: []
+  syntax:
+    content: All = 0
+    return:
+      type: HarmonyLib.HarmonyPatchType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HarmonyLib.HarmonyPatchType.Prefix
+  commentId: F:HarmonyLib.HarmonyPatchType.Prefix
+  id: Prefix
+  parent: HarmonyLib.HarmonyPatchType
+  langs:
+  - csharp
+  - vb
+  name: Prefix
+  nameWithType: HarmonyPatchType.Prefix
+  fullName: HarmonyLib.HarmonyPatchType.Prefix
+  type: Field
+  source:
+    remote:
+      path: Harmony/Public/Attributes.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: Prefix
+    path: ../Public/Attributes.cs
+    startLine: 42
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: A prefix patch
+  example: []
+  syntax:
+    content: Prefix = 1
+    return:
+      type: HarmonyLib.HarmonyPatchType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HarmonyLib.HarmonyPatchType.Postfix
+  commentId: F:HarmonyLib.HarmonyPatchType.Postfix
+  id: Postfix
+  parent: HarmonyLib.HarmonyPatchType
+  langs:
+  - csharp
+  - vb
+  name: Postfix
+  nameWithType: HarmonyPatchType.Postfix
+  fullName: HarmonyLib.HarmonyPatchType.Postfix
+  type: Field
+  source:
+    remote:
+      path: Harmony/Public/Attributes.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: Postfix
+    path: ../Public/Attributes.cs
+    startLine: 44
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: A postfix patch
+  example: []
+  syntax:
+    content: Postfix = 2
+    return:
+      type: HarmonyLib.HarmonyPatchType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HarmonyLib.HarmonyPatchType.Transpiler
+  commentId: F:HarmonyLib.HarmonyPatchType.Transpiler
+  id: Transpiler
+  parent: HarmonyLib.HarmonyPatchType
+  langs:
+  - csharp
+  - vb
+  name: Transpiler
+  nameWithType: HarmonyPatchType.Transpiler
+  fullName: HarmonyLib.HarmonyPatchType.Transpiler
+  type: Field
+  source:
+    remote:
+      path: Harmony/Public/Attributes.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: Transpiler
+    path: ../Public/Attributes.cs
+    startLine: 46
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: A transpiler
+  example: []
+  syntax:
+    content: Transpiler = 3
+    return:
+      type: HarmonyLib.HarmonyPatchType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HarmonyLib.HarmonyPatchType.Finalizer
+  commentId: F:HarmonyLib.HarmonyPatchType.Finalizer
+  id: Finalizer
+  parent: HarmonyLib.HarmonyPatchType
+  langs:
+  - csharp
+  - vb
+  name: Finalizer
+  nameWithType: HarmonyPatchType.Finalizer
+  fullName: HarmonyLib.HarmonyPatchType.Finalizer
+  type: Field
+  source:
+    remote:
+      path: Harmony/Public/Attributes.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: Finalizer
+    path: ../Public/Attributes.cs
+    startLine: 48
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: A finalizer
+  example: []
+  syntax:
+    content: Finalizer = 4
+    return:
+      type: HarmonyLib.HarmonyPatchType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HarmonyLib.HarmonyPatchType.ReversePatch
+  commentId: F:HarmonyLib.HarmonyPatchType.ReversePatch
+  id: ReversePatch
+  parent: HarmonyLib.HarmonyPatchType
+  langs:
+  - csharp
+  - vb
+  name: ReversePatch
+  nameWithType: HarmonyPatchType.ReversePatch
+  fullName: HarmonyLib.HarmonyPatchType.ReversePatch
+  type: Field
+  source:
+    remote:
+      path: Harmony/Public/Attributes.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: ReversePatch
+    path: ../Public/Attributes.cs
+    startLine: 50
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: A reverse patch
+  example: []
+  syntax:
+    content: ReversePatch = 5
+    return:
+      type: HarmonyLib.HarmonyPatchType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: HarmonyLib
+  commentId: N:HarmonyLib
+  name: HarmonyLib
+  nameWithType: HarmonyLib
+  fullName: HarmonyLib
+- uid: HarmonyLib.HarmonyPatchType
+  commentId: T:HarmonyLib.HarmonyPatchType
+  parent: HarmonyLib
+  name: HarmonyPatchType
+  nameWithType: HarmonyPatchType
+  fullName: HarmonyLib.HarmonyPatchType

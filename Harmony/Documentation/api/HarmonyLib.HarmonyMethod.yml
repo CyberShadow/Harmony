@@ -1,0 +1,1499 @@
+### YamlMime:ManagedReference
+items:
+- uid: HarmonyLib.HarmonyMethod
+  commentId: T:HarmonyLib.HarmonyMethod
+  id: HarmonyMethod
+  parent: HarmonyLib
+  children:
+  - HarmonyLib.HarmonyMethod.#ctor
+  - HarmonyLib.HarmonyMethod.#ctor(System.Reflection.MethodInfo)
+  - HarmonyLib.HarmonyMethod.#ctor(System.Type,System.String,System.Type[])
+  - HarmonyLib.HarmonyMethod.after
+  - HarmonyLib.HarmonyMethod.argumentTypes
+  - HarmonyLib.HarmonyMethod.before
+  - HarmonyLib.HarmonyMethod.declaringType
+  - HarmonyLib.HarmonyMethod.HarmonyFields
+  - HarmonyLib.HarmonyMethod.Merge(System.Collections.Generic.List{HarmonyLib.HarmonyMethod})
+  - HarmonyLib.HarmonyMethod.method
+  - HarmonyLib.HarmonyMethod.methodName
+  - HarmonyLib.HarmonyMethod.methodType
+  - HarmonyLib.HarmonyMethod.priority
+  - HarmonyLib.HarmonyMethod.reversePatchType
+  - HarmonyLib.HarmonyMethod.ToString
+  langs:
+  - csharp
+  - vb
+  name: HarmonyMethod
+  nameWithType: HarmonyMethod
+  fullName: HarmonyLib.HarmonyMethod
+  type: Class
+  source:
+    remote:
+      path: Harmony/Public/HarmonyMethod.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: HarmonyMethod
+    path: ../Public/HarmonyMethod.cs
+    startLine: 9
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: A wrapper around a method to use it as a patch (for example a Prefix)
+  example: []
+  syntax:
+    content: public class HarmonyMethod
+    content.vb: Public Class HarmonyMethod
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  extensionMethods:
+  - HarmonyLib.HarmonyMethod.HarmonyLib.HarmonyMethodExtensions.CopyTo(HarmonyLib.HarmonyMethod)
+  - HarmonyLib.HarmonyMethod.HarmonyLib.HarmonyMethodExtensions.Clone
+  - HarmonyLib.HarmonyMethod.HarmonyLib.HarmonyMethodExtensions.Merge(HarmonyLib.HarmonyMethod)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: HarmonyLib.HarmonyMethod.method
+  commentId: F:HarmonyLib.HarmonyMethod.method
+  id: method
+  parent: HarmonyLib.HarmonyMethod
+  langs:
+  - csharp
+  - vb
+  name: method
+  nameWithType: HarmonyMethod.method
+  fullName: HarmonyLib.HarmonyMethod.method
+  type: Field
+  source:
+    remote:
+      path: Harmony/Public/HarmonyMethod.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: method
+    path: ../Public/HarmonyMethod.cs
+    startLine: 12
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: The original method
+  example: []
+  syntax:
+    content: public MethodInfo method
+    return:
+      type: System.Reflection.MethodInfo
+    content.vb: Public method As MethodInfo
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HarmonyLib.HarmonyMethod.declaringType
+  commentId: F:HarmonyLib.HarmonyMethod.declaringType
+  id: declaringType
+  parent: HarmonyLib.HarmonyMethod
+  langs:
+  - csharp
+  - vb
+  name: declaringType
+  nameWithType: HarmonyMethod.declaringType
+  fullName: HarmonyLib.HarmonyMethod.declaringType
+  type: Field
+  source:
+    remote:
+      path: Harmony/Public/HarmonyMethod.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: declaringType
+    path: ../Public/HarmonyMethod.cs
+    startLine: 15
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Declaring class
+  example: []
+  syntax:
+    content: public Type declaringType
+    return:
+      type: System.Type
+    content.vb: Public declaringType As Type
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HarmonyLib.HarmonyMethod.methodName
+  commentId: F:HarmonyLib.HarmonyMethod.methodName
+  id: methodName
+  parent: HarmonyLib.HarmonyMethod
+  langs:
+  - csharp
+  - vb
+  name: methodName
+  nameWithType: HarmonyMethod.methodName
+  fullName: HarmonyLib.HarmonyMethod.methodName
+  type: Field
+  source:
+    remote:
+      path: Harmony/Public/HarmonyMethod.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: methodName
+    path: ../Public/HarmonyMethod.cs
+    startLine: 17
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Method name
+  example: []
+  syntax:
+    content: public string methodName
+    return:
+      type: System.String
+    content.vb: Public methodName As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HarmonyLib.HarmonyMethod.methodType
+  commentId: F:HarmonyLib.HarmonyMethod.methodType
+  id: methodType
+  parent: HarmonyLib.HarmonyMethod
+  langs:
+  - csharp
+  - vb
+  name: methodType
+  nameWithType: HarmonyMethod.methodType
+  fullName: HarmonyLib.HarmonyMethod.methodType
+  type: Field
+  source:
+    remote:
+      path: Harmony/Public/HarmonyMethod.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: methodType
+    path: ../Public/HarmonyMethod.cs
+    startLine: 19
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Method type
+  example: []
+  syntax:
+    content: public MethodType? methodType
+    return:
+      type: System.Nullable{HarmonyLib.MethodType}
+    content.vb: Public methodType As MethodType?
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HarmonyLib.HarmonyMethod.argumentTypes
+  commentId: F:HarmonyLib.HarmonyMethod.argumentTypes
+  id: argumentTypes
+  parent: HarmonyLib.HarmonyMethod
+  langs:
+  - csharp
+  - vb
+  name: argumentTypes
+  nameWithType: HarmonyMethod.argumentTypes
+  fullName: HarmonyLib.HarmonyMethod.argumentTypes
+  type: Field
+  source:
+    remote:
+      path: Harmony/Public/HarmonyMethod.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: argumentTypes
+    path: ../Public/HarmonyMethod.cs
+    startLine: 21
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Argument types
+  example: []
+  syntax:
+    content: public Type[] argumentTypes
+    return:
+      type: System.Type[]
+    content.vb: Public argumentTypes As Type()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HarmonyLib.HarmonyMethod.priority
+  commentId: F:HarmonyLib.HarmonyMethod.priority
+  id: priority
+  parent: HarmonyLib.HarmonyMethod
+  langs:
+  - csharp
+  - vb
+  name: priority
+  nameWithType: HarmonyMethod.priority
+  fullName: HarmonyLib.HarmonyMethod.priority
+  type: Field
+  source:
+    remote:
+      path: Harmony/Public/HarmonyMethod.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: priority
+    path: ../Public/HarmonyMethod.cs
+    startLine: 23
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Priority
+  example: []
+  syntax:
+    content: public int priority
+    return:
+      type: System.Int32
+    content.vb: Public priority As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HarmonyLib.HarmonyMethod.before
+  commentId: F:HarmonyLib.HarmonyMethod.before
+  id: before
+  parent: HarmonyLib.HarmonyMethod
+  langs:
+  - csharp
+  - vb
+  name: before
+  nameWithType: HarmonyMethod.before
+  fullName: HarmonyLib.HarmonyMethod.before
+  type: Field
+  source:
+    remote:
+      path: Harmony/Public/HarmonyMethod.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: before
+    path: ../Public/HarmonyMethod.cs
+    startLine: 25
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Before parameter
+  example: []
+  syntax:
+    content: public string[] before
+    return:
+      type: System.String[]
+    content.vb: Public before As String()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HarmonyLib.HarmonyMethod.after
+  commentId: F:HarmonyLib.HarmonyMethod.after
+  id: after
+  parent: HarmonyLib.HarmonyMethod
+  langs:
+  - csharp
+  - vb
+  name: after
+  nameWithType: HarmonyMethod.after
+  fullName: HarmonyLib.HarmonyMethod.after
+  type: Field
+  source:
+    remote:
+      path: Harmony/Public/HarmonyMethod.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: after
+    path: ../Public/HarmonyMethod.cs
+    startLine: 27
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: After parameter
+  example: []
+  syntax:
+    content: public string[] after
+    return:
+      type: System.String[]
+    content.vb: Public after As String()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HarmonyLib.HarmonyMethod.reversePatchType
+  commentId: F:HarmonyLib.HarmonyMethod.reversePatchType
+  id: reversePatchType
+  parent: HarmonyLib.HarmonyMethod
+  langs:
+  - csharp
+  - vb
+  name: reversePatchType
+  nameWithType: HarmonyMethod.reversePatchType
+  fullName: HarmonyLib.HarmonyMethod.reversePatchType
+  type: Field
+  source:
+    remote:
+      path: Harmony/Public/HarmonyMethod.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: reversePatchType
+    path: ../Public/HarmonyMethod.cs
+    startLine: 29
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Reverse patch type
+  example: []
+  syntax:
+    content: public HarmonyReversePatchType? reversePatchType
+    return:
+      type: System.Nullable{HarmonyLib.HarmonyReversePatchType}
+    content.vb: Public reversePatchType As HarmonyReversePatchType?
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HarmonyLib.HarmonyMethod.#ctor
+  commentId: M:HarmonyLib.HarmonyMethod.#ctor
+  id: '#ctor'
+  parent: HarmonyLib.HarmonyMethod
+  langs:
+  - csharp
+  - vb
+  name: HarmonyMethod()
+  nameWithType: HarmonyMethod.HarmonyMethod()
+  fullName: HarmonyLib.HarmonyMethod.HarmonyMethod()
+  type: Constructor
+  source:
+    remote:
+      path: Harmony/Public/HarmonyMethod.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: .ctor
+    path: ../Public/HarmonyMethod.cs
+    startLine: 32
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Default constructor
+  example: []
+  syntax:
+    content: public HarmonyMethod()
+    content.vb: Public Sub New
+  overload: HarmonyLib.HarmonyMethod.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HarmonyLib.HarmonyMethod.#ctor(System.Reflection.MethodInfo)
+  commentId: M:HarmonyLib.HarmonyMethod.#ctor(System.Reflection.MethodInfo)
+  id: '#ctor(System.Reflection.MethodInfo)'
+  parent: HarmonyLib.HarmonyMethod
+  langs:
+  - csharp
+  - vb
+  name: HarmonyMethod(MethodInfo)
+  nameWithType: HarmonyMethod.HarmonyMethod(MethodInfo)
+  fullName: HarmonyLib.HarmonyMethod.HarmonyMethod(System.Reflection.MethodInfo)
+  type: Constructor
+  source:
+    remote:
+      path: Harmony/Public/HarmonyMethod.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: .ctor
+    path: ../Public/HarmonyMethod.cs
+    startLine: 50
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Creates an annotation from a method
+  example: []
+  syntax:
+    content: public HarmonyMethod(MethodInfo method)
+    parameters:
+    - id: method
+      type: System.Reflection.MethodInfo
+      description: The original method
+    content.vb: Public Sub New(method As MethodInfo)
+  overload: HarmonyLib.HarmonyMethod.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HarmonyLib.HarmonyMethod.#ctor(System.Type,System.String,System.Type[])
+  commentId: M:HarmonyLib.HarmonyMethod.#ctor(System.Type,System.String,System.Type[])
+  id: '#ctor(System.Type,System.String,System.Type[])'
+  parent: HarmonyLib.HarmonyMethod
+  langs:
+  - csharp
+  - vb
+  name: HarmonyMethod(Type, String, Type[])
+  nameWithType: HarmonyMethod.HarmonyMethod(Type, String, Type[])
+  fullName: HarmonyLib.HarmonyMethod.HarmonyMethod(System.Type, System.String, System.Type[])
+  type: Constructor
+  source:
+    remote:
+      path: Harmony/Public/HarmonyMethod.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: .ctor
+    path: ../Public/HarmonyMethod.cs
+    startLine: 62
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Creates an annotation from a method.
+  example: []
+  syntax:
+    content: public HarmonyMethod(Type type, string name, Type[] parameters = null)
+    parameters:
+    - id: type
+      type: System.Type
+      description: The type
+    - id: name
+      type: System.String
+      description: The method name
+    - id: parameters
+      type: System.Type[]
+      description: The optional argument types for overloaded methods
+    content.vb: Public Sub New(type As Type, name As String, parameters As Type() = Nothing)
+  overload: HarmonyLib.HarmonyMethod.#ctor*
+  nameWithType.vb: HarmonyMethod.HarmonyMethod(Type, String, Type())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: HarmonyLib.HarmonyMethod.HarmonyMethod(System.Type, System.String, System.Type())
+  name.vb: HarmonyMethod(Type, String, Type())
+- uid: HarmonyLib.HarmonyMethod.HarmonyFields
+  commentId: M:HarmonyLib.HarmonyMethod.HarmonyFields
+  id: HarmonyFields
+  parent: HarmonyLib.HarmonyMethod
+  langs:
+  - csharp
+  - vb
+  name: HarmonyFields()
+  nameWithType: HarmonyMethod.HarmonyFields()
+  fullName: HarmonyLib.HarmonyMethod.HarmonyFields()
+  type: Method
+  source:
+    remote:
+      path: Harmony/Public/HarmonyMethod.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: HarmonyFields
+    path: ../Public/HarmonyMethod.cs
+    startLine: 73
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Gets the names of all internal patch info fields
+  example: []
+  syntax:
+    content: public static List<string> HarmonyFields()
+    return:
+      type: System.Collections.Generic.List{System.String}
+      description: A list of field names
+    content.vb: Public Shared Function HarmonyFields As List(Of String)
+  overload: HarmonyLib.HarmonyMethod.HarmonyFields*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: HarmonyLib.HarmonyMethod.Merge(System.Collections.Generic.List{HarmonyLib.HarmonyMethod})
+  commentId: M:HarmonyLib.HarmonyMethod.Merge(System.Collections.Generic.List{HarmonyLib.HarmonyMethod})
+  id: Merge(System.Collections.Generic.List{HarmonyLib.HarmonyMethod})
+  parent: HarmonyLib.HarmonyMethod
+  langs:
+  - csharp
+  - vb
+  name: Merge(List<HarmonyMethod>)
+  nameWithType: HarmonyMethod.Merge(List<HarmonyMethod>)
+  fullName: HarmonyLib.HarmonyMethod.Merge(System.Collections.Generic.List<HarmonyLib.HarmonyMethod>)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Public/HarmonyMethod.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: Merge
+    path: ../Public/HarmonyMethod.cs
+    startLine: 85
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Merges annotations
+  example: []
+  syntax:
+    content: public static HarmonyMethod Merge(List<HarmonyMethod> attributes)
+    parameters:
+    - id: attributes
+      type: System.Collections.Generic.List{HarmonyLib.HarmonyMethod}
+      description: The annotations
+    return:
+      type: HarmonyLib.HarmonyMethod
+      description: A merged annotation
+    content.vb: Public Shared Function Merge(attributes As List(Of HarmonyMethod)) As HarmonyMethod
+  overload: HarmonyLib.HarmonyMethod.Merge*
+  nameWithType.vb: HarmonyMethod.Merge(List(Of HarmonyMethod))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: HarmonyLib.HarmonyMethod.Merge(System.Collections.Generic.List(Of HarmonyLib.HarmonyMethod))
+  name.vb: Merge(List(Of HarmonyMethod))
+- uid: HarmonyLib.HarmonyMethod.ToString
+  commentId: M:HarmonyLib.HarmonyMethod.ToString
+  id: ToString
+  parent: HarmonyLib.HarmonyMethod
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: HarmonyMethod.ToString()
+  fullName: HarmonyLib.HarmonyMethod.ToString()
+  type: Method
+  source:
+    remote:
+      path: Harmony/Public/HarmonyMethod.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: ToString
+    path: ../Public/HarmonyMethod.cs
+    startLine: 106
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Returns a string that represents the annotation
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: A string representation
+    content.vb: Public Overrides Function ToString As String
+  overridden: System.Object.ToString
+  overload: HarmonyLib.HarmonyMethod.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: HarmonyLib
+  commentId: N:HarmonyLib
+  name: HarmonyLib
+  nameWithType: HarmonyLib
+  fullName: HarmonyLib
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: HarmonyLib.HarmonyMethod.HarmonyLib.HarmonyMethodExtensions.CopyTo(HarmonyLib.HarmonyMethod)
+  commentId: M:HarmonyLib.HarmonyMethodExtensions.CopyTo(HarmonyLib.HarmonyMethod,HarmonyLib.HarmonyMethod)
+  parent: HarmonyLib.HarmonyMethodExtensions
+  definition: HarmonyLib.HarmonyMethodExtensions.CopyTo(HarmonyLib.HarmonyMethod,HarmonyLib.HarmonyMethod)
+  name: CopyTo(HarmonyMethod)
+  nameWithType: HarmonyMethodExtensions.CopyTo(HarmonyMethod)
+  fullName: HarmonyLib.HarmonyMethodExtensions.CopyTo(HarmonyLib.HarmonyMethod)
+  spec.csharp:
+  - uid: HarmonyLib.HarmonyMethodExtensions.CopyTo(HarmonyLib.HarmonyMethod)
+    name: CopyTo
+    nameWithType: HarmonyMethodExtensions.CopyTo
+    fullName: HarmonyLib.HarmonyMethodExtensions.CopyTo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: HarmonyLib.HarmonyMethod
+    name: HarmonyMethod
+    nameWithType: HarmonyMethod
+    fullName: HarmonyLib.HarmonyMethod
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: HarmonyLib.HarmonyMethodExtensions.CopyTo(HarmonyLib.HarmonyMethod)
+    name: CopyTo
+    nameWithType: HarmonyMethodExtensions.CopyTo
+    fullName: HarmonyLib.HarmonyMethodExtensions.CopyTo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: HarmonyLib.HarmonyMethod
+    name: HarmonyMethod
+    nameWithType: HarmonyMethod
+    fullName: HarmonyLib.HarmonyMethod
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: HarmonyLib.HarmonyMethod.HarmonyLib.HarmonyMethodExtensions.Clone
+  commentId: M:HarmonyLib.HarmonyMethodExtensions.Clone(HarmonyLib.HarmonyMethod)
+  parent: HarmonyLib.HarmonyMethodExtensions
+  definition: HarmonyLib.HarmonyMethodExtensions.Clone(HarmonyLib.HarmonyMethod)
+  name: Clone()
+  nameWithType: HarmonyMethodExtensions.Clone()
+  fullName: HarmonyLib.HarmonyMethodExtensions.Clone()
+  spec.csharp:
+  - uid: HarmonyLib.HarmonyMethodExtensions.Clone
+    name: Clone
+    nameWithType: HarmonyMethodExtensions.Clone
+    fullName: HarmonyLib.HarmonyMethodExtensions.Clone
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: HarmonyLib.HarmonyMethodExtensions.Clone
+    name: Clone
+    nameWithType: HarmonyMethodExtensions.Clone
+    fullName: HarmonyLib.HarmonyMethodExtensions.Clone
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: HarmonyLib.HarmonyMethod.HarmonyLib.HarmonyMethodExtensions.Merge(HarmonyLib.HarmonyMethod)
+  commentId: M:HarmonyLib.HarmonyMethodExtensions.Merge(HarmonyLib.HarmonyMethod,HarmonyLib.HarmonyMethod)
+  parent: HarmonyLib.HarmonyMethodExtensions
+  definition: HarmonyLib.HarmonyMethodExtensions.Merge(HarmonyLib.HarmonyMethod,HarmonyLib.HarmonyMethod)
+  name: Merge(HarmonyMethod)
+  nameWithType: HarmonyMethodExtensions.Merge(HarmonyMethod)
+  fullName: HarmonyLib.HarmonyMethodExtensions.Merge(HarmonyLib.HarmonyMethod)
+  spec.csharp:
+  - uid: HarmonyLib.HarmonyMethodExtensions.Merge(HarmonyLib.HarmonyMethod)
+    name: Merge
+    nameWithType: HarmonyMethodExtensions.Merge
+    fullName: HarmonyLib.HarmonyMethodExtensions.Merge
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: HarmonyLib.HarmonyMethod
+    name: HarmonyMethod
+    nameWithType: HarmonyMethod
+    fullName: HarmonyLib.HarmonyMethod
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: HarmonyLib.HarmonyMethodExtensions.Merge(HarmonyLib.HarmonyMethod)
+    name: Merge
+    nameWithType: HarmonyMethodExtensions.Merge
+    fullName: HarmonyLib.HarmonyMethodExtensions.Merge
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: HarmonyLib.HarmonyMethod
+    name: HarmonyMethod
+    nameWithType: HarmonyMethod
+    fullName: HarmonyLib.HarmonyMethod
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: HarmonyLib.HarmonyMethodExtensions.CopyTo(HarmonyLib.HarmonyMethod,HarmonyLib.HarmonyMethod)
+  commentId: M:HarmonyLib.HarmonyMethodExtensions.CopyTo(HarmonyLib.HarmonyMethod,HarmonyLib.HarmonyMethod)
+  name: CopyTo(HarmonyMethod, HarmonyMethod)
+  nameWithType: HarmonyMethodExtensions.CopyTo(HarmonyMethod, HarmonyMethod)
+  fullName: HarmonyLib.HarmonyMethodExtensions.CopyTo(HarmonyLib.HarmonyMethod, HarmonyLib.HarmonyMethod)
+  spec.csharp:
+  - uid: HarmonyLib.HarmonyMethodExtensions.CopyTo(HarmonyLib.HarmonyMethod,HarmonyLib.HarmonyMethod)
+    name: CopyTo
+    nameWithType: HarmonyMethodExtensions.CopyTo
+    fullName: HarmonyLib.HarmonyMethodExtensions.CopyTo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: HarmonyLib.HarmonyMethod
+    name: HarmonyMethod
+    nameWithType: HarmonyMethod
+    fullName: HarmonyLib.HarmonyMethod
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: HarmonyLib.HarmonyMethod
+    name: HarmonyMethod
+    nameWithType: HarmonyMethod
+    fullName: HarmonyLib.HarmonyMethod
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: HarmonyLib.HarmonyMethodExtensions.CopyTo(HarmonyLib.HarmonyMethod,HarmonyLib.HarmonyMethod)
+    name: CopyTo
+    nameWithType: HarmonyMethodExtensions.CopyTo
+    fullName: HarmonyLib.HarmonyMethodExtensions.CopyTo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: HarmonyLib.HarmonyMethod
+    name: HarmonyMethod
+    nameWithType: HarmonyMethod
+    fullName: HarmonyLib.HarmonyMethod
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: HarmonyLib.HarmonyMethod
+    name: HarmonyMethod
+    nameWithType: HarmonyMethod
+    fullName: HarmonyLib.HarmonyMethod
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: HarmonyLib.HarmonyMethodExtensions
+  commentId: T:HarmonyLib.HarmonyMethodExtensions
+  parent: HarmonyLib
+  name: HarmonyMethodExtensions
+  nameWithType: HarmonyMethodExtensions
+  fullName: HarmonyLib.HarmonyMethodExtensions
+- uid: HarmonyLib.HarmonyMethodExtensions.Clone(HarmonyLib.HarmonyMethod)
+  commentId: M:HarmonyLib.HarmonyMethodExtensions.Clone(HarmonyLib.HarmonyMethod)
+  name: Clone(HarmonyMethod)
+  nameWithType: HarmonyMethodExtensions.Clone(HarmonyMethod)
+  fullName: HarmonyLib.HarmonyMethodExtensions.Clone(HarmonyLib.HarmonyMethod)
+  spec.csharp:
+  - uid: HarmonyLib.HarmonyMethodExtensions.Clone(HarmonyLib.HarmonyMethod)
+    name: Clone
+    nameWithType: HarmonyMethodExtensions.Clone
+    fullName: HarmonyLib.HarmonyMethodExtensions.Clone
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: HarmonyLib.HarmonyMethod
+    name: HarmonyMethod
+    nameWithType: HarmonyMethod
+    fullName: HarmonyLib.HarmonyMethod
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: HarmonyLib.HarmonyMethodExtensions.Clone(HarmonyLib.HarmonyMethod)
+    name: Clone
+    nameWithType: HarmonyMethodExtensions.Clone
+    fullName: HarmonyLib.HarmonyMethodExtensions.Clone
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: HarmonyLib.HarmonyMethod
+    name: HarmonyMethod
+    nameWithType: HarmonyMethod
+    fullName: HarmonyLib.HarmonyMethod
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: HarmonyLib.HarmonyMethodExtensions.Merge(HarmonyLib.HarmonyMethod,HarmonyLib.HarmonyMethod)
+  commentId: M:HarmonyLib.HarmonyMethodExtensions.Merge(HarmonyLib.HarmonyMethod,HarmonyLib.HarmonyMethod)
+  name: Merge(HarmonyMethod, HarmonyMethod)
+  nameWithType: HarmonyMethodExtensions.Merge(HarmonyMethod, HarmonyMethod)
+  fullName: HarmonyLib.HarmonyMethodExtensions.Merge(HarmonyLib.HarmonyMethod, HarmonyLib.HarmonyMethod)
+  spec.csharp:
+  - uid: HarmonyLib.HarmonyMethodExtensions.Merge(HarmonyLib.HarmonyMethod,HarmonyLib.HarmonyMethod)
+    name: Merge
+    nameWithType: HarmonyMethodExtensions.Merge
+    fullName: HarmonyLib.HarmonyMethodExtensions.Merge
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: HarmonyLib.HarmonyMethod
+    name: HarmonyMethod
+    nameWithType: HarmonyMethod
+    fullName: HarmonyLib.HarmonyMethod
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: HarmonyLib.HarmonyMethod
+    name: HarmonyMethod
+    nameWithType: HarmonyMethod
+    fullName: HarmonyLib.HarmonyMethod
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: HarmonyLib.HarmonyMethodExtensions.Merge(HarmonyLib.HarmonyMethod,HarmonyLib.HarmonyMethod)
+    name: Merge
+    nameWithType: HarmonyMethodExtensions.Merge
+    fullName: HarmonyLib.HarmonyMethodExtensions.Merge
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: HarmonyLib.HarmonyMethod
+    name: HarmonyMethod
+    nameWithType: HarmonyMethod
+    fullName: HarmonyLib.HarmonyMethod
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: HarmonyLib.HarmonyMethod
+    name: HarmonyMethod
+    nameWithType: HarmonyMethod
+    fullName: HarmonyLib.HarmonyMethod
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Reflection.MethodInfo
+  commentId: T:System.Reflection.MethodInfo
+  parent: System.Reflection
+  isExternal: true
+  name: MethodInfo
+  nameWithType: MethodInfo
+  fullName: System.Reflection.MethodInfo
+- uid: System.Reflection
+  commentId: N:System.Reflection
+  isExternal: true
+  name: System.Reflection
+  nameWithType: System.Reflection
+  fullName: System.Reflection
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Nullable{HarmonyLib.MethodType}
+  commentId: T:System.Nullable{HarmonyLib.MethodType}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<MethodType>
+  nameWithType: Nullable<MethodType>
+  fullName: System.Nullable<HarmonyLib.MethodType>
+  nameWithType.vb: Nullable(Of MethodType)
+  fullName.vb: System.Nullable(Of HarmonyLib.MethodType)
+  name.vb: Nullable(Of MethodType)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: HarmonyLib.MethodType
+    name: MethodType
+    nameWithType: MethodType
+    fullName: HarmonyLib.MethodType
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: HarmonyLib.MethodType
+    name: MethodType
+    nameWithType: MethodType
+    fullName: HarmonyLib.MethodType
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Type[]
+  isExternal: true
+  name: Type[]
+  nameWithType: Type[]
+  fullName: System.Type[]
+  nameWithType.vb: Type()
+  fullName.vb: System.Type()
+  name.vb: Type()
+  spec.csharp:
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  nameWithType.vb: String()
+  fullName.vb: System.String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Nullable{HarmonyLib.HarmonyReversePatchType}
+  commentId: T:System.Nullable{HarmonyLib.HarmonyReversePatchType}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<HarmonyReversePatchType>
+  nameWithType: Nullable<HarmonyReversePatchType>
+  fullName: System.Nullable<HarmonyLib.HarmonyReversePatchType>
+  nameWithType.vb: Nullable(Of HarmonyReversePatchType)
+  fullName.vb: System.Nullable(Of HarmonyLib.HarmonyReversePatchType)
+  name.vb: Nullable(Of HarmonyReversePatchType)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: HarmonyLib.HarmonyReversePatchType
+    name: HarmonyReversePatchType
+    nameWithType: HarmonyReversePatchType
+    fullName: HarmonyLib.HarmonyReversePatchType
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: HarmonyLib.HarmonyReversePatchType
+    name: HarmonyReversePatchType
+    nameWithType: HarmonyReversePatchType
+    fullName: HarmonyLib.HarmonyReversePatchType
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: HarmonyLib.HarmonyMethod.#ctor*
+  commentId: Overload:HarmonyLib.HarmonyMethod.#ctor
+  name: HarmonyMethod
+  nameWithType: HarmonyMethod.HarmonyMethod
+  fullName: HarmonyLib.HarmonyMethod.HarmonyMethod
+- uid: HarmonyLib.HarmonyMethod.HarmonyFields*
+  commentId: Overload:HarmonyLib.HarmonyMethod.HarmonyFields
+  name: HarmonyFields
+  nameWithType: HarmonyMethod.HarmonyFields
+  fullName: HarmonyLib.HarmonyMethod.HarmonyFields
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<String>
+  nameWithType: List<String>
+  fullName: System.Collections.Generic.List<System.String>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of System.String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: HarmonyLib.HarmonyMethod.Merge*
+  commentId: Overload:HarmonyLib.HarmonyMethod.Merge
+  name: Merge
+  nameWithType: HarmonyMethod.Merge
+  fullName: HarmonyLib.HarmonyMethod.Merge
+- uid: System.Collections.Generic.List{HarmonyLib.HarmonyMethod}
+  commentId: T:System.Collections.Generic.List{HarmonyLib.HarmonyMethod}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<HarmonyMethod>
+  nameWithType: List<HarmonyMethod>
+  fullName: System.Collections.Generic.List<HarmonyLib.HarmonyMethod>
+  nameWithType.vb: List(Of HarmonyMethod)
+  fullName.vb: System.Collections.Generic.List(Of HarmonyLib.HarmonyMethod)
+  name.vb: List(Of HarmonyMethod)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: HarmonyLib.HarmonyMethod
+    name: HarmonyMethod
+    nameWithType: HarmonyMethod
+    fullName: HarmonyLib.HarmonyMethod
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: HarmonyLib.HarmonyMethod
+    name: HarmonyMethod
+    nameWithType: HarmonyMethod
+    fullName: HarmonyLib.HarmonyMethod
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: HarmonyLib.HarmonyMethod
+  commentId: T:HarmonyLib.HarmonyMethod
+  parent: HarmonyLib
+  name: HarmonyMethod
+  nameWithType: HarmonyMethod
+  fullName: HarmonyLib.HarmonyMethod
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: HarmonyLib.HarmonyMethod.ToString*
+  commentId: Overload:HarmonyLib.HarmonyMethod.ToString
+  name: ToString
+  nameWithType: HarmonyMethod.ToString
+  fullName: HarmonyLib.HarmonyMethod.ToString

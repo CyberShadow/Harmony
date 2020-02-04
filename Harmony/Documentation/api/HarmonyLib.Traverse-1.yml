@@ -1,0 +1,460 @@
+### YamlMime:ManagedReference
+items:
+- uid: HarmonyLib.Traverse`1
+  commentId: T:HarmonyLib.Traverse`1
+  id: Traverse`1
+  parent: HarmonyLib
+  children:
+  - HarmonyLib.Traverse`1.#ctor(HarmonyLib.Traverse)
+  - HarmonyLib.Traverse`1.Value
+  langs:
+  - csharp
+  - vb
+  name: Traverse<T>
+  nameWithType: Traverse<T>
+  fullName: HarmonyLib.Traverse<T>
+  type: Class
+  source:
+    remote:
+      path: Harmony/Tools/Traverse.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: Traverse
+    path: ../Tools/Traverse.cs
+    startLine: 11
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: A reflection helper to read and write private elements
+  example: []
+  syntax:
+    content: public class Traverse<T>
+    typeParameters:
+    - id: T
+      description: The result type defined by GetValue()
+    content.vb: Public Class Traverse(Of T)
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  nameWithType.vb: Traverse(Of T)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  fullName.vb: HarmonyLib.Traverse(Of T)
+  name.vb: Traverse(Of T)
+- uid: HarmonyLib.Traverse`1.#ctor(HarmonyLib.Traverse)
+  commentId: M:HarmonyLib.Traverse`1.#ctor(HarmonyLib.Traverse)
+  id: '#ctor(HarmonyLib.Traverse)'
+  parent: HarmonyLib.Traverse`1
+  langs:
+  - csharp
+  - vb
+  name: Traverse(Traverse)
+  nameWithType: Traverse<T>.Traverse(Traverse)
+  fullName: HarmonyLib.Traverse<T>.Traverse(HarmonyLib.Traverse)
+  type: Constructor
+  source:
+    remote:
+      path: Harmony/Tools/Traverse.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: .ctor
+    path: ../Tools/Traverse.cs
+    startLine: 22
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Creates a traverse instance from an existing instance
+  example: []
+  syntax:
+    content: public Traverse(Traverse traverse)
+    parameters:
+    - id: traverse
+      type: HarmonyLib.Traverse
+      description: The original
+    content.vb: Public Sub New(traverse As Traverse)
+  overload: HarmonyLib.Traverse`1.#ctor*
+  nameWithType.vb: Traverse(Of T).Traverse(Traverse)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: HarmonyLib.Traverse(Of T).Traverse(HarmonyLib.Traverse)
+- uid: HarmonyLib.Traverse`1.Value
+  commentId: P:HarmonyLib.Traverse`1.Value
+  id: Value
+  parent: HarmonyLib.Traverse`1
+  langs:
+  - csharp
+  - vb
+  name: Value
+  nameWithType: Traverse<T>.Value
+  fullName: HarmonyLib.Traverse<T>.Value
+  type: Property
+  source:
+    remote:
+      path: Harmony/Tools/Traverse.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: Value
+    path: ../Tools/Traverse.cs
+    startLine: 30
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Gets/Sets the current value
+  example: []
+  syntax:
+    content: public T Value { get; set; }
+    parameters: []
+    return:
+      type: '{T}'
+      description: The value to read or write
+    content.vb: Public Property Value As T
+  overload: HarmonyLib.Traverse`1.Value*
+  nameWithType.vb: Traverse(Of T).Value
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: HarmonyLib.Traverse(Of T).Value
+references:
+- uid: HarmonyLib
+  commentId: N:HarmonyLib
+  name: HarmonyLib
+  nameWithType: HarmonyLib
+  fullName: HarmonyLib
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: HarmonyLib.Traverse`1.#ctor*
+  commentId: Overload:HarmonyLib.Traverse`1.#ctor
+  name: Traverse
+  nameWithType: Traverse<T>.Traverse
+  fullName: HarmonyLib.Traverse<T>.Traverse
+  nameWithType.vb: Traverse(Of T).Traverse
+  fullName.vb: HarmonyLib.Traverse(Of T).Traverse
+- uid: HarmonyLib.Traverse
+  commentId: T:HarmonyLib.Traverse
+  parent: HarmonyLib
+  name: Traverse
+  nameWithType: Traverse
+  fullName: HarmonyLib.Traverse
+- uid: HarmonyLib.Traverse`1.Value*
+  commentId: Overload:HarmonyLib.Traverse`1.Value
+  name: Value
+  nameWithType: Traverse<T>.Value
+  fullName: HarmonyLib.Traverse<T>.Value
+  nameWithType.vb: Traverse(Of T).Value
+  fullName.vb: HarmonyLib.Traverse(Of T).Value
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T

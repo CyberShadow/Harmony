@@ -1,0 +1,61 @@
+### YamlMime:ManagedReference
+items:
+- uid: HarmonyLib.InstantiationHandler`1
+  commentId: T:HarmonyLib.InstantiationHandler`1
+  id: InstantiationHandler`1
+  parent: HarmonyLib
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: InstantiationHandler<T>
+  nameWithType: InstantiationHandler<T>
+  fullName: HarmonyLib.InstantiationHandler<T>
+  type: Delegate
+  source:
+    remote:
+      path: Harmony/Extras/FastAccess.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: InstantiationHandler
+    path: ../Extras/FastAccess.cs
+    startLine: 30
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: A constructor delegate type
+  example: []
+  syntax:
+    content: public delegate T InstantiationHandler<out T>();
+    typeParameters:
+    - id: T
+      description: Type that constructor creates
+    return:
+      type: '{T}'
+      description: An delegate
+    content.vb: Public Delegate Function InstantiationHandler(Of Out T) As T
+  nameWithType.vb: InstantiationHandler(Of T)
+  modifiers.csharp:
+  - public
+  - delegate
+  modifiers.vb:
+  - Public
+  - Delegate
+  fullName.vb: HarmonyLib.InstantiationHandler(Of T)
+  name.vb: InstantiationHandler(Of T)
+references:
+- uid: HarmonyLib
+  commentId: N:HarmonyLib
+  name: HarmonyLib
+  nameWithType: HarmonyLib
+  fullName: HarmonyLib
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T

@@ -1,0 +1,1189 @@
+### YamlMime:ManagedReference
+items:
+- uid: HarmonyLib.GeneralExtensions
+  commentId: T:HarmonyLib.GeneralExtensions
+  id: GeneralExtensions
+  parent: HarmonyLib
+  children:
+  - HarmonyLib.GeneralExtensions.Description(System.Type[])
+  - HarmonyLib.GeneralExtensions.FullDescription(System.Reflection.MethodBase)
+  - HarmonyLib.GeneralExtensions.FullDescription(System.Type)
+  - HarmonyLib.GeneralExtensions.GetTypedValue``1(System.Collections.Generic.Dictionary{System.String,System.Object},System.String)
+  - HarmonyLib.GeneralExtensions.GetValueSafe``2(System.Collections.Generic.Dictionary{``0,``1},``0)
+  - HarmonyLib.GeneralExtensions.Join``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.String},System.String)
+  - HarmonyLib.GeneralExtensions.Types(System.Reflection.ParameterInfo[])
+  langs:
+  - csharp
+  - vb
+  name: GeneralExtensions
+  nameWithType: GeneralExtensions
+  fullName: HarmonyLib.GeneralExtensions
+  type: Class
+  source:
+    remote:
+      path: Harmony/Tools/Extensions.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: GeneralExtensions
+    path: ../Tools/Extensions.cs
+    startLine: 8
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: General extensions for common cases
+  example: []
+  syntax:
+    content: public static class GeneralExtensions
+    content.vb: Public Module GeneralExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: HarmonyLib.GeneralExtensions.Join``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.String},System.String)
+  commentId: M:HarmonyLib.GeneralExtensions.Join``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.String},System.String)
+  id: Join``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.String},System.String)
+  isExtensionMethod: true
+  parent: HarmonyLib.GeneralExtensions
+  langs:
+  - csharp
+  - vb
+  name: Join<T>(IEnumerable<T>, Func<T, String>, String)
+  nameWithType: GeneralExtensions.Join<T>(IEnumerable<T>, Func<T, String>, String)
+  fullName: HarmonyLib.GeneralExtensions.Join<T>(System.Collections.Generic.IEnumerable<T>, System.Func<T, System.String>, System.String)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/Extensions.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: Join
+    path: ../Tools/Extensions.cs
+    startLine: 17
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Joins an enumeration with a value converter and a delimiter to a string
+  example: []
+  syntax:
+    content: public static string Join<T>(this IEnumerable<T> enumeration, Func<T, string> converter = null, string delimiter = ", ")
+    parameters:
+    - id: enumeration
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The enumeration
+    - id: converter
+      type: System.Func{{T},System.String}
+      description: An optional value converter (from T to string)
+    - id: delimiter
+      type: System.String
+      description: An optional delimiter
+    typeParameters:
+    - id: T
+      description: The inner type of the enumeration
+    return:
+      type: System.String
+      description: The values joined into a string
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Join(Of T)(enumeration As IEnumerable(Of T), converter As Func(Of T, String) = Nothing, delimiter As String = ", ") As String
+  overload: HarmonyLib.GeneralExtensions.Join*
+  nameWithType.vb: GeneralExtensions.Join(Of T)(IEnumerable(Of T), Func(Of T, String), String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: HarmonyLib.GeneralExtensions.Join(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, System.String), System.String)
+  name.vb: Join(Of T)(IEnumerable(Of T), Func(Of T, String), String)
+- uid: HarmonyLib.GeneralExtensions.Description(System.Type[])
+  commentId: M:HarmonyLib.GeneralExtensions.Description(System.Type[])
+  id: Description(System.Type[])
+  isExtensionMethod: true
+  parent: HarmonyLib.GeneralExtensions
+  langs:
+  - csharp
+  - vb
+  name: Description(Type[])
+  nameWithType: GeneralExtensions.Description(Type[])
+  fullName: HarmonyLib.GeneralExtensions.Description(System.Type[])
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/Extensions.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: Description
+    path: ../Tools/Extensions.cs
+    startLine: 27
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: Converts an array of types (for example methods arguments) into a human readable form
+  example: []
+  syntax:
+    content: public static string Description(this Type[] parameters)
+    parameters:
+    - id: parameters
+      type: System.Type[]
+      description: The array of types
+    return:
+      type: System.String
+      description: A human readable description including brackets
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Description(parameters As Type()) As String
+  overload: HarmonyLib.GeneralExtensions.Description*
+  nameWithType.vb: GeneralExtensions.Description(Type())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: HarmonyLib.GeneralExtensions.Description(System.Type())
+  name.vb: Description(Type())
+- uid: HarmonyLib.GeneralExtensions.FullDescription(System.Type)
+  commentId: M:HarmonyLib.GeneralExtensions.FullDescription(System.Type)
+  id: FullDescription(System.Type)
+  isExtensionMethod: true
+  parent: HarmonyLib.GeneralExtensions
+  langs:
+  - csharp
+  - vb
+  name: FullDescription(Type)
+  nameWithType: GeneralExtensions.FullDescription(Type)
+  fullName: HarmonyLib.GeneralExtensions.FullDescription(System.Type)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/Extensions.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: FullDescription
+    path: ../Tools/Extensions.cs
+    startLine: 37
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: A full description of a type
+  example: []
+  syntax:
+    content: public static string FullDescription(this Type type)
+    parameters:
+    - id: type
+      type: System.Type
+      description: The type
+    return:
+      type: System.String
+      description: A human readable description
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function FullDescription(type As Type) As String
+  overload: HarmonyLib.GeneralExtensions.FullDescription*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: HarmonyLib.GeneralExtensions.FullDescription(System.Reflection.MethodBase)
+  commentId: M:HarmonyLib.GeneralExtensions.FullDescription(System.Reflection.MethodBase)
+  id: FullDescription(System.Reflection.MethodBase)
+  isExtensionMethod: true
+  parent: HarmonyLib.GeneralExtensions
+  langs:
+  - csharp
+  - vb
+  name: FullDescription(MethodBase)
+  nameWithType: GeneralExtensions.FullDescription(MethodBase)
+  fullName: HarmonyLib.GeneralExtensions.FullDescription(System.Reflection.MethodBase)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/Extensions.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: FullDescription
+    path: ../Tools/Extensions.cs
+    startLine: 65
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: A a full description of a method or a constructor without assembly details but with generics
+  example: []
+  syntax:
+    content: public static string FullDescription(this MethodBase method)
+    parameters:
+    - id: method
+      type: System.Reflection.MethodBase
+      description: The method or constructor
+    return:
+      type: System.String
+      description: A human readable description
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function FullDescription(method As MethodBase) As String
+  overload: HarmonyLib.GeneralExtensions.FullDescription*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: HarmonyLib.GeneralExtensions.Types(System.Reflection.ParameterInfo[])
+  commentId: M:HarmonyLib.GeneralExtensions.Types(System.Reflection.ParameterInfo[])
+  id: Types(System.Reflection.ParameterInfo[])
+  isExtensionMethod: true
+  parent: HarmonyLib.GeneralExtensions
+  langs:
+  - csharp
+  - vb
+  name: Types(ParameterInfo[])
+  nameWithType: GeneralExtensions.Types(ParameterInfo[])
+  fullName: HarmonyLib.GeneralExtensions.Types(System.Reflection.ParameterInfo[])
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/Extensions.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: Types
+    path: ../Tools/Extensions.cs
+    startLine: 78
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: A helper converting parameter infos to types
+  example: []
+  syntax:
+    content: public static Type[] Types(this ParameterInfo[] pinfo)
+    parameters:
+    - id: pinfo
+      type: System.Reflection.ParameterInfo[]
+      description: The array of ParameterInfo
+    return:
+      type: System.Type[]
+      description: The parameter types
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Types(pinfo As ParameterInfo()) As Type()
+  overload: HarmonyLib.GeneralExtensions.Types*
+  nameWithType.vb: GeneralExtensions.Types(ParameterInfo())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: HarmonyLib.GeneralExtensions.Types(System.Reflection.ParameterInfo())
+  name.vb: Types(ParameterInfo())
+- uid: HarmonyLib.GeneralExtensions.GetValueSafe``2(System.Collections.Generic.Dictionary{``0,``1},``0)
+  commentId: M:HarmonyLib.GeneralExtensions.GetValueSafe``2(System.Collections.Generic.Dictionary{``0,``1},``0)
+  id: GetValueSafe``2(System.Collections.Generic.Dictionary{``0,``1},``0)
+  isExtensionMethod: true
+  parent: HarmonyLib.GeneralExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetValueSafe<S, T>(Dictionary<S, T>, S)
+  nameWithType: GeneralExtensions.GetValueSafe<S, T>(Dictionary<S, T>, S)
+  fullName: HarmonyLib.GeneralExtensions.GetValueSafe<S, T>(System.Collections.Generic.Dictionary<S, T>, S)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/Extensions.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: GetValueSafe
+    path: ../Tools/Extensions.cs
+    startLine: 90
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: A helper to access a value via key from a dictionary
+  example: []
+  syntax:
+    content: public static T GetValueSafe<S, T>(this Dictionary<S, T> dictionary, S key)
+    parameters:
+    - id: dictionary
+      type: System.Collections.Generic.Dictionary{{S},{T}}
+      description: The dictionary
+    - id: key
+      type: '{S}'
+      description: The key
+    typeParameters:
+    - id: S
+      description: The key type
+    - id: T
+      description: The value type
+    return:
+      type: '{T}'
+      description: The value for the key or the default value (of T) if that key does not exist
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetValueSafe(Of S, T)(dictionary As Dictionary(Of S, T), key As S) As T
+  overload: HarmonyLib.GeneralExtensions.GetValueSafe*
+  nameWithType.vb: GeneralExtensions.GetValueSafe(Of S, T)(Dictionary(Of S, T), S)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: HarmonyLib.GeneralExtensions.GetValueSafe(Of S, T)(System.Collections.Generic.Dictionary(Of S, T), S)
+  name.vb: GetValueSafe(Of S, T)(Dictionary(Of S, T), S)
+- uid: HarmonyLib.GeneralExtensions.GetTypedValue``1(System.Collections.Generic.Dictionary{System.String,System.Object},System.String)
+  commentId: M:HarmonyLib.GeneralExtensions.GetTypedValue``1(System.Collections.Generic.Dictionary{System.String,System.Object},System.String)
+  id: GetTypedValue``1(System.Collections.Generic.Dictionary{System.String,System.Object},System.String)
+  isExtensionMethod: true
+  parent: HarmonyLib.GeneralExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetTypedValue<T>(Dictionary<String, Object>, String)
+  nameWithType: GeneralExtensions.GetTypedValue<T>(Dictionary<String, Object>, String)
+  fullName: HarmonyLib.GeneralExtensions.GetTypedValue<T>(System.Collections.Generic.Dictionary<System.String, System.Object>, System.String)
+  type: Method
+  source:
+    remote:
+      path: Harmony/Tools/Extensions.cs
+      branch: master
+      repo: git@github.com:pardeike/Harmony.git
+    id: GetTypedValue
+    path: ../Tools/Extensions.cs
+    startLine: 103
+  assemblies:
+  - 0Harmony
+  namespace: HarmonyLib
+  summary: A helper to access a value via key from a dictionary with extra casting
+  example: []
+  syntax:
+    content: public static T GetTypedValue<T>(this Dictionary<string, object> dictionary, string key)
+    parameters:
+    - id: dictionary
+      type: System.Collections.Generic.Dictionary{System.String,System.Object}
+      description: The dictionary
+    - id: key
+      type: System.String
+      description: The key
+    typeParameters:
+    - id: T
+      description: The value type
+    return:
+      type: '{T}'
+      description: The value for the key or the default value (of T) if that key does not exist or cannot be cast to T
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetTypedValue(Of T)(dictionary As Dictionary(Of String, Object), key As String) As T
+  overload: HarmonyLib.GeneralExtensions.GetTypedValue*
+  nameWithType.vb: GeneralExtensions.GetTypedValue(Of T)(Dictionary(Of String, Object), String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: HarmonyLib.GeneralExtensions.GetTypedValue(Of T)(System.Collections.Generic.Dictionary(Of System.String, System.Object), System.String)
+  name.vb: GetTypedValue(Of T)(Dictionary(Of String, Object), String)
+references:
+- uid: HarmonyLib
+  commentId: N:HarmonyLib
+  name: HarmonyLib
+  nameWithType: HarmonyLib
+  fullName: HarmonyLib
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: HarmonyLib.GeneralExtensions.Join*
+  commentId: Overload:HarmonyLib.GeneralExtensions.Join
+  name: Join
+  nameWithType: GeneralExtensions.Join
+  fullName: HarmonyLib.GeneralExtensions.Join
+- uid: System.Collections.Generic.IEnumerable{{T}}
+  commentId: T:System.Collections.Generic.IEnumerable{``0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Func{{T},System.String}
+  commentId: T:System.Func{``0,System.String}
+  parent: System
+  definition: System.Func`2
+  name: Func<T, String>
+  nameWithType: Func<T, String>
+  fullName: System.Func<T, System.String>
+  nameWithType.vb: Func(Of T, String)
+  fullName.vb: System.Func(Of T, System.String)
+  name.vb: Func(Of T, String)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: HarmonyLib.GeneralExtensions.Description*
+  commentId: Overload:HarmonyLib.GeneralExtensions.Description
+  name: Description
+  nameWithType: GeneralExtensions.Description
+  fullName: HarmonyLib.GeneralExtensions.Description
+- uid: System.Type[]
+  isExternal: true
+  name: Type[]
+  nameWithType: Type[]
+  fullName: System.Type[]
+  nameWithType.vb: Type()
+  fullName.vb: System.Type()
+  name.vb: Type()
+  spec.csharp:
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: HarmonyLib.GeneralExtensions.FullDescription*
+  commentId: Overload:HarmonyLib.GeneralExtensions.FullDescription
+  name: FullDescription
+  nameWithType: GeneralExtensions.FullDescription
+  fullName: HarmonyLib.GeneralExtensions.FullDescription
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: System.Reflection.MethodBase
+  commentId: T:System.Reflection.MethodBase
+  parent: System.Reflection
+  isExternal: true
+  name: MethodBase
+  nameWithType: MethodBase
+  fullName: System.Reflection.MethodBase
+- uid: System.Reflection
+  commentId: N:System.Reflection
+  isExternal: true
+  name: System.Reflection
+  nameWithType: System.Reflection
+  fullName: System.Reflection
+- uid: HarmonyLib.GeneralExtensions.Types*
+  commentId: Overload:HarmonyLib.GeneralExtensions.Types
+  name: Types
+  nameWithType: GeneralExtensions.Types
+  fullName: HarmonyLib.GeneralExtensions.Types
+- uid: System.Reflection.ParameterInfo[]
+  isExternal: true
+  name: ParameterInfo[]
+  nameWithType: ParameterInfo[]
+  fullName: System.Reflection.ParameterInfo[]
+  nameWithType.vb: ParameterInfo()
+  fullName.vb: System.Reflection.ParameterInfo()
+  name.vb: ParameterInfo()
+  spec.csharp:
+  - uid: System.Reflection.ParameterInfo
+    name: ParameterInfo
+    nameWithType: ParameterInfo
+    fullName: System.Reflection.ParameterInfo
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Reflection.ParameterInfo
+    name: ParameterInfo
+    nameWithType: ParameterInfo
+    fullName: System.Reflection.ParameterInfo
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: HarmonyLib.GeneralExtensions.GetValueSafe*
+  commentId: Overload:HarmonyLib.GeneralExtensions.GetValueSafe
+  name: GetValueSafe
+  nameWithType: GeneralExtensions.GetValueSafe
+  fullName: HarmonyLib.GeneralExtensions.GetValueSafe
+- uid: System.Collections.Generic.Dictionary{{S},{T}}
+  commentId: T:System.Collections.Generic.Dictionary{``0,``1}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  name: Dictionary<S, T>
+  nameWithType: Dictionary<S, T>
+  fullName: System.Collections.Generic.Dictionary<S, T>
+  nameWithType.vb: Dictionary(Of S, T)
+  fullName.vb: System.Collections.Generic.Dictionary(Of S, T)
+  name.vb: Dictionary(Of S, T)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: S
+    nameWithType: S
+    fullName: S
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: S
+    nameWithType: S
+    fullName: S
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: '{S}'
+  commentId: '!:S'
+  definition: S
+  name: S
+  nameWithType: S
+  fullName: S
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: S
+  name: S
+  nameWithType: S
+  fullName: S
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: HarmonyLib.GeneralExtensions.GetTypedValue*
+  commentId: Overload:HarmonyLib.GeneralExtensions.GetTypedValue
+  name: GetTypedValue
+  nameWithType: GeneralExtensions.GetTypedValue
+  fullName: HarmonyLib.GeneralExtensions.GetTypedValue
+- uid: System.Collections.Generic.Dictionary{System.String,System.Object}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,System.Object}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  name: Dictionary<String, Object>
+  nameWithType: Dictionary<String, Object>
+  fullName: System.Collections.Generic.Dictionary<System.String, System.Object>
+  nameWithType.vb: Dictionary(Of String, Object)
+  fullName.vb: System.Collections.Generic.Dictionary(Of System.String, System.Object)
+  name.vb: Dictionary(Of String, Object)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
