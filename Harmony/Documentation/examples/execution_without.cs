@@ -1,6 +1,7 @@
 class Code
 {
 	// <example>
+
 	// while patching, the method ModifiedOriginal is created by chaining
 	// all transpilers. This happens only once when you patch, not during runtime
 	//

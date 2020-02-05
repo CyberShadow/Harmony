@@ -24,17 +24,17 @@ public class Example
 		FileLog.FlushBuffer(); // don't forget to flush
 		// </log>
 
-		// <patch-annotation>
+		// <patch_annotation>
 		var assembly = Assembly.GetExecutingAssembly();
 		harmony.PatchAll(assembly);
 
 		// or implying current assembly:
 		harmony.PatchAll();
-		// </patch-annotation>
+		// </patch_annotation>
 
 		void PatchManual()
 		{
-			// <patch-manual>
+			// <patch_manual>
 			// add null checks to the following lines, they are omitted for clarity
 			var original = typeof(TheClass).GetMethod("TheMethod");
 			var prefix = typeof(MyPatchClass1).GetMethod("SomeMethod");
@@ -45,31 +45,31 @@ public class Example
 			// You can use named arguments to specify certain patch types only:
 			harmony.Patch(original, postfix: new HarmonyMethod(postfix));
 			harmony.Patch(original, prefix: new HarmonyMethod(prefix), transpiler: new HarmonyMethod(transpiler));
-			// </patch-manual>
+			// </patch_manual>
 
-			// <patch-method>
+			// <patch_method>
 			var harmonyPostfix = new HarmonyMethod(postfix)
-				{
-					priority = Priority.Low,
-					before = new[] { "that.other.harmony.user" }
-				};
-			// </patch-method>
+			{
+				priority = Priority.Low,
+				before = new[] { "that.other.harmony.user" }
+			};
+			// </patch_method>
 		}
 		PatchManual();
 		
-		// <patch-getall>
+		// <patch_getall>
 		var originalMethods = Harmony.GetAllPatchedMethods();
 		foreach (var method in originalMethods) { }
-		// </patch-getall>
+		// </patch_getall>
 
-		// <patch-get>
+		// <patch_get>
 		var myOriginalMethods = harmony.GetPatchedMethods();
 		foreach (var method in myOriginalMethods) { }
-		// </patch-get>
+		// </patch_get>
 
 		void PatchInfo()
 		{
-			// <patch-info>
+			// <patch_info>
 			// get the MethodBase of the original
 			var original = typeof(TheClass).GetMethod("TheMethod");
 
@@ -90,13 +90,13 @@ public class Example
 				FileLog.Log("before: " + patch.before);
 				FileLog.Log("after: " + patch.after);
 			}
-			// </patch-info>
+			// </patch_info>
 		}
 		PatchInfo();
 
-		// <patch-has>
+		// <patch_has>
 		if(Harmony.HasAnyPatches("their.harmony.id")) { }
-		// </patch-has>
+		// </patch_has>
 
 		// <version>
 		var dict = Harmony.VersionInfo(out var myVersion);
@@ -121,7 +121,7 @@ public class Example
 		harmony.UnpatchAll("their.harmony.id");
 		// </unpatch>
 
-		// <unpatch-one>
+		// <unpatch_one>
 		var original = typeof(TheClass).GetMethod("TheMethod");
 
 		// all prefixes on the original method:
@@ -136,7 +136,7 @@ public class Example
 		// removing a specific patch:
 		var patch = typeof(TheClass).GetMethod("SomePrefix");
 		harmony.Unpatch(original, patch);
-		// </unpatch-one>
+		// </unpatch_one>
 	}
 
 	class TheClass {}

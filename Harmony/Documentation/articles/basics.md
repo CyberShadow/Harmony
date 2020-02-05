@@ -54,7 +54,7 @@ You can also use Harmony's file logger in your own code:
 
 If you prefer annotations to organize your patches, you instruct Harmony to search for them by using `PatchAll()`:
 
-[!code-csharp[example](../examples/basics.cs?name=patch-annotation)]
+[!code-csharp[example](../examples/basics.cs?name=patch_annotation)]
 
 which will search the given assembly for all classes that are decorated with Harmony annotations. All patches are registered automatically and Harmony will do the rest.
 
@@ -62,11 +62,11 @@ which will search the given assembly for all classes that are decorated with Har
 
 For more control, you use `Patch()`. It takes an original and a combination of Prefix, Postfix or Transpiler methods, which are optional HarmonyMethod objects (pass null to `Patch()` to skip one type of patch):
 
-[!code-csharp[example](../examples/basics.cs?name=patch-manual)]
+[!code-csharp[example](../examples/basics.cs?name=patch_manual)]
 
 The use of an extra HarmonyMethod is to allow for you to define extra properties like priority and such together with the method pointer. HarmonyMethod is the common class shared by manual and annotation patching.
 
-[!code-csharp[example](../examples/basics.cs?name=patch-method)]
+[!code-csharp[example](../examples/basics.cs?name=patch_method)]
 
 A common mistake here is to fail to retrieve a valid reference for original or your patches resulting in a `null` value which when passed to HarmonyMethod will throw an error. You can use standard `System.Reflection` to get the MethodInfo of the original and your HarmonyMethods. See the Utilities section for the various ways Harmony can make Reflection easier.
 
@@ -74,19 +74,19 @@ A common mistake here is to fail to retrieve a valid reference for original or y
 
 To get a list of all patched methods in the current appdomain (yours and others), call GetAllPatchedMethods:
 
-[!code-csharp[example](../examples/basics.cs?name=patch-getall)]
+[!code-csharp[example](../examples/basics.cs?name=patch_getall)]
 
 If you are only interested in your own patched methods, use GetPatchedMethods:
 
-[!code-csharp[example](../examples/basics.cs?name=patch-get)]
+[!code-csharp[example](../examples/basics.cs?name=patch_get)]
 
 If you want to know more about all existing patches (yours or others) on a specific original method, you can call GetPatchInfo:
 
-[!code-csharp[example](../examples/basics.cs?name=patch-getinfo)]
+[!code-csharp[example](../examples/basics.cs?name=patch_info)]
 
 Sometimes it is necessary to test if another mod is loaded. This is best done by resolving one of their types by name. However, if you want to know if a specific Harmony has applied any patches so far, you can use HasAnyPatches:
 
-[!code-csharp[example](../examples/basics.cs?name=patch-has)]
+[!code-csharp[example](../examples/basics.cs?name=patch_has)]
 
 Finally, to retrieve an overview of which assemblies use which version of Harmony you can use (based on actice patches only)
 
@@ -104,4 +104,4 @@ You can unpatch every patch from an existing harmony instance or even all harmon
 
 Besides that, you can unpatch specific patches too:
 
-[!code-csharp[example](../examples/basics.cs?name=unpatch-one)]
+[!code-csharp[example](../examples/basics.cs?name=unpatch_one)]
