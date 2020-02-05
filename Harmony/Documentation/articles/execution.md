@@ -22,45 +22,7 @@ Prefix methods that return `void` and have no `ref` arguments are considered sid
 
 Exceptions thrown in a Prefix, a Postfix or in the modified Original method will not be caught by default and will reach the caller of the Original method. If you want to handle exceptions, you need to use Finalizer patches.
 
-```csharp
-
-// while patching, the method ModifiedOriginal is created by chaining
-// all transpilers. This happens only once when you patch, not during runtime
-//
-// var codes = GetCodeFromOriginal(originalMethod);
-// codes = Transpiler1(codes);
-// codes = Transpiler2(codes);
-// codes = Transpiler3(codes);
-// static ModifiedOriginal = GenerateDynamicMethod(codes);
-
-static R ReplacementMethod(T optionalThisArgument, ...arguments)
-{
-	R result = default;
-	bool run = true;
-
-	// Harmony separates all Prefix patches into those that change the
-	// original methods result/execution and those who have no side efects
-	// Lets call all prefixes with no side effect "SimplePrefix" and add
-	// a number to them that indicates their sort order after applying
-	// priorities to them:
-
-	SimplePrefix1(arguments);
-	if (run) run = Prefix2();
-	SimplePrefix3(arguments);
-	SimplePrefix4(arguments);
-	if (run) Prefix5(ref someArgument, ref result);
-	// ...
-
-	if (run) result = ModifiedOriginal(arguments);
-
-	Postfix1(ref result)
-	result = Postfix2(result, ...arguments)
-	Postfix3()
-	// ...
-
-	return result
-}
-```
+[!code-csharp[example](../examples/execution_without.cs?name=example)]
 
 ##### With Finalizer patches
 

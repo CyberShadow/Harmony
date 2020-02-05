@@ -1,3 +1,4 @@
+// <example>
 using HarmonyLib;
 
 [HarmonyPatch(typeof(SomeTypeHere))]
@@ -9,3 +10,6 @@ class MyPatches
 		//...
 	}
 }
+// </example>
+
+class SomeTypeHere {}

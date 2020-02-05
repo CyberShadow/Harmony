@@ -8,7 +8,7 @@ When you call harmony.**PatchAll()**, Harmony will search through all classes an
 
 A typical patch consists of a class with annotations that looks like this:
 
-[!code-csharp[example](../examples/annotations_basic/code.cs)]
+[!code-csharp[example](../examples/annotations_basic.cs?name=example)]
 
 This example annotates the class with enough information to identify the method to patch. Inside that class, you define a combination of **Prefix**, **Postfix**, **Finalizer** or **Transpiler** methods. Harmony will find them by their name and if you annotate those methods you can even have different names.
 
@@ -157,10 +157,10 @@ To patch methods with generic signatures, you need to patch specific versions of
 
 To simplify multiple patches while still using annotations, you can combine annotations with `TargetMethod()` and `TargetMethods()`:
 
-[!code-csharp[example](../examples/annotations_multiple/code.cs)]
+[!code-csharp[example](../examples/annotations_multiple.cs?name=example)]
 
 ### Combining annotations
 
 The combination of those annotations defines the target method. Annotations are **inherited** from class to method so you can use `[HarmonyPatch(Type)]` on the class and `[HarmonyPatch(String)]` on one of its methods to combine both.
 
-[!code-csharp[example](../examples/annotations_combining/code.cs)]
+[!code-csharp[example](../examples/annotations_combining.cs?name=example)]
