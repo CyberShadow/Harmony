@@ -105,7 +105,7 @@ class Patch
 {
     public string GetName()
     {
-        // ...
+        return name; // ...
     }
 }
 
@@ -124,7 +124,7 @@ class Patch
 {
     public bool IsFullAfterTakingIn(int i)
     {
-        // do expensive calculations
+        return DoSomeExpensiveCalculation() &gt; i;
     }
 }
 
@@ -168,7 +168,7 @@ class Patch
     static void Postfix(Stopwatch __state)
     {
         __state.Stop();
-        FileLog.Log(__state.Elapsed);
+        FileLog.Log(__state.Elapsed.ToString());
     }
 }
 </code></pre>

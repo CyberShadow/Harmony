@@ -73,11 +73,13 @@
 <p>To simplify things, each original method you want to patch is usually represented by a &quot;patch class&quot;, that is, a class that has at least one harmony patch annotation <code>[HarmonyPatch]</code>.</p>
 <p>When you call harmony.<strong>PatchAll()</strong>, Harmony will search through all classes and methods inside the given assembly looking for specific Harmony annotations.</p>
 <p>A typical patch consists of a class with annotations that looks like this:</p>
-<pre><code class="lang-csharp">[HarmonyPatch(typeof(SomeTypeHere))]
+<pre><code class="lang-csharp">using HarmonyLib;
+
+[HarmonyPatch(typeof(SomeTypeHere))]
 [HarmonyPatch(&quot;SomeMethodName&quot;)]
 class MyPatches
 {
-    static void Postfix(...)
+    static void Postfix(/*...*/)
     {
         //...
     }
@@ -179,12 +181,12 @@ class MyPatches
 <h4 id="patching-multiple-methods">Patching multiple methods</h4>
 <p>To simplify multiple patches while still using annotations, you can combine annotations with <code>TargetMethod()</code> and <code>TargetMethods()</code>:</p>
 <pre><code class="lang-csharp">[HarmonyPatch] // make sure Harmony inspects the class
-class MyPatches()
+class MyPatches
 {
     IEnumerable&lt;MethodBase&gt; TargetMethods()
     {
         return AccessTools.GetTypesFromAssembly(someAssembly)
-            .SelectMany(type =&gt; type.GetDeclaredMethods())
+            .SelectMany(type =&gt; type.GetMethods())
             .Where(method =&gt; method.ReturnType != typeof(void) &amp;&amp; method.Name.StartsWith(&quot;Player&quot;))
             .Cast&lt;MethodBase&gt;();
     }
@@ -198,24 +200,30 @@ class MyPatches()
 </code></pre>
 <h3 id="combining-annotations">Combining annotations</h3>
 <p>The combination of those annotations defines the target method. Annotations are <strong>inherited</strong> from class to method so you can use <code>[HarmonyPatch(Type)]</code> on the class and <code>[HarmonyPatch(String)]</code> on one of its methods to combine both.</p>
-<pre><code class="lang-csharp">[HarmonyPatch(typeof(SomeType))]
+<pre><code class="lang-csharp">using HarmonyLib;
+
+[HarmonyPatch(typeof(SomeType))]
 class MyPatches1
 {
+    [HarmonyPostfix]
     [HarmonyPatch(&quot;SomeMethod1&quot;)]
-    static void Postfix() { }
+    static void Postfix1() { }
 
+    [HarmonyPostfix]
     [HarmonyPatch(&quot;SomeMethod2&quot;)]
-    static void Postfix() { }
+    static void Postfix2() { }
 }
 
 [HarmonyPatch(typeof(TypeA))]
 class MyPatches2
 {
+    [HarmonyPrefix]
     [HarmonyPatch(&quot;SomeMethod1&quot;)]
-    static void Prefix() { }
+    static void Prefix1() { }
 
+    [HarmonyPrefix]
     [HarmonyPatch(&quot;SomeMethod2&quot;)]
-    static void Prefix() { }
+    static void Prefix2() { }
 
     [HarmonyPatch(typeof(TypeB), &quot;SomeMethod1&quot;)]
     static void Postfix() { }

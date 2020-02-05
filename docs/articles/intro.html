@@ -143,8 +143,8 @@
         if (isRunning)
         {
             counter++;
-            return counter * 10;
         }
+        return counter * 10;
     }
 }
 </code></pre>
@@ -170,7 +170,7 @@ public class MyPatcher
 [HarmonyPatch(&quot;DoSomething&quot;)]
 class Patch01
 {
-    static FieldRef&lt;SomeGameClass,bool&gt; isRunningRef =
+    static AccessTools.FieldRef&lt;SomeGameClass,bool&gt; isRunningRef =
         AccessTools.FieldRefAccess&lt;SomeGameClass, bool&gt;(&quot;isRunning&quot;);
 
     static bool Prefix(SomeGameClass __instance, ref int ___counter)

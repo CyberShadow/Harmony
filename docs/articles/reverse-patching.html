@@ -96,7 +96,7 @@ public class Patch
 {
     [HarmonyReversePatch]
     [HarmonyPatch(typeof(OriginalCode), &quot;Test&quot;)]
-    public static void MyTest(object instance, int counter, ref string name)
+    public static void MyTest(object instance, int counter, string name)
     {
         // its a stub so it has no initial content
         throw new NotImplementedException(&quot;It's a stub&quot;);
@@ -108,7 +108,6 @@ class Main
     void Test()
     {
         // here we call OriginalCode.Test()
-        var originalInstance = ...
         Patch.MyTest(originalInstance, 100, &quot;hello&quot;);
     }
 }

@@ -162,7 +162,7 @@ foreach (var patch in patches.Prefixes)
 {
     FileLog.Log(&quot;index: &quot; + patch.index);
     FileLog.Log(&quot;owner: &quot; + patch.owner);
-    FileLog.Log(&quot;patch method: &quot; + patch.patch);
+    FileLog.Log(&quot;patch method: &quot; + patch.PatchMethod);
     FileLog.Log(&quot;priority: &quot; + patch.priority);
     FileLog.Log(&quot;before: &quot; + patch.before);
     FileLog.Log(&quot;after: &quot; + patch.after);
@@ -190,7 +190,6 @@ var harmony = new Harmony(&quot;my.harmony.id&quot;);
 harmony.UnpatchAll();
 
 // only the patches that one specific Harmony instance did:
-var harmony = new Harmony(&quot;my.harmony.id&quot;);
 harmony.UnpatchAll(&quot;their.harmony.id&quot;);
 </code></pre>
 <p>Besides that, you can unpatch specific patches too:</p>
