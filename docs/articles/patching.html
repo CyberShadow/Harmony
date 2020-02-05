@@ -90,16 +90,16 @@ The attributes of the methods in the class inherit the attributes of the class.<
 <pre><code class="lang-csharp">[HarmonyPatch(...)]
 class Patch
 {
-	static void Prefix()
-	{
-		// this method uses the name &quot;Prefix&quot;, no annotation necessary
-	}
+    static void Prefix()
+    {
+        // this method uses the name &quot;Prefix&quot;, no annotation necessary
+    }
 
-	[HarmonyPostfix]
-	static void MyOwnName()
-	{
-		// this method is a Postfix as defined by the attribute
-	}
+    [HarmonyPostfix]
+    static void MyOwnName()
+    {
+        // this method is a Postfix as defined by the attribute
+    }
 }
 </code></pre>
 <p>If you prefer manual patching, you can use any method name or class structure you want. You are responsible to retrieve the MethodInfo for the different patch methods and supply them to the Patch() method by wrapping them into HarmonyMethod objects.</p>

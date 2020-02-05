@@ -132,8 +132,8 @@ harmony.Patch(original, prefix: new HarmonyMethod(prefix), transpiler: new Harmo
 <p>The use of an extra HarmonyMethod is to allow for you to define extra properties like priority and such together with the method pointer. HarmonyMethod is the common class shared by manual and annotation patching.</p>
 <pre><code class="lang-csharp">var harmonyPostfix = new HarmonyMethod(postfix)
 {
-	priority = Priority.Low,
-	before = new[] { &quot;that.other.harmony.user&quot; }
+    priority = Priority.Low,
+    before = new[] { &quot;that.other.harmony.user&quot; }
 };
 </code></pre>
 <p>A common mistake here is to fail to retrieve a valid reference for original or your patches resulting in a <code>null</code> value which when passed to HarmonyMethod will throw an error. You can use standard <code>System.Reflection</code> to get the MethodInfo of the original and your HarmonyMethods. See the Utilities section for the various ways Harmony can make Reflection easier.</p>
@@ -160,12 +160,12 @@ FileLog.Log(&quot;all owners: &quot; + patches.Owners);
 // get info about all Prefixes/Postfixes/Transpilers
 foreach (var patch in patches.Prefixes)
 {
-	FileLog.Log(&quot;index: &quot; + patch.index);
-	FileLog.Log(&quot;owner: &quot; + patch.owner);
-	FileLog.Log(&quot;patch method: &quot; + patch.patch);
-	FileLog.Log(&quot;priority: &quot; + patch.priority);
-	FileLog.Log(&quot;before: &quot; + patch.before);
-	FileLog.Log(&quot;after: &quot; + patch.after);
+    FileLog.Log(&quot;index: &quot; + patch.index);
+    FileLog.Log(&quot;owner: &quot; + patch.owner);
+    FileLog.Log(&quot;patch method: &quot; + patch.patch);
+    FileLog.Log(&quot;priority: &quot; + patch.priority);
+    FileLog.Log(&quot;before: &quot; + patch.before);
+    FileLog.Log(&quot;after: &quot; + patch.after);
 }
 </code></pre>
 <p>Sometimes it is necessary to test if another mod is loaded. This is best done by resolving one of their types by name. However, if you want to know if a specific Harmony has applied any patches so far, you can use HasAnyPatches:</p>
@@ -176,9 +176,9 @@ foreach (var patch in patches.Prefixes)
 FileLog.Log(&quot;My version: &quot; + myVersion);
 foreach (var entry in dict)
 {
-	var id = entry.Key;
-	var version = entry.Value;
-	FileLog.Log(&quot;Mod &quot; + id + &quot; uses Harmony version &quot; + version);
+    var id = entry.Key;
+    var version = entry.Value;
+    FileLog.Log(&quot;Mod &quot; + id + &quot; uses Harmony version &quot; + version);
 }
 </code></pre>
 <h3 id="unpatching">Unpatching</h3>

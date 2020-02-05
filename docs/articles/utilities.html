@@ -114,37 +114,37 @@ public static void IterateProperties(object source, object target, Action&lt;Tra
 <p>Example:</p>
 <pre><code class="lang-csharp">class Foo
 {
-	struct Bar
-	{
-		static string secret = &quot;hello&quot;;
+    struct Bar
+    {
+        static string secret = &quot;hello&quot;;
 
-		public string ModifiedSecret()
-		{
-			return secret.ToUpper();
-		}
-	}
+        public string ModifiedSecret()
+        {
+            return secret.ToUpper();
+        }
+    }
 
-	Bar myBar
-	{
-		get
-		{
-			return new Bar();
-		}
-	}
+    Bar myBar
+    {
+        get
+        {
+            return new Bar();
+        }
+    }
 
-	public string GetSecret()
-	{
-		return myBar.ModifiedSecret();
-	}
+    public string GetSecret()
+    {
+        return myBar.ModifiedSecret();
+    }
 
-	Foo()
-	{
-	}
+    Foo()
+    {
+    }
 
-	static Foo MakeFoo()
-	{
-		return new Foo();
-	}
+    static Foo MakeFoo()
+    {
+        return new Foo();
+    }
 }
 
 var foo = Traverse.Create&lt;Foo&gt;().Method(&quot;MakeFoo&quot;).GetValue&lt;Foo&gt;();

@@ -81,7 +81,7 @@
 <h3 id="suppressing-any-exceptions">Suppressing any exceptions</h3>
 <pre><code class="lang-csharp">static Exception Finalizer()
 {
-	return null;
+    return null;
 }
 </code></pre>
 <h3 id="observing-exceptions">Observing exceptions</h3>
@@ -93,18 +93,18 @@
 <pre><code class="lang-csharp">[Serializable]
 public class MyException : Exception
 {
-	public MyException() { }
-	public MyException(string message) : base(message) { }
-	public MyException(string message, Exception innerException) : base(message, innerException) { }
-	protected MyException(SerializationInfo serializationInfo, StreamingContext streamingContext)
-	{
-		throw new NotImplementedException();
-	}
+    public MyException() { }
+    public MyException(string message) : base(message) { }
+    public MyException(string message, Exception innerException) : base(message, innerException) { }
+    protected MyException(SerializationInfo serializationInfo, StreamingContext streamingContext)
+    {
+        throw new NotImplementedException();
+    }
 }
 
 static Exception Finalizer(Exception __exception)
 {
-	return new MyException(&quot;Oops&quot;, __exception);
+    return new MyException(&quot;Oops&quot;, __exception);
 }
 </code></pre>
 <p>Beside their handling of exceptions they can receive the same arguments as Postfixes.</p>

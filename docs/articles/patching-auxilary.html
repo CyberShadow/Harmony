@@ -102,9 +102,9 @@ static IEnumerable&lt;MethodBase&gt; CalculateMethods(Harmony instance)
 <p>A typical implementation would <code>yield</code> the results like this:</p>
 <pre><code class="lang-csharp">static IEnumerable&lt;MethodBase&gt; TargetMethods()
 {
-	yield return AccessTools.Method(typeof(Foo), &quot;Method1&quot;);
-	yield return AccessTools.Method(typeof(Bar), &quot;Method2&quot;);
-	// you could also iterate using reflections over many methods
+    yield return AccessTools.Method(typeof(Foo), &quot;Method1&quot;);
+    yield return AccessTools.Method(typeof(Bar), &quot;Method2&quot;);
+    // you could also iterate using reflections over many methods
 }
 </code></pre>
 <h3 id="cleanup">Cleanup</h3>
