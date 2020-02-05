@@ -145,7 +145,7 @@ class Patch
 <h3 id="passing-state-between-prefix-and-postfix">Passing state between prefix and postfix</h3>
 <p>If you want to share state between your prefix and the corresponding postfix, you can use <code>__state</code> (with the <code>ref</code> or <code>out</code> keyword). If you need more than one value you can create your own type and pass it instead.</p>
 <p><img src="https://raw.githubusercontent.com/pardeike/Harmony/master/Harmony/Documentation/images/note.png" alt="note"> This only works if Prefix and Postfix are defined in the same class since Harmony internally uses the declaring type as a key to store the information.</p>
-<pre><code class="lang-cs">public class OriginalCode
+<pre><code class="lang-csharp">public class OriginalCode
 {
     public void Test(int counter, string name)
     {
